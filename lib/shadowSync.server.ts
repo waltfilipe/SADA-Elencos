@@ -8,11 +8,12 @@ import type { ShadowScope, ShadowTeamState } from "./shadowTeamStorage";
  * sync fica desligado e cada app usa só o localStorage — comportamento
  * idêntico ao de antes.
  *
- * Vars na Vercel: KV_REST_API_URL e KV_REST_API_TOKEN (integração Upstash).
+ * Vars na Vercel: KV_REST_API_URL/KV_REST_API_TOKEN (Vercel KV) ou
+ * UPSTASH_REDIS_REST_URL/UPSTASH_REDIS_REST_TOKEN (integração Upstash nova).
  */
 
-const API_URL = process.env.KV_REST_API_URL;
-const API_TOKEN = process.env.KV_REST_API_TOKEN;
+const API_URL = process.env.KV_REST_API_URL ?? process.env.UPSTASH_REDIS_REST_URL;
+const API_TOKEN = process.env.KV_REST_API_TOKEN ?? process.env.UPSTASH_REDIS_REST_TOKEN;
 
 const VALID_SCOPES = new Set(["todas", "estaduais"]);
 
