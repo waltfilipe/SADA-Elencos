@@ -1,0 +1,2841 @@
+[
+ {
+  "person_key": "name:tiquinho soares|1991|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2022",
+  "player_id": "tiquinho-soares-botafogo-422",
+  "sofascore_team": "Mirassol",
+  "person_clubs": [
+   "Botafogo",
+   "Santos"
+  ]
+ },
+ {
+  "person_key": "name:tiquinho soares|1991|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "tiquinho-soares-botafogo-422",
+  "sofascore_team": "Mirassol",
+  "person_clubs": [
+   "Botafogo",
+   "Santos"
+  ]
+ },
+ {
+  "person_key": "name:tiquinho soares|1991|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "tiquinho-soares-botafogo-422",
+  "sofascore_team": "Mirassol",
+  "person_clubs": [
+   "Botafogo",
+   "Santos"
+  ]
+ },
+ {
+  "person_key": "name:nicolas|1989|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "186408",
+    4
+   ],
+   [
+    "442258",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-a",
+    "season": "2022",
+    "player_id": "nicolas-goi-s-305",
+    "club": "Goiás"
+   },
+   {
+    "league": "serie-b",
+    "season": "2023",
+    "player_id": "serie-b-nicolas-cear-227",
+    "club": "Ceará"
+   },
+   {
+    "league": "serie-b",
+    "season": "2024",
+    "player_id": "serie-b-nicolas-paysandu-121",
+    "club": "Paysandu"
+   },
+   {
+    "league": "serie-b",
+    "season": "2025",
+    "player_id": "serie-b-nicolas-crici-ma-294",
+    "club": "Criciúma"
+   },
+   {
+    "league": "serie-b",
+    "season": "2026",
+    "player_id": "serie-b-nicolas-crici-ma-294",
+    "club": "Criciúma"
+   }
+  ]
+ },
+ {
+  "person_key": "name:marcelo cirino|1992|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-marcelo-cirino-brasiliense-382",
+  "sofascore_team": "Amazonas FC",
+  "person_clubs": [
+   "Athletico Paranaense",
+   "Brasiliense"
+  ]
+ },
+ {
+  "person_key": "name:william pottker|1994|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-william-pottker-londrina-173",
+  "sofascore_team": "Ponte Preta",
+  "person_clubs": [
+   "Avaí",
+   "CRB",
+   "Coritiba",
+   "Londrina"
+  ]
+ },
+ {
+  "person_key": "name:airton|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-airton-guarani-232",
+  "sofascore_team": "Grêmio Novorizontino",
+  "person_clubs": [
+   "Atlético GO",
+   "Guarani"
+  ]
+ },
+ {
+  "person_key": "name:pedro henrique|1990|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2023",
+  "player_id": "pedro-henrique-internacional-257",
+  "sofascore_team": "Athletico",
+  "person_clubs": [
+   "Ceará",
+   "Corinthians",
+   "Fortaleza",
+   "Internacional"
+  ]
+ },
+ {
+  "person_key": "name:vitinho|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2025",
+  "player_id": "vitinho-internacional-44",
+  "sofascore_team": "Corinthians",
+  "person_clubs": [
+   "Athletico Paranaense",
+   "Internacional",
+   "Red Bull Bragantino"
+  ]
+ },
+ {
+  "person_key": "name:vitinho|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "vitinho-internacional-44",
+  "sofascore_team": "Corinthians",
+  "person_clubs": [
+   "Athletico Paranaense",
+   "Internacional",
+   "Red Bull Bragantino"
+  ]
+ },
+ {
+  "person_key": "name:matheusinho|1998|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-matheusinho-atl-tico-go-367",
+  "sofascore_team": "Ceará",
+  "person_clubs": [
+   "América Mineiro",
+   "Atlético GO",
+   "Criciúma",
+   "Mirassol",
+   "Sport Recife",
+   "Ypiranga Erechim"
+  ]
+ },
+ {
+  "person_key": "name:romulo|2001|1",
+  "type": "sofascore_conflict",
+  "season": "2023",
+  "ss_ids": [
+   "1105078",
+   "1133743"
+  ],
+  "rows": [
+   {
+    "league": "serie-a",
+    "season": "2022",
+    "player_id": "r-mulo-athletico-paranaense-266",
+    "club": "Athletico Paranaense"
+   },
+   {
+    "league": "serie-a",
+    "season": "2022",
+    "player_id": "r-mulo-juventude-591",
+    "club": "Juventude"
+   },
+   {
+    "league": "serie-b",
+    "season": "2022",
+    "player_id": "serie-b-r-mulo-gr-mio-novorizontino-28",
+    "club": "Grêmio Novorizontino"
+   },
+   {
+    "league": "serie-a",
+    "season": "2023",
+    "player_id": "r-mulo-athletico-paranaense-426",
+    "club": "Athletico Paranaense"
+   },
+   {
+    "league": "serie-a",
+    "season": "2023",
+    "player_id": "r-mulo-internacional-268",
+    "club": "Internacional"
+   },
+   {
+    "league": "serie-b",
+    "season": "2023",
+    "player_id": "serie-b-r-mulo-gr-mio-novorizontino-28",
+    "club": "Grêmio Novorizontino"
+   },
+   {
+    "league": "serie-a",
+    "season": "2024",
+    "player_id": "r-mulo-palmeiras-555",
+    "club": "Palmeiras"
+   },
+   {
+    "league": "serie-a",
+    "season": "2024",
+    "player_id": "r-mulo-internacional-160",
+    "club": "Internacional"
+   },
+   {
+    "league": "serie-a",
+    "season": "2025",
+    "player_id": "r-mulo-cear-610",
+    "club": "Ceará"
+   },
+   {
+    "league": "serie-b",
+    "season": "2025",
+    "player_id": "serie-b-r-mulo-gr-mio-novorizontino-28",
+    "club": "Grêmio Novorizontino"
+   },
+   {
+    "league": "serie-b",
+    "season": "2026",
+    "player_id": "serie-b-r-mulo-gr-mio-novorizontino-28",
+    "club": "Grêmio Novorizontino"
+   }
+  ]
+ },
+ {
+  "person_key": "name:yago felipe|1995|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-yago-felipe-chapecoense-344",
+  "sofascore_team": "Sport Recife",
+  "person_clubs": [
+   "Bahia",
+   "Chapecoense",
+   "Fluminense",
+   "Mirassol"
+  ]
+ },
+ {
+  "person_key": "name:nathan|1995|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-nathan-buriram-united-322",
+  "sofascore_team": "Juventude",
+  "person_clubs": [
+   "Buriram United",
+   "Fluminense",
+   "Grêmio"
+  ]
+ },
+ {
+  "person_key": "name:wesley|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2023",
+  "player_id": "wesley-cruzeiro-515",
+  "sofascore_team": "Corinthians",
+  "person_clubs": [
+   "Cruzeiro",
+   "Internacional",
+   "Palmeiras"
+  ]
+ },
+ {
+  "person_key": "name:guilherme parede|1995|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-guilherme-parede-am-rica-mineiro-492",
+  "sofascore_team": "Guarani",
+  "person_clubs": [
+   "América Mineiro",
+   "Juventude",
+   "Vila Nova"
+  ]
+ },
+ {
+  "person_key": "name:chay|1991|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-chay-crb-371",
+  "sofascore_team": "Guarani",
+  "person_clubs": [
+   "Botafogo",
+   "CRB",
+   "Ceará",
+   "Volta Redonda"
+  ]
+ },
+ {
+  "person_key": "name:pablo dyego|1994|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-pablo-dyego-gr-mio-novorizontino-331",
+  "sofascore_team": "Sport Recife",
+  "person_clubs": [
+   "Avaí",
+   "Grêmio Novorizontino",
+   "Londrina",
+   "Ponte Preta",
+   "Vila Nova"
+  ]
+ },
+ {
+  "person_key": "name:pablo dyego|1994|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-pablo-dyego-londrina-279",
+  "sofascore_team": "São Bernardo",
+  "person_clubs": [
+   "Avaí",
+   "Grêmio Novorizontino",
+   "Londrina",
+   "Ponte Preta",
+   "Vila Nova"
+  ]
+ },
+ {
+  "person_key": "name:ze hugo|1999|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "740157",
+    4
+   ],
+   [
+    "940479",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-a",
+    "season": "2022",
+    "player_id": "z-hugo-coritiba-495",
+    "club": "Coritiba"
+   },
+   {
+    "league": "serie-b",
+    "season": "2023",
+    "player_id": "serie-b-z-hugo-vit-ria-224",
+    "club": "Vitória"
+   },
+   {
+    "league": "serie-a",
+    "season": "2024",
+    "player_id": "z-hugo-vit-ria-396",
+    "club": "Vitória"
+   },
+   {
+    "league": "serie-b",
+    "season": "2025",
+    "player_id": "serie-b-z-hugo-ferrovi-ria-508",
+    "club": "Ferroviária"
+   },
+   {
+    "league": "serie-b",
+    "season": "2026",
+    "player_id": "serie-b-z-hugo-botafogo-sp-83",
+    "club": "Botafogo SP"
+   }
+  ]
+ },
+ {
+  "person_key": "name:dentinho|1997|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-dentinho-brusque-197",
+  "sofascore_team": "Amazonas FC",
+  "person_clubs": [
+   "Avaí",
+   "Brusque",
+   "Caxias",
+   "Chapecoense",
+   "Guarani",
+   "Vila Nova"
+  ]
+ },
+ {
+  "person_key": "name:marlon|1994|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-marlon-remo-183",
+  "sofascore_team": "Grêmio Novorizontino",
+  "person_clubs": [
+   "América Mineiro",
+   "Remo"
+  ]
+ },
+ {
+  "person_key": "name:matheuzinho|1994|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2025",
+  "player_id": "matheuzinho-corinthians-46",
+  "sofascore_team": "Vitória",
+  "person_clubs": [
+   "América RN",
+   "Corinthians",
+   "Flamengo",
+   "Vila Nova"
+  ]
+ },
+ {
+  "person_key": "name:matheuzinho|1994|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "matheuzinho-corinthians-46",
+  "sofascore_team": "Vitória",
+  "person_clubs": [
+   "América RN",
+   "Corinthians",
+   "Flamengo",
+   "Vila Nova"
+  ]
+ },
+ {
+  "person_key": "name:madson|1992|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-m-dson-gr-mio-novorizontino-120",
+  "sofascore_team": "Sport Recife",
+  "person_clubs": [
+   "Athletico Paranaense",
+   "Grêmio Novorizontino",
+   "Santos"
+  ]
+ },
+ {
+  "person_key": "name:dudu|1997|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-dudu-chapecoense-447",
+  "sofascore_team": "Guarani",
+  "person_clubs": [
+   "Atlético GO",
+   "Chapecoense",
+   "Criciúma",
+   "Fortaleza"
+  ]
+ },
+ {
+  "person_key": "name:igor carius|1993|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "igor-cari-s-vila-nova-658",
+  "sofascore_team": "Mirassol",
+  "person_clubs": [
+   "Cuiabá",
+   "Sport Recife",
+   "Vila Nova"
+  ]
+ },
+ {
+  "person_key": "name:rafael|1991|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2023",
+  "player_id": "rafael-botafogo-450",
+  "sofascore_team": "São Paulo",
+  "person_clubs": [
+   "Botafogo"
+  ]
+ },
+ {
+  "person_key": "name:guilherme|2002|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2023",
+  "player_id": "guilherme-red-bull-bragantino-536",
+  "sofascore_team": "Goiás",
+  "person_clubs": [
+   "Atlético GO",
+   "CRB",
+   "Red Bull Bragantino"
+  ]
+ },
+ {
+  "person_key": "name:allan|1997|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "allan-corinthians-223",
+  "sofascore_team": "Botafogo",
+  "person_clubs": [
+   "Atlético Mineiro",
+   "Corinthians",
+   "Flamengo"
+  ]
+ },
+ {
+  "person_key": "name:danilo|2001|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2025",
+  "player_id": "danilo-botafogo-108",
+  "sofascore_team": "Flamengo",
+  "person_clubs": [
+   "Botafogo",
+   "Palmeiras"
+  ]
+ },
+ {
+  "person_key": "name:danilo|2001|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "danilo-botafogo-108",
+  "sofascore_team": "Flamengo",
+  "person_clubs": [
+   "Botafogo",
+   "Palmeiras"
+  ]
+ },
+ {
+  "person_key": "name:r fernandez|1997|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2023",
+  "player_id": "r-fern-ndez-santos-131",
+  "sofascore_team": "Botafogo",
+  "person_clubs": [
+   "Santos"
+  ]
+ },
+ {
+  "person_key": "name:gabriel|1991|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2023",
+  "player_id": "gabriel-internacional-349",
+  "sofascore_team": "Coritiba",
+  "person_clubs": [
+   "Athletico Paranaense",
+   "CSA",
+   "Ferroviário",
+   "Internacional",
+   "Red Bull Bragantino"
+  ]
+ },
+ {
+  "person_key": "name:gabriel|1991|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2025",
+  "player_id": "gabriel-red-bull-bragantino-141",
+  "sofascore_team": "Vitória",
+  "person_clubs": [
+   "Athletico Paranaense",
+   "CSA",
+   "Ferroviário",
+   "Internacional",
+   "Red Bull Bragantino"
+  ]
+ },
+ {
+  "person_key": "name:gabriel|1991|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "gabriel-red-bull-bragantino-141",
+  "sofascore_team": "Vitória",
+  "person_clubs": [
+   "Athletico Paranaense",
+   "CSA",
+   "Ferroviário",
+   "Internacional",
+   "Red Bull Bragantino"
+  ]
+ },
+ {
+  "person_key": "name:jair|1994|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2023",
+  "player_id": "jair-vasco-da-gama-530",
+  "sofascore_team": "Santos",
+  "person_clubs": [
+   "Atlético Mineiro",
+   "Vasco da Gama"
+  ]
+ },
+ {
+  "person_key": "name:patrick de paula|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "patrick-de-paula-sport-recife-413",
+  "sofascore_team": "Remo",
+  "person_clubs": [
+   "Botafogo",
+   "Criciúma",
+   "Sport Recife"
+  ]
+ },
+ {
+  "person_key": "name:fernando sobral|1995|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "fernando-sobral-sport-recife-544",
+  "sofascore_team": "Coritiba",
+  "person_clubs": [
+   "Ceará",
+   "Cuiabá",
+   "Sport Recife"
+  ]
+ },
+ {
+  "person_key": "name:gabriel pires|1993|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "gabriel-pires-juventude-498",
+  "sofascore_team": "Mirassol",
+  "person_clubs": [
+   "Botafogo",
+   "Fluminense",
+   "Juventude"
+  ]
+ },
+ {
+  "person_key": "name:fabinho|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2025",
+  "player_id": "fabinho-red-bull-bragantino-340",
+  "sofascore_team": "Coritiba",
+  "person_clubs": [
+   "Palmeiras",
+   "Red Bull Bragantino"
+  ]
+ },
+ {
+  "person_key": "name:fabinho|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "fabinho-red-bull-bragantino-340",
+  "sofascore_team": "Coritiba",
+  "person_clubs": [
+   "Palmeiras",
+   "Red Bull Bragantino"
+  ]
+ },
+ {
+  "person_key": "name:reynaldo|1997|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2023",
+  "player_id": "reynaldo-coritiba-514",
+  "sofascore_team": "Cruzeiro",
+  "person_clubs": [
+   "Avaí",
+   "Coritiba",
+   "Goiás",
+   "Remo",
+   "Vitória"
+  ]
+ },
+ {
+  "person_key": "name:luiz otavio|1989|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2022",
+  "player_id": "luiz-ot-vio-cear-706",
+  "sofascore_team": "Mirassol",
+  "person_clubs": [
+   "Ceará"
+  ]
+ },
+ {
+  "person_key": "name:luiz otavio|1989|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2023",
+  "player_id": "serie-b-luiz-ot-vio-cear-36",
+  "sofascore_team": "Cuiabá",
+  "person_clubs": [
+   "Ceará"
+  ]
+ },
+ {
+  "person_key": "name:luizao|2002|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-luiz-o-s-o-bernardo-fc-470",
+  "sofascore_team": "CRB",
+  "person_clubs": [
+   "Brusque",
+   "São Bernardo FC",
+   "São Paulo"
+  ]
+ },
+ {
+  "person_key": "name:n ferraresi|1999|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "466336",
+    4
+   ],
+   [
+    "811219",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-a",
+    "season": "2022",
+    "player_id": "n-ferraresi-s-o-paulo-402",
+    "club": "São Paulo"
+   },
+   {
+    "league": "serie-a",
+    "season": "2023",
+    "player_id": "n-ferraresi-s-o-paulo-728",
+    "club": "São Paulo"
+   },
+   {
+    "league": "serie-a",
+    "season": "2024",
+    "player_id": "n-ferraresi-s-o-paulo-345",
+    "club": "São Paulo"
+   },
+   {
+    "league": "serie-a",
+    "season": "2025",
+    "player_id": "n-ferraresi-s-o-paulo-139",
+    "club": "São Paulo"
+   },
+   {
+    "league": "serie-a",
+    "season": "2026",
+    "player_id": "n-ferraresi-botafogo-117",
+    "club": "Botafogo"
+   }
+  ]
+ },
+ {
+  "person_key": "name:david braz|1987|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-david-braz-brasiliense-491",
+  "sofascore_team": "Ponte Preta",
+  "person_clubs": [
+   "Brasiliense",
+   "Fluminense",
+   "Goiás",
+   "Guarani"
+  ]
+ },
+ {
+  "person_key": "name:j cazares|1993|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-j-cazares-paysandu-349",
+  "sofascore_team": "Santos",
+  "person_clubs": [
+   "América Mineiro",
+   "Paysandu"
+  ]
+ },
+ {
+  "person_key": "name:danielzinho|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-danielzinho-n-utico-147",
+  "sofascore_team": "Maringá FC",
+  "person_clubs": [
+   "Athletico Paranaense",
+   "Atlético GO",
+   "EC São José",
+   "Náutico"
+  ]
+ },
+ {
+  "person_key": "name:fabio|1991|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2023",
+  "player_id": "f-bio-gr-mio-338",
+  "sofascore_team": "Fluminense",
+  "person_clubs": [
+   "Grêmio"
+  ]
+ },
+ {
+  "person_key": "name:nicolas|1997|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "442258",
+    4
+   ],
+   [
+    "186408",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-b",
+    "season": "2022",
+    "player_id": "serie-b-nicolas-gr-mio-124",
+    "club": "Grêmio"
+   },
+   {
+    "league": "serie-a",
+    "season": "2023",
+    "player_id": "nicolas-am-rica-mineiro-367",
+    "club": "América Mineiro"
+   },
+   {
+    "league": "serie-b",
+    "season": "2024",
+    "player_id": "serie-b-nicolas-am-rica-mineiro-336",
+    "club": "América Mineiro"
+   },
+   {
+    "league": "serie-a",
+    "season": "2025",
+    "player_id": "nicolas-cear-440",
+    "club": "Ceará"
+   },
+   {
+    "league": "serie-b",
+    "season": "2026",
+    "player_id": "serie-b-nicolas-goi-s-128",
+    "club": "Goiás"
+   }
+  ]
+ },
+ {
+  "person_key": "name:fernando|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2022",
+  "player_id": "serie-b-fernando-chapecoense-334",
+  "sofascore_team": "Ceará",
+  "person_clubs": [
+   "Athletico Paranaense",
+   "Chapecoense"
+  ]
+ },
+ {
+  "person_key": "name:fernando|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-fernando-chapecoense-334",
+  "sofascore_team": "Ceará",
+  "person_clubs": [
+   "Athletico Paranaense",
+   "Chapecoense"
+  ]
+ },
+ {
+  "person_key": "name:marcos vinicius|1997|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "marcos-vinicius-goi-s-379",
+  "sofascore_team": "Chapecoense",
+  "person_clubs": [
+   "ABC",
+   "Avaí",
+   "Coritiba",
+   "Goiás"
+  ]
+ },
+ {
+  "person_key": "name:willian oliveira|1993|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "willian-oliveira-sport-recife-410",
+  "sofascore_team": "Coritiba",
+  "person_clubs": [
+   "Cruzeiro",
+   "Goiás",
+   "Sport Recife",
+   "Vitória"
+  ]
+ },
+ {
+  "person_key": "name:ian luccas|2003|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-ian-luccas-alverca-208",
+  "sofascore_team": "Athletic Club",
+  "person_clubs": [
+   "Alverca",
+   "Cruzeiro",
+   "Ferroviária"
+  ]
+ },
+ {
+  "person_key": "name:paulinho|2004|2",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-paulinho-vasco-da-gama-472",
+  "sofascore_team": "América Mineiro",
+  "person_clubs": [
+   "Sport Recife",
+   "Vasco da Gama"
+  ]
+ },
+ {
+  "person_key": "name:higor meritao|1994|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "higor-merit-o-vila-nova-299",
+  "sofascore_team": "Chapecoense",
+  "person_clubs": [
+   "CRB",
+   "Criciúma",
+   "Goiás",
+   "Vila Nova"
+  ]
+ },
+ {
+  "person_key": "name:edu|2000|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "371250",
+    3
+   ],
+   [
+    "548591",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-a",
+    "season": "2023",
+    "player_id": "edu-goi-s-466",
+    "club": "Goiás"
+   },
+   {
+    "league": "serie-a",
+    "season": "2024",
+    "player_id": "edu-vit-ria-625",
+    "club": "Vitória"
+   },
+   {
+    "league": "serie-a",
+    "season": "2025",
+    "player_id": "edu-vit-ria-625",
+    "club": "Vitória"
+   },
+   {
+    "league": "serie-a",
+    "season": "2026",
+    "player_id": "edu-vit-ria-625",
+    "club": "Vitória"
+   }
+  ]
+ },
+ {
+  "person_key": "name:jonathan|2002|1",
+  "type": "sofascore_conflict",
+  "season": "2025",
+  "ss_ids": [
+   "1066686",
+   "1498670"
+  ],
+  "rows": [
+   {
+    "league": "serie-a",
+    "season": "2023",
+    "player_id": "jonathan-am-rica-mineiro-707",
+    "club": "América Mineiro"
+   },
+   {
+    "league": "serie-a",
+    "season": "2024",
+    "player_id": "jonathan-cruzeiro-145",
+    "club": "Cruzeiro"
+   },
+   {
+    "league": "serie-a",
+    "season": "2025",
+    "player_id": "jonathan-cruzeiro-145",
+    "club": "Cruzeiro"
+   },
+   {
+    "league": "serie-c",
+    "season": "2025",
+    "player_id": "serie-c-jonathan-maring-23",
+    "club": "Maringá"
+   },
+   {
+    "league": "serie-a",
+    "season": "2026",
+    "player_id": "jonathan-cruzeiro-145",
+    "club": "Cruzeiro"
+   }
+  ]
+ },
+ {
+  "person_key": "name:e rodriguez|2003|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-e-rodr-guez-cerro-514",
+  "sofascore_team": "Londrina",
+  "person_clubs": [
+   "Atlético GO",
+   "Cerro"
+  ]
+ },
+ {
+  "person_key": "name:vitinho|1999|3",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "vitinho-botafogo-54",
+  "sofascore_team": "Corinthians",
+  "person_clubs": [
+   "Atlético Cearense",
+   "Atlético GO",
+   "Botafogo",
+   "Fortaleza",
+   "Goiás",
+   "Red Bull Bragantino",
+   "Sampaio Corrêa",
+   "Vasco da Gama"
+  ]
+ },
+ {
+  "person_key": "name:max|2001|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2025",
+  "player_id": "serie-b-max-athletic-club-134",
+  "sofascore_team": "Sport Recife",
+  "person_clubs": [
+   "Athletic Club",
+   "Atlético GO",
+   "Chapecoense",
+   "Cuiabá"
+  ]
+ },
+ {
+  "person_key": "name:max|2001|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-max-athletic-club-134",
+  "sofascore_team": "Sport Recife",
+  "person_clubs": [
+   "Athletic Club",
+   "Atlético GO",
+   "Chapecoense",
+   "Cuiabá"
+  ]
+ },
+ {
+  "person_key": "name:jean carlos|1992|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "jean-carlos-n-utico-273",
+  "sofascore_team": "Chapecoense",
+  "person_clubs": [
+   "Ceará",
+   "Criciúma",
+   "Juventude",
+   "Náutico"
+  ]
+ },
+ {
+  "person_key": "name:gustavo prado|2005|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-gustavo-prado-dynamo-kyiv-610",
+  "sofascore_team": "Ceará",
+  "person_clubs": [
+   "Dynamo Kyiv",
+   "Internacional"
+  ]
+ },
+ {
+  "person_key": "name:vitinho|1999|2",
+  "type": "heatmap_team_mismatch",
+  "season": "2025",
+  "player_id": "vitinho-botafogo-54",
+  "sofascore_team": "Corinthians",
+  "person_clubs": [
+   "Atlético Cearense",
+   "Botafogo",
+   "Cruzeiro",
+   "Floresta EC",
+   "Fortaleza",
+   "Guarani",
+   "Juventude",
+   "Red Bull Bragantino",
+   "Volta Redonda"
+  ]
+ },
+ {
+  "person_key": "name:vitinho|1999|2",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "vitinho-botafogo-54",
+  "sofascore_team": "Corinthians",
+  "person_clubs": [
+   "Atlético Cearense",
+   "Botafogo",
+   "Cruzeiro",
+   "Floresta EC",
+   "Fortaleza",
+   "Guarani",
+   "Juventude",
+   "Red Bull Bragantino",
+   "Volta Redonda"
+  ]
+ },
+ {
+  "person_key": "name:victor hugo|2003|1",
+  "type": "heatmap_team_mismatch",
+  "season": "2022",
+  "player_id": "serie-b-victor-hugo-londrina-193",
+  "sofascore_team": "Cuiabá",
+  "person_clubs": [
+   "Amazonas",
+   "Fluminense",
+   "Londrina",
+   "Red Bull Bragantino"
+  ]
+ },
+ {
+  "person_key": "name:victor hugo|2003|1",
+  "type": "heatmap_team_mismatch",
+  "season": "2023",
+  "player_id": "serie-b-victor-hugo-londrina-193",
+  "sofascore_team": "Cuiabá",
+  "person_clubs": [
+   "Amazonas",
+   "Fluminense",
+   "Londrina",
+   "Red Bull Bragantino"
+  ]
+ },
+ {
+  "person_key": "name:victor hugo|2003|1",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-victor-hugo-londrina-193",
+  "sofascore_team": "Cuiabá",
+  "person_clubs": [
+   "Amazonas",
+   "Fluminense",
+   "Londrina",
+   "Red Bull Bragantino"
+  ]
+ },
+ {
+  "person_key": "name:jean carlos|2004|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2025",
+  "player_id": "serie-b-jean-carlos-goi-s-140",
+  "sofascore_team": "Náutico",
+  "person_clubs": [
+   "Atlético GO",
+   "Goiás",
+   "Ponte Preta"
+  ]
+ },
+ {
+  "person_key": "name:jean carlos|2004|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-jean-carlos-goi-s-140",
+  "sofascore_team": "Náutico",
+  "person_clubs": [
+   "Atlético GO",
+   "Goiás",
+   "Ponte Preta"
+  ]
+ },
+ {
+  "person_key": "name:wesley gasolina|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-wesley-gasolina-nacional-383",
+  "sofascore_team": "Avaí",
+  "person_clubs": [
+   "Athletic Club",
+   "Cruzeiro",
+   "Nacional"
+  ]
+ },
+ {
+  "person_key": "name:luis miguel|2005|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-luis-miguel-trofense-626",
+  "sofascore_team": "Caxias",
+  "person_clubs": [
+   "Botafogo PB",
+   "Trofense",
+   "Vitória"
+  ]
+ },
+ {
+  "person_key": "name:charles|1995|0",
+  "type": "sofascore_conflict",
+  "season": "2025",
+  "ss_ids": [
+   "845178",
+   "937938"
+  ],
+  "rows": [
+   {
+    "league": "serie-a",
+    "season": "2024",
+    "player_id": "charles-corinthians-519",
+    "club": "Corinthians"
+   },
+   {
+    "league": "serie-a",
+    "season": "2025",
+    "player_id": "charles-corinthians-519",
+    "club": "Corinthians"
+   },
+   {
+    "league": "serie-b",
+    "season": "2025",
+    "player_id": "serie-b-charles-oper-rio-pr-730",
+    "club": "Operário PR"
+   },
+   {
+    "league": "serie-c",
+    "season": "2025",
+    "player_id": "serie-c-charles-ypiranga-erechim-77",
+    "club": "Ypiranga Erechim"
+   },
+   {
+    "league": "serie-a",
+    "season": "2026",
+    "player_id": "charles-corinthians-519",
+    "club": "Corinthians"
+   }
+  ]
+ },
+ {
+  "person_key": "name:pablo|2003|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "1100071",
+    2
+   ],
+   [
+    "906011",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-a",
+    "season": "2024",
+    "player_id": "pablo-vit-ria-653",
+    "club": "Vitória"
+   },
+   {
+    "league": "serie-c",
+    "season": "2025",
+    "player_id": "serie-c-pablo-guarani-484",
+    "club": "Guarani"
+   },
+   {
+    "league": "serie-c",
+    "season": "2026",
+    "player_id": "serie-c-pablo-paysandu-308",
+    "club": "Paysandu"
+   }
+  ]
+ },
+ {
+  "person_key": "name:a galeano|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "a-galeano-remo-310",
+  "sofascore_team": "Mirassol",
+  "person_clubs": [
+   "Ceará",
+   "Remo"
+  ]
+ },
+ {
+  "person_key": "name:enio|2001|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "enio-al-jabalain-311",
+  "sofascore_team": "Chapecoense",
+  "person_clubs": [
+   "Al Jabalain",
+   "Amazonas",
+   "Juventude"
+  ]
+ },
+ {
+  "person_key": "name:j lavega|2005|1",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "1219751",
+    1
+   ],
+   [
+    "895926",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-a",
+    "season": "2025",
+    "player_id": "j-lavega-fluminense-659",
+    "club": "Fluminense"
+   },
+   {
+    "league": "serie-a",
+    "season": "2026",
+    "player_id": "j-lavega-coritiba-183",
+    "club": "Coritiba"
+   }
+  ]
+ },
+ {
+  "person_key": "name:leo jaco|2005|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-leo-jac-santa-clara-435",
+  "sofascore_team": "Atlético Goianiense",
+  "person_clubs": [
+   "Santa Clara",
+   "Vasco da Gama"
+  ]
+ },
+ {
+  "person_key": "name:joao pedro chermont|2006|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "jo-o-pedro-chermont-al-sharjah-252",
+  "sofascore_team": "Coritiba",
+  "person_clubs": [
+   "Al Sharjah",
+   "Santos"
+  ]
+ },
+ {
+  "person_key": "name:ryan|2002|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-ryan-brusque-51",
+  "sofascore_team": "Figueirense",
+  "person_clubs": [
+   "Atlético Cearense",
+   "Bahia",
+   "Brusque",
+   "CRB",
+   "Chapecoense",
+   "Corinthians",
+   "EC São José",
+   "Fortaleza",
+   "Náutico",
+   "Operário PR"
+  ]
+ },
+ {
+  "person_key": "name:luisao|2003|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-luis-o-goi-s-175",
+  "sofascore_team": "Cuiabá",
+  "person_clubs": [
+   "Goiás",
+   "Grêmio Novorizontino",
+   "Santos"
+  ]
+ },
+ {
+  "person_key": "name:luiz otavio|1992|0",
+  "type": "sofascore_conflict",
+  "season": "2026",
+  "ss_ids": [
+   "870111",
+   "874778"
+  ],
+  "rows": [
+   {
+    "league": "serie-b",
+    "season": "2022",
+    "player_id": "serie-b-luiz-ot-vio-bahia-64",
+    "club": "Bahia"
+   },
+   {
+    "league": "serie-b",
+    "season": "2023",
+    "player_id": "serie-b-luiz-ot-vio-mirassol-8",
+    "club": "Mirassol"
+   },
+   {
+    "league": "serie-b",
+    "season": "2024",
+    "player_id": "serie-b-luiz-ot-vio-mirassol-46",
+    "club": "Mirassol"
+   },
+   {
+    "league": "serie-a",
+    "season": "2025",
+    "player_id": "luiz-ot-vio-mirassol-618",
+    "club": "Mirassol"
+   },
+   {
+    "league": "serie-a",
+    "season": "2026",
+    "player_id": "luiz-ot-vio-cear-706",
+    "club": "Ceará"
+   },
+   {
+    "league": "serie-b",
+    "season": "2026",
+    "player_id": "serie-b-luiz-ot-vio-cear-36",
+    "club": "Ceará"
+   }
+  ]
+ },
+ {
+  "person_key": "name:luiz otavio|1992|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-luiz-ot-vio-cear-36",
+  "sofascore_team": "Cuiabá",
+  "person_clubs": [
+   "Bahia",
+   "Ceará",
+   "Mirassol"
+  ]
+ },
+ {
+  "person_key": "name:bruno santos|1997|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-bruno-santos-mirassol-188",
+  "sofascore_team": "Londrina",
+  "person_clubs": [
+   "Brusque",
+   "Guarani",
+   "Mirassol",
+   "São Bernardo FC",
+   "Volta Redonda"
+  ]
+ },
+ {
+  "person_key": "name:nathan fogaca|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "nathan-foga-a-fortaleza-453",
+  "sofascore_team": "Mirassol",
+  "person_clubs": [
+   "Fortaleza",
+   "Grêmio Novorizontino",
+   "Operário PR"
+  ]
+ },
+ {
+  "person_key": "name:caio suassuna|2007|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "caio-suassuna-ava-702",
+  "sofascore_team": "Bahia",
+  "person_clubs": [
+   "Avaí"
+  ]
+ },
+ {
+  "person_key": "name:gabriel mec|2008|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "gabriel-mec-porto-332",
+  "sofascore_team": "Grêmio",
+  "person_clubs": [
+   "Porto"
+  ]
+ },
+ {
+  "person_key": "name:kevin ramirez|1994|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-kevin-ram-rez-chapecoense-656",
+  "sofascore_team": "Atlético Goianiense",
+  "person_clubs": [
+   "Amazonas",
+   "Chapecoense"
+  ]
+ },
+ {
+  "person_key": "name:diego hernandez|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "diego-hern-ndez-sport-recife-546",
+  "sofascore_team": "Remo",
+  "person_clubs": [
+   "Sport Recife"
+  ]
+ },
+ {
+  "person_key": "name:robinho junior|2008|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "robinho-junior-genoa-u20-632",
+  "sofascore_team": "Santos",
+  "person_clubs": [
+   "Genoa U20"
+  ]
+ },
+ {
+  "person_key": "name:nicolas ferreira|2002|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "nicol-s-ferreira-cear-680",
+  "sofascore_team": "Remo",
+  "person_clubs": [
+   "Ceará"
+  ]
+ },
+ {
+  "person_key": "name:everton|1995|1",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "everton-chapecoense-150",
+  "sofascore_team": "Flamengo",
+  "person_clubs": [
+   "América RN",
+   "Chapecoense"
+  ]
+ },
+ {
+  "person_key": "name:claudinho|2006|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "claudinho-athletico-paranaense-397",
+  "sofascore_team": "Vitória",
+  "person_clubs": [
+   "Athletico Paranaense"
+  ]
+ },
+ {
+  "person_key": "name:rodrigues|1998|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "rodrigues-kalamata-637",
+  "sofascore_team": "Mirassol",
+  "person_clubs": [
+   "Aparecidense",
+   "Grêmio",
+   "Kalamata"
+  ]
+ },
+ {
+  "person_key": "name:b cufre|1997|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "b-cufr-aldosivi-662",
+  "sofascore_team": "Remo",
+  "person_clubs": [
+   "Aldosivi"
+  ]
+ },
+ {
+  "person_key": "name:paulinho|1997|3",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "paulinho-internacional-232",
+  "sofascore_team": "Palmeiras",
+  "person_clubs": [
+   "Internacional"
+  ]
+ },
+ {
+  "person_key": "name:l perez|2004|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "l-p-rez-racing-club-327",
+  "sofascore_team": "Grêmio",
+  "person_clubs": [
+   "Racing Club"
+  ]
+ },
+ {
+  "person_key": "name:joao vitor|1998|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "jo-o-vitor-londrina-305",
+  "sofascore_team": "Chapecoense",
+  "person_clubs": [
+   "Avaí",
+   "Itabaiana",
+   "Londrina",
+   "Vila Nova",
+   "Ypiranga Erechim"
+  ]
+ },
+ {
+  "person_key": "name:hugo leonardo|2004|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "hugo-leonardo-mito-hollyhock-679",
+  "sofascore_team": "São Paulo",
+  "person_clubs": [
+   "Mito Hollyhock"
+  ]
+ },
+ {
+  "person_key": "name:rosivan|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-rosivan-chapecoense-68",
+  "sofascore_team": "Maranhão AC",
+  "person_clubs": [
+   "Chapecoense"
+  ]
+ },
+ {
+  "person_key": "name:joao paulo|1997|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "jo-o-paulo-chapecoense-338",
+  "sofascore_team": "Bahia",
+  "person_clubs": [
+   "Chapecoense",
+   "Náutico"
+  ]
+ },
+ {
+  "person_key": "name:doria|1995|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "d-ria-batman-petrolspor-516",
+  "sofascore_team": "São Paulo",
+  "person_clubs": [
+   "Batman Petrolspor"
+  ]
+ },
+ {
+  "person_key": "name:b baldini|2007|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-b-baldini-athletico-paranaense-u20-310",
+  "sofascore_team": "Avaí",
+  "person_clubs": [
+   "Athletico Paranaense U20"
+  ]
+ },
+ {
+  "person_key": "name:ythallo|2004|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "ythallo-santa-clara-651",
+  "sofascore_team": "Botafogo",
+  "person_clubs": [
+   "Santa Clara"
+  ]
+ },
+ {
+  "person_key": "name:quirino|1994|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-quirino-caxias-211",
+  "sofascore_team": "Santa Cruz",
+  "person_clubs": [
+   "Caxias",
+   "Ferroviária",
+   "Grêmio Novorizontino",
+   "Ituano",
+   "Londrina",
+   "Mirassol"
+  ]
+ },
+ {
+  "person_key": "name:igor henrique|1992|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-igor-henrique-ferrovi-ria-375",
+  "sofascore_team": "Atlético Goianiense",
+  "person_clubs": [
+   "Ferroviária",
+   "Tombense",
+   "Vila Nova"
+  ]
+ },
+ {
+  "person_key": "name:luis phelipe|2001|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-luis-phelipe-sheriff-494",
+  "sofascore_team": "Ponte Preta",
+  "person_clubs": [
+   "Náutico",
+   "Paysandu",
+   "Sheriff"
+  ]
+ },
+ {
+  "person_key": "name:marcelinho|1996|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-marcelinho-barra-238",
+  "sofascore_team": "Ypiranga FC",
+  "person_clubs": [
+   "Altos",
+   "Barra",
+   "Botafogo PB",
+   "Brasil de Pelotas",
+   "CSA",
+   "Chapecoense",
+   "Ferroviário",
+   "Londrina",
+   "Paysandu",
+   "Remo",
+   "Sampaio Corrêa",
+   "Tombense",
+   "Vila Nova"
+  ]
+ },
+ {
+  "person_key": "name:artur|1994|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-artur-londrina-466",
+  "sofascore_team": "América Mineiro",
+  "person_clubs": [
+   "Londrina",
+   "Ponte Preta"
+  ]
+ },
+ {
+  "person_key": "name:alex silva|1994|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-alex-silva-am-rica-mineiro-272",
+  "sofascore_team": "Ceará",
+  "person_clubs": [
+   "ABC",
+   "América Mineiro",
+   "Coritiba",
+   "Mirassol",
+   "Vila Nova"
+  ]
+ },
+ {
+  "person_key": "name:pacheco|1992|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-pacheco-guarani-169",
+  "sofascore_team": "Operário-PR",
+  "person_clubs": [
+   "Guarani",
+   "Ituano",
+   "Ponte Preta"
+  ]
+ },
+ {
+  "person_key": "name:bryan|1996|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-bryan-cear-167",
+  "sofascore_team": "Ponte Preta",
+  "person_clubs": [
+   "Ceará",
+   "Grêmio Novorizontino",
+   "Náutico",
+   "Paysandu"
+  ]
+ },
+ {
+  "person_key": "name:andre luiz|1995|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-andr-luiz-viettel-207",
+  "sofascore_team": "Londrina",
+  "person_clubs": [
+   "Sampaio Corrêa",
+   "Viettel",
+   "Volta Redonda"
+  ]
+ },
+ {
+  "person_key": "name:romulo|1997|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-r-mulo-crb-315",
+  "sofascore_team": "Chapecoense",
+  "person_clubs": [
+   "CRB",
+   "Criciúma"
+  ]
+ },
+ {
+  "person_key": "name:emerson santos|1992|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "382171",
+    4
+   ],
+   [
+    "131028",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-b",
+    "season": "2022",
+    "player_id": "serie-b-emerson-santos-bahia-339",
+    "club": "Bahia"
+   },
+   {
+    "league": "serie-b",
+    "season": "2023",
+    "player_id": "serie-b-emerson-santos-juventude-563",
+    "club": "Juventude"
+   },
+   {
+    "league": "serie-b",
+    "season": "2024",
+    "player_id": "serie-b-emerson-santos-ponte-preta-122",
+    "club": "Ponte Preta"
+   },
+   {
+    "league": "serie-c",
+    "season": "2025",
+    "player_id": "serie-c-emerson-santos-s-o-bernardo-fc-141",
+    "club": "São Bernardo FC"
+   },
+   {
+    "league": "serie-c",
+    "season": "2026",
+    "player_id": "serie-c-emerson-santos-inter-de-limeira-345",
+    "club": "Inter de Limeira"
+   }
+  ]
+ },
+ {
+  "person_key": "name:juninho|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-juninho-londrina-164",
+  "sofascore_team": "Ferroviária",
+  "person_clubs": [
+   "Criciúma",
+   "Londrina",
+   "Paysandu",
+   "Vasco da Gama"
+  ]
+ },
+ {
+  "person_key": "name:indio|1992|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-ndio-oper-rio-pr-384",
+  "sofascore_team": "Atlético Goianiense",
+  "person_clubs": [
+   "Guarani",
+   "Operário PR"
+  ]
+ },
+ {
+  "person_key": "name:indio|1992|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2025",
+  "player_id": "serie-b-ndio-oper-rio-pr-384",
+  "sofascore_team": "Atlético Goianiense",
+  "person_clubs": [
+   "Guarani",
+   "Operário PR"
+  ]
+ },
+ {
+  "person_key": "name:indio|1992|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-ndio-oper-rio-pr-384",
+  "sofascore_team": "Atlético Goianiense",
+  "person_clubs": [
+   "Guarani",
+   "Operário PR"
+  ]
+ },
+ {
+  "person_key": "name:wallace|1988|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-wallace-londrina-180",
+  "sofascore_team": "Botafogo-SP",
+  "person_clubs": [
+   "Brusque",
+   "Londrina"
+  ]
+ },
+ {
+  "person_key": "name:frazan|1996|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-frazan-birkirkara-179",
+  "sofascore_team": "Inter de Limeira",
+  "person_clubs": [
+   "Birkirkara",
+   "Chapecoense",
+   "Ituano"
+  ]
+ },
+ {
+  "person_key": "name:carlao|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-carl-o-ferrovi-ria-375",
+  "sofascore_team": "Ituano",
+  "person_clubs": [
+   "Botafogo SP",
+   "Ferroviária",
+   "Náutico",
+   "Paysandu"
+  ]
+ },
+ {
+  "person_key": "name:matheus martins|1998|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-matheus-martins-flc-thanh-hoa-145",
+  "sofascore_team": "Floresta",
+  "person_clubs": [
+   "ABC",
+   "FLC Thanh Hoa",
+   "Sampaio Corrêa"
+  ]
+ },
+ {
+  "person_key": "name:leo duarte|1999|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "312678",
+    4
+   ],
+   [
+    "724670",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-c",
+    "season": "2022",
+    "player_id": "serie-c-l-o-duarte-mirassol-30",
+    "club": "Mirassol"
+   },
+   {
+    "league": "serie-b",
+    "season": "2023",
+    "player_id": "serie-b-l-o-duarte-vila-nova-115",
+    "club": "Vila Nova"
+   },
+   {
+    "league": "serie-b",
+    "season": "2024",
+    "player_id": "serie-b-l-o-duarte-ituano-387",
+    "club": "Ituano"
+   },
+   {
+    "league": "serie-c",
+    "season": "2025",
+    "player_id": "serie-c-l-o-duarte-s-o-bernardo-fc-487",
+    "club": "São Bernardo FC"
+   },
+   {
+    "league": "serie-c",
+    "season": "2026",
+    "player_id": "serie-c-l-o-duarte-barra-589",
+    "club": "Barra"
+   }
+  ]
+ },
+ {
+  "person_key": "name:iury|1992|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "612161",
+    3
+   ],
+   [
+    "366450",
+    2
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-c",
+    "season": "2022",
+    "player_id": "serie-c-iury-vit-ria-344",
+    "club": "Vitória"
+   },
+   {
+    "league": "serie-b",
+    "season": "2023",
+    "player_id": "serie-b-iury-ituano-249",
+    "club": "Ituano"
+   },
+   {
+    "league": "serie-c",
+    "season": "2024",
+    "player_id": "serie-c-iury-tombense-313",
+    "club": "Tombense"
+   },
+   {
+    "league": "serie-c",
+    "season": "2025",
+    "player_id": "serie-c-iury-figueirense-86",
+    "club": "Figueirense"
+   },
+   {
+    "league": "serie-c",
+    "season": "2026",
+    "player_id": "serie-c-iury-amazonas-82",
+    "club": "Amazonas"
+   }
+  ]
+ },
+ {
+  "person_key": "name:richard|2005|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-richard-ituano-256",
+  "sofascore_team": "Ceará",
+  "person_clubs": [
+   "Ituano"
+  ]
+ },
+ {
+  "person_key": "name:richard|2005|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-richard-ituano-73",
+  "sofascore_team": "Inter de Limeira",
+  "person_clubs": [
+   "Ituano"
+  ]
+ },
+ {
+  "person_key": "name:tarik|1993|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-t-rik-londrina-229",
+  "sofascore_team": "Ponte Preta",
+  "person_clubs": [
+   "Botafogo SP",
+   "Chapecoense",
+   "Ferroviária",
+   "Londrina"
+  ]
+ },
+ {
+  "person_key": "name:gustavo henrique|1999|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "208681",
+    4
+   ],
+   [
+    "671652",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-c",
+    "season": "2022",
+    "player_id": "serie-c-gustavo-henrique-botafogo-sp-208",
+    "club": "Botafogo SP"
+   },
+   {
+    "league": "serie-b",
+    "season": "2023",
+    "player_id": "serie-b-gustavo-henrique-sampaio-corr-a-55",
+    "club": "Sampaio Corrêa"
+   },
+   {
+    "league": "serie-b",
+    "season": "2024",
+    "player_id": "serie-b-gustavo-henrique-crb-223",
+    "club": "CRB"
+   },
+   {
+    "league": "serie-c",
+    "season": "2025",
+    "player_id": "serie-c-gustavo-henrique-caxias-477",
+    "club": "Caxias"
+   },
+   {
+    "league": "serie-c",
+    "season": "2026",
+    "player_id": "serie-c-gustavo-henrique-an-polis-236",
+    "club": "Anápolis"
+   }
+  ]
+ },
+ {
+  "person_key": "name:diogo silva|1996|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-diogo-silva-amazonas-250",
+  "sofascore_team": "Paysandu SC",
+  "person_clubs": [
+   "Amazonas",
+   "Botafogo SP",
+   "Guarani"
+  ]
+ },
+ {
+  "person_key": "name:joao maistro|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-jo-o-maistro-brusque-465",
+  "sofascore_team": "Avaí",
+  "person_clubs": [
+   "Atlético GO",
+   "Brusque",
+   "Londrina",
+   "Náutico"
+  ]
+ },
+ {
+  "person_key": "name:w silva|2002|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-w-silva-santos-252",
+  "sofascore_team": "Chapecoense",
+  "person_clubs": [
+   "Santos"
+  ]
+ },
+ {
+  "person_key": "name:jhan torres|2001|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-jhan-torres-athletic-club-359",
+  "sofascore_team": "Operário-PR",
+  "person_clubs": [
+   "Athletic Club",
+   "Brusque"
+  ]
+ },
+ {
+  "person_key": "name:eric|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-eric-cear-366",
+  "sofascore_team": "Vila Nova FC",
+  "person_clubs": [
+   "Ceará",
+   "Cuiabá",
+   "Ferroviária"
+  ]
+ },
+ {
+  "person_key": "name:lorran|1996|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "671647",
+    3
+   ],
+   [
+    "1009030",
+    2
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-c",
+    "season": "2022",
+    "player_id": "serie-c-lorran-ypiranga-erechim-172",
+    "club": "Ypiranga Erechim"
+   },
+   {
+    "league": "serie-c",
+    "season": "2023",
+    "player_id": "serie-c-lorran-ypiranga-erechim-95",
+    "club": "Ypiranga Erechim"
+   },
+   {
+    "league": "serie-b",
+    "season": "2024",
+    "player_id": "serie-b-lorran-brusque-470",
+    "club": "Brusque"
+   },
+   {
+    "league": "serie-c",
+    "season": "2025",
+    "player_id": "serie-c-lorran-caxias-367",
+    "club": "Caxias"
+   },
+   {
+    "league": "serie-c",
+    "season": "2026",
+    "player_id": "serie-c-lorran-confian-a-508",
+    "club": "Confiança"
+   }
+  ]
+ },
+ {
+  "person_key": "name:gabriel bispo|1998|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-gabriel-bispo-guarani-216",
+  "sofascore_team": "Paysandu SC",
+  "person_clubs": [
+   "Botafogo SP",
+   "Guarani"
+  ]
+ },
+ {
+  "person_key": "name:matheus salustiano|1993|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-b-matheus-salustiano-guarani-85",
+  "sofascore_team": "Brusque",
+  "person_clubs": [
+   "Guarani",
+   "São Bernardo FC"
+  ]
+ },
+ {
+  "person_key": "name:carlao|1992|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2024",
+  "player_id": "serie-c-carl-o-ferrovi-ria-375",
+  "sofascore_team": "Ituano",
+  "person_clubs": [
+   "Ferroviária",
+   "Grêmio Novorizontino"
+  ]
+ },
+ {
+  "person_key": "name:italo|1997|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-talo-paysandu-130",
+  "sofascore_team": "Amazonas FC",
+  "person_clubs": [
+   "Paysandu",
+   "Volta Redonda"
+  ]
+ },
+ {
+  "person_key": "name:maranhao|1996|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-maranh-o-ferrovi-ria-104",
+  "sofascore_team": "Guarani",
+  "person_clubs": [
+   "Atlético GO",
+   "Ferroviária"
+  ]
+ },
+ {
+  "person_key": "name:yuri|1996|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-yuri-atl-tico-go-306",
+  "sofascore_team": "Náutico",
+  "person_clubs": [
+   "Athletic Club",
+   "Atlético GO"
+  ]
+ },
+ {
+  "person_key": "name:gabriel souza|2002|1",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-gabriel-souza-confian-a-99",
+  "sofascore_team": "Santa Cruz",
+  "person_clubs": [
+   "Confiança",
+   "Operário PR"
+  ]
+ },
+ {
+  "person_key": "name:leo alaba|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-l-o-alaba-chaves-402",
+  "sofascore_team": "América Mineiro",
+  "person_clubs": [
+   "Chaves",
+   "Criciúma"
+  ]
+ },
+ {
+  "person_key": "name:marcelo|2005|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "1463877",
+    1
+   ],
+   [
+    "184672",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-b",
+    "season": "2025",
+    "player_id": "serie-b-marcelo-cuiab-388",
+    "club": "Cuiabá"
+   },
+   {
+    "league": "serie-b",
+    "season": "2026",
+    "player_id": "serie-b-marcelo-athletic-club-343",
+    "club": "Athletic Club"
+   }
+  ]
+ },
+ {
+  "person_key": "name:jamerson|2006|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "613641",
+    1
+   ],
+   [
+    "1367776",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-b",
+    "season": "2025",
+    "player_id": "serie-b-jamerson-ava-485",
+    "club": "Avaí"
+   },
+   {
+    "league": "serie-b",
+    "season": "2026",
+    "player_id": "serie-b-jamerson-leix-es-u23-650",
+    "club": "Leixões U23"
+   }
+  ]
+ },
+ {
+  "person_key": "name:pedro henrique|2006|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-pedro-henrique-paysandu-62",
+  "sofascore_team": "Ferroviária",
+  "person_clubs": [
+   "Itabaiana",
+   "Paysandu"
+  ]
+ },
+ {
+  "person_key": "name:rafael castro|1996|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-rafael-castro-csa-513",
+  "sofascore_team": "Volta Redonda",
+  "person_clubs": [
+   "Brasil de Pelotas",
+   "CSA",
+   "Remo"
+  ]
+ },
+ {
+  "person_key": "name:wallace|1994|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "1219466",
+    1
+   ],
+   [
+    "225335",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-b",
+    "season": "2025",
+    "player_id": "serie-b-wallace-atl-tico-go-413",
+    "club": "Atlético GO"
+   },
+   {
+    "league": "serie-b",
+    "season": "2026",
+    "player_id": "serie-b-wallace-botafogo-sp-241",
+    "club": "Botafogo SP"
+   }
+  ]
+ },
+ {
+  "person_key": "name:hernandes|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-hernandes-viettel-495",
+  "sofascore_team": "Cuiabá",
+  "person_clubs": [
+   "Viettel"
+  ]
+ },
+ {
+  "person_key": "name:f avenatti|1993|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-f-avenatti-boston-river-501",
+  "sofascore_team": "Avaí",
+  "person_clubs": [
+   "Boston River"
+  ]
+ },
+ {
+  "person_key": "name:gabriel moyses|2002|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-gabriel-moys-s-al-ahli-546",
+  "sofascore_team": "Athletic Club",
+  "person_clubs": [
+   "Al Ahli"
+  ]
+ },
+ {
+  "person_key": "name:mateus criciuma|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-mateus-crici-ma-anagennisi-karditsas-581",
+  "sofascore_team": "Cuiabá",
+  "person_clubs": [
+   "Anagennisi Karditsas"
+  ]
+ },
+ {
+  "person_key": "name:kayke|2004|1",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-kayke-botafogo-639",
+  "sofascore_team": "Fortaleza",
+  "person_clubs": [
+   "Botafogo"
+  ]
+ },
+ {
+  "person_key": "name:juan alano|1996|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-juan-alano-sport-recife-282",
+  "sofascore_team": "Ceará",
+  "person_clubs": [
+   "Sport Recife"
+  ]
+ },
+ {
+  "person_key": "name:sorriso|2005|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-sorriso-al-fateh-356",
+  "sofascore_team": "Avaí",
+  "person_clubs": [
+   "Al Fateh"
+  ]
+ },
+ {
+  "person_key": "name:henrique freitas|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-henrique-freitas-atl-tico-go-438",
+  "sofascore_team": "Barra FC",
+  "person_clubs": [
+   "Atlético GO"
+  ]
+ },
+ {
+  "person_key": "name:giulio|2005|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-giulio-viborg-401",
+  "sofascore_team": "Ceará",
+  "person_clubs": [
+   "Viborg"
+  ]
+ },
+ {
+  "person_key": "name:leo chu|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-l-o-ch-ava-483",
+  "sofascore_team": "Athletic Club",
+  "person_clubs": [
+   "Avaí"
+  ]
+ },
+ {
+  "person_key": "name:gabriel cipriano|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-gabriel-cipriano-ava-253",
+  "sofascore_team": "Amazonas FC",
+  "person_clubs": [
+   "Avaí"
+  ]
+ },
+ {
+  "person_key": "name:e torres|1998|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-e-torres-once-caldas-536",
+  "sofascore_team": "Operário-PR",
+  "person_clubs": [
+   "Once Caldas"
+  ]
+ },
+ {
+  "person_key": "name:pedro henrique|2006|1",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-pedro-henrique-botafogo-sp-248",
+  "sofascore_team": "Ceará",
+  "person_clubs": [
+   "Botafogo SP",
+   "Itabaiana"
+  ]
+ },
+ {
+  "person_key": "name:william|2006|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-william-ava-432",
+  "sofascore_team": "América Mineiro",
+  "person_clubs": [
+   "Avaí"
+  ]
+ },
+ {
+  "person_key": "name:rodriguinho|2001|2",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-rodriguinho-fortaleza-141",
+  "sofascore_team": "Ponte Preta",
+  "person_clubs": [
+   "Fortaleza"
+  ]
+ },
+ {
+  "person_key": "name:cristiano|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-cristiano-atl-tico-go-119",
+  "sofascore_team": "Avaí",
+  "person_clubs": [
+   "Atlético GO",
+   "EC São José",
+   "Ypiranga Erechim"
+  ]
+ },
+ {
+  "person_key": "name:juninho|1999|2",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-juninho-gr-mio-novorizontino-223",
+  "sofascore_team": "Goiás",
+  "person_clubs": [
+   "Grêmio Novorizontino"
+  ]
+ },
+ {
+  "person_key": "name:leonai|1995|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-leonai-millonarios-464",
+  "sofascore_team": "Náutico",
+  "person_clubs": [
+   "Millonarios"
+  ]
+ },
+ {
+  "person_key": "name:r saravia|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-r-saravia-boston-river-573",
+  "sofascore_team": "Ponte Preta",
+  "person_clubs": [
+   "Boston River"
+  ]
+ },
+ {
+  "person_key": "name:p nunez|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-p-n-ez-n-utico-179",
+  "sofascore_team": "Amazonas FC",
+  "person_clubs": [
+   "Náutico"
+  ]
+ },
+ {
+  "person_key": "name:jhonatan lima|2005|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-jhonatan-lima-uberl-ndia-594",
+  "sofascore_team": "América Mineiro",
+  "person_clubs": [
+   "Uberlândia"
+  ]
+ },
+ {
+  "person_key": "name:caio|2007|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-caio-cear-u20-640",
+  "sofascore_team": "Náutico",
+  "person_clubs": [
+   "Ceará U20"
+  ]
+ },
+ {
+  "person_key": "name:estevao|2002|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-estev-o-crb-309",
+  "sofascore_team": "Ypiranga FC",
+  "person_clubs": [
+   "CRB"
+  ]
+ },
+ {
+  "person_key": "name:victor feitosa|1996|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-victor-feitosa-londrina-467",
+  "sofascore_team": "Volta Redonda",
+  "person_clubs": [
+   "Londrina"
+  ]
+ },
+ {
+  "person_key": "name:leo indio|1996|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-l-o-ndio-n-utico-236",
+  "sofascore_team": "Juventude",
+  "person_clubs": [
+   "Náutico",
+   "Ponte Preta"
+  ]
+ },
+ {
+  "person_key": "name:caio marcelo|1998|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-b-caio-marcelo-seoul-e-land-368",
+  "sofascore_team": "Vila Nova FC",
+  "person_clubs": [
+   "Seoul E-Land"
+  ]
+ },
+ {
+  "person_key": "name:renan gorne|1996|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-renan-gorne-rayong-223",
+  "sofascore_team": "Ypiranga FC",
+  "person_clubs": [
+   "América RN",
+   "Confiança",
+   "Rayong",
+   "Sampaio Corrêa"
+  ]
+ },
+ {
+  "person_key": "name:lucas santos|1993|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "873876",
+    2
+   ],
+   [
+    "534473",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-c",
+    "season": "2023",
+    "player_id": "serie-c-lucas-santos-botafogo-pb-91",
+    "club": "Botafogo PB"
+   },
+   {
+    "league": "serie-c",
+    "season": "2024",
+    "player_id": "serie-c-lucas-santos-floresta-ec-67",
+    "club": "Floresta EC"
+   },
+   {
+    "league": "serie-c",
+    "season": "2026",
+    "player_id": "serie-c-lucas-santos-inter-de-limeira-32",
+    "club": "Inter de Limeira"
+   }
+  ]
+ },
+ {
+  "person_key": "name:eduardo biazus|2002|0",
+  "type": "tm_id_conflict",
+  "tm_ids": [
+   [
+    "627229",
+    2
+   ],
+   [
+    "936773",
+    1
+   ]
+  ],
+  "rows": [
+   {
+    "league": "serie-c",
+    "season": "2023",
+    "player_id": "serie-c-eduardo-biazus-s-o-bernardo-fc-531",
+    "club": "São Bernardo FC"
+   },
+   {
+    "league": "serie-c",
+    "season": "2024",
+    "player_id": "serie-c-eduardo-biazus-csa-85",
+    "club": "CSA"
+   },
+   {
+    "league": "serie-c",
+    "season": "2025",
+    "player_id": "serie-c-eduardo-biazus-csa-519",
+    "club": "CSA"
+   }
+  ]
+ },
+ {
+  "person_key": "name:n schiappacasse|1999|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-n-schiappacasse-paysandu-236",
+  "sofascore_team": "Amazonas FC",
+  "person_clubs": [
+   "Paysandu"
+  ]
+ },
+ {
+  "person_key": "name:o blanco|1990|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-o-blanco-universitario-de-vinto-375",
+  "sofascore_team": "Volta Redonda",
+  "person_clubs": [
+   "Universitario de Vinto"
+  ]
+ },
+ {
+  "person_key": "name:vitinho|1999|6",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-vitinho-santa-cruz-116",
+  "sofascore_team": "Caxias",
+  "person_clubs": [
+   "Santa Cruz",
+   "Ypiranga Erechim"
+  ]
+ },
+ {
+  "person_key": "name:gabriel william|2007|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-gabriel-william-houston-dynamo-ii-135",
+  "sofascore_team": "Ituano",
+  "person_clubs": [
+   "Houston Dynamo II"
+  ]
+ },
+ {
+  "person_key": "name:wendel|2003|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-wendel-volta-redonda-459",
+  "sofascore_team": "Confiança",
+  "person_clubs": [
+   "Volta Redonda"
+  ]
+ },
+ {
+  "person_key": "name:ignacio neira|1998|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-ignacio-neira-albion-651",
+  "sofascore_team": "Maringá FC",
+  "person_clubs": [
+   "Albion"
+  ]
+ },
+ {
+  "person_key": "name:joao victor|2002|1",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-jo-o-victor-floresta-ec-6",
+  "sofascore_team": "Inter de Limeira",
+  "person_clubs": [
+   "Floresta EC"
+  ]
+ },
+ {
+  "person_key": "name:lucao|2000|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-luc-o-maranh-o-21",
+  "sofascore_team": "AO Itabaiana",
+  "person_clubs": [
+   "Maranhão"
+  ]
+ },
+ {
+  "person_key": "name:lucas rodrigues|2002|0",
+  "type": "heatmap_team_mismatch",
+  "season": "2026",
+  "player_id": "serie-c-lucas-rodrigues-paysandu-275",
+  "sofascore_team": "Ferroviária",
+  "person_clubs": [
+   "Paysandu"
+  ]
+ }
+]

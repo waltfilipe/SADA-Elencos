@@ -1,0 +1,533 @@
+/* ==========================================================================
+   Elenco + Time Sombra — mesma linguagem da tela de posições:
+   chapado, linhas finas, ciano só na seleção, campo com cara de campo.
+   ========================================================================== */
+
+.scout-root.shadow-page {
+  --line: rgba(186, 204, 224, 0.11);
+  --line-2: rgba(186, 204, 224, 0.2);
+  --ink-2: #102235;
+  --select: #1be7ff;
+  background: #0b1824;
+}
+
+/* Cabeçalho e controles */
+.shadow-page-header {
+  align-items: center;
+  padding-bottom: 0.85rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.shadow-page-title {
+  font-size: 1.6rem;
+  font-weight: 650;
+}
+
+.shadow-page-sub {
+  color: var(--text-3);
+  font-size: 0.82rem;
+}
+
+.shadow-page-controls {
+  align-items: center;
+  gap: 0.75rem 1.4rem;
+}
+
+.shadow-board-switch {
+  gap: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+
+.shadow-board-tab {
+  padding: 0.35rem 0;
+  border-radius: 0;
+  color: var(--text-3);
+  font-weight: 500;
+  box-shadow: inset 0 -2px 0 transparent;
+}
+
+.shadow-board-tab + .shadow-board-tab {
+  margin-left: 1.3rem;
+}
+
+.shadow-board-tab:hover {
+  color: var(--text);
+}
+
+.shadow-board-tab.active {
+  background: none;
+  color: var(--text);
+  box-shadow: inset 0 -2px 0 var(--select);
+}
+
+.shadow-formation-picker {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.shadow-formation-label {
+  color: var(--text-3);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.shadow-formation-chips {
+  gap: 0.3rem;
+}
+
+.shadow-formation-chip {
+  border-radius: 6px;
+  border-color: var(--line-2);
+  background: none;
+  padding: 0.32rem 0.65rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.shadow-formation-chip:hover {
+  border-color: rgba(27, 231, 255, 0.5);
+}
+
+.shadow-formation-chip.active {
+  background: rgba(27, 231, 255, 0.08);
+  border-color: rgba(27, 231, 255, 0.55);
+  color: var(--text);
+}
+
+/* Barra de números */
+.shadow-page .team-stats-bar,
+.shadow-page .player-card {
+  border-color: var(--line);
+  border-radius: 8px;
+  background: var(--ink-2);
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.shadow-page .team-stats-bar {
+  margin-bottom: 1rem;
+}
+
+/* Layout: cards alinhados topo a base */
+.shadow-layout {
+  align-items: stretch;
+}
+
+.shadow-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+.shadow-side > .player-card:last-child {
+  flex: 1 1 auto;
+}
+
+.shadow-main {
+  gap: 1.1rem;
+}
+
+.shadow-pitch-stage {
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 240px);
+}
+
+/* Campo: grama contida e linhas brancas suaves */
+.shadow-pitch {
+  width: min(100%, 600px);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background:
+    linear-gradient(180deg, rgba(18, 105, 66, 0.5) 0%, rgba(13, 84, 52, 0.6) 50%, rgba(11, 70, 44, 0.65) 100%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 0,
+      rgba(255, 255, 255, 0.03) 8.33%,
+      transparent 8.33%,
+      transparent 16.66%
+    );
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-pitch-mid,
+.shadow-pitch-circle,
+.shadow-pitch-box {
+  border-color: rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.shadow-pitch-circle,
+.shadow-pitch-box {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+}
+
+.shadow-pitch-axis {
+  color: var(--text-3);
+}
+
+/* Atleta no campo: foto maior com aro, nome em plaquinha */
+.shadow-pitch-token {
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  gap: 0.3rem;
+}
+
+.shadow-pitch-token-photo {
+  width: 46px;
+  height: 46px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: #0d1b2a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-pitch-token-photo img {
+  object-position: center 12%;
+}
+
+.shadow-pitch-token-initials {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.shadow-pitch-token-name {
+  display: block;
+  max-width: 84px;
+  min-width: 76px;
+  padding: 0.14rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(8, 15, 24, 0.85);
+  font-size: 0.64rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.shadow-pitch-token-name-only .shadow-pitch-token-name {
+  max-width: none;
+  min-width: 0;
+  -webkit-line-clamp: 1;
+}
+
+.shadow-pitch-token-name-only {
+  width: auto;
+  padding: 0;
+}
+
+.shadow-pitch-slot.filled {
+  width: 84px;
+}
+
+.shadow-pitch-slot.selected .shadow-pitch-token-photo {
+  border-color: var(--select);
+}
+
+.shadow-slot-label {
+  color: rgba(232, 238, 246, 0.75);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.shadow-slot-empty {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.shadow-slot-hit:hover .shadow-slot-empty {
+  border-color: var(--select);
+  background: rgba(27, 231, 255, 0.12);
+}
+
+.shadow-slot-plus {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(8, 15, 24, 0.8);
+}
+
+.shadow-slot-plus:hover {
+  border-color: var(--select);
+}
+
+.shadow-pitch-hint {
+  color: var(--text-3);
+}
+
+/* Painel "Perfis por linha" e cards laterais */
+.shadow-page .profile-card-head {
+  border-bottom-color: var(--line);
+}
+
+.shadow-page .section-label {
+  color: var(--text-2);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.shadow-roster-tabs {
+  border-bottom: 1px solid var(--line);
+}
+
+.shadow-roster-tabs button {
+  border-radius: 0;
+  box-shadow: inset 0 -2px 0 transparent;
+}
+
+.shadow-roster-tabs button.active {
+  box-shadow: inset 0 -2px 0 var(--select);
+}
+
+@media (max-width: 980px) {
+  .shadow-page .scout-topbar-compact .topbar-links-primary {
+    gap: 1rem;
+  }
+
+  .shadow-pitch-stage {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Elencos Prévios — chips desabilitados (ex.: Série D sem arquivo) */
+.shadow-formation-chip:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.shadow-formation-chip:disabled:hover {
+  border-color: var(--line-2);
+}
+
+/* Elencos Prévios — seletor de competição e top 5 similares por titular */
+.previos-similar-pick,
+.previos-similar-results {
+  margin-top: 14px;
+  padding: 14px;
+}
+
+.previos-similar-note {
+  color: var(--text-3);
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+.previos-similar-hint {
+  margin: 0 0 0.75rem;
+  color: var(--text-3);
+  font-size: 0.84rem;
+}
+
+.previos-similar-leagues {
+  row-gap: 0.4rem;
+}
+
+.previos-similar-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.85rem;
+}
+
+.previos-similar-group {
+  border-top: 1px solid var(--line);
+  padding-top: 0.85rem;
+}
+
+.previos-similar-group:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.previos-similar-starter {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.55rem;
+}
+
+.previos-similar-slot {
+  min-width: 2.1rem;
+  padding: 0.2rem 0.35rem;
+  border-radius: 6px;
+  background: rgba(27, 231, 255, 0.1);
+  color: var(--select);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.previos-similar-starter-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.previos-similar-starter-copy strong {
+  font-size: 0.9rem;
+}
+
+.previos-similar-starter-copy em {
+  color: var(--text-3);
+  font-size: 0.74rem;
+  font-style: normal;
+}
+
+.previos-similar-hits {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.previos-similar-hit {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.previos-similar-hit:hover {
+  border-color: rgba(27, 231, 255, 0.4);
+  background: rgba(27, 231, 255, 0.04);
+}
+
+.previos-similar-rank {
+  width: 1.2rem;
+  color: var(--text-3);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.previos-similar-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+.previos-similar-fallback {
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text-2);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.previos-similar-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.previos-similar-copy strong {
+  font-size: 0.86rem;
+}
+
+.previos-similar-copy em {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--text-3);
+  font-size: 0.72rem;
+  font-style: normal;
+}
+
+.previos-similar-score {
+  color: var(--select);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.previos-similar-empty {
+  margin: 0;
+  color: var(--text-3);
+  font-size: 0.78rem;
+}
+
+/* Elencos Prévios — lista de clubes na ordem da tabela */
+.previos-clubs {
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.previos-clubs-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.previos-club-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 0.35rem;
+  max-height: 238px;
+  overflow-y: auto;
+}
+
+.previos-club {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.38rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: none;
+  color: var(--text-2);
+  font-size: 0.82rem;
+  text-align: left;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.previos-club:hover {
+  border-color: rgba(27, 231, 255, 0.4);
+  color: var(--text);
+}
+
+.previos-club.active {
+  border-color: rgba(27, 231, 255, 0.6);
+  background: rgba(27, 231, 255, 0.09);
+  color: var(--text);
+}
+
+.previos-club-pos {
+  min-width: 1.6rem;
+  color: var(--text-3);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.previos-club.active .previos-club-pos {
+  color: var(--select);
+}
+
+.previos-club-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,782 @@
+/* ==========================================================================
+   Tela de posições — acabamento "ficha de scout": menos brilho e pílulas,
+   hierarquia por tipografia e linhas finas, ciano só onde há seleção.
+   ========================================================================== */
+
+.scout-root.zag-v2 {
+  --line: rgba(186, 204, 224, 0.11);
+  --line-2: rgba(186, 204, 224, 0.2);
+  --ink-2: #102235;
+  --select: #1be7ff;
+  background: #0b1824;
+}
+
+/* Navegação: a topbar usa a mesma pílula ciana de `.topbar-links a.active`
+   em todas as seções; o acabamento sublinhado fica só nas abas de posição. */
+.scout-root .scout-topbar {
+  background: #0b1824;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.zag-v2 .scout-subnav {
+  justify-content: flex-start;
+  padding: 0 1.25rem;
+  background: #0b1824;
+}
+
+.zag-v2 .position-tabs {
+  gap: 1.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+
+.zag-v2 .position-tabs a {
+  padding: 0.7rem 0 0.62rem;
+  border-radius: 0;
+  color: var(--text-3);
+  font-weight: 500;
+  box-shadow: inset 0 -2px 0 transparent;
+}
+
+.zag-v2 .position-tabs a:hover {
+  background: none;
+  color: var(--text);
+}
+
+.zag-v2 .position-tabs a.active {
+  background: none;
+  color: var(--text);
+  font-weight: 600;
+  box-shadow: inset 0 -2px 0 var(--select);
+}
+
+/* Cabeçalho da página */
+.zag-v2-title-card {
+  padding: 1.1rem 1.25rem 0.95rem;
+  background: none;
+}
+
+.zag-v2-kicker {
+  color: var(--text-3);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 0.78rem;
+}
+
+.zag-v2-title-card h1 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 650;
+}
+
+.zag-v2-title-count {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--text-3);
+}
+
+.zag-v2-title-card button {
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Coluna da lista */
+.zag-v2-shell {
+  grid-template-columns: 360px minmax(0, 1fr);
+  background: none;
+}
+
+.zag-v2-rail {
+  padding: 0.9rem 0 1.4rem;
+  background: var(--ink-2);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(186, 204, 224, 0.22) transparent;
+}
+
+.zag-v2-search,
+.zag-v2-filters,
+.zag-v2-count {
+  margin-inline: 0.9rem;
+}
+
+.zag-v2-search {
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.zag-v2-search:focus-within {
+  border-color: rgba(27, 231, 255, 0.5);
+}
+
+.zag-v2-filters {
+  border-radius: 6px;
+  background: none;
+}
+
+.zag-v2-filters summary .fa-sliders {
+  color: var(--text-3);
+}
+
+.zag-v2-chips button {
+  border-radius: 4px;
+}
+
+.zag-v2-block {
+  border-color: var(--line);
+  border-radius: 6px;
+  background: none;
+}
+
+.zag-v2-selects select {
+  border-radius: 4px;
+}
+
+.zag-v2-count {
+  margin-top: 0.4rem;
+  margin-bottom: 0.3rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.72rem;
+}
+
+/* Lista como ranking: posição, foto e nome/clube — sem notas */
+.zag-v2-list {
+  gap: 0;
+}
+
+.zag-v2-list button,
+.zag-v2.league-serie-b .zag-v2-list button,
+.zag-v2.league-serie-c .zag-v2-list button,
+.zag-v2.league-serie-d .zag-v2-list button {
+  grid-template-columns: 1.6rem 40px minmax(0, 1fr);
+  column-gap: 0.65rem;
+  padding: 0.55rem 0.9rem 0.55rem 0.75rem;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  box-shadow: inset 3px 0 0 transparent;
+  transition: background 0.12s ease;
+}
+
+.zag-v2-list button:hover {
+  background: rgba(186, 204, 224, 0.04);
+}
+
+.zag-v2-list button:focus-visible {
+  outline: 1px solid rgba(27, 231, 255, 0.55);
+  outline-offset: -1px;
+}
+
+.zag-v2-list button.active {
+  background: rgba(27, 231, 255, 0.07);
+  box-shadow: inset 3px 0 0 var(--select);
+}
+
+.zag-v2-rank {
+  justify-self: end;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-3);
+}
+
+.zag-v2-list button.active .zag-v2-rank {
+  color: var(--text);
+}
+
+.zag-v2-photo,
+.zag-v2.league-serie-b .zag-v2-photo,
+.zag-v2.league-serie-c .zag-v2-photo,
+.zag-v2.league-serie-d .zag-v2-photo {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(186, 204, 224, 0.1);
+  color: var(--text-2);
+}
+
+.zag-v2.league-serie-b .zag-v2-photo img,
+.zag-v2.league-serie-c .zag-v2-photo img,
+.zag-v2.league-serie-d .zag-v2-photo img {
+  transform: scale(1.12);
+}
+
+.zag-v2-copy strong {
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.zag-v2-copy em {
+  font-size: 0.72rem;
+}
+
+.zag-v2-empty {
+  margin-inline: 0.9rem;
+}
+
+/* Área da ficha */
+.zag-v2-detail {
+  padding: 1.1rem 1.4rem 2.4rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(186, 204, 224, 0.22) transparent;
+}
+
+.zag-v2 .player-card {
+  border-color: var(--line);
+  border-radius: 8px;
+  background: var(--ink-2);
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+/* Ficha do atleta: retrato na lateral, nome e bio ao centro, contexto à direita */
+.zag-v2 .player-hero {
+  --hero-accent: #1be7ff;
+  padding: 0;
+  isolation: isolate;
+}
+
+.zag-v2 .player-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Fundo vivo: brilho na cor do perfil que deriva devagar + linhas de campo */
+.zag-v2 .player-hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: auto;
+  border-radius: inherit;
+  opacity: 1;
+  pointer-events: none;
+  background: radial-gradient(560px 300px at var(--hero-glow-x, 18%) var(--hero-glow-y, 0%),
+    color-mix(in srgb, var(--hero-accent) 18%, transparent), transparent 70%);
+  animation: hero-drift 20s ease-in-out infinite alternate;
+}
+
+@property --hero-glow-x {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 18%;
+}
+
+@property --hero-glow-y {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+@keyframes hero-drift {
+  0% {
+    --hero-glow-x: 12%;
+    --hero-glow-y: 0%;
+  }
+  50% {
+    --hero-glow-x: 48%;
+    --hero-glow-y: 100%;
+  }
+  100% {
+    --hero-glow-x: 82%;
+    --hero-glow-y: 10%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zag-v2 .player-hero::before {
+    animation: none;
+  }
+}
+
+.zag-v2 .player-hero-main {
+  gap: 0;
+}
+
+.zag-v2 .player-hero-photo,
+.zag-v2.league-serie-b .player-hero-photo,
+.zag-v2.league-serie-c .player-hero-photo,
+.zag-v2.league-serie-d .player-hero-photo {
+  width: 150px;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  align-self: center;
+  margin: 0 0 0 0.85rem;
+  border: 2px solid var(--hero-accent);
+  border-radius: 6px;
+  background: linear-gradient(180deg, #17334c 0%, #102235 100%);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--hero-accent) 14%, transparent);
+}
+
+.zag-v2 .player-hero-photo img,
+.zag-v2.league-serie-b .player-hero-photo img,
+.zag-v2.league-serie-c .player-hero-photo img,
+.zag-v2.league-serie-d .player-hero-photo img {
+  object-fit: contain;
+  object-position: center;
+  transform: none;
+}
+
+.zag-v2 .player-hero-photo-fallback {
+  color: var(--text-3);
+}
+
+.zag-v2 .player-hero-copy {
+  padding: 1.05rem 1.2rem;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.zag-v2 .player-hero-name {
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.zag-v2 .player-hero-club-sep {
+  display: none;
+}
+
+.zag-v2 .player-hero-position {
+  margin-left: 0.35rem;
+  padding: 0.08rem 0.45rem;
+  border: 1px solid var(--line-2);
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  white-space: nowrap;
+}
+
+/* Bio e produção: linha de texto com separadores finos, sem caixas */
+.zag-v2 .hero-bio-block {
+  gap: 0.7rem;
+  width: 100%;
+}
+
+.zag-v2 .hero-fact {
+  border-right-color: var(--line);
+}
+
+.zag-v2 .hero-fact-label {
+  color: var(--text-3);
+  letter-spacing: 0.07em;
+}
+
+.zag-v2 .hero-output {
+  grid-column: auto;
+  grid-row: auto;
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  padding: 0.7rem 0 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: none;
+  animation: none;
+  gap: 0;
+}
+
+.zag-v2 .hero-output::after {
+  display: none;
+}
+
+.zag-v2 .hero-output div {
+  border-left: 1px solid var(--line);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.zag-v2 .hero-output div:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+
+.zag-v2 .hero-output strong {
+  font-size: 1.15rem;
+}
+
+/* Coluna de contexto: meta chapada + ações */
+.zag-v2 .hero-side {
+  flex: 0 1 520px;
+  width: 520px;
+  min-width: 440px;
+  padding: 1rem 1.15rem;
+  border-left: 1px solid var(--line);
+  gap: 0.7rem;
+  justify-content: center;
+}
+
+.zag-v2 .hero-market-card,
+.zag-v2 .hero-market-card-warn,
+.zag-v2 .hero-market-card-danger {
+  border-radius: 6px;
+  border-color: var(--line);
+  background: none;
+}
+
+.zag-v2 .hero-market-card-warn .hero-market-icon {
+  border: 0;
+}
+
+.zag-v2 .hero-market-card-danger .hero-market-icon {
+  border: 0;
+}
+
+.zag-v2 .hero-market-icon {
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 0;
+  border-radius: 6px;
+  background: rgba(254, 215, 102, 0.1);
+}
+
+.zag-v2 .hero-market-card-danger .hero-market-icon {
+  background: rgba(254, 74, 73, 0.12);
+}
+
+.zag-v2 .hero-market-label {
+  color: var(--text-3);
+}
+
+.zag-v2 .identity-minutes-track-wide {
+  height: 4px;
+}
+
+.zag-v2 .hero-action-grid {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.zag-v2 .hero-action-cell .btn {
+  border-color: var(--line-2);
+  background: rgba(255, 255, 255, 0.015);
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.zag-v2 .hero-action-cell .btn:hover:not(:disabled),
+.zag-v2 .hero-action-cell .btn.is-open {
+  border-color: rgba(27, 231, 255, 0.5);
+  background: rgba(27, 231, 255, 0.07);
+  color: var(--text);
+}
+
+.zag-v2 .hero-market-card {
+  border-radius: 6px;
+}
+
+.zag-v2 .profile-card-head {
+  border-bottom-color: var(--line);
+}
+
+.zag-v2 .profile-card-head .section-label,
+.zag-v2 .player-card .section-label {
+  color: var(--text-2);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.zag-v2 .profile-view-shell {
+  animation: none;
+}
+
+@media (max-width: 1180px) {
+  .zag-v2 .player-hero {
+    flex-wrap: wrap;
+  }
+
+  .zag-v2 .hero-side {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 980px) {
+  .zag-v2-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .zag-v2 .position-tabs {
+    gap: 1.1rem;
+  }
+}
+
+/* Popup de temporada do atleta */
+.season-peek-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background: rgba(5, 10, 17, 0.6);
+}
+
+.season-peek {
+  width: min(560px, 100%);
+  max-height: min(86vh, 780px);
+  overflow-y: auto;
+  border: 1px solid var(--line, rgba(186, 204, 224, 0.16));
+  border-radius: 10px;
+  background: #102235;
+  padding: 1.1rem 1.15rem 1rem;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
+}
+
+.season-peek-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.season-peek-kicker {
+  margin: 0 0 0.15rem;
+  color: var(--text-3, #93a0b3);
+  font-size: 0.74rem;
+  font-weight: 500;
+}
+
+.season-peek-name {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.season-peek-close {
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: var(--text-3, #93a0b3);
+  font-size: 1rem;
+  padding: 0.3rem 0.45rem;
+  cursor: pointer;
+}
+
+.season-peek-close:hover {
+  color: var(--text, #e8eef6);
+  background: rgba(186, 204, 224, 0.08);
+}
+
+.season-peek-status {
+  margin: 1rem 0 0.25rem;
+  color: var(--text-3, #93a0b3);
+  font-size: 0.85rem;
+}
+
+.season-peek-body {
+  display: flex;
+  gap: 0.9rem;
+  margin-top: 0.9rem;
+  align-items: stretch;
+}
+
+.season-peek-photo {
+  width: 92px;
+  aspect-ratio: 4 / 5;
+  border: 2px solid var(--hero-accent, #1be7ff);
+  border-radius: 6px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #17334c 0%, #0d1b2a 100%);
+  flex-shrink: 0;
+}
+
+.season-peek-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+}
+
+.season-peek-meta {
+  min-width: 0;
+}
+
+.season-peek-club {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 0 0.2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.season-peek-pos {
+  padding: 0.08rem 0.4rem;
+  border: 1px solid var(--line-2, rgba(186, 204, 224, 0.2));
+  border-radius: 4px;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-2, #c5d0de);
+}
+
+.season-peek-profile {
+  margin: 0 0 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.season-peek-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  margin: 0;
+}
+
+.season-peek-facts div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.season-peek-facts dt {
+  color: var(--text-3, #93a0b3);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.season-peek-facts dd {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.season-peek-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.2rem;
+  margin-top: 0.9rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line, rgba(186, 204, 224, 0.11));
+}
+
+.season-peek-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.season-peek-stats span {
+  color: var(--text-3, #93a0b3);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.season-peek-stats strong {
+  font-size: 1rem;
+}
+
+.season-peek-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+}
+
+.season-peek-hint {
+  color: var(--text-3, #93a0b3);
+  font-size: 0.72rem;
+  line-height: 1.35;
+  text-align: right;
+  max-width: 200px;
+}
+
+.season-peek-profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 0.85rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--line, rgba(186, 204, 224, 0.11));
+}
+
+.season-peek-profile-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+}
+
+.season-peek-profile-label {
+  font-weight: 600;
+}
+
+.season-peek-profile-nums {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text-3, #93a0b3);
+  font-size: 0.74rem;
+}
+
+.season-peek-profile-nums strong {
+  font-size: 0.84rem;
+}
+
+.season-peek-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.85rem;
+}
+
+.season-peek-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--line-2, rgba(186, 204, 224, 0.18));
+  border-radius: 4px;
+  color: var(--text-2, #c5d0de);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.season-peek-badge i {
+  color: var(--hero-accent, #1be7ff);
+  font-size: 0.68rem;
+}
+
+/* Cards expansivos de dados dentro do popup */
+.season-peek-data {
+  margin-top: 0.9rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line, rgba(186, 204, 224, 0.11));
+}
+
+.season-peek-data .projection-groups {
+  grid-template-columns: 1fr;
+  margin-top: 0;
+}
+
+.season-peek-data .projection-group {
+  background: rgba(186, 204, 224, 0.04);
+}
+
+.season-peek-data .projection-group-toggle {
+  padding: 0.6rem 0.7rem;
+}

@@ -1,0 +1,5827 @@
+{
+ "140541": {
+  "joined": "2025-01-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luciano-castan/profil/spieler/140541"
+ },
+ "166032": {
+  "joined": "2026-01-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marllon/profil/spieler/166032"
+ },
+ "375690": {
+  "joined": "2025-01-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/eder/profil/spieler/375690"
+ },
+ "55250": {
+  "joined": "2026-03-12",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/titi/profil/spieler/55250"
+ },
+ "428783": {
+  "joined": "2026-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vitao/profil/spieler/428783"
+ },
+ "514297": {
+  "joined": "2026-07-08",
+  "move": {
+   "from_club": "Al-Arabi SC (Kuwait)",
+   "date": "2026-07-08",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/reynaldo/profil/spieler/514297"
+ },
+ "476339": {
+  "joined": "2026-01-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marcelo-benevenuto/profil/spieler/476339"
+ },
+ "273000": {
+  "joined": "2026-07-13",
+  "move": {
+   "from_club": "Atlético Mineiro",
+   "date": "2026-07-13",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/junior-alonso/profil/spieler/273000"
+ },
+ "403296": {
+  "joined": "2025-01-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/leotm/profil/spieler/403296"
+ },
+ "236202": {
+  "joined": "2025-02-28",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wanderson/profil/spieler/236202"
+ },
+ "113586": {
+  "joined": "2026-05-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/manoel/profil/spieler/113586"
+ },
+ "329720": {
+  "joined": "2026-09-06",
+  "move": {
+   "from_club": "RB Bragantino",
+   "date": "2026-09-06",
+   "fee": "€500mil",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/pedro-henrique/profil/spieler/329720"
+ },
+ "401539": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/messias/profil/spieler/401539"
+ },
+ "742855": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-lacerda/profil/spieler/742855"
+ },
+ "148765": {
+  "joined": "2026-02-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/pablo/profil/spieler/148765"
+ },
+ "374136": {
+  "joined": "2024-03-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/leo-ortiz/profil/spieler/374136"
+ },
+ "84695": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/maicon/profil/spieler/84695"
+ },
+ "256453": {
+  "joined": "2026-02-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bressan/profil/spieler/256453"
+ },
+ "882916": {
+  "joined": "2026-07-20",
+  "move": {
+   "from_club": "Cong An Ho Chi Minh City FC",
+   "date": "2026-07-20",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/matheus-felipe/profil/spieler/882916"
+ },
+ "686333": {
+  "joined": "2026-01-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vitor-mendes/profil/spieler/686333"
+ },
+ "875332": {
+  "joined": "2026-09-04",
+  "move": {
+   "from_club": "TSG 1899 Hoffenheim",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/arthur-chaves/profil/spieler/875332"
+ },
+ "524446": {
+  "joined": "2023-08-22",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/kanu/profil/spieler/524446"
+ },
+ "103146": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/edson/profil/spieler/103146"
+ },
+ "255805": {
+  "joined": "2026-03-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rafael-vaz/profil/spieler/255805"
+ },
+ "863073": {
+  "joined": "2026-01-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-gazal/profil/spieler/863073"
+ },
+ "371025": {
+  "joined": "2026-03-27",
+  "move": {
+   "from_club": "Sport Recife",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ramon-menezes/profil/spieler/371025"
+ },
+ "119434": {
+  "joined": "2025-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rodrigo-moledo/profil/spieler/119434"
+ },
+ "432773": {
+  "joined": "2025-01-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/fabricio-bruno/profil/spieler/432773"
+ },
+ "285548": {
+  "joined": "2025-07-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/fabian-balbuena/profil/spieler/285548"
+ },
+ "258254": {
+  "joined": "2026-03-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jemerson/profil/spieler/258254"
+ },
+ "373150": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luiz-felipe/profil/spieler/373150"
+ },
+ "210747": {
+  "joined": "2025-07-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/willian-arao/profil/spieler/210747"
+ },
+ "958598": {
+  "joined": "2025-08-25",
+  "move": {
+   "from_club": "Zenit São Petersburgo",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/robert-renan/profil/spieler/958598"
+ },
+ "466336": {
+  "joined": "2026-08-19",
+  "move": {
+   "from_club": "São Paulo FC",
+   "date": "2026-08-19",
+   "fee": "€3.50mi",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/nahuel-ferraresi/profil/spieler/466336"
+ },
+ "53226": {
+  "joined": "2026-06-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/david-braz/profil/spieler/53226"
+ },
+ "484599": {
+  "joined": "2026-03-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/william-klaus/profil/spieler/484599"
+ },
+ "341701": {
+  "joined": "2025-08-22",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/igor-rabello/profil/spieler/341701"
+ },
+ "979629": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/yan-souto/profil/spieler/979629"
+ },
+ "680673": {
+  "joined": "2026-02-20",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/da-silva/profil/spieler/680673"
+ },
+ "605893": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-ribeiro/profil/spieler/605893"
+ },
+ "626110": {
+  "joined": "2025-07-24",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/joao-victor/profil/spieler/626110"
+ },
+ "208681": {
+  "joined": "2024-01-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-henrique/profil/spieler/208681"
+ },
+ "67207": {
+  "joined": "2026-08-01",
+  "move": {
+   "from_club": "América FC",
+   "date": "2026-08-01",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/wellington-tanque/profil/spieler/67207"
+ },
+ "607817": {
+  "joined": "2023-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/camutanga/profil/spieler/607817"
+ },
+ "977465": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "SL Benfica B",
+   "date": "2026-07-01",
+   "fee": "€3.50mi",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-marques/profil/spieler/977465"
+ },
+ "406676": {
+  "joined": "2023-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/juninho-capixaba/profil/spieler/406676"
+ },
+ "547932": {
+  "joined": "2026-10-15",
+  "move": {
+   "from_club": "Tuna Luso Brasileira",
+   "date": "2026-10-15",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/dieguinho/profil/spieler/547932"
+ },
+ "388236": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rodrigo-soares/profil/spieler/388236"
+ },
+ "101506": {
+  "joined": "2026-05-12",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/aderlan/profil/spieler/101506"
+ },
+ "432166": {
+  "joined": "2026-01-23",
+  "move": {
+   "from_club": "RB Bragantino",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/luan-candido/profil/spieler/432166"
+ },
+ "520430": {
+  "joined": "2026-03-23",
+  "move": {
+   "from_club": "EC Primavera",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/kevin/profil/spieler/520430"
+ },
+ "212209": {
+  "joined": "2025-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rene/profil/spieler/212209"
+ },
+ "435163": {
+  "joined": "2026-01-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-pacheco/profil/spieler/435163"
+ },
+ "72451": {
+  "joined": "2026-07-04",
+  "move": {
+   "from_club": "Cuiabá EC",
+   "date": "2026-07-04",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/nino-paraiba/profil/spieler/72451"
+ },
+ "672292": {
+  "joined": "2026-01-09",
+  "move": {
+   "from_club": "Grêmio FBPA",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/joao-lucas/profil/spieler/672292"
+ },
+ "443721": {
+  "joined": "2026-08-13",
+  "move": {
+   "from_club": "Cuiabá EC",
+   "date": "2026-08-13",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/marlon/profil/spieler/443721"
+ },
+ "594226": {
+  "joined": "2024-02-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheuzinho/profil/spieler/594226"
+ },
+ "177845": {
+  "joined": "2026-08-03",
+  "move": {
+   "from_club": "Sport Recife",
+   "date": "2026-08-03",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/madson/profil/spieler/177845"
+ },
+ "653348": {
+  "joined": "2025-08-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/khellven/profil/spieler/653348"
+ },
+ "587786": {
+  "joined": "2026-02-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/felipe-jonatan/profil/spieler/587786"
+ },
+ "350766": {
+  "joined": "2026-03-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/maguinho/profil/spieler/350766"
+ },
+ "262851": {
+  "joined": "2026-07-09",
+  "move": {
+   "from_club": "Fortaleza EC",
+   "date": "2026-07-09",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/emanuel-britez/profil/spieler/262851"
+ },
+ "670201": {
+  "joined": "2023-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-piton/profil/spieler/670201"
+ },
+ "346766": {
+  "joined": "2026-01-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/guilherme-arana/profil/spieler/346766"
+ },
+ "592344": {
+  "joined": "2023-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/guga/profil/spieler/592344"
+ },
+ "601011": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "SE Palmeiras",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/caio-paulista/profil/spieler/601011"
+ },
+ "922247": {
+  "joined": "2026-08-25",
+  "move": {
+   "from_club": "AA Anapolina",
+   "date": "2026-08-25",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/dudu/profil/spieler/922247"
+ },
+ "412594": {
+  "joined": "2024-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/paulo-henrique/profil/spieler/412594"
+ },
+ "225617": {
+  "joined": "2025-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/reinaldo/profil/spieler/225617"
+ },
+ "740295": {
+  "joined": "2025-01-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/natanael/profil/spieler/740295"
+ },
+ "538978": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/pedrinho/profil/spieler/538978"
+ },
+ "389942": {
+  "joined": "2026-01-13",
+  "move": {
+   "from_club": "Santos FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/hayner/profil/spieler/389942"
+ },
+ "596586": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "Goiás EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/moraes/profil/spieler/596586"
+ },
+ "290388": {
+  "joined": "2025-01-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rafael-ramos/profil/spieler/290388"
+ },
+ "265660": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/yago-pikachu/profil/spieler/265660"
+ },
+ "552240": {
+  "joined": "2025-07-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/igor-vinicius/profil/spieler/552240"
+ },
+ "273442": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/tinga/profil/spieler/273442"
+ },
+ "271666": {
+  "joined": "2025-01-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/danilo-barcelos/profil/spieler/271666"
+ },
+ "349737": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/arthur-henrique/profil/spieler/349737"
+ },
+ "47592": {
+  "joined": "2026-01-07",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/fagner/profil/spieler/47592"
+ },
+ "281837": {
+  "joined": "2026-01-30",
+  "move": {
+   "from_club": "Clube do Remo",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/dodo/profil/spieler/281837"
+ },
+ "607093": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Sem clube",
+   "date": "2026-07-01",
+   "fee": "-",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/savio/profil/spieler/607093"
+ },
+ "980022": {
+  "joined": "2026-08-21",
+  "move": {
+   "from_club": "SE Gama",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ramon/profil/spieler/980022"
+ },
+ "902135": {
+  "joined": "2026-03-04",
+  "move": {
+   "from_club": "EC Noroeste",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/cristiano/profil/spieler/902135"
+ },
+ "740273": {
+  "joined": "2026-01-30",
+  "move": {
+   "from_club": "Santos FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/nathan/profil/spieler/740273"
+ },
+ "788361": {
+  "joined": "2026-02-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/moises/profil/spieler/788361"
+ },
+ "290250": {
+  "joined": "2026-04-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/thales-oleques/profil/spieler/290250"
+ },
+ "887801": {
+  "joined": "2026-01-20",
+  "move": {
+   "from_club": "RB Bragantino",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/nathan-mendes/profil/spieler/887801"
+ },
+ "896860": {
+  "joined": "2026-03-01",
+  "move": {
+   "from_club": "Pouso Alegre FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/diego-porfirio/profil/spieler/896860"
+ },
+ "538230": {
+  "joined": "2025-01-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-melo/profil/spieler/538230"
+ },
+ "406675": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marlon/profil/spieler/406675"
+ },
+ "867461": {
+  "joined": "2025-08-01",
+  "move": {
+   "from_club": "SE Palmeiras",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/romulo/profil/spieler/867461"
+ },
+ "688310": {
+  "joined": "2026-07-10",
+  "move": {
+   "from_club": "Ceará SC",
+   "date": "2026-07-10",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/lucas-lima/profil/spieler/688310"
+ },
+ "428787": {
+  "joined": "2026-01-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/joao-pedro/profil/spieler/428787"
+ },
+ "868893": {
+  "joined": "2026-02-22",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vitor-ricardo/profil/spieler/868893"
+ },
+ "373446": {
+  "joined": "2024-01-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/david-duarte/profil/spieler/373446"
+ },
+ "678502": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "RB Bragantino",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/guilherme-lopes/profil/spieler/678502"
+ },
+ "868085": {
+  "joined": "2023-05-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/douglas-pele/profil/spieler/868085"
+ },
+ "1015962": {
+  "joined": "2026-02-04",
+  "move": {
+   "from_club": "RB Bragantino U20",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/nathan-camargo/profil/spieler/1015962"
+ },
+ "921863": {
+  "joined": "2026-07-20",
+  "move": {
+   "from_club": "Red Bull Salzburg",
+   "date": "2026-07-20",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/douglas-mendes/profil/spieler/921863"
+ },
+ "542072": {
+  "joined": "2019-09-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/weverton/profil/spieler/542072"
+ },
+ "612496": {
+  "joined": "2026-01-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marcos-paulo/profil/spieler/612496"
+ },
+ "373299": {
+  "joined": "2026-03-24",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheus-ribeiro/profil/spieler/373299"
+ },
+ "977484": {
+  "joined": "2026-04-23",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rikelmi/profil/spieler/977484"
+ },
+ "271187": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/juninho/profil/spieler/271187"
+ },
+ "546530": {
+  "joined": "2024-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/raniele/profil/spieler/546530"
+ },
+ "385271": {
+  "joined": "2026-02-06",
+  "move": {
+   "from_club": "CR Flamengo",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/allan/profil/spieler/385271"
+ },
+ "808509": {
+  "joined": "2025-07-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/danilo/profil/spieler/808509"
+ },
+ "257740": {
+  "joined": "2026-01-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/carlos-de-pena/profil/spieler/257740"
+ },
+ "270188": {
+  "joined": "2025-03-14",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-evangelista/profil/spieler/270188"
+ },
+ "205179": {
+  "joined": "2026-01-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jadson/profil/spieler/205179"
+ },
+ "364972": {
+  "joined": "2026-01-04",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marlon-freitas/profil/spieler/364972"
+ },
+ "479587": {
+  "joined": "2026-03-01",
+  "move": {
+   "from_club": "Athletico Paranaense",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/raul/profil/spieler/479587"
+ },
+ "1096607": {
+  "joined": "2024-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/richard/profil/spieler/1096607"
+ },
+ "606716": {
+  "joined": "2026-02-18",
+  "move": {
+   "from_club": "EC Vitória",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/pepe/profil/spieler/606716"
+ },
+ "364261": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/tche-tche/profil/spieler/364261"
+ },
+ "213606": {
+  "joined": "2025-01-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel/profil/spieler/213606"
+ },
+ "552242": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/baralhas/profil/spieler/552242"
+ },
+ "468304": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rodrigo-nestor/profil/spieler/468304"
+ },
+ "411563": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rafael-gava/profil/spieler/411563"
+ },
+ "646404": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/zanocelo/profil/spieler/646404"
+ },
+ "333159": {
+  "joined": "2026-01-06",
+  "move": {
+   "from_club": "Santos FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/patrick/profil/spieler/333159"
+ },
+ "515638": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/erick/profil/spieler/515638"
+ },
+ "110078": {
+  "joined": "2026-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/eduardo/profil/spieler/110078"
+ },
+ "407654": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheus-sales/profil/spieler/407654"
+ },
+ "323452": {
+  "joined": "2026-01-25",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ze-welison/profil/spieler/323452"
+ },
+ "52896": {
+  "joined": "2024-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/everton-ribeiro/profil/spieler/52896"
+ },
+ "644157": {
+  "joined": "2026-07-22",
+  "move": {
+   "from_club": "CR Vasco da Gama",
+   "date": "2026-07-22",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/hugo-moura/profil/spieler/644157"
+ },
+ "672202": {
+  "joined": "2026-01-09",
+  "move": {
+   "from_club": "Grêmio FBPA",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/camilo/profil/spieler/672202"
+ },
+ "71080": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/willian-farias/profil/spieler/71080"
+ },
+ "538107": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/willian-maranhao/profil/spieler/538107"
+ },
+ "703322": {
+  "joined": "2024-02-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-gomes/profil/spieler/703322"
+ },
+ "982617": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/hercules/profil/spieler/982617"
+ },
+ "547554": {
+  "joined": "2026-04-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marcao/profil/spieler/547554"
+ },
+ "749559": {
+  "joined": "2026-01-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/victor-hugo/profil/spieler/749559"
+ },
+ "349826": {
+  "joined": "2026-01-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jean-irmer/profil/spieler/349826"
+ },
+ "1259352": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/otavio-goncalves/profil/spieler/1259352"
+ },
+ "555277": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luis-oyama/profil/spieler/555277"
+ },
+ "546172": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/nonato/profil/spieler/546172"
+ },
+ "727751": {
+  "joined": "2024-01-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/caio-alexandre/profil/spieler/727751"
+ },
+ "442818": {
+  "joined": "2026-07-10",
+  "move": {
+   "from_club": "Ceará SC",
+   "date": "2026-07-10",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/fernandinho/profil/spieler/442818"
+ },
+ "740294": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bernardo/profil/spieler/740294"
+ },
+ "608216": {
+  "joined": "2026-01-14",
+  "move": {
+   "from_club": "Atlético Mineiro",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-menino/profil/spieler/608216"
+ },
+ "1354728": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/felipe/profil/spieler/1354728"
+ },
+ "203394": {
+  "joined": "2025-08-29",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/andreas-pereira/profil/spieler/203394"
+ },
+ "421935": {
+  "joined": "2026-01-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/maycon/profil/spieler/421935"
+ },
+ "167291": {
+  "joined": "2026-07-31",
+  "move": {
+   "from_club": "Mirassol FC",
+   "date": "2026-07-31",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-pires/profil/spieler/167291"
+ },
+ "808507": {
+  "joined": "2026-01-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/denilson/profil/spieler/808507"
+ },
+ "351892": {
+  "joined": "2024-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheus-fernandes/profil/spieler/351892"
+ },
+ "471994": {
+  "joined": "2024-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/geovane/profil/spieler/471994"
+ },
+ "288496": {
+  "joined": "2024-08-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-boschilia/profil/spieler/288496"
+ },
+ "624630": {
+  "joined": "2025-11-20",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/andrey-nunes/profil/spieler/624630"
+ },
+ "476336": {
+  "joined": "2024-04-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ze-ricardo/profil/spieler/476336"
+ },
+ "360526": {
+  "joined": "2026-01-21",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/emmanuel-martinez/profil/spieler/360526"
+ },
+ "743593": {
+  "joined": "2026-01-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rodriguinho/profil/spieler/743593"
+ },
+ "680539": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luan-silva/profil/spieler/680539"
+ },
+ "530499": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vinicius-leite/profil/spieler/530499"
+ },
+ "323618": {
+  "joined": "2025-01-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/para/profil/spieler/323618"
+ },
+ "627230": {
+  "joined": "2025-03-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/fabinho/profil/spieler/627230"
+ },
+ "868810": {
+  "joined": "2026-02-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/weverson/profil/spieler/868810"
+ },
+ "740491": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/kelvi-gomes/profil/spieler/740491"
+ },
+ "348262": {
+  "joined": "2026-08-10",
+  "move": {
+   "from_club": "Kyoto Sanga",
+   "date": "2026-08-10",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-barreto/profil/spieler/348262"
+ },
+ "440658": {
+  "joined": "2026-03-28",
+  "move": {
+   "from_club": "Botafogo FR",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/artur/profil/spieler/440658"
+ },
+ "588989": {
+  "joined": "2026-02-07",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jhon-arias/profil/spieler/588989"
+ },
+ "546253": {
+  "joined": "2025-05-08",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/dada-belmonte/profil/spieler/546253"
+ },
+ "612479": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alef-manga/profil/spieler/612479"
+ },
+ "131101": {
+  "joined": "2025-07-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/stiven-mendoza/profil/spieler/131101"
+ },
+ "75111": {
+  "joined": "2026-02-24",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/felipe-azevedo/profil/spieler/75111"
+ },
+ "169052": {
+  "joined": null,
+  "move": null,
+  "error": true
+ },
+ "199472": {
+  "joined": "2026-07-24",
+  "move": {
+   "from_club": "AA Ponte Preta",
+   "date": "2026-07-24",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/william-pottker/profil/spieler/199472"
+ },
+ "146020": {
+  "joined": "2025-02-20",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vinicius/profil/spieler/146020"
+ },
+ "388397": {
+  "joined": "2026-03-31",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/everaldo/profil/spieler/388397"
+ },
+ "519851": {
+  "joined": "2025-05-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/andre-luis/profil/spieler/519851"
+ },
+ "372013": {
+  "joined": "2026-02-12",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luiz-fernando/profil/spieler/372013"
+ },
+ "102017": {
+  "joined": "2025-06-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jorginho/profil/spieler/102017"
+ },
+ "503052": {
+  "joined": "2025-01-30",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/tomas-cuello/profil/spieler/503052"
+ },
+ "213368": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Ceará SC",
+   "date": "2026-07-01",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/pedro-henrique/profil/spieler/213368"
+ },
+ "668228": {
+  "joined": "2024-07-30",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheus-martins/profil/spieler/668228"
+ },
+ "678439": {
+  "joined": "2024-07-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mauricio/profil/spieler/678439"
+ },
+ "544259": {
+  "joined": "2023-04-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ademir/profil/spieler/544259"
+ },
+ "670965": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Dinamo de Kiev",
+   "date": "2026-07-01",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/vitinho/profil/spieler/670965"
+ },
+ "457533": {
+  "joined": "2025-01-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/agustin-canobbio/profil/spieler/457533"
+ },
+ "321239": {
+  "joined": "2026-09-09",
+  "move": {
+   "from_club": "CR Flamengo",
+   "date": "2026-09-09",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/everton/profil/spieler/321239"
+ },
+ "1127252": {
+  "joined": "2025-04-16",
+  "move": {
+   "from_club": null,
+   "date": "2026-10-19",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/marinho/profil/spieler/1127252"
+ },
+ "401533": {
+  "joined": "2026-08-03",
+  "move": {
+   "from_club": "CD Santa Clara",
+   "date": "2026-08-03",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/matheusinho/profil/spieler/401533"
+ },
+ "338861": {
+  "joined": "2026-03-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/hyoran/profil/spieler/338861"
+ },
+ "868891": {
+  "joined": "2024-01-24",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/adson/profil/spieler/868891"
+ },
+ "288431": {
+  "joined": "2020-01-31",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/leo-pereira/profil/spieler/288431"
+ },
+ "232847": {
+  "joined": "2026-01-29",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-lima/profil/spieler/232847"
+ },
+ "346935": {
+  "joined": "2026-08-14",
+  "move": {
+   "from_club": "Sport Recife",
+   "date": "2026-08-14",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/yago-felipe/profil/spieler/346935"
+ },
+ "979481": {
+  "joined": "2025-07-21",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-silva/profil/spieler/979481"
+ },
+ "390368": {
+  "joined": "2026-01-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vitor-bueno/profil/spieler/390368"
+ },
+ "936544": {
+  "joined": "2025-01-08",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/erick-pulga/profil/spieler/936544"
+ },
+ "688684": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "EC Vitória",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ronald/profil/spieler/688684"
+ },
+ "689521": {
+  "joined": "2026-01-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luiz-henrique/profil/spieler/689521"
+ },
+ "592347": {
+  "joined": "2026-03-06",
+  "move": {
+   "from_club": "Atlético Mineiro",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/junior-santos/profil/spieler/592347"
+ },
+ "480225": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Torpedo Moscou",
+   "date": "2026-07-01",
+   "fee": "€500mil",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/alesson/profil/spieler/480225"
+ },
+ "362844": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/pedro-rocha/profil/spieler/362844"
+ },
+ "1136743": {
+  "joined": "2026-09-02",
+  "move": {
+   "from_club": "Cianorte FC",
+   "date": "2026-09-02",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/robinho/profil/spieler/1136743"
+ },
+ "76135": {
+  "joined": "2022-07-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/elvis/profil/spieler/76135"
+ },
+ "816144": {
+  "joined": "2025-01-04",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-barbosa/profil/spieler/816144"
+ },
+ "55338": {
+  "joined": "2025-03-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/willian-bigode/profil/spieler/55338"
+ },
+ "100091": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marquinhos-gabriel/profil/spieler/100091"
+ },
+ "373170": {
+  "joined": "2024-02-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/cristian-pavon/profil/spieler/373170"
+ },
+ "942644": {
+  "joined": "2026-03-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wesley/profil/spieler/942644"
+ },
+ "393830": {
+  "joined": "2026-07-09",
+  "move": {
+   "from_club": "Guarani FC",
+   "date": "2026-07-09",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/guilherme-parede/profil/spieler/393830"
+ },
+ "1361961": {
+  "joined": "2025-08-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/miguel-morais/profil/spieler/1361961"
+ },
+ "681627": {
+  "joined": "2026-08-05",
+  "move": {
+   "from_club": "Torpedo Kutaisi",
+   "date": "2026-08-05",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/warley/profil/spieler/681627"
+ },
+ "312294": {
+  "joined": "2025-06-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/yeferson-soteldo/profil/spieler/312294"
+ },
+ "612161": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/iury/profil/spieler/612161"
+ },
+ "432967": {
+  "joined": "2025-04-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marcinho/profil/spieler/432967"
+ },
+ "264343": {
+  "joined": "2026-07-10",
+  "move": {
+   "from_club": "São Bernardo FC",
+   "date": "2026-07-10",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/pablo-dyego/profil/spieler/264343"
+ },
+ "405720": {
+  "joined": "2025-02-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/diego-goncalves/profil/spieler/405720"
+ },
+ "940479": {
+  "joined": "2026-03-04",
+  "move": {
+   "from_club": "Azuriz FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ze-hugo/profil/spieler/940479"
+ },
+ "542598": {
+  "joined": "2026-01-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/breno-lopes/profil/spieler/542598"
+ },
+ "282502": {
+  "joined": "2026-09-27",
+  "move": {
+   "from_club": "Londrina EC",
+   "date": "2026-09-27",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/paulinho-moccelin/profil/spieler/282502"
+ },
+ "177680": {
+  "joined": "2026-02-07",
+  "move": {
+   "from_club": "Club Nacional",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/romulo-otero/profil/spieler/177680"
+ },
+ "871802": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marquinhos/profil/spieler/871802"
+ },
+ "931076": {
+  "joined": "2026-03-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-cardoso/profil/spieler/931076"
+ },
+ "218118": {
+  "joined": "2023-07-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-silva/profil/spieler/218118"
+ },
+ "697848": {
+  "joined": "2026-02-23",
+  "move": {
+   "from_club": "EC Primavera",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/welliton/profil/spieler/697848"
+ },
+ "867139": {
+  "joined": "2026-03-02",
+  "move": {
+   "from_club": "Brusque FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/biel-fonseca/profil/spieler/867139"
+ },
+ "689507": {
+  "joined": "2025-01-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-ramos/profil/spieler/689507"
+ },
+ "309193": {
+  "joined": "2026-01-22",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jefferson-savarino/profil/spieler/309193"
+ },
+ "795619": {
+  "joined": "2026-03-20",
+  "move": {
+   "from_club": "Nova Iguaçu FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/leo-rafael/profil/spieler/795619"
+ },
+ "716388": {
+  "joined": "2025-10-24",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/kelvyn/profil/spieler/716388"
+ },
+ "752552": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vitor-leque/profil/spieler/752552"
+ },
+ "1365900": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/felipinho/profil/spieler/1365900"
+ },
+ "1063811": {
+  "joined": "2023-04-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/miguelito/profil/spieler/1063811"
+ },
+ "752560": {
+  "joined": "2026-08-03",
+  "move": {
+   "from_club": "Sport Recife",
+   "date": "2026-08-03",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-maia/profil/spieler/752560"
+ },
+ "323879": {
+  "joined": "2025-04-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vinicius-jau/profil/spieler/323879"
+ },
+ "935978": {
+  "joined": "2026-07-10",
+  "move": {
+   "from_club": "CSP",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/joao-vitor/profil/spieler/935978"
+ },
+ "688773": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheusinho/profil/spieler/688773"
+ },
+ "106281": {
+  "joined": "2025-07-31",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vina/profil/spieler/106281"
+ },
+ "675178": {
+  "joined": "2025-01-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/isidro-pitta/profil/spieler/675178"
+ },
+ "371009": {
+  "joined": "2026-01-30",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rony/profil/spieler/371009"
+ },
+ "80562": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Atlético Mineiro",
+   "date": "2026-07-01",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/hulk/profil/spieler/80562"
+ },
+ "244275": {
+  "joined": "2026-01-03",
+  "move": {
+   "from_club": "Cruzeiro EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-barbosa/profil/spieler/244275"
+ },
+ "103743": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/henrique-almeida/profil/spieler/103743"
+ },
+ "161188": {
+  "joined": "2025-01-22",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/robson/profil/spieler/161188"
+ },
+ "943837": {
+  "joined": "2025-02-28",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vitor-roque/profil/spieler/943837"
+ },
+ "162883": {
+  "joined": "2023-03-31",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/eduardo-sasha/profil/spieler/162883"
+ },
+ "267849": {
+  "joined": "2026-03-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/romarinho/profil/spieler/267849"
+ },
+ "186408": {
+  "joined": "2025-06-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/nicolas/profil/spieler/186408"
+ },
+ "363794": {
+  "joined": "2025-06-17",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/carlos-eduardo/profil/spieler/363794"
+ },
+ "371996": {
+  "joined": "2026-01-30",
+  "move": {
+   "from_club": "CSKA Moscou",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/alerrandro/profil/spieler/371996"
+ },
+ "373189": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/david/profil/spieler/373189"
+ },
+ "195882": {
+  "joined": "2026-03-11",
+  "move": {
+   "from_club": "Athletico Paranaense",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gonzalo-mastriani/profil/spieler/195882"
+ },
+ "114514": {
+  "joined": "2026-06-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marcelo-cirino/profil/spieler/114514"
+ },
+ "468249": {
+  "joined": "2024-08-30",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vitinho/profil/spieler/468249"
+ },
+ "977549": {
+  "joined": "2026-03-30",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/clayton/profil/spieler/977549"
+ },
+ "177381": {
+  "joined": "2026-03-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jenison/profil/spieler/177381"
+ },
+ "53922": {
+  "joined": "2026-03-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alan-kardec/profil/spieler/53922"
+ },
+ "404321": {
+  "joined": "2025-04-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/renato-kayzer/profil/spieler/404321"
+ },
+ "548298": {
+  "joined": "2026-07-20",
+  "move": {
+   "from_club": null,
+   "date": "2027-01-01",
+   "fee": "-",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/fabio-gomes/profil/spieler/548298"
+ },
+ "977125": {
+  "joined": "2026-03-13",
+  "move": {
+   "from_club": "Santa Catarina Clube",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/bruninho/profil/spieler/977125"
+ },
+ "53965": {
+  "joined": "2025-12-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/guilherme-santos/profil/spieler/53965"
+ },
+ "978057": {
+  "joined": "2026-01-20",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/petterson/profil/spieler/978057"
+ },
+ "1071760": {
+  "joined": "2024-02-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/leo-maia/profil/spieler/1071760"
+ },
+ "13047": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/daniel-cruz/profil/spieler/13047"
+ },
+ "1005640": {
+  "joined": "2026-02-05",
+  "move": {
+   "from_club": "RB Bragantino",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/arthur-sousa/profil/spieler/1005640"
+ },
+ "698784": {
+  "joined": "2024-08-30",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/doma/profil/spieler/698784"
+ },
+ "592340": {
+  "joined": "2026-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/willian-machado/profil/spieler/592340"
+ },
+ "603122": {
+  "joined": "2026-02-26",
+  "move": {
+   "from_club": "SC Corinthians",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/caca/profil/spieler/603122"
+ },
+ "593382": {
+  "joined": "2025-05-22",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jacy/profil/spieler/593382"
+ },
+ "546033": {
+  "joined": "2024-03-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/sabino/profil/spieler/546033"
+ },
+ "555015": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "US Sassuolo",
+   "date": "2026-07-01",
+   "fee": "€3.50mi",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ruan/profil/spieler/555015"
+ },
+ "379752": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Botafogo FR",
+   "date": "2026-07-01",
+   "fee": "€3.40mi",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/alexander-barboza/profil/spieler/379752"
+ },
+ "411662": {
+  "joined": "2026-03-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-verissimo/profil/spieler/411662"
+ },
+ "1083207": {
+  "joined": "2024-07-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jonathan-jesus/profil/spieler/1083207"
+ },
+ "468174": {
+  "joined": "2026-01-18",
+  "move": {
+   "from_club": "SC Corinthians",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/felix-torres/profil/spieler/468174"
+ },
+ "1141364": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jemmes/profil/spieler/1141364"
+ },
+ "729587": {
+  "joined": "2026-08-08",
+  "move": {
+   "from_club": "Chapecoense",
+   "date": "2026-08-08",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/bruno-leonardo/profil/spieler/729587"
+ },
+ "834444": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/victor-gabriel/profil/spieler/834444"
+ },
+ "624291": {
+  "joined": "2024-07-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ignacio/profil/spieler/624291"
+ },
+ "950393": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Grêmio FBPA",
+   "date": "2026-07-01",
+   "fee": "€15.00mi",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/viery/profil/spieler/950393"
+ },
+ "503343": {
+  "joined": "2026-07-15",
+  "move": {
+   "from_club": "São Paulo FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/alan-franco/profil/spieler/503343"
+ },
+ "149752": {
+  "joined": "2026-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vitor-hugo/profil/spieler/149752"
+ },
+ "484848": {
+  "joined": "2026-07-20",
+  "move": {
+   "from_club": "Santos FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ze-ivaldo/profil/spieler/484848"
+ },
+ "1219466": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "CRB",
+   "date": "2026-07-01",
+   "fee": "€506mil",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/wallace/profil/spieler/1219466"
+ },
+ "671572": {
+  "joined": "2025-02-14",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wagner-leonardo/profil/spieler/671572"
+ },
+ "811219": {
+  "joined": "2026-07-17",
+  "move": {
+   "from_club": "Botafogo FR",
+   "date": "2026-07-17",
+   "fee": "€3.00mi",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/newton/profil/spieler/811219"
+ },
+ "592373": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-oliveira/profil/spieler/592373"
+ },
+ "563692": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-fuchs/profil/spieler/563692"
+ },
+ "736652": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/joao-paulo/profil/spieler/736652"
+ },
+ "1089609": {
+  "joined": "2026-07-16",
+  "move": {
+   "from_club": "Fluminense FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/kayky-almeida/profil/spieler/1089609"
+ },
+ "740501": {
+  "joined": "2026-06-18",
+  "move": {
+   "from_club": "EC Bahia",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-xavier/profil/spieler/740501"
+ },
+ "410183": {
+  "joined": "2026-03-25",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/joao-basso/profil/spieler/410183"
+ },
+ "265693": {
+  "joined": "2019-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luiz-otavio/profil/spieler/265693"
+ },
+ "688690": {
+  "joined": "2026-01-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/igor-formiga/profil/spieler/688690"
+ },
+ "670021": {
+  "joined": "2023-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheus-bidu/profil/spieler/670021"
+ },
+ "440377": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gonzalo-escobar/profil/spieler/440377"
+ },
+ "681494": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marcelinho/profil/spieler/681494"
+ },
+ "663578": {
+  "joined": "2025-08-08",
+  "move": {
+   "from_club": "SC Internacional",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ramon/profil/spieler/663578"
+ },
+ "378189": {
+  "joined": "2026-02-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-ramon/profil/spieler/378189"
+ },
+ "879217": {
+  "joined": "2026-07-02",
+  "move": {
+   "from_club": "Cruzeiro EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/kaiki/profil/spieler/879217"
+ },
+ "891353": {
+  "joined": "2026-02-05",
+  "move": {
+   "from_club": "Nottingham Forest",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/cuiabano/profil/spieler/891353"
+ },
+ "856990": {
+  "joined": "2025-03-28",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/everton/profil/spieler/856990"
+ },
+ "603423": {
+  "joined": "2026-03-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mayk/profil/spieler/603423"
+ },
+ "231614": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "EC Bahia",
+   "date": "2026-07-01",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gilberto/profil/spieler/231614"
+ },
+ "613641": {
+  "joined": "2025-02-07",
+  "move": {
+   "from_club": "Coritiba FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/jamerson/profil/spieler/613641"
+ },
+ "741021": {
+  "joined": "2026-02-14",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheus-bahia/profil/spieler/741021"
+ },
+ "1089955": {
+  "joined": "2026-09-25",
+  "move": {
+   "from_club": "Santos FC",
+   "date": "2026-09-25",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/jp-chermont/profil/spieler/1089955"
+ },
+ "415843": {
+  "joined": "2026-07-11",
+  "move": {
+   "from_club": "Chapecoense",
+   "date": "2026-07-11",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/walter-clar/profil/spieler/415843"
+ },
+ "520468": {
+  "joined": "2026-08-06",
+  "move": {
+   "from_club": "EC Bahia",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/iago/profil/spieler/520468"
+ },
+ "1092620": {
+  "joined": "2026-07-24",
+  "move": {
+   "from_club": "Goiás EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/diego-caito/profil/spieler/1092620"
+ },
+ "870778": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mateus-silva/profil/spieler/870778"
+ },
+ "594006": {
+  "joined": "2026-08-04",
+  "move": {
+   "from_club": "Chapecoense",
+   "date": "2026-08-04",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/marcos-vinicius/profil/spieler/594006"
+ },
+ "731057": {
+  "joined": "2026-07-24",
+  "move": {
+   "from_club": "Ceará SC",
+   "date": "2026-07-24",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/fernando/profil/spieler/731057"
+ },
+ "341705": {
+  "joined": "2026-01-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gerson/profil/spieler/341705"
+ },
+ "10471": {
+  "joined": "2026-01-23",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luiz-gustavo/profil/spieler/10471"
+ },
+ "555310": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/caique-goncalves/profil/spieler/555310"
+ },
+ "578872": {
+  "joined": "2024-01-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jean-lucas/profil/spieler/578872"
+ },
+ "292731": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/danielzinho/profil/spieler/292731"
+ },
+ "825780": {
+  "joined": "2026-03-18",
+  "move": {
+   "from_club": "Maringá FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ze-vitor/profil/spieler/825780"
+ },
+ "1083966": {
+  "joined": "2023-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/cauan-barros/profil/spieler/1083966"
+ },
+ "644204": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/aldo-filho/profil/spieler/644204"
+ },
+ "346922": {
+  "joined": "2026-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/thiago-santos/profil/spieler/346922"
+ },
+ "534473": {
+  "joined": "2026-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/paulinho-paula/profil/spieler/534473"
+ },
+ "362842": {
+  "joined": "2026-08-31",
+  "move": {
+   "from_club": "Juventus FC",
+   "date": "2026-08-31",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/arthur-melo/profil/spieler/362842"
+ },
+ "876874": {
+  "joined": "2024-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vini-paulista/profil/spieler/876874"
+ },
+ "722133": {
+  "joined": "2024-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/carvalheira/profil/spieler/722133"
+ },
+ "742073": {
+  "joined": "2026-08-01",
+  "move": {
+   "from_club": "Coritiba FC",
+   "date": "2026-08-01",
+   "fee": "€510mil",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/wallisson/profil/spieler/742073"
+ },
+ "323934": {
+  "joined": "2026-01-16",
+  "move": {
+   "from_club": "Fortaleza EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/matheus-pereira/profil/spieler/323934"
+ },
+ "646432": {
+  "joined": "2026-07-04",
+  "move": {
+   "from_club": "Chapecoense",
+   "date": "2026-07-04",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/higor-meritao/profil/spieler/646432"
+ },
+ "252900": {
+  "joined": "2026-07-31",
+  "move": {
+   "from_club": "Coritiba FC",
+   "date": "2026-07-31",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/willian-oliveira/profil/spieler/252900"
+ },
+ "1115489": {
+  "joined": "2024-02-14",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/felipinho/profil/spieler/1115489"
+ },
+ "1365897": {
+  "joined": "2026-07-25",
+  "move": {
+   "from_club": "Sport Recife",
+   "date": "2026-07-25",
+   "fee": "€4.40mi",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ze-lucas/profil/spieler/1365897"
+ },
+ "980837": {
+  "joined": "2026-07-20",
+  "move": {
+   "from_club": "São Paulo FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/felipe-negrucci/profil/spieler/980837"
+ },
+ "600549": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ze-ricardo/profil/spieler/600549"
+ },
+ "514500": {
+  "joined": "2023-07-07",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marcinho/profil/spieler/514500"
+ },
+ "895926": {
+  "joined": "2026-01-08",
+  "move": {
+   "from_club": "Fluminense FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/joaquin-lavega/profil/spieler/895926"
+ },
+ "1082631": {
+  "joined": "2026-08-31",
+  "move": {
+   "from_club": "SE Palmeiras",
+   "date": "2026-08-31",
+   "fee": "€37.50mi",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/allan/profil/spieler/1082631"
+ },
+ "613873": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alvaro-barreal/profil/spieler/613873"
+ },
+ "657746": {
+  "joined": "2026-01-05",
+  "move": {
+   "from_club": "Grêmio FBPA",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/cristian-olivera/profil/spieler/657746"
+ },
+ "726092": {
+  "joined": "2026-02-24",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jaja/profil/spieler/726092"
+ },
+ "668953": {
+  "joined": "2026-01-30",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jose-herrera/profil/spieler/668953"
+ },
+ "125513": {
+  "joined": "2024-04-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/giovanni-augusto/profil/spieler/125513"
+ },
+ "766258": {
+  "joined": "2026-01-29",
+  "move": {
+   "from_club": "Al-Hilal SFC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/kaio-cesar/profil/spieler/766258"
+ },
+ "802809": {
+  "joined": "2026-02-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mauricio-garcez/profil/spieler/802809"
+ },
+ "689017": {
+  "joined": "2024-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ferreirinha/profil/spieler/689017"
+ },
+ "491599": {
+  "joined": "2026-08-13",
+  "move": {
+   "from_club": "Mirassol FC",
+   "date": "2026-08-13",
+   "fee": "€500mil",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/antonio-galeano/profil/spieler/491599"
+ },
+ "1082820": {
+  "joined": "2026-07-31",
+  "move": {
+   "from_club": "Chapecoense",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/italo-vargas/profil/spieler/1082820"
+ },
+ "593205": {
+  "joined": "2026-07-13",
+  "move": {
+   "from_club": "Athletico Paranaense",
+   "date": "2026-07-13",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/julimar/profil/spieler/593205"
+ },
+ "1110658": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/leozinho/profil/spieler/1110658"
+ },
+ "162812": {
+  "joined": "2026-02-16",
+  "move": {
+   "from_club": "EC Bahia",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/cauly/profil/spieler/162812"
+ },
+ "102574": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Chapecoense",
+   "date": "2026-07-01",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/jean-carlos/profil/spieler/102574"
+ },
+ "465819": {
+  "joined": "2026-09-02",
+  "move": {
+   "from_club": "Botafogo FR",
+   "date": "2026-09-02",
+   "fee": "€5.85mi",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/santiago-rodriguez/profil/spieler/465819"
+ },
+ "348354": {
+  "joined": "2026-07-08",
+  "move": {
+   "from_club": "Fortaleza EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/tomas-pochettino/profil/spieler/348354"
+ },
+ "75471": {
+  "joined": "2026-01-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/yannick-bolasie/profil/spieler/75471"
+ },
+ "585876": {
+  "joined": "2026-03-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-taliari/profil/spieler/585876"
+ },
+ "323831": {
+  "joined": "2026-07-04",
+  "move": {
+   "from_club": "SC Internacional",
+   "date": "2026-07-04",
+   "fee": "€2.20mi",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/rafael-santos-borre/profil/spieler/323831"
+ },
+ "794925": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Goiás EC",
+   "date": "2026-07-01",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/edson-carioca/profil/spieler/794925"
+ },
+ "871427": {
+  "joined": "2026-07-12",
+  "move": {
+   "from_club": "Londrina EC",
+   "date": "2026-07-12",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/bruno-santos/profil/spieler/871427"
+ },
+ "392487": {
+  "joined": "2025-01-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/thaciano/profil/spieler/392487"
+ },
+ "205041": {
+  "joined": "2026-02-06",
+  "move": {
+   "from_club": "Fluminense FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/everaldo/profil/spieler/205041"
+ },
+ "406766": {
+  "joined": "2026-02-18",
+  "move": {
+   "from_club": "SE Palmeiras",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/bruno-rodrigues/profil/spieler/406766"
+ },
+ "432959": {
+  "joined": "2026-03-27",
+  "move": {
+   "from_club": "Chapecoense",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/perotti/profil/spieler/432959"
+ },
+ "967167": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucao/profil/spieler/967167"
+ },
+ "212199": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rafael-donato/profil/spieler/212199"
+ },
+ "177534": {
+  "joined": "2026-02-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-alves/profil/spieler/177534"
+ },
+ "104544": {
+  "joined": "2026-02-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/saimon/profil/spieler/104544"
+ },
+ "68833": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wallace/profil/spieler/68833"
+ },
+ "265837": {
+  "joined": "2026-03-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ligger/profil/spieler/265837"
+ },
+ "292152": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rafael-thyere/profil/spieler/292152"
+ },
+ "555421": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/everton-alemao/profil/spieler/555421"
+ },
+ "485554": {
+  "joined": "2026-03-12",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-bispo/profil/spieler/485554"
+ },
+ "642014": {
+  "joined": "2026-08-31",
+  "move": {
+   "from_club": "Figueirense FC",
+   "date": "2026-08-31",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/lucas-dias/profil/spieler/642014"
+ },
+ "663523": {
+  "joined": "2026-07-23",
+  "move": {
+   "from_club": "Zakho SC",
+   "date": "2026-07-23",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/joseph/profil/spieler/663523"
+ },
+ "542615": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alisson-cassiano/profil/spieler/542615"
+ },
+ "225639": {
+  "joined": "2026-01-08",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wellington-carvalho/profil/spieler/225639"
+ },
+ "552237": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mateus-silva/profil/spieler/552237"
+ },
+ "99667": {
+  "joined": "2025-12-20",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/diego-ivo/profil/spieler/99667"
+ },
+ "522979": {
+  "joined": "2026-07-29",
+  "move": {
+   "from_club": "AA Internacional de Limeira",
+   "date": "2026-07-29",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/frazan/profil/spieler/522979"
+ },
+ "437777": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marcondes/profil/spieler/437777"
+ },
+ "544254": {
+  "joined": "2023-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/fabio-alemao/profil/spieler/544254"
+ },
+ "349144": {
+  "joined": "2026-02-23",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/carlao/profil/spieler/349144"
+ },
+ "411663": {
+  "joined": "2024-04-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/augusto/profil/spieler/411663"
+ },
+ "1010940": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/fabricio/profil/spieler/1010940"
+ },
+ "725079": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/guilherme-paraiba/profil/spieler/725079"
+ },
+ "1003423": {
+  "joined": "2024-01-12",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/douglas-silva/profil/spieler/1003423"
+ },
+ "373065": {
+  "joined": "2025-12-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mauricio/profil/spieler/373065"
+ },
+ "403540": {
+  "joined": "2026-03-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ianson/profil/spieler/403540"
+ },
+ "371522": {
+  "joined": "2025-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheus-mancini/profil/spieler/371522"
+ },
+ "450193": {
+  "joined": "2025-06-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/leo-santos/profil/spieler/450193"
+ },
+ "995883": {
+  "joined": "2026-07-10",
+  "move": {
+   "from_club": "Cuiabá EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gabriel/profil/spieler/995883"
+ },
+ "812937": {
+  "joined": "2021-12-13",
+  "move": {
+   "from_club": null,
+   "date": "2026-07-10",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ronald-carvalho/profil/spieler/812937"
+ },
+ "982165": {
+  "joined": "2026-09-01",
+  "move": {
+   "from_club": "UD Leiria",
+   "date": "2026-09-01",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ze-vitor/profil/spieler/982165"
+ },
+ "461924": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/fabiano/profil/spieler/461924"
+ },
+ "268522": {
+  "joined": "2024-01-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/arnaldo/profil/spieler/268522"
+ },
+ "477621": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/willian-formiga/profil/spieler/477621"
+ },
+ "353722": {
+  "joined": "2026-03-25",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/sander/profil/spieler/353722"
+ },
+ "277713": {
+  "joined": "2026-07-09",
+  "move": {
+   "from_club": "Ceará SC",
+   "date": "2026-07-09",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/alex-silva/profil/spieler/277713"
+ },
+ "347283": {
+  "joined": "2024-12-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/raul-prata/profil/spieler/347283"
+ },
+ "442258": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/nicolas/profil/spieler/442258"
+ },
+ "544464": {
+  "joined": "2026-01-06",
+  "move": {
+   "from_club": "EC Vitória",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/willean-lepo/profil/spieler/544464"
+ },
+ "278402": {
+  "joined": "2026-01-02",
+  "move": {
+   "from_club": "Maringá FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/cristovam/profil/spieler/278402"
+ },
+ "605326": {
+  "joined": "2026-01-07",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/pedro-vitor/profil/spieler/605326"
+ },
+ "329738": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/reginaldo/profil/spieler/329738"
+ },
+ "114144": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/roberto/profil/spieler/114144"
+ },
+ "184109": {
+  "joined": "2026-01-07",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mario-sergio/profil/spieler/184109"
+ },
+ "1458909": {
+  "joined": "2025-12-17",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rodrigo-ferreira/profil/spieler/1458909"
+ },
+ "419146": {
+  "joined": "2025-10-31",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alex-ruan/profil/spieler/419146"
+ },
+ "231009": {
+  "joined": "2026-03-23",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/diogo-mateus/profil/spieler/231009"
+ },
+ "548827": {
+  "joined": "2025-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-hipolito/profil/spieler/548827"
+ },
+ "439460": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rai-ramos/profil/spieler/439460"
+ },
+ "676034": {
+  "joined": "2026-03-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ewerthon/profil/spieler/676034"
+ },
+ "167724": {
+  "joined": "2026-04-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/diogo-barbosa/profil/spieler/167724"
+ },
+ "733578": {
+  "joined": "2026-07-22",
+  "move": {
+   "from_club": "Java United FC",
+   "date": "2026-07-22",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/igor-inocencio/profil/spieler/733578"
+ },
+ "375025": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-marques/profil/spieler/375025"
+ },
+ "294789": {
+  "joined": "2026-03-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jeferson/profil/spieler/294789"
+ },
+ "556486": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/claudinho/profil/spieler/556486"
+ },
+ "607210": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "São Paulo FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/mailton/profil/spieler/607210"
+ },
+ "740404": {
+  "joined": "2025-01-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/thassio/profil/spieler/740404"
+ },
+ "555012": {
+  "joined": "2026-03-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/felipe-albuquerque/profil/spieler/555012"
+ },
+ "865095": {
+  "joined": "2026-03-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mauricio-maranhao/profil/spieler/865095"
+ },
+ "1092857": {
+  "joined": "2025-09-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jean-carlos/profil/spieler/1092857"
+ },
+ "601030": {
+  "joined": "2026-01-05",
+  "move": {
+   "from_club": "Rio Claro FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/denilson/profil/spieler/601030"
+ },
+ "752558": {
+  "joined": "2024-01-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/railan/profil/spieler/752558"
+ },
+ "886688": {
+  "joined": "2026-03-27",
+  "move": {
+   "from_club": "Ferroviária",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/edson-lucas/profil/spieler/886688"
+ },
+ "451933": {
+  "joined": "2026-03-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/thiago-ennes/profil/spieler/451933"
+ },
+ "351897": {
+  "joined": "2026-03-07",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/renan-areias/profil/spieler/351897"
+ },
+ "436833": {
+  "joined": "2026-01-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/felipe-rodrigues/profil/spieler/436833"
+ },
+ "371967": {
+  "joined": "2026-07-22",
+  "move": {
+   "from_club": "Avaí FC",
+   "date": "2026-07-22",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/wesley-gasolina/profil/spieler/371967"
+ },
+ "843500": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mateus-ludke/profil/spieler/843500"
+ },
+ "642570": {
+  "joined": "2026-04-25",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/reverson/profil/spieler/642570"
+ },
+ "346923": {
+  "joined": "2026-01-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/waguininho/profil/spieler/346923"
+ },
+ "1035650": {
+  "joined": "2024-01-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/eliel/profil/spieler/1035650"
+ },
+ "530388": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jhonata-varela/profil/spieler/530388"
+ },
+ "175395": {
+  "joined": "2026-02-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/genilson/profil/spieler/175395"
+ },
+ "524568": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "AA Ponte Preta",
+   "date": "2026-07-01",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/bryan-borges/profil/spieler/524568"
+ },
+ "1095563": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ryan-santos/profil/spieler/1095563"
+ },
+ "412376": {
+  "joined": "2025-04-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/miranda/profil/spieler/412376"
+ },
+ "1221818": {
+  "joined": "2025-08-22",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/andre/profil/spieler/1221818"
+ },
+ "859135": {
+  "joined": "2026-01-02",
+  "move": {
+   "from_club": "EC Vitória",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/leo-naldi/profil/spieler/859135"
+ },
+ "689737": {
+  "joined": "2026-03-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/patrick-de-lucca/profil/spieler/689737"
+ },
+ "210548": {
+  "joined": "2026-03-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/fabinho/profil/spieler/210548"
+ },
+ "299596": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "CRB",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gege/profil/spieler/299596"
+ },
+ "72438": {
+  "joined": "2024-04-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ricardinho/profil/spieler/72438"
+ },
+ "875994": {
+  "joined": "2024-01-24",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/felipe-amaral/profil/spieler/875994"
+ },
+ "340113": {
+  "joined": "2026-02-24",
+  "move": {
+   "from_club": "Portuguesa",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/marcelo-freitas/profil/spieler/340113"
+ },
+ "347090": {
+  "joined": "2026-02-14",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/leandro-vilela/profil/spieler/347090"
+ },
+ "418530": {
+  "joined": "2025-01-04",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/danielzinho/profil/spieler/418530"
+ },
+ "468167": {
+  "joined": "2026-03-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jhony-douglas/profil/spieler/468167"
+ },
+ "520629": {
+  "joined": "2026-09-02",
+  "move": {
+   "from_club": "EC Vitória",
+   "date": "2026-09-02",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/filipe-machado/profil/spieler/520629"
+ },
+ "349420": {
+  "joined": "2021-05-21",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rodrigo/profil/spieler/349420"
+ },
+ "634737": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "Coritiba FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/matheus-bianqui/profil/spieler/634737"
+ },
+ "281438": {
+  "joined": "2026-10-19",
+  "move": {
+   "from_club": "Lagarto FC",
+   "date": "2026-10-19",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/yago-henrique/profil/spieler/281438"
+ },
+ "511925": {
+  "joined": "2026-04-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/richard-franco/profil/spieler/511925"
+ },
+ "862595": {
+  "joined": "2026-05-07",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wagner-balotelli/profil/spieler/862595"
+ },
+ "892091": {
+  "joined": "2024-01-04",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mandaca/profil/spieler/892091"
+ },
+ "592310": {
+  "joined": "2026-07-10",
+  "move": {
+   "from_club": "CA Juventus",
+   "date": "2026-07-10",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/madison/profil/spieler/592310"
+ },
+ "395060": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheus-trindade/profil/spieler/395060"
+ },
+ "349161": {
+  "joined": "2026-02-12",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/tomas-bastos/profil/spieler/349161"
+ },
+ "540990": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jhonny-lucas/profil/spieler/540990"
+ },
+ "598972": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/martha/profil/spieler/598972"
+ },
+ "554298": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/eduardo-person/profil/spieler/554298"
+ },
+ "131028": {
+  "joined": "2026-02-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/emerson-santos/profil/spieler/131028"
+ },
+ "539365": {
+  "joined": "2026-06-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jorge-jimenez/profil/spieler/539365"
+ },
+ "519877": {
+  "joined": "2026-02-20",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/dudu-vieira/profil/spieler/519877"
+ },
+ "740299": {
+  "joined": "2026-03-30",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/andre-lima/profil/spieler/740299"
+ },
+ "670968": {
+  "joined": "2026-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ze-gabriel/profil/spieler/670968"
+ },
+ "214312": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/pedro-castro/profil/spieler/214312"
+ },
+ "184672": {
+  "joined": "2023-01-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/guido-carrillo/profil/spieler/184672"
+ },
+ "740271": {
+  "joined": "2026-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/juninho/profil/spieler/740271"
+ },
+ "538257": {
+  "joined": "2023-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/indio/profil/spieler/538257"
+ },
+ "181784": {
+  "joined": "2026-02-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheus-barbosa/profil/spieler/181784"
+ },
+ "227986": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/moises-ribeiro/profil/spieler/227986"
+ },
+ "877578": {
+  "joined": "2026-01-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luiz-felipe/profil/spieler/877578"
+ },
+ "984512": {
+  "joined": "2026-03-26",
+  "move": {
+   "from_club": "CA Tubarão",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/geovany-soares/profil/spieler/984512"
+ },
+ "867798": {
+  "joined": "2026-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/tito/profil/spieler/867798"
+ },
+ "1033501": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/calebe-costa/profil/spieler/1033501"
+ },
+ "458251": {
+  "joined": "2026-07-24",
+  "move": {
+   "from_club": "FC Tokyo",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/everton-galdino/profil/spieler/458251"
+ },
+ "591650": {
+  "joined": "2026-08-30",
+  "move": {
+   "from_club": "Volta Redonda FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ygor-catatau/profil/spieler/591650"
+ },
+ "191872": {
+  "joined": "2025-04-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/douglas-baggio/profil/spieler/191872"
+ },
+ "29091": {
+  "joined": "2026-01-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/nene/profil/spieler/29091"
+ },
+ "532828": {
+  "joined": "2024-01-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jean-lucas/profil/spieler/532828"
+ },
+ "644210": {
+  "joined": "2026-02-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-jose/profil/spieler/644210"
+ },
+ "695232": {
+  "joined": "2024-02-21",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/chrystian-barletta/profil/spieler/695232"
+ },
+ "213539": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheuzinho/profil/spieler/213539"
+ },
+ "515068": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lourenco/profil/spieler/515068"
+ },
+ "419474": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/hygor/profil/spieler/419474"
+ },
+ "659705": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "GD Chaves",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/paulo-victor/profil/spieler/659705"
+ },
+ "627099": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/isaque/profil/spieler/627099"
+ },
+ "658665": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "Tombense FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/kleiton-pego/profil/spieler/658665"
+ },
+ "985345": {
+  "joined": "2026-01-22",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/julio-cesar/profil/spieler/985345"
+ },
+ "202907": {
+  "joined": "2026-03-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/renatinho/profil/spieler/202907"
+ },
+ "688896": {
+  "joined": "2025-01-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/echapora/profil/spieler/688896"
+ },
+ "435234": {
+  "joined": "2026-07-31",
+  "move": {
+   "from_club": "AA Ponte Preta",
+   "date": "2026-07-31",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/diego-tavares/profil/spieler/435234"
+ },
+ "670940": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/janderson/profil/spieler/670940"
+ },
+ "978146": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/raitm/profil/spieler/978146"
+ },
+ "553563": {
+  "joined": "2026-07-10",
+  "move": {
+   "from_club": "América Mineiro",
+   "date": "2026-07-10",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/everton-brito/profil/spieler/553563"
+ },
+ "374091": {
+  "joined": "2025-04-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/cleo-silva/profil/spieler/374091"
+ },
+ "1227759": {
+  "joined": "2026-05-28",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luizinho/profil/spieler/1227759"
+ },
+ "521074": {
+  "joined": "2026-09-04",
+  "move": {
+   "from_club": "Atlético Goianiense",
+   "date": "2026-09-04",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/igor-henrique/profil/spieler/521074"
+ },
+ "203323": {
+  "joined": "2026-03-23",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/victor-andrade/profil/spieler/203323"
+ },
+ "689561": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vinicius-paiva/profil/spieler/689561"
+ },
+ "722615": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alan-ferreira/profil/spieler/722615"
+ },
+ "347181": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jean-silva/profil/spieler/347181"
+ },
+ "34953": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/cassio/profil/spieler/34953"
+ },
+ "959092": {
+  "joined": "2026-01-12",
+  "move": {
+   "from_club": "Grêmio FBPA",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ronald/profil/spieler/959092"
+ },
+ "538259": {
+  "joined": "2026-02-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jean-carlo/profil/spieler/538259"
+ },
+ "637995": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/warley/profil/spieler/637995"
+ },
+ "903050": {
+  "joined": "2021-06-01",
+  "move": {
+   "from_club": null,
+   "date": "2026-10-31",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/joao-lucas/profil/spieler/903050"
+ },
+ "285605": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/calyson/profil/spieler/285605"
+ },
+ "813048": {
+  "joined": "2026-01-30",
+  "move": {
+   "from_club": "Club Tijuana",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/vitinho/profil/spieler/813048"
+ },
+ "977463": {
+  "joined": "2026-02-10",
+  "move": {
+   "from_club": "Cruzeiro EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/rodriguinho/profil/spieler/977463"
+ },
+ "637809": {
+  "joined": "2026-10-15",
+  "move": {
+   "from_club": "ABC FC",
+   "date": "2026-10-15",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/jhosefer/profil/spieler/637809"
+ },
+ "711338": {
+  "joined": "2024-08-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jhonata-robert/profil/spieler/711338"
+ },
+ "553870": {
+  "joined": "2024-04-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-lima/profil/spieler/553870"
+ },
+ "118007": {
+  "joined": "2025-04-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/anselmo-ramon/profil/spieler/118007"
+ },
+ "178940": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucca/profil/spieler/178940"
+ },
+ "371250": {
+  "joined": "2024-07-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/edu-ribeiro/profil/spieler/371250"
+ },
+ "76474": {
+  "joined": "2026-03-31",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ciel/profil/spieler/76474"
+ },
+ "79960": {
+  "joined": "2024-08-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alex-sandro/profil/spieler/79960"
+ },
+ "329845": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/aylon/profil/spieler/329845"
+ },
+ "490613": {
+  "joined": "2026-03-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/daniel-amorim/profil/spieler/490613"
+ },
+ "125004": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ronaldo/profil/spieler/125004"
+ },
+ "537928": {
+  "joined": "2026-02-23",
+  "move": {
+   "from_club": "Mirassol FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/rodrigo-rodrigues/profil/spieler/537928"
+ },
+ "1103170": {
+  "joined": "2026-03-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-santos/profil/spieler/1103170"
+ },
+ "538258": {
+  "joined": "2026-07-22",
+  "move": {
+   "from_club": "Santa Cruz FC",
+   "date": "2026-07-22",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/quirino/profil/spieler/538258"
+ },
+ "628647": {
+  "joined": "2026-03-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/caio-dantas/profil/spieler/628647"
+ },
+ "55378": {
+  "joined": "2026-04-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/kayke/profil/spieler/55378"
+ },
+ "52953": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/felipe-garcia/profil/spieler/52953"
+ },
+ "518080": {
+  "joined": "2026-01-08",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/junior-todinho/profil/spieler/518080"
+ },
+ "345401": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/nicolas-careca/profil/spieler/345401"
+ },
+ "612340": {
+  "joined": "2026-03-25",
+  "move": {
+   "from_club": "Sport Recife",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-coutinho/profil/spieler/612340"
+ },
+ "719251": {
+  "joined": "2026-03-23",
+  "move": {
+   "from_club": "Atlético Goianiense",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/derek/profil/spieler/719251"
+ },
+ "54044": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-mezenga/profil/spieler/54044"
+ },
+ "369283": {
+  "joined": "2025-08-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-mota/profil/spieler/369283"
+ },
+ "528004": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/leo-passos/profil/spieler/528004"
+ },
+ "412366": {
+  "joined": "2026-01-28",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/brenner/profil/spieler/412366"
+ },
+ "592345": {
+  "joined": "2026-01-09",
+  "move": {
+   "from_club": "Tombense FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/getulio/profil/spieler/592345"
+ },
+ "819408": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lincoln/profil/spieler/819408"
+ },
+ "697400": {
+  "joined": "2025-02-20",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/breno/profil/spieler/697400"
+ },
+ "245778": {
+  "joined": "2026-02-20",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/fernando-viana/profil/spieler/245778"
+ },
+ "520088": {
+  "joined": "2026-03-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/tiago-marques/profil/spieler/520088"
+ },
+ "369240": {
+  "joined": "2026-03-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/salatiel/profil/spieler/369240"
+ },
+ "638380": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/eduardo-melo/profil/spieler/638380"
+ },
+ "900196": {
+  "joined": "2026-07-09",
+  "move": {
+   "from_club": "Londrina EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/iago-teles/profil/spieler/900196"
+ },
+ "668230": {
+  "joined": "2026-02-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-belezi/profil/spieler/668230"
+ },
+ "363174": {
+  "joined": "2024-01-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rodrigo-sam/profil/spieler/363174"
+ },
+ "936090": {
+  "joined": "2024-07-31",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/patrick/profil/spieler/936090"
+ },
+ "811949": {
+  "joined": "2026-01-08",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jhonathan/profil/spieler/811949"
+ },
+ "390695": {
+  "joined": "2026-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/allyson/profil/spieler/390695"
+ },
+ "739272": {
+  "joined": "2024-01-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/adriano-martins/profil/spieler/739272"
+ },
+ "269467": {
+  "joined": "2026-01-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/cesar-martins/profil/spieler/269467"
+ },
+ "355496": {
+  "joined": "2026-01-21",
+  "move": {
+   "from_club": "RB Bragantino",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/lucas-cunha/profil/spieler/355496"
+ },
+ "1095336": {
+  "joined": "2026-09-02",
+  "move": {
+   "from_club": "Londrina EC",
+   "date": "2026-09-02",
+   "fee": "€500mil",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/yago-lincoln/profil/spieler/1095336"
+ },
+ "346729": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/tiago-pagnussat/profil/spieler/346729"
+ },
+ "910216": {
+  "joined": "2023-07-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marcelo-ajul/profil/spieler/910216"
+ },
+ "1216411": {
+  "joined": "2026-03-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/betao/profil/spieler/1216411"
+ },
+ "1128780": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "Volta Redonda FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-bahia/profil/spieler/1128780"
+ },
+ "806150": {
+  "joined": "2026-01-21",
+  "move": {
+   "from_club": "Volta Redonda FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-pinheiro/profil/spieler/806150"
+ },
+ "1093922": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "Santos FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/luisao/profil/spieler/1093922"
+ },
+ "1083889": {
+  "joined": "2026-02-04",
+  "move": {
+   "from_club": "CR Vasco da Gama",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/lyncon/profil/spieler/1083889"
+ },
+ "978287": {
+  "joined": "2026-07-07",
+  "move": {
+   "from_club": "EC Juventude",
+   "date": "2026-07-07",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/leo-oliveira/profil/spieler/978287"
+ },
+ "225335": {
+  "joined": "2026-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wallace/profil/spieler/225335"
+ },
+ "678376": {
+  "joined": "2026-01-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luan-freitas/profil/spieler/678376"
+ },
+ "550891": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wanderson/profil/spieler/550891"
+ },
+ "539183": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/anderson/profil/spieler/539183"
+ },
+ "683337": {
+  "joined": "2026-03-11",
+  "move": {
+   "from_club": "EC Noroeste",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/carlinhos/profil/spieler/683337"
+ },
+ "837444": {
+  "joined": "2026-07-09",
+  "move": {
+   "from_club": "Operário FEC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/jhan-torres/profil/spieler/837444"
+ },
+ "1100070": {
+  "joined": "2026-03-02",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/eric/profil/spieler/1100070"
+ },
+ "1090822": {
+  "joined": "2026-01-20",
+  "move": {
+   "from_club": "Coritiba FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/guilherme-aquino/profil/spieler/1090822"
+ },
+ "694495": {
+  "joined": "2026-08-07",
+  "move": {
+   "from_club": "Atlético Goianiense",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/joao-maistro/profil/spieler/694495"
+ },
+ "349513": {
+  "joined": "2026-07-08",
+  "move": {
+   "from_club": "EC Vitória",
+   "date": "2026-07-08",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/neris/profil/spieler/349513"
+ },
+ "435170": {
+  "joined": "2026-01-12",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/patrick-brey/profil/spieler/435170"
+ },
+ "250841": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/igor-fernandes/profil/spieler/250841"
+ },
+ "391497": {
+  "joined": "2026-02-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-lovat/profil/spieler/391497"
+ },
+ "1220181": {
+  "joined": "2026-01-15",
+  "move": {
+   "from_club": "Atlético Mineiro",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/maykon-jesus/profil/spieler/1220181"
+ },
+ "697401": {
+  "joined": "2026-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/heron/profil/spieler/697401"
+ },
+ "994588": {
+  "joined": "2026-02-25",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/diogo-batista/profil/spieler/994588"
+ },
+ "874699": {
+  "joined": "2026-03-24",
+  "move": {
+   "from_club": "Londrina EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/mauricio-mucuri/profil/spieler/874699"
+ },
+ "788402": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-inocencio/profil/spieler/788402"
+ },
+ "634139": {
+  "joined": "2023-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/hereda/profil/spieler/634139"
+ },
+ "375241": {
+  "joined": "2026-02-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/sanchez/profil/spieler/375241"
+ },
+ "56066": {
+  "joined": "2026-07-13",
+  "move": {
+   "from_club": "AA Argentinos Juniors",
+   "date": "2026-07-13",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/enzo-perez/profil/spieler/56066"
+ },
+ "325196": {
+  "joined": "2026-01-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/zeca/profil/spieler/325196"
+ },
+ "682134": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wallison/profil/spieler/682134"
+ },
+ "1032891": {
+  "joined": "2026-01-29",
+  "move": {
+   "from_club": "Santos FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/kevyson/profil/spieler/1032891"
+ },
+ "530286": {
+  "joined": "2026-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/kevyn/profil/spieler/530286"
+ },
+ "476337": {
+  "joined": "2026-08-03",
+  "move": {
+   "from_club": "Náutico",
+   "date": "2026-08-03",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/yuri/profil/spieler/476337"
+ },
+ "911994": {
+  "joined": "2026-01-06",
+  "move": {
+   "from_club": "Clube do Remo",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/alexis-alvarino/profil/spieler/911994"
+ },
+ "1226336": {
+  "joined": "2026-08-07",
+  "move": {
+   "from_club": "Portuguesa",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/joao-vitor/profil/spieler/1226336"
+ },
+ "524404": {
+  "joined": "2025-01-24",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wenderson/profil/spieler/524404"
+ },
+ "525256": {
+  "joined": "2026-07-31",
+  "move": {
+   "from_club": "Maringá FC",
+   "date": "2026-07-31",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/everton-morelli/profil/spieler/525256"
+ },
+ "731531": {
+  "joined": "2023-04-28",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vinicius-diniz/profil/spieler/731531"
+ },
+ "730982": {
+  "joined": "2025-07-01",
+  "move": {
+   "from_club": "Boavista SC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/crystopher/profil/spieler/730982"
+ },
+ "740162": {
+  "joined": "2026-02-21",
+  "move": {
+   "from_club": "EC Vitória",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/dudu-miraima/profil/spieler/740162"
+ },
+ "699824": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/joao-vieira/profil/spieler/699824"
+ },
+ "1223077": {
+  "joined": "2026-04-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/joao-gabriel/profil/spieler/1223077"
+ },
+ "268572": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/foguinho/profil/spieler/268572"
+ },
+ "1116366": {
+  "joined": "2026-01-23",
+  "move": {
+   "from_club": "Atlético Mineiro",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/paulo-vitor/profil/spieler/1116366"
+ },
+ "432958": {
+  "joined": "2026-01-06",
+  "move": {
+   "from_club": "Cuiabá EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/lucas-mineiro/profil/spieler/432958"
+ },
+ "869477": {
+  "joined": "2025-04-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rodrigo-santos/profil/spieler/869477"
+ },
+ "802646": {
+  "joined": "2026-01-04",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/pierre/profil/spieler/802646"
+ },
+ "458115": {
+  "joined": "2026-07-09",
+  "move": {
+   "from_club": "AA Ponte Preta",
+   "date": "2026-07-09",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/tarik/profil/spieler/458115"
+ },
+ "675047": {
+  "joined": "2026-08-03",
+  "move": {
+   "from_club": "EC Noroeste",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/daniel-peixoto/profil/spieler/675047"
+ },
+ "594650": {
+  "joined": "2024-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/neto-paraiba/profil/spieler/594650"
+ },
+ "689975": {
+  "joined": "2026-03-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/murilo/profil/spieler/689975"
+ },
+ "1005642": {
+  "joined": "2026-01-21",
+  "move": {
+   "from_club": "SC Corinthians",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ryan/profil/spieler/1005642"
+ },
+ "980864": {
+  "joined": "2026-07-09",
+  "move": {
+   "from_club": "Atlético Goianiense",
+   "date": "2026-07-09",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ariel/profil/spieler/980864"
+ },
+ "869094": {
+  "joined": "2026-07-02",
+  "move": {
+   "from_club": "Amazonas FC",
+   "date": "2026-07-02",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-domingos/profil/spieler/869094"
+ },
+ "1074479": {
+  "joined": "2026-01-28",
+  "move": {
+   "from_club": "Fortaleza EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/kauan-rodrigues/profil/spieler/1074479"
+ },
+ "1225124": {
+  "joined": "2026-09-02",
+  "move": {
+   "from_club": "Avaí FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/thayllon/profil/spieler/1225124"
+ },
+ "638305": {
+  "joined": "2025-02-07",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/thiaguinho/profil/spieler/638305"
+ },
+ "1115017": {
+  "joined": "2026-09-03",
+  "move": {
+   "from_club": "AC Paranavaí",
+   "date": "2026-09-03",
+   "fee": "€101mil",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/kadu/profil/spieler/1115017"
+ },
+ "691861": {
+  "joined": "2026-02-12",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/fabio-lima/profil/spieler/691861"
+ },
+ "1223701": {
+  "joined": "2026-02-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/kauan-cristtyan/profil/spieler/1223701"
+ },
+ "718307": {
+  "joined": "2026-01-15",
+  "move": {
+   "from_club": "Botafogo FR",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/matias-segovia/profil/spieler/718307"
+ },
+ "678853": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheus-araujo/profil/spieler/678853"
+ },
+ "788362": {
+  "joined": "2026-07-06",
+  "move": {
+   "from_club": "Atlético Goianiense",
+   "date": "2026-07-06",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/jean-dias/profil/spieler/788362"
+ },
+ "392809": {
+  "joined": "2026-01-29",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/clayson/profil/spieler/392809"
+ },
+ "139607": {
+  "joined": "2026-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/guilherme/profil/spieler/139607"
+ },
+ "671539": {
+  "joined": "2026-07-07",
+  "move": {
+   "from_club": "CA Sarmiento (Junín)",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/benjamin-borasi/profil/spieler/671539"
+ },
+ "635807": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marlon/profil/spieler/635807"
+ },
+ "975509": {
+  "joined": "2026-01-30",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-rian/profil/spieler/975509"
+ },
+ "380483": {
+  "joined": "2026-09-14",
+  "move": {
+   "from_club": "Boavista SC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/karl/profil/spieler/380483"
+ },
+ "866830": {
+  "joined": "2026-09-04",
+  "move": {
+   "from_club": "Ypiranga FC",
+   "date": "2026-09-04",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/danielzinho/profil/spieler/866830"
+ },
+ "642689": {
+  "joined": "2025-02-28",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mikael/profil/spieler/642689"
+ },
+ "443338": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alisson-safira/profil/spieler/443338"
+ },
+ "396894": {
+  "joined": "2025-07-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/maxi-gomez/profil/spieler/396894"
+ },
+ "1090830": {
+  "joined": "2026-03-02",
+  "move": {
+   "from_club": "Coritiba FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/brandao/profil/spieler/1090830"
+ },
+ "752724": {
+  "joined": "2026-03-02",
+  "move": {
+   "from_club": "Coritiba FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/david-da-hora/profil/spieler/752724"
+ },
+ "1083073": {
+  "joined": "2026-02-10",
+  "move": {
+   "from_club": "Atlético Mineiro",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/cadu/profil/spieler/1083073"
+ },
+ "796796": {
+  "joined": "2026-08-05",
+  "move": {
+   "from_club": "Cruzeiro EC",
+   "date": "2026-08-05",
+   "fee": "€1.00mi",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ian-luccas/profil/spieler/796796"
+ },
+ "982549": {
+  "joined": "2025-08-29",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucca/profil/spieler/982549"
+ },
+ "184604": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/dellatorre/profil/spieler/184604"
+ },
+ "224481": {
+  "joined": "2026-04-23",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/arthur-caike/profil/spieler/224481"
+ },
+ "941369": {
+  "joined": "2026-09-09",
+  "move": {
+   "from_club": "Internacional de Lages",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/igor-bahia/profil/spieler/941369"
+ },
+ "373256": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/icaro/profil/spieler/373256"
+ },
+ "1223243": {
+  "joined": "2026-01-28",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/claudinho/profil/spieler/1223243"
+ },
+ "520377": {
+  "joined": "2026-02-20",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/perema/profil/spieler/520377"
+ },
+ "675892": {
+  "joined": "2026-04-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luis-fernando/profil/spieler/675892"
+ },
+ "435185": {
+  "joined": "2026-08-06",
+  "move": {
+   "from_club": "Volta Redonda FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/rafael-castro/profil/spieler/435185"
+ },
+ "671652": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-henrique/profil/spieler/671652"
+ },
+ "867533": {
+  "joined": "2025-11-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marcelo-sousa/profil/spieler/867533"
+ },
+ "550495": {
+  "joined": "2025-01-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/fernando/profil/spieler/550495"
+ },
+ "693176": {
+  "joined": "2026-06-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-balardin/profil/spieler/693176"
+ },
+ "546214": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/igor-morais/profil/spieler/546214"
+ },
+ "83757": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/william-alves/profil/spieler/83757"
+ },
+ "411437": {
+  "joined": "2026-03-06",
+  "move": {
+   "from_club": "Capivariano FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/wendel-lomar/profil/spieler/411437"
+ },
+ "731695": {
+  "joined": "2026-01-07",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/diney/profil/spieler/731695"
+ },
+ "380066": {
+  "joined": "2026-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jean-victor/profil/spieler/380066"
+ },
+ "312678": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Basaksehir FK",
+   "date": "2026-07-01",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/leo-duarte/profil/spieler/312678"
+ },
+ "226871": {
+  "joined": "2025-07-31",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luiz-paulo/profil/spieler/226871"
+ },
+ "175238": {
+  "joined": "2024-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/renan-luis/profil/spieler/175238"
+ },
+ "193513": {
+  "joined": "2026-03-17",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ze-mario/profil/spieler/193513"
+ },
+ "625373": {
+  "joined": "2025-11-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/vitinho/profil/spieler/625373"
+ },
+ "1222898": {
+  "joined": "2025-06-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/samuel/profil/spieler/1222898"
+ },
+ "435252": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/leonan/profil/spieler/435252"
+ },
+ "640867": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ricardo-luz/profil/spieler/640867"
+ },
+ "519885": {
+  "joined": "2025-11-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-salomao/profil/spieler/519885"
+ },
+ "981508": {
+  "joined": "2026-03-24",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ailton-santos/profil/spieler/981508"
+ },
+ "874148": {
+  "joined": "2026-09-04",
+  "move": {
+   "from_club": "Guarani FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/renan-castro/profil/spieler/874148"
+ },
+ "371992": {
+  "joined": "2026-03-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rhuan/profil/spieler/371992"
+ },
+ "731039": {
+  "joined": "2023-10-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-rodrigues/profil/spieler/731039"
+ },
+ "816145": {
+  "joined": "2026-01-30",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jhonnathan/profil/spieler/816145"
+ },
+ "1113411": {
+  "joined": "2026-09-03",
+  "move": {
+   "from_club": "Retrô FC Brasil",
+   "date": "2026-09-03",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/esquerdinha/profil/spieler/1113411"
+ },
+ "583064": {
+  "joined": "2026-03-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/thiaguinho/profil/spieler/583064"
+ },
+ "728540": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "Volta Redonda FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/danrley/profil/spieler/728540"
+ },
+ "101382": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bryan-robson/profil/spieler/101382"
+ },
+ "485705": {
+  "joined": "2024-02-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/thallyson/profil/spieler/485705"
+ },
+ "681813": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luciano-naninho/profil/spieler/681813"
+ },
+ "524567": {
+  "joined": "2026-01-14",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jhemerson/profil/spieler/524567"
+ },
+ "739418": {
+  "joined": "2026-01-08",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ruan-nascimento/profil/spieler/739418"
+ },
+ "120582": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/agustin-cousillas/profil/spieler/120582"
+ },
+ "942580": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "EC XV de Piracicaba",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/igor-bolt/profil/spieler/942580"
+ },
+ "5819": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/serginho/profil/spieler/5819"
+ },
+ "434052": {
+  "joined": "2026-01-07",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luidy/profil/spieler/434052"
+ },
+ "521498": {
+  "joined": "2024-05-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/leilson/profil/spieler/521498"
+ },
+ "832313": {
+  "joined": "2025-08-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/cesinha/profil/spieler/832313"
+ },
+ "670000": {
+  "joined": "2026-04-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/joao-diogo/profil/spieler/670000"
+ },
+ "868952": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/guilherme-pira/profil/spieler/868952"
+ },
+ "870416": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alason-carioca/profil/spieler/870416"
+ },
+ "592364": {
+  "joined": "2025-02-21",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alyson/profil/spieler/592364"
+ },
+ "432895": {
+  "joined": "2021-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/pedro/profil/spieler/432895"
+ },
+ "347015": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-ramos/profil/spieler/347015"
+ },
+ "670020": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/renanzinho/profil/spieler/670020"
+ },
+ "552515": {
+  "joined": "2026-08-27",
+  "move": {
+   "from_club": "AO Itabaiana",
+   "date": "2026-08-27",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/lucas-bessa/profil/spieler/552515"
+ },
+ "742120": {
+  "joined": "2026-02-04",
+  "move": {
+   "from_club": "Atlético Goianiense",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/thayllon/profil/spieler/742120"
+ },
+ "638270": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wagninho/profil/spieler/638270"
+ },
+ "838221": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/dudu-hatamoto/profil/spieler/838221"
+ },
+ "980435": {
+  "joined": "2025-07-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jhonatan-ribeiro/profil/spieler/980435"
+ },
+ "216681": {
+  "joined": "2026-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/anderson-rosa/profil/spieler/216681"
+ },
+ "530413": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/albano/profil/spieler/530413"
+ },
+ "976103": {
+  "joined": "2024-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/edison-negueba/profil/spieler/976103"
+ },
+ "972378": {
+  "joined": "2026-09-14",
+  "move": {
+   "from_club": "Ypiranga FC",
+   "date": "2026-09-14",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/nicolas-schulz/profil/spieler/972378"
+ },
+ "950821": {
+  "joined": "2026-09-04",
+  "move": {
+   "from_club": "ABECAT Ouvidorense",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/romarinho/profil/spieler/950821"
+ },
+ "626704": {
+  "joined": "2026-06-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/dione/profil/spieler/626704"
+ },
+ "439021": {
+  "joined": "2026-08-13",
+  "move": {
+   "from_club": "Ypiranga FC",
+   "date": "2026-08-13",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/renan-gorne/profil/spieler/439021"
+ },
+ "997718": {
+  "joined": "2026-07-10",
+  "move": {
+   "from_club": "AA Altos",
+   "date": "2026-07-10",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/jeffinho/profil/spieler/997718"
+ },
+ "193135": {
+  "joined": "2026-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jackson/profil/spieler/193135"
+ },
+ "542597": {
+  "joined": "2026-07-10",
+  "move": {
+   "from_club": "EC Noroeste",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/marlyson/profil/spieler/542597"
+ },
+ "878798": {
+  "joined": "2026-07-24",
+  "move": {
+   "from_club": "Piauí EC",
+   "date": "2026-07-24",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/natan/profil/spieler/878798"
+ },
+ "448859": {
+  "joined": "2026-03-02",
+  "move": {
+   "from_club": "EC Noroeste",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/lucas-cunha/profil/spieler/448859"
+ },
+ "663269": {
+  "joined": "2026-06-19",
+  "move": {
+   "from_club": "Retrô FC Brasil",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/rayan-ribeiro/profil/spieler/663269"
+ },
+ "479498": {
+  "joined": "2026-03-23",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/renato-vischi/profil/spieler/479498"
+ },
+ "740406": {
+  "joined": "2026-03-31",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/itambe/profil/spieler/740406"
+ },
+ "1116407": {
+  "joined": "2026-03-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/leo-paraiso/profil/spieler/1116407"
+ },
+ "737098": {
+  "joined": "2026-08-29",
+  "move": {
+   "from_club": "Piauí EC",
+   "date": "2026-08-29",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/eduardo-thuram/profil/spieler/737098"
+ },
+ "1082706": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/islan/profil/spieler/1082706"
+ },
+ "936773": {
+  "joined": "2025-01-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/eduardo-biazus/profil/spieler/936773"
+ },
+ "987594": {
+  "joined": "2025-04-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-fagundes/profil/spieler/987594"
+ },
+ "108621": {
+  "joined": "2026-02-23",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lenon/profil/spieler/108621"
+ },
+ "664549": {
+  "joined": "2026-08-14",
+  "move": {
+   "from_club": "Manauara EC",
+   "date": "2026-08-14",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/felippe-borges/profil/spieler/664549"
+ },
+ "681690": {
+  "joined": "2026-03-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/davi-gabriel/profil/spieler/681690"
+ },
+ "983118": {
+  "joined": "2026-06-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/raphinha/profil/spieler/983118"
+ },
+ "1237486": {
+  "joined": "2026-07-31",
+  "move": {
+   "from_club": "Independência FC",
+   "date": "2026-07-31",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/israel/profil/spieler/1237486"
+ },
+ "551904": {
+  "joined": "2026-08-15",
+  "move": {
+   "from_club": "Figueirense FC",
+   "date": "2026-08-15",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/jean-mangabeira/profil/spieler/551904"
+ },
+ "681509": {
+  "joined": "2026-03-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rafael-carrilho/profil/spieler/681509"
+ },
+ "265652": {
+  "joined": "2024-01-30",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/netinho/profil/spieler/265652"
+ },
+ "383373": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/guilherme-xavier/profil/spieler/383373"
+ },
+ "981213": {
+  "joined": "2025-01-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alencar/profil/spieler/981213"
+ },
+ "972900": {
+  "joined": "2026-03-09",
+  "move": {
+   "from_club": "North EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/evanderson/profil/spieler/972900"
+ },
+ "676510": {
+  "joined": "2026-01-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/igor-maduro/profil/spieler/676510"
+ },
+ "554983": {
+  "joined": "2026-03-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/douglas-skilo/profil/spieler/554983"
+ },
+ "1209359": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/romarinho/profil/spieler/1209359"
+ },
+ "1005639": {
+  "joined": "2026-03-17",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/richard/profil/spieler/1005639"
+ },
+ "1100068": {
+  "joined": "2026-03-20",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/macario/profil/spieler/1100068"
+ },
+ "976600": {
+  "joined": "2026-01-27",
+  "move": {
+   "from_club": "Náutico",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/kayon/profil/spieler/976600"
+ },
+ "640202": {
+  "joined": "2025-12-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alisson-taddei/profil/spieler/640202"
+ },
+ "1094940": {
+  "joined": "2025-02-11",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/renan-bernabe/profil/spieler/1094940"
+ },
+ "704585": {
+  "joined": "2025-06-06",
+  "move": {
+   "from_club": "São Bernardo FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/kaua-jesus/profil/spieler/704585"
+ },
+ "978179": {
+  "joined": "2026-03-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/edson-miranda/profil/spieler/978179"
+ },
+ "997469": {
+  "joined": "2025-02-11",
+  "move": {
+   "from_club": null,
+   "date": "2026-07-10",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/joao-ramos/profil/spieler/997469"
+ },
+ "1007091": {
+  "joined": "2026-03-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/leo-gobo/profil/spieler/1007091"
+ },
+ "688661": {
+  "joined": "2026-03-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ynaia/profil/spieler/688661"
+ },
+ "739445": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/raimar/profil/spieler/739445"
+ },
+ "539175": {
+  "joined": "2026-03-03",
+  "move": {
+   "from_club": "Santa Cruz FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/pedro-costa/profil/spieler/539175"
+ },
+ "869062": {
+  "joined": "2025-08-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/thiago-rosa/profil/spieler/869062"
+ },
+ "979984": {
+  "joined": "2025-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/guilherme-dal-pian/profil/spieler/979984"
+ },
+ "576563": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/dudu-mandai/profil/spieler/576563"
+ },
+ "640201": {
+  "joined": "2026-01-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/diego-fumaca/profil/spieler/640201"
+ },
+ "722456": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/caio-mello/profil/spieler/722456"
+ },
+ "869061": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gazao/profil/spieler/869061"
+ },
+ "1093317": {
+  "joined": "2025-04-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/pedro-favela/profil/spieler/1093317"
+ },
+ "674690": {
+  "joined": "2026-02-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/reifit/profil/spieler/674690"
+ },
+ "537622": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": null,
+   "date": "2026-10-31",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/rodrigo-alves/profil/spieler/537622"
+ },
+ "910199": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/adeilson-maranhao/profil/spieler/910199"
+ },
+ "519874": {
+  "joined": "2025-10-24",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/iago/profil/spieler/519874"
+ },
+ "1004820": {
+  "joined": "2026-10-01",
+  "move": {
+   "from_club": "Maranhão AC",
+   "date": "2026-10-01",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/will/profil/spieler/1004820"
+ },
+ "538225": {
+  "joined": "2025-04-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/alvaro/profil/spieler/538225"
+ },
+ "270959": {
+  "joined": "2024-07-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/henrique-dourado/profil/spieler/270959"
+ },
+ "994622": {
+  "joined": "2024-07-01",
+  "move": {
+   "from_club": null,
+   "date": "2026-10-31",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/cipriano/profil/spieler/994622"
+ },
+ "695177": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "Porto Vitória FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/leo-coltro/profil/spieler/695177"
+ },
+ "340557": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mauricio-antonio/profil/spieler/340557"
+ },
+ "979440": {
+  "joined": "2025-04-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-adell/profil/spieler/979440"
+ },
+ "1091616": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rafael-milhorim/profil/spieler/1091616"
+ },
+ "574903": {
+  "joined": "2025-10-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/walce/profil/spieler/574903"
+ },
+ "696243": {
+  "joined": "2025-03-21",
+  "move": {
+   "from_club": null,
+   "date": "2026-08-27",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/mancha/profil/spieler/696243"
+ },
+ "740161": {
+  "joined": "2026-07-20",
+  "move": {
+   "from_club": "Ituano FC",
+   "date": "2026-07-20",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/carlao/profil/spieler/740161"
+ },
+ "1220190": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rubens/profil/spieler/1220190"
+ },
+ "813119": {
+  "joined": "2025-04-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jonathan/profil/spieler/813119"
+ },
+ "639729": {
+  "joined": "2026-03-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-mota/profil/spieler/639729"
+ },
+ "1066523": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": null,
+   "date": "2026-10-31",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ricardo-cerqueira/profil/spieler/1066523"
+ },
+ "688686": {
+  "joined": "2026-07-22",
+  "move": {
+   "from_club": "Criciúma EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/heitor-roca/profil/spieler/688686"
+ },
+ "1276397": {
+  "joined": "2026-08-26",
+  "move": {
+   "from_club": "Ituano FC",
+   "date": "2026-08-26",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/tiaguinho/profil/spieler/1276397"
+ },
+ "641507": {
+  "joined": "2025-06-26",
+  "move": {
+   "from_club": null,
+   "date": "2026-10-31",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/tito/profil/spieler/641507"
+ },
+ "1101134": {
+  "joined": "2026-03-17",
+  "move": {
+   "from_club": "Guarani FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/fabricio-dias/profil/spieler/1101134"
+ },
+ "906328": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/paulinho/profil/spieler/906328"
+ },
+ "468254": {
+  "joined": "2026-09-21",
+  "move": {
+   "from_club": "Maranhão AC",
+   "date": "2026-09-21",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/vander/profil/spieler/468254"
+ },
+ "1011996": {
+  "joined": "2023-04-25",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-buchecha/profil/spieler/1011996"
+ },
+ "1083075": {
+  "joined": "2026-03-26",
+  "move": {
+   "from_club": "Azuriz FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-zeca/profil/spieler/1083075"
+ },
+ "322588": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/natanael/profil/spieler/322588"
+ },
+ "980806": {
+  "joined": "2026-01-21",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-mila/profil/spieler/980806"
+ },
+ "1137374": {
+  "joined": "2024-01-01",
+  "move": {
+   "from_club": null,
+   "date": "2026-10-31",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/grigor/profil/spieler/1137374"
+ },
+ "870653": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ronald-camarao/profil/spieler/870653"
+ },
+ "980000": {
+  "joined": "2026-03-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/garraty/profil/spieler/980000"
+ },
+ "894215": {
+  "joined": "2026-09-10",
+  "move": {
+   "from_club": "Osasco Sporting",
+   "date": "2026-09-10",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/matheus-martins/profil/spieler/894215"
+ },
+ "726103": {
+  "joined": "2026-03-11",
+  "move": {
+   "from_club": "Tombense FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/cleiton/profil/spieler/726103"
+ },
+ "1091130": {
+  "joined": "2026-01-01",
+  "move": {
+   "from_club": "Cianorte FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/udeh-clinton/profil/spieler/1091130"
+ },
+ "906011": {
+  "joined": "2026-07-08",
+  "move": {
+   "from_club": "AMSD Atlético de Rafaela",
+   "date": "2026-07-08",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/pablo-furtado/profil/spieler/906011"
+ },
+ "976894": {
+  "joined": "2025-10-24",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/danielzinho/profil/spieler/976894"
+ },
+ "1082825": {
+  "joined": "2026-03-11",
+  "move": {
+   "from_club": "Chapecoense",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/mailson/profil/spieler/1082825"
+ },
+ "1206598": {
+  "joined": "2026-09-04",
+  "move": {
+   "from_club": "Guarani FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/maranhao/profil/spieler/1206598"
+ },
+ "1047465": {
+  "joined": "2026-03-26",
+  "move": {
+   "from_club": "EC Juventude",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/emerson-galego/profil/spieler/1047465"
+ },
+ "637615": {
+  "joined": "2025-11-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/giovane-gomez/profil/spieler/637615"
+ },
+ "1095706": {
+  "joined": "2026-08-04",
+  "move": {
+   "from_club": "Ferroviário AC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/thalisson/profil/spieler/1095706"
+ },
+ "976620": {
+  "joined": "2026-04-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/paulo-miranda/profil/spieler/976620"
+ },
+ "1126160": {
+  "joined": "2026-01-08",
+  "move": {
+   "from_club": "Real Brasília FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/matheus-obina/profil/spieler/1126160"
+ },
+ "228433": {
+  "joined": "2025-01-31",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wendell/profil/spieler/228433"
+ },
+ "480274": {
+  "joined": "2025-08-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/shaylon/profil/spieler/480274"
+ },
+ "711028": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-oliveira/profil/spieler/711028"
+ },
+ "982552": {
+  "joined": "2026-08-06",
+  "move": {
+   "from_club": "SC Internacional",
+   "date": "2026-08-06",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/estevao/profil/spieler/982552"
+ },
+ "979290": {
+  "joined": "2026-07-24",
+  "move": {
+   "from_club": "Araguaína FR",
+   "date": "2026-07-24",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/giovani/profil/spieler/979290"
+ },
+ "992868": {
+  "joined": "2026-03-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-furtado/profil/spieler/992868"
+ },
+ "976998": {
+  "joined": "2025-09-10",
+  "move": {
+   "from_club": null,
+   "date": "2026-06-25",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/diogo/profil/spieler/976998"
+ },
+ "868069": {
+  "joined": "2025-04-10",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/cleberson/profil/spieler/868069"
+ },
+ "336474": {
+  "joined": "2026-04-20",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-dias/profil/spieler/336474"
+ },
+ "555672": {
+  "joined": "2026-01-17",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/djalma-silva/profil/spieler/555672"
+ },
+ "538228": {
+  "joined": "2026-03-28",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rodolfo-potiguar/profil/spieler/538228"
+ },
+ "329843": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/neto-moura/profil/spieler/329843"
+ },
+ "724654": {
+  "joined": "2026-06-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rafinha/profil/spieler/724654"
+ },
+ "341710": {
+  "joined": "2023-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/william/profil/spieler/341710"
+ },
+ "676035": {
+  "joined": "2023-09-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luciano-juba/profil/spieler/676035"
+ },
+ "722613": {
+  "joined": "2026-08-17",
+  "move": {
+   "from_club": "Brasiliense FC",
+   "date": "2026-08-17",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/julio-vitor/profil/spieler/722613"
+ },
+ "680681": {
+  "joined": "2021-12-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/negueba/profil/spieler/680681"
+ },
+ "109652": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/neto-berola/profil/spieler/109652"
+ },
+ "742024": {
+  "joined": "2026-03-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/juliano-fabro/profil/spieler/742024"
+ },
+ "825614": {
+  "joined": "2026-06-19",
+  "move": {
+   "from_club": "AC Paranavaí",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/cirilo/profil/spieler/825614"
+ },
+ "145573": {
+  "joined": "2022-01-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/richardson/profil/spieler/145573"
+ },
+ "873608": {
+  "joined": "2026-01-08",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/daniel-felipe/profil/spieler/873608"
+ },
+ "979925": {
+  "joined": "2026-09-03",
+  "move": {
+   "from_club": "Parnahyba SC",
+   "date": "2026-09-03",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/max-oliveira/profil/spieler/979925"
+ },
+ "939779": {
+  "joined": "2026-08-28",
+  "move": {
+   "from_club": "Tuna Luso Brasileira",
+   "date": "2026-08-28",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/douglas-santos/profil/spieler/939779"
+ },
+ "981271": {
+  "joined": "2024-02-01",
+  "move": {
+   "from_club": null,
+   "date": "2026-09-30",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ze-carlos/profil/spieler/981271"
+ },
+ "1129205": {
+  "joined": "2025-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/adriel/profil/spieler/1129205"
+ },
+ "856976": {
+  "joined": "2026-04-17",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/filipe-ramon/profil/spieler/856976"
+ },
+ "682445": {
+  "joined": "2026-04-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/mario-henrique/profil/spieler/682445"
+ },
+ "894774": {
+  "joined": "2026-08-07",
+  "move": {
+   "from_club": "Santa Cruz FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/natan-masiero/profil/spieler/894774"
+ },
+ "312686": {
+  "joined": "2025-08-29",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/daniel-vancan/profil/spieler/312686"
+ },
+ "399013": {
+  "joined": "2026-04-22",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/erick-varao/profil/spieler/399013"
+ },
+ "614324": {
+  "joined": "2026-07-14",
+  "move": {
+   "from_club": "Brasiliense FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/marcos-junior/profil/spieler/614324"
+ },
+ "277335": {
+  "joined": "2023-07-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-henrique/profil/spieler/277335"
+ },
+ "892058": {
+  "joined": "2026-07-30",
+  "move": {
+   "from_club": "ABECAT Ouvidorense",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/uesley-gaucho/profil/spieler/892058"
+ },
+ "852923": {
+  "joined": "2026-06-18",
+  "move": {
+   "from_club": "Sousa EC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/diego-viana/profil/spieler/852923"
+ },
+ "382201": {
+  "joined": "2026-08-04",
+  "move": {
+   "from_club": "CS Sergipe",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/mauro-jr/profil/spieler/382201"
+ },
+ "901036": {
+  "joined": "2026-07-30",
+  "move": {
+   "from_club": "EC São Luiz",
+   "date": "2026-07-30",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/marco-freitas/profil/spieler/901036"
+ },
+ "860989": {
+  "joined": "2026-08-20",
+  "move": {
+   "from_club": "AD Iguatu",
+   "date": "2026-08-20",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/thalison/profil/spieler/860989"
+ },
+ "993005": {
+  "joined": "2026-03-22",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/raphael-freitas/profil/spieler/993005"
+ },
+ "227016": {
+  "joined": "2026-08-22",
+  "move": {
+   "from_club": "Porto Velho EC",
+   "date": "2026-08-22",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-davis/profil/spieler/227016"
+ },
+ "640291": {
+  "joined": "2026-06-03",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/kadu-barone/profil/spieler/640291"
+ },
+ "801817": {
+  "joined": "2026-03-12",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/daniel-de-pauli/profil/spieler/801817"
+ },
+ "830367": {
+  "joined": "2026-03-17",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/hitalo/profil/spieler/830367"
+ },
+ "873908": {
+  "joined": "2026-03-24",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/jonathan-cabeca/profil/spieler/873908"
+ },
+ "237452": {
+  "joined": "2025-12-30",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/watthimen/profil/spieler/237452"
+ },
+ "1109412": {
+  "joined": "2025-10-25",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/robert/profil/spieler/1109412"
+ },
+ "522090": {
+  "joined": "2026-07-29",
+  "move": {
+   "from_club": "AA Anapolina",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/roberto-baggio/profil/spieler/522090"
+ },
+ "639161": {
+  "joined": "2025-04-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rafael-ibiapino/profil/spieler/639161"
+ },
+ "628222": {
+  "joined": "2026-04-22",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rodrigo-carioca/profil/spieler/628222"
+ },
+ "977534": {
+  "joined": "2026-04-06",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/carlos-maia/profil/spieler/977534"
+ },
+ "677679": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/michel-custodio/profil/spieler/677679"
+ },
+ "889487": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/almir-luan/profil/spieler/889487"
+ },
+ "978314": {
+  "joined": "2026-01-02",
+  "move": {
+   "from_club": "EC Novo Hamburgo",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/luis-gustavo/profil/spieler/978314"
+ },
+ "554980": {
+  "joined": "2026-03-13",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/rennan-siqueira/profil/spieler/554980"
+ },
+ "365368": {
+  "joined": "2023-04-12",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/matheuzinho/profil/spieler/365368"
+ },
+ "539173": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-carvalho/profil/spieler/539173"
+ },
+ "688689": {
+  "joined": "2026-07-23",
+  "move": {
+   "from_club": "Mixto EC",
+   "date": "2026-07-23",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/rael/profil/spieler/688689"
+ },
+ "1118708": {
+  "joined": "2026-01-06",
+  "move": {
+   "from_club": "CSP",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/tenorio/profil/spieler/1118708"
+ },
+ "980613": {
+  "joined": "2026-03-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/caio-hila/profil/spieler/980613"
+ },
+ "412681": {
+  "joined": "2025-07-29",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wellisson/profil/spieler/412681"
+ },
+ "137216": {
+  "joined": "2024-12-12",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/raphael-soares/profil/spieler/137216"
+ },
+ "880341": {
+  "joined": "2026-07-22",
+  "move": {
+   "from_club": "FC Cascavel",
+   "date": "2026-07-22",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/guilherme-borech/profil/spieler/880341"
+ },
+ "541230": {
+  "joined": "2026-04-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/joecio/profil/spieler/541230"
+ },
+ "476354": {
+  "joined": "2025-11-19",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/roldan/profil/spieler/476354"
+ },
+ "692934": {
+  "joined": "2026-04-14",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-galhardo/profil/spieler/692934"
+ },
+ "1093951": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Portuguesa",
+   "date": "2026-07-01",
+   "fee": "€1.00mi",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/rene/profil/spieler/1093951"
+ },
+ "307289": {
+  "joined": "2026-09-24",
+  "move": {
+   "from_club": "Amazonas FC",
+   "date": "2026-09-24",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/rafael-tavares/profil/spieler/307289"
+ },
+ "190543": {
+  "joined": "2026-01-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/dener/profil/spieler/190543"
+ },
+ "236952": {
+  "joined": "2026-01-09",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/ronaldo-mendes/profil/spieler/236952"
+ },
+ "798105": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/frank/profil/spieler/798105"
+ },
+ "880119": {
+  "joined": "2026-03-17",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/luis-araujo/profil/spieler/880119"
+ },
+ "188959": {
+  "joined": "2026-05-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/william-barbio/profil/spieler/188959"
+ },
+ "520488": {
+  "joined": "2025-08-29",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wallace-pernambucano/profil/spieler/520488"
+ },
+ "292409": {
+  "joined": "2026-03-25",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/buba/profil/spieler/292409"
+ },
+ "20405": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/wendel/profil/spieler/20405"
+ },
+ "646181": {
+  "joined": "2026-06-18",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-vieira/profil/spieler/646181"
+ },
+ "231177": {
+  "joined": "2026-05-15",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/caio-mancha/profil/spieler/231177"
+ },
+ "1095621": {
+  "joined": "2026-08-26",
+  "move": {
+   "from_club": "AA Maguary",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/vinicius-kanu/profil/spieler/1095621"
+ },
+ "1083083": {
+  "joined": "2026-01-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/emanuel/profil/spieler/1083083"
+ },
+ "738409": {
+  "joined": "2026-07-28",
+  "move": {
+   "from_club": "CS Sergipe",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/rafael-luiz/profil/spieler/738409"
+ },
+ "731714": {
+  "joined": "2026-06-26",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/iranilson/profil/spieler/731714"
+ },
+ "616356": {
+  "joined": "2026-07-30",
+  "move": {
+   "from_club": "EC São Luiz",
+   "date": "2026-07-30",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/guilherme-escuro/profil/spieler/616356"
+ },
+ "740493": {
+  "joined": "2026-01-01",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/geilson/profil/spieler/740493"
+ },
+ "1082528": {
+  "joined": "2025-04-16",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/cauari/profil/spieler/1082528"
+ },
+ "341120": {
+  "joined": "2026-01-27",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/marcos-calazans/profil/spieler/341120"
+ },
+ "1083218": {
+  "joined": "2025-02-05",
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-silva/profil/spieler/1083218"
+ },
+ "977722": {
+  "joined": "2026-09-04",
+  "move": {
+   "from_club": "Maranhão AC",
+   "date": "2026-09-04",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/tiburcio/profil/spieler/977722"
+ },
+ "375688": {
+  "joined": "2026-08-03",
+  "move": {
+   "from_club": "Amazonas FC",
+   "date": "2026-08-03",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/leo-coelho/profil/spieler/375688"
+ },
+ "901160": {
+  "joined": "2026-09-07",
+  "move": {
+   "from_club": "Maranhão AC",
+   "date": "2026-09-07",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/keven/profil/spieler/901160"
+ },
+ "54996": {
+  "joined": null,
+  "move": null,
+  "profile_url": "https://www.transfermarkt.com.br/joao-victor/profil/spieler/54996"
+ },
+ "1083883": {
+  "joined": "2025-07-01",
+  "move": {
+   "from_club": null,
+   "date": "2026-09-02",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/matheus-juliao/profil/spieler/1083883"
+ },
+ "142403": {
+  "joined": "2026-09-29",
+  "move": {
+   "from_club": "Sem clube",
+   "date": "2026-09-29",
+   "fee": "-",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/ignacio-panzariello/profil/spieler/142403"
+ },
+ "767623": {
+  "joined": "2023-01-01",
+  "move": {
+   "from_club": null,
+   "date": "2026-09-11",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/gaspar/profil/spieler/767623"
+ },
+ "982551": {
+  "joined": "2026-08-26",
+  "move": {
+   "from_club": "Ferroviária",
+   "date": "2026-08-26",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/allison/profil/spieler/982551"
+ },
+ "870487": {
+  "joined": "2026-07-09",
+  "move": {
+   "from_club": "Figueirense FC",
+   "date": "2026-07-09",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "profile_url": "https://www.transfermarkt.com.br/lucas-alves/profil/spieler/870487"
+ }
+}

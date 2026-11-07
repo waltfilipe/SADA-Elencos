@@ -1,0 +1,3849 @@
+/* ==========================================================================
+   Scout dossier — design system for the position pages
+   ========================================================================== */
+
+.scout-shell {
+  display: block;
+  min-height: 100vh;
+  background: #0d1b2a;
+}
+
+.scout-root {
+  --bg: #0d1b2a;
+  --surface: #0d1b2a;
+  --surface-2: #0d1b2a;
+  --surface-3: #0d1b2a;
+  --line: rgba(186, 204, 224, 0.16);
+  --line-2: rgba(186, 204, 224, 0.28);
+  --text: #e8eef6;
+  --text-2: #c5d0de;
+  --text-3: #93a0b3;
+  --accent: #1be7ff;
+
+  --radius-lg: 16px;
+  --radius: 12px;
+  --radius-sm: 8px;
+
+  --tier-color: #c5d0de;
+  --tier-soft: rgba(186, 204, 224, 0.1);
+  --tier-border: rgba(186, 204, 224, 0.24);
+  --tier-glow: rgba(0, 0, 0, 0.2);
+
+  min-height: 100vh;
+  color: var(--text);
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  background:
+    radial-gradient(1100px 520px at 8% -8%, rgba(27, 231, 255, 0.08), transparent 62%),
+    radial-gradient(900px 460px at 98% -4%, rgba(137, 128, 245, 0.08), transparent 58%),
+    var(--bg);
+}
+
+.scout-root h1,
+.scout-root h2,
+.scout-root h3 {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.scout-root ::selection {
+  background: rgba(27, 231, 255, 0.24);
+}
+
+/* ── Profile accent tones ────────────────────────────────────────────────── */
+
+.tone-combativo,
+.profile-combativo { --tone: #fe4a49; }
+.tone-defensor-area,
+.profile-defensor-area { --tone: #1be7ff; }
+.tone-construtor,
+.profile-construtor { --tone: #31e981; }
+.tone-posicional,
+.profile-posicional { --tone: #1be7ff; }
+.tone-defensivo,
+.profile-defensivo { --tone: #1be7ff; }
+.tone-vertical,
+.profile-vertical { --tone: #8980f5; }
+.tone-ofensivo,
+.profile-ofensivo { --tone: #fe4a49; }
+.tone-contencao,
+.profile-contencao { --tone: #1be7ff; }
+.tone-boxtobox,
+.profile-boxtobox { --tone: #fed766; }
+.tone-criador,
+.profile-criador { --tone: #8980f5; }
+.tone-meia-ponta,
+.profile-meia-ponta { --tone: #8980f5; }
+.tone-armador,
+.profile-armador { --tone: #31e981; }
+.tone-finalizador,
+.profile-finalizador { --tone: #fe4a49; }
+.tone-alvo,
+.profile-alvo { --tone: #fed766; }
+.tone-movel,
+.profile-movel { --tone: #1be7ff; }
+.tone-hibrido,
+.profile-hibrido { --tone: #8980f5; }
+.tone-hibrido-construtor,
+.profile-hibrido-construtor { --tone: #31e981; }
+.tone-hibrido-defensivo,
+.profile-hibrido-defensivo { --tone: #1be7ff; }
+
+/* ── Top bar ─────────────────────────────────────────────────────────────── */
+
+.scout-topbar-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.scout-topbar {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  height: auto;
+  min-height: 76px;
+  flex-wrap: wrap;
+  row-gap: 0.45rem;
+  padding: 0.45rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+  background: rgba(13, 27, 42, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.scout-topbar-compact {
+  min-height: 64px;
+  flex-wrap: nowrap;
+}
+
+.scout-topbar-compact .topbar-links-primary,
+.scout-topbar-compact .topbar-links-squad {
+  gap: 0.15rem;
+  padding: 0.22rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.scout-topbar-compact .topbar-links-primary {
+  margin-left: auto;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.scout-topbar-compact .topbar-links-squad {
+  flex-shrink: 0;
+  border-color: rgba(250, 204, 21, 0.3);
+}
+
+.scout-topbar-compact .topbar-links-primary a,
+.scout-topbar-compact .topbar-links-squad a {
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.84rem;
+}
+
+.topbar-links-squad a.active {
+  color: #0d1b2a;
+  font-weight: 650;
+  background: var(--gold);
+}
+
+.topbar-link-muted {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Chip de contexto: competição + temporada sempre visível no canto do topbar. */
+.topbar-context {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  align-self: center;
+  margin-left: 0.6rem;
+  padding: 0.28rem 0.55rem 0.28rem 0.34rem;
+  border-radius: 12px;
+  border: 1px solid rgba(56, 189, 248, 0.38);
+  background: rgba(8, 51, 68, 0.42);
+  white-space: nowrap;
+}
+
+.topbar-context-arrow {
+  display: grid;
+  place-items: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #67e8f9;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.topbar-context-arrow:hover {
+  background: rgba(56, 189, 248, 0.18);
+}
+
+.topbar-context-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 80;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  border-radius: 12px;
+  border: 1px solid rgba(56, 189, 248, 0.32);
+  background: rgba(6, 14, 24, 0.97);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5);
+}
+
+.topbar-context-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.34rem 0.5rem;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.topbar-context-menu-item:hover {
+  background: rgba(56, 189, 248, 0.12);
+}
+
+.topbar-context-menu-item .topbar-context-logo,
+.topbar-context-menu-item .topbar-context-brand {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  font-size: 0.56rem;
+}
+
+.topbar-context-menu-season {
+  margin-left: auto;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #67e8f9;
+  opacity: 0.85;
+}
+
+.topbar-context-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.topbar-context-brand {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: rgba(56, 189, 248, 0.16);
+  color: #7dd3fc;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.topbar-context-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.topbar-context-name {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  letter-spacing: 0.01em;
+}
+
+.topbar-context-season {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #67e8f9;
+}
+
+.topbar-context-archive {
+  border-color: rgba(245, 158, 11, 0.55);
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.topbar-context-archive .topbar-context-season {
+  color: #fcd34d;
+}
+
+.topbar-context-archive .topbar-context-brand {
+  background: rgba(245, 158, 11, 0.16);
+  color: #fcd34d;
+}
+
+.scout-subnav {
+  display: flex;
+  justify-content: center;
+  padding: 0.45rem 1.25rem 0.55rem;
+  border-bottom: 1px solid var(--line);
+  background: rgba(13, 27, 42, 0.96);
+  overflow-x: auto;
+}
+
+.scout-subnav-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 1.25rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.season-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.season-switcher-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.season-switcher-tabs {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.15rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.season-switcher-tabs a {
+  border-radius: 999px;
+  padding: 0.28rem 0.62rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.season-switcher-tabs a.is-active {
+  background: var(--accent, #3d8bfd);
+  color: #fff;
+}
+
+.hub-season-picker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.hub-season-picker-label,
+.player-season-slicer-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.hub-season-picker-tabs,
+.player-season-slicer-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.15rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.hub-season-picker-tabs button,
+.player-season-slicer-tabs button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.32rem 0.72rem;
+  font-size: 0.82rem;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.hub-season-picker-tabs button.is-active,
+.player-season-slicer-tabs button.is-active {
+  background: var(--accent, #3d8bfd);
+  color: #fff;
+}
+
+.hub-page-archive {
+  box-shadow: inset 0 4px 0 #f59e0b;
+}
+
+.hub-archive-hint {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0 0 0.85rem;
+  max-width: 52rem;
+}
+
+.profile-view-shell-archive-ficha {
+  border-left: 4px solid #f59e0b;
+  padding-left: 0.85rem;
+  margin-left: -0.85rem;
+}
+
+.profile-view-shell-archive-hub {
+  outline: 1px dashed rgba(245, 158, 11, 0.45);
+  outline-offset: 6px;
+  border-radius: 12px;
+  padding: 0.35rem;
+}
+
+.profile-archive-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0 0 0.65rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  font-size: 0.84rem;
+  color: #fcd34d;
+}
+
+.profile-archive-back {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: auto;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(245, 158, 11, 0.55);
+  background: rgba(245, 158, 11, 0.14);
+  color: #fde68a;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.profile-archive-back:hover {
+  background: rgba(245, 158, 11, 0.26);
+  border-color: rgba(251, 191, 36, 0.8);
+  color: #fef3c7;
+}
+
+.player-season-slicer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.player-season-slicer-loading {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.player-season-slicer-inline {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.player-season-slicer-inline .player-season-slicer-tabs button {
+  padding: 0.28rem 0.62rem;
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+
+.player-season-slicer-archive-active .player-season-slicer-tabs {
+  background: rgba(245, 158, 11, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(245, 158, 11, 0.45);
+}
+
+.player-season-slicer-archive-active .player-season-slicer-tabs button.is-active {
+  background: #f59e0b;
+  color: #1a1205;
+}
+
+.zag-v2-hub-archive .zag-v2-frame {
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  box-shadow: inset 3px 0 0 #f59e0b;
+}
+
+.zag-v2-archive-notice {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  color: #fcd34d;
+}
+
+.player-report-archive-picks {
+  padding: 0.5rem 0.65rem 0.35rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.player-report-archive-picks-title {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.player-report-archive-pick {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+.player-report-archive-tag {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.2);
+  color: #fcd34d;
+  font-size: 0.75rem;
+}
+
+.scout-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.scout-header-logo {
+  display: block;
+  width: auto;
+  max-width: min(220px, 42vw);
+  height: auto;
+  object-fit: contain;
+}
+
+.scout-header-logo-stacked {
+  max-width: min(132px, 34vw);
+  max-height: 40px;
+  object-position: left center;
+}
+
+.sc-brand-mark {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #0d1b2a;
+  background: #1be7ff;
+  box-shadow: 0 4px 14px rgba(49, 233, 129, 0.24);
+}
+
+.sc-brand-copy {
+  display: grid;
+  line-height: 1.25;
+}
+
+.sc-brand-copy strong {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.sc-brand-copy em {
+  font-style: normal;
+  font-size: 0.68rem;
+  color: var(--text-3);
+}
+
+.position-tabs {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 10px;
+  background: rgba(27, 231, 255, 0.035);
+  border: 1px solid var(--line);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.position-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.position-tabs a {
+  padding: 0.42rem 0.8rem;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  color: var(--text-2);
+  white-space: nowrap;
+  transition: background 0.16s ease, color 0.16s ease;
+}
+
+.position-tabs a:hover {
+  color: var(--text);
+  background: rgba(27, 231, 255, 0.05);
+}
+
+.position-tabs a.active {
+  color: #0d1b2a;
+  font-weight: 600;
+  background: #1be7ff;
+}
+
+.position-tabs .tab-short {
+  display: none;
+}
+
+.topbar-links {
+  display: flex;
+  gap: 2px;
+  margin-left: auto;
+  padding: 3px;
+  border-radius: 999px;
+  background: rgba(27, 231, 255, 0.035);
+  border: 1px solid var(--line);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.topbar-links::-webkit-scrollbar {
+  display: none;
+}
+
+.topbar-links a {
+  flex-shrink: 0;
+  padding: 0.38rem 0.72rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  color: var(--text-2);
+  transition: background 0.16s ease, color 0.16s ease;
+}
+
+.topbar-links a:hover {
+  color: var(--text);
+  background: rgba(27, 231, 255, 0.05);
+}
+
+.topbar-links a.active {
+  color: #0d1b2a;
+  font-weight: 650;
+  background: #1be7ff;
+}
+
+.topbar-links a:focus-visible,
+.position-tabs a:focus-visible,
+.scout-brand:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid rgba(27, 231, 255, 0.9);
+  outline-offset: 2px;
+}
+
+/* ── Page frame ──────────────────────────────────────────────────────────── */
+
+.scout-body {
+  display: grid;
+  grid-template-columns: 316px minmax(0, 1fr);
+  align-items: start;
+}
+
+.scout-empty {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--text-2);
+}
+
+.route-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  min-height: 42vh;
+  color: var(--text-2);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.route-loading-mark {
+  width: min(320px, 84vw);
+  height: auto;
+}
+
+.route-loading-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.92rem;
+}
+
+.route-loading i {
+  color: var(--accent);
+}
+
+.global-loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: rgba(8, 14, 22, 0.55);
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+}
+
+.global-loading-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1.25rem 1.5rem 1.35rem;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(13, 27, 42, 0.92);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45);
+}
+
+.global-loading-logo {
+  width: auto;
+  height: 56px;
+  opacity: 0.95;
+}
+
+.global-loading-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-2);
+}
+
+.global-loading-spin {
+  color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .global-loading-spin {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .global-loading-spin {
+    animation: global-loading-spin 0.85s linear infinite;
+  }
+}
+
+@keyframes global-loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Roster rail ─────────────────────────────────────────────────────────── */
+
+.roster {
+  border-right: 1px solid var(--line);
+  background: rgba(13, 27, 42, 0.6);
+}
+
+.roster-inner {
+  position: sticky;
+  top: 76px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  height: calc(100vh - 76px);
+  padding: 1rem 0.85rem 0.5rem;
+}
+
+.roster-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.roster-search svg {
+  position: absolute;
+  left: 0.65rem;
+  width: 15px;
+  height: 15px;
+  color: var(--text-3);
+  pointer-events: none;
+}
+
+.roster-search input {
+  width: 100%;
+  padding: 0.58rem 2rem 0.58rem 2.1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 0.84rem;
+  outline: none;
+  transition: border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.roster-search input::placeholder {
+  color: var(--text-3);
+}
+
+.roster-search input:focus {
+  border-color: rgba(27, 231, 255, 0.45);
+  box-shadow: 0 0 0 3px rgba(27, 231, 255, 0.1);
+}
+
+.roster-search button {
+  position: absolute;
+  right: 0.45rem;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--text-3);
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.roster-search button:hover {
+  color: var(--text);
+  background: rgba(27, 231, 255, 0.06);
+}
+
+.roster-sort {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  padding: 3px;
+  border-radius: var(--radius-sm);
+  background: rgba(27, 231, 255, 0.035);
+  border: 1px solid var(--line);
+}
+
+.roster-sort button {
+  padding: 0.34rem 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-3);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.16s ease, color 0.16s ease;
+}
+
+.roster-sort button:hover {
+  color: var(--text-2);
+}
+
+.roster-sort button.active {
+  color: var(--text);
+  background: var(--surface-3);
+  box-shadow: inset 0 0 0 1px var(--line-2);
+}
+
+.roster-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.filter-chip {
+  padding: 0.24rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-2);
+  background: transparent;
+  color: var(--text-3);
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: color 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+.filter-chip:hover {
+  color: var(--text-2);
+  border-color: var(--tone, var(--line-2));
+}
+
+.filter-chip.active {
+  color: var(--tone);
+  border-color: color-mix(in srgb, var(--tone) 45%, transparent);
+  background: color-mix(in srgb, var(--tone) 12%, transparent);
+}
+
+.roster-count {
+  margin: 0.1rem 0 0;
+  font-size: 0.72rem;
+  color: var(--text-3);
+}
+
+.roster-count strong {
+  color: var(--text-2);
+  font-weight: 600;
+}
+
+.roster-list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0 -0.3rem;
+  padding: 0 0.3rem 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: #0d1b2a transparent;
+}
+
+.roster-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.roster-list::-webkit-scrollbar-thumb {
+  background: #0d1b2a;
+  border-radius: 99px;
+}
+
+.roster-item {
+  display: grid;
+  grid-template-columns: 18px 40px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.48rem 0.5rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.14s ease, border-color 0.14s ease;
+}
+
+.roster-item:hover {
+  background: rgba(27, 231, 255, 0.035);
+}
+
+.roster-item.active {
+  background: var(--surface-3);
+  border-color: var(--line-2);
+}
+
+.roster-pos {
+  font-size: 0.68rem;
+  color: var(--text-3);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.roster-item.active .roster-pos {
+  color: var(--tier-color);
+}
+
+.roster-avatar {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface-3);
+  border: 1px solid var(--line);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-3);
+  flex-shrink: 0;
+}
+
+.roster-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 28%;
+  transform: scale(0.78);
+  transform-origin: 50% 28%;
+}
+
+.roster-info {
+  display: grid;
+  min-width: 0;
+  line-height: 1.3;
+}
+
+.roster-info strong {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.roster-info em {
+  font-style: normal;
+  font-size: 0.68rem;
+  color: var(--text-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.roster-club {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.roster-rating {
+  padding: 0.18rem 0.46rem;
+  border-radius: 6px;
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--rating-accent, var(--tier-color));
+  background: color-mix(in srgb, var(--rating-accent, var(--tier-color)) 16%, transparent);
+  border: 1px solid color-mix(in srgb, var(--rating-accent, var(--tier-color)) 32%, transparent);
+  align-self: center;
+}
+
+.roster-empty {
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+/* ── Dossier canvas ──────────────────────────────────────────────────────── */
+
+.dossier {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1360px;
+  padding: 1.35rem 1.75rem 3.5rem;
+}
+
+.sc-panel-head-compact {
+  margin-bottom: 0.85rem;
+}
+
+/* ── Panels ──────────────────────────────────────────────────────────────── */
+
+.sc-panel {
+  padding: 1.15rem 1.25rem 1.3rem;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.sc-panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.05rem;
+}
+
+.sc-eyebrow {
+  margin: 0;
+  font-size: 0.66rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--text-3);
+}
+
+.sc-panel-head h2 {
+  margin-top: 0.28rem;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.sc-note {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--text-3);
+  text-align: right;
+}
+
+/* ── Dossier header card ─────────────────────────────────────────────────── */
+
+.dossier-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas:
+    "portrait identity dial"
+    "bar bar bar";
+  gap: 1.35rem 1.6rem;
+  padding: 1.4rem 1.5rem 0;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(620px 220px at 0% 0%, rgba(27, 231, 255, 0.05), transparent 70%),
+    linear-gradient(180deg, #0d1b2a 0%, #0d1b2a 100%);
+}
+
+.dossier-portrait {
+  grid-area: portrait;
+  display: grid;
+  place-items: center;
+  width: 116px;
+  height: 146px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: linear-gradient(180deg, #0d1b2a, #0d1b2a);
+  border: 1px solid var(--line-2);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.32);
+}
+
+.dossier-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.portrait-fallback {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--text-3);
+}
+
+.dossier-identity {
+  grid-area: identity;
+  min-width: 0;
+  align-self: center;
+}
+
+.dossier-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 0.4rem;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-3);
+}
+
+.dossier-eyebrow i {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--line-2);
+}
+
+.profile-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--tone);
+  background: color-mix(in srgb, var(--tone) 13%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tone) 32%, transparent);
+}
+
+.profile-lean {
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--tone) 72%, var(--text-2));
+  opacity: 0.92;
+}
+
+.cluster-defensor { --tone: #1be7ff; }
+.cluster-defensivo { --tone: #1be7ff; }
+.cluster-defensor-area { --tone: #1be7ff; }
+.cluster-construtor { --tone: #31e981; }
+.cluster-ofensivo { --tone: #fe4a49; }
+.cluster-combativo { --tone: #fed766; }
+.cluster-rebatedor { --tone: #1be7ff; }
+.cluster-agressivo { --tone: #fed766; }
+.cluster-hibrido { --tone: #8980f5; }
+.cluster-contencao { --tone: #1be7ff; }
+.cluster-boxtobox { --tone: #fed766; }
+.cluster-driblador { --tone: #8980f5; }
+.cluster-meia-ponta { --tone: #8980f5; }
+.cluster-ruptura { --tone: #8980f5; }
+.cluster-finalizador { --tone: #fe4a49; }
+.cluster-alvo { --tone: #fed766; }
+.cluster-movel { --tone: #1be7ff; }
+
+.cluster-tag {
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--line-2);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cluster-tag-macro,
+.cluster-tag-badge,
+.cluster-tag-micro,
+.cluster-tag-hybrid {
+  padding: 0.2rem 0.45rem;
+  color: var(--tone);
+  background: color-mix(in srgb, var(--tone) 12%, transparent);
+}
+
+.cluster-tag-badge {
+  border-left: 1px solid color-mix(in srgb, var(--tone) 28%, transparent);
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-weight: 600;
+}
+
+.cluster-tag-hybrid {
+  border-left: 1px solid color-mix(in srgb, var(--tone) 28%, transparent);
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-weight: 600;
+  --tone: #8980f5;
+}
+
+.cluster-tag-micro {
+  border-left: 1px solid color-mix(in srgb, var(--tone) 28%, transparent);
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-weight: 600;
+}
+
+.cluster-hierarchy {
+  display: grid;
+  gap: 0.85rem;
+  padding: 0.95rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: rgba(13, 27, 42, 0.55);
+}
+
+.cluster-hierarchy-head {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.cluster-path {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.cluster-path-macro,
+.cluster-path-micro {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tone);
+}
+
+.cluster-path-micro {
+  color: var(--text);
+}
+
+.cluster-path-chevron {
+  width: 0.85rem;
+  height: 0.85rem;
+  color: var(--text-3);
+}
+
+.cluster-path-desc {
+  display: none;
+}
+
+.cluster-badge-hierarchical {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  color: #31e981;
+  background: color-mix(in srgb, #31e981 18%, transparent);
+  border: 1px solid color-mix(in srgb, #31e981 35%, transparent);
+}
+
+.cluster-hybrid-badge {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  color: #8980f5;
+  background: color-mix(in srgb, #8980f5 18%, transparent);
+  border: 1px solid color-mix(in srgb, #8980f5 35%, transparent);
+}
+
+.cluster-share-caption {
+  margin: 0;
+  font-size: 0.68rem;
+  color: var(--text-3);
+}
+
+.cluster-share-bars {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.cluster-share-row {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr 2.2rem;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.cluster-share-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tone);
+}
+
+.cluster-share-track {
+  height: 0.45rem;
+  border-radius: 999px;
+  background: rgba(27, 231, 255, 0.06);
+  overflow: hidden;
+}
+
+.cluster-share-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: color-mix(in srgb, var(--tone) 72%, transparent);
+}
+
+.cluster-share-value {
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-2);
+  text-align: right;
+}
+
+.cluster-share-row.active .cluster-share-label,
+.cluster-share-row.active .cluster-share-value {
+  color: var(--text);
+}
+
+.cluster-map-archetypes {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cluster-map-archetype {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.65rem;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--tone) 22%, var(--line));
+  background: color-mix(in srgb, var(--tone) 4%, transparent);
+  text-align: center;
+}
+
+.cluster-map-archetype-name {
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tone);
+}
+
+.cluster-map-archetype strong {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.cluster-map-archetype em {
+  font-style: normal;
+  font-size: 0.68rem;
+  color: var(--text-3);
+}
+
+.cluster-map-archetype.active {
+  border-color: color-mix(in srgb, var(--tone) 45%, transparent);
+  background: color-mix(in srgb, var(--tone) 12%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--tone) 18%, transparent);
+}
+
+.cluster-pool-hybrid-note {
+  grid-column: 1 / -1;
+  margin: 0.15rem 0 0;
+  font-size: 0.68rem;
+  color: var(--text-3);
+  text-align: center;
+}
+
+.cluster-map {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.cluster-map-branch {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.65rem;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--tone) 22%, var(--line));
+  background: color-mix(in srgb, var(--tone) 4%, transparent);
+}
+
+.cluster-map-macro {
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--tone);
+}
+
+.cluster-map-leaves {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.cluster-map-leaf {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.45rem;
+  align-items: center;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: rgba(27, 231, 255, 0.02);
+  color: var(--text-2);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.cluster-map-leaf strong {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--text-2);
+}
+
+.cluster-map-leaf em {
+  font-style: normal;
+  font-size: 0.68rem;
+  color: var(--text-3);
+}
+
+.cluster-map-code {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--tone);
+}
+
+.cluster-map-leaf.active {
+  border-color: color-mix(in srgb, var(--tone) 45%, transparent);
+  background: color-mix(in srgb, var(--tone) 12%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--tone) 18%, transparent);
+}
+
+.cluster-map-leaf.active strong {
+  color: var(--text);
+}
+
+.cluster-filter-groups {
+  display: grid;
+  gap: 0.45rem;
+  width: 100%;
+}
+
+.cluster-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.cluster-filter-row-micro .filter-chip {
+  min-width: 2.1rem;
+  justify-content: center;
+  padding-inline: 0.45rem;
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.dossier-identity h1 {
+  font-size: clamp(1.7rem, 2.6vw, 2.3rem);
+  line-height: 1.08;
+  color: var(--text);
+}
+
+.dossier-club {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+  color: var(--text-2);
+}
+
+.dossier-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+  margin: 1rem 0 0;
+}
+
+.dossier-facts div {
+  display: grid;
+  gap: 0.12rem;
+}
+
+.dossier-facts dt {
+  font-size: 0.64rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-3);
+}
+
+.dossier-facts dd {
+  margin: 0;
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.dossier-facts dd em {
+  margin-left: 0.2rem;
+  font-style: normal;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--text-3);
+}
+
+.dossier-dial {
+  grid-area: dial;
+  align-self: center;
+  min-width: 0;
+}
+
+/* Dossier rating cluster (geral + eixos) */
+
+.dossier-ratings {
+  display: flex;
+  align-items: stretch;
+  gap: 0.65rem;
+}
+
+.dossier-rating-label {
+  font-size: 0.62rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-3);
+}
+
+.dossier-rating-hero {
+  display: grid;
+  align-content: center;
+  gap: 0.35rem;
+  min-width: 118px;
+  padding: 0.85rem 0.95rem 0.9rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-2);
+  background:
+    radial-gradient(120px 80px at 100% 0%, rgba(27, 231, 255, 0.04), transparent 70%),
+    var(--surface-2);
+  box-shadow: inset 0 1px 0 rgba(27, 231, 255, 0.04);
+}
+
+.dossier-rating-hero .dossier-rating-value {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 2.35rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--rating-accent, var(--tier-color));
+  font-variant-numeric: tabular-nums;
+}
+
+.dossier-rating-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.68rem;
+  color: var(--text-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.dossier-rating-meta i {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--line-2);
+}
+
+.dossier-rating-meter {
+  margin-top: 0.15rem;
+}
+
+.dossier-rating-cluster {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  padding: 0.55rem;
+  border-radius: calc(var(--radius) + 2px);
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(27, 231, 255, 0.025) 0%, transparent 100%),
+    rgba(13, 27, 42, 0.35);
+  box-shadow: inset 0 1px 0 rgba(27, 231, 255, 0.03);
+}
+
+.dossier-rating-axis {
+  display: grid;
+  gap: 0.28rem;
+  min-width: 96px;
+  padding: 0.65rem 0.72rem 0.7rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.dossier-rating-axis.is-top5 {
+  box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.12);
+}
+
+.dossier-rating-axis-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
+}
+
+.dossier-rating-axis-head em {
+  font-style: normal;
+  font-size: 0.62rem;
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.dossier-rating-axis-value {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--rating-accent, var(--tier-color));
+  font-variant-numeric: tabular-nums;
+}
+
+/* Rating dial (legacy — compare/other views may reuse) */
+
+.rating-dial {
+  position: relative;
+  width: 156px;
+}
+
+.dial-svg {
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+
+.dial-track {
+  fill: none;
+  stroke: rgba(27, 231, 255, 0.1);
+}
+
+.dial-reference {
+  stroke: rgba(233, 240, 248, 0.62);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+
+.dial-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55.8%;
+  transform: translateY(-52%);
+  text-align: center;
+  pointer-events: none;
+}
+
+.dial-center strong {
+  display: block;
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.dial-center span {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.63rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--text-3);
+}
+
+.dial-foot {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-top: -0.4rem;
+}
+
+.dial-rank {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.dial-rank em {
+  margin-left: 0.25rem;
+  font-style: normal;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--text-3);
+}
+
+.dial-pct {
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+/* Header bottom bar */
+
+.dossier-bar {
+  grid-area: bar;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem 2rem;
+  margin: 0 -1.5rem;
+  padding: 0.95rem 1.5rem;
+  border-top: 1px solid var(--line);
+  background: rgba(6, 9, 14, 0.42);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.dossier-ratings-solo {
+  justify-content: flex-end;
+}
+
+.dossier-ratings-solo .dossier-rating-hero {
+  min-width: 0;
+}
+
+.dossier-rating-hero-modern {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid color-mix(in srgb, var(--rating-accent, var(--tier-color)) 28%, var(--line));
+  background:
+    radial-gradient(120px 90px at 100% 0%, color-mix(in srgb, var(--rating-accent, var(--tier-color)) 14%, transparent), transparent 70%),
+    rgba(13, 27, 42, 0.55);
+  box-shadow: inset 0 1px 0 rgba(27, 231, 255, 0.04);
+}
+
+.dossier-rating-ring {
+  position: relative;
+  width: 5.4rem;
+  height: 5.4rem;
+  flex-shrink: 0;
+}
+
+.dossier-rating-ring svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.dossier-rating-ring-track {
+  fill: none;
+  stroke: rgba(27, 231, 255, 0.08);
+  stroke-width: 7;
+}
+
+.dossier-rating-ring-fill {
+  fill: none;
+  stroke: var(--rating-accent, var(--tier-color));
+  stroke-width: 7;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 6px var(--rating-glow, transparent));
+}
+
+.dossier-rating-ring-center {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 0.05rem;
+}
+
+.dossier-rating-hero-modern .dossier-rating-value {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--rating-accent, var(--tier-color));
+  font-variant-numeric: tabular-nums;
+}
+
+.dossier-rating-hero-modern .dossier-rating-label {
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+}
+
+.dossier-rating-side {
+  display: grid;
+  gap: 0.55rem;
+  min-width: 0;
+  flex: 1;
+}
+
+.dossier-rating-rank {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.dossier-rating-gradient .dossier-rating-ring-fill {
+  stroke: var(--rating-accent, var(--tier-color));
+}
+
+.dossier-rating-gradient .dossier-rating-value {
+  color: var(--rating-accent, var(--tier-color));
+}
+
+.bar-item-minutes {
+  min-width: 8.5rem;
+}
+
+.dossier-bar-minutes-track {
+  height: 4px;
+  margin-top: 0.35rem;
+  border-radius: 999px;
+  background: rgba(27, 231, 255, 0.08);
+  overflow: hidden;
+}
+
+.dossier-bar-minutes-track i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(27, 231, 255, 0.45), var(--accent));
+}
+
+.bar-minutes-pct {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.62rem;
+  font-style: normal;
+  color: var(--text-3);
+}
+
+.dossier-minutes-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.68rem;
+  color: var(--text-3);
+}
+
+.dossier-minutes-head strong {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.dossier-minutes-track {
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(27, 231, 255, 0.14);
+  overflow: hidden;
+}
+
+.dossier-minutes-track i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(27, 231, 255, 0.45), var(--accent));
+}
+
+.dossier-profile-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  align-items: stretch;
+}
+
+.dossier-profile-col {
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+}
+
+.dossier-profile-col-bars {
+  gap: 0.65rem;
+}
+
+.archetype-radar {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.75rem 0.85rem 0.8rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(360px 180px at 50% 0%, rgba(27, 231, 255, 0.05), transparent 72%),
+    linear-gradient(180deg, #0d1b2a 0%, #0d1b2a 100%);
+}
+
+.archetype-radar-svg {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+  display: block;
+}
+
+.archetype-radar-grid {
+  stroke: rgba(27, 231, 255, 0.08);
+  stroke-width: 1;
+}
+
+.archetype-radar-spoke {
+  stroke: rgba(27, 231, 255, 0.1);
+  stroke-width: 1;
+}
+
+.archetype-radar-fill {
+  fill: rgba(27, 231, 255, 0.16);
+  stroke: rgba(27, 231, 255, 0.72);
+  stroke-width: 1.6;
+  filter: drop-shadow(0 0 10px rgba(27, 231, 255, 0.18));
+}
+
+.archetype-radar-dot {
+  fill: var(--tone);
+  stroke: rgba(27, 231, 255, 0.92);
+  stroke-width: 1.2;
+}
+
+.archetype-radar-label {
+  font-size: 7px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  fill: var(--tone);
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+}
+
+.archetype-radar-legend {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.archetype-radar-legend li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.08rem;
+  padding: 0.35rem 0.45rem;
+  border-radius: 8px;
+  border: 1px solid rgba(27, 231, 255, 0.05);
+  background: rgba(27, 231, 255, 0.02);
+  font-size: 0.62rem;
+  color: var(--text-3);
+}
+
+.archetype-radar-legend li.active {
+  border-color: rgba(27, 231, 255, 0.28);
+  background: rgba(27, 231, 255, 0.06);
+}
+
+.archetype-radar-legend strong {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.82rem;
+  color: var(--text);
+}
+
+.aspect-group-def {
+  margin-top: 0;
+}
+
+.archetype-mix-card {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0.85rem 0.95rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(420px 160px at 0% 0%, rgba(27, 231, 255, 0.06), transparent 70%),
+    linear-gradient(180deg, #0d1b2a 0%, #0d1b2a 100%);
+  height: 100%;
+  min-height: 0;
+}
+
+.dossier-profile-card-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  padding: 0.85rem 0.95rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(420px 160px at 100% 0%, rgba(27, 231, 255, 0.04), transparent 70%),
+    linear-gradient(180deg, #0d1b2a 0%, #0d1b2a 100%);
+}
+
+.dossier-profile-card-panel > header {
+  padding-bottom: 0.45rem;
+  margin-bottom: 0.35rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.dossier-profile-card-panel > header h3 {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.dossier-profile-card-panel .constr-share-stack {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+.archetype-mix-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.archetype-mix-head h3 {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.archetype-mix-primary {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tone);
+}
+
+.archetype-mix-desc {
+  display: none;
+}
+
+.archetype-mix-rows {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.archetype-mix-item {
+  list-style: none;
+}
+
+.archetype-tip-wrap.is-block {
+  display: block;
+  width: 100%;
+}
+
+.archetype-tip-wrap.is-block .archetype-tip {
+  left: 0.75rem;
+  right: auto;
+  top: auto;
+  bottom: calc(100% + 0.45rem);
+  transform: translateY(4px);
+  min-width: 200px;
+}
+
+.archetype-tip-wrap.is-block:hover .archetype-tip,
+.archetype-tip-wrap.is-block:focus-within .archetype-tip {
+  transform: translateY(0);
+}
+
+.archetype-mix-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 0.55rem;
+  align-items: center;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: rgba(27, 231, 255, 0.02);
+  cursor: default;
+}
+
+.archetype-mix-row.active {
+  border-color: color-mix(in srgb, var(--tone) 38%, transparent);
+  background: color-mix(in srgb, var(--tone) 10%, transparent);
+}
+
+.archetype-mix-name {
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tone);
+}
+
+.archetype-mix-share {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.archetype-mix-rating {
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+
+.archetype-mix-rating strong {
+  margin-left: 0.2rem;
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--tier-color);
+}
+
+.archetype-tip-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.archetype-tip-wrap .archetype-tip {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 0.45rem);
+  transform: translateX(-50%) translateY(4px);
+  z-index: 30;
+  min-width: 210px;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--tone) 35%, var(--line));
+  background:
+    linear-gradient(180deg, rgba(13, 27, 42, 0.98) 0%, rgba(13, 27, 42, 0.98) 100%);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+}
+
+.archetype-tip-wrap:hover .archetype-tip,
+.archetype-tip-wrap:focus-within .archetype-tip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.archetype-tip-title {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tone);
+}
+
+.archetype-tip-traits {
+  display: grid;
+  gap: 0.28rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.archetype-tip-trait {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  color: var(--text-2);
+}
+
+.archetype-tip-trait.is-up {
+  color: #31e981;
+}
+
+.archetype-tip-trait.is-down {
+  color: #fe4a49;
+}
+
+.archetype-tip-arrow {
+  width: 0.75rem;
+  height: 0.75rem;
+  flex-shrink: 0;
+}
+
+.dossier-profile-card {
+  padding: 0.95rem 1rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(520px 180px at 0% 0%, rgba(49, 233, 129, 0.05), transparent 70%),
+    linear-gradient(180deg, #0d1b2a 0%, #0d1b2a 100%);
+}
+
+.dossier-profile-card .cluster-hierarchy {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.bar-group {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.bar-market {
+  position: relative;
+  padding-right: 2rem;
+}
+
+.bar-market::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -0.15rem;
+  bottom: -0.15rem;
+  width: 1px;
+  background: var(--line);
+}
+
+.bar-item {
+  display: grid;
+  gap: 0.16rem;
+}
+
+.bar-item span {
+  font-size: 0.63rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-3);
+}
+
+.bar-item strong {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.bar-market .bar-item strong {
+  color: #31e981;
+}
+
+/* Minutes played — shared across dossier, compare and filters */
+
+.minutes-stat {
+  display: grid;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.minutes-label {
+  font-size: 0.63rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-3);
+}
+
+.minutes-value {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-weight: 700;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.minutes-meta {
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 0.1rem;
+}
+
+.minutes-pct {
+  font-size: 0.72rem;
+  color: var(--text-2);
+}
+
+.minutes-pct b {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.minutes-track {
+  width: min(100%, 9.5rem);
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(27, 231, 255, 0.16);
+  overflow: hidden;
+}
+
+.minutes-track i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(27, 231, 255, 0.55), var(--accent));
+}
+
+.minutes-stat.is-prominent {
+  padding: 0.55rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid rgba(27, 231, 255, 0.22);
+  background: rgba(27, 231, 255, 0.06);
+}
+
+.minutes-stat.is-prominent .minutes-value {
+  font-size: 1.45rem;
+}
+
+.minutes-stat.is-compact .minutes-value {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.minutes-stat.is-inline {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.minutes-stat.is-inline strong {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.minutes-stat.is-inline em {
+  font-style: normal;
+  font-size: 0.72rem;
+  color: var(--text);
+}
+
+.dossier-bar .minutes-stat.is-prominent {
+  flex: 0 1 auto;
+}
+
+.bar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-left: auto;
+}
+
+.bar-compare {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.36rem 0.7rem;
+  border-radius: 7px;
+  border: 1px solid rgba(27, 231, 255, 0.35);
+  background: rgba(27, 231, 255, 0.08);
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 500;
+  transition: background 0.16s ease, border-color 0.16s ease;
+}
+
+.bar-compare svg {
+  width: 13px;
+  height: 13px;
+}
+
+.bar-compare:hover {
+  background: rgba(27, 231, 255, 0.16);
+  border-color: rgba(27, 231, 255, 0.55);
+}
+
+.bar-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  padding: 0.34rem 0.62rem;
+  border-radius: 7px;
+  border: 1px solid var(--line-2);
+  font-size: 0.74rem;
+  color: var(--text-2);
+  transition: color 0.16s ease, border-color 0.16s ease;
+}
+
+.bar-source svg {
+  width: 10px;
+  height: 10px;
+}
+
+.bar-source:hover {
+  color: var(--accent);
+  border-color: rgba(27, 231, 255, 0.4);
+}
+
+/* ── Profile rating cards ────────────────────────────────────────────────── */
+
+.rating-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+  gap: 0.75rem;
+}
+
+.rating-card-axis {
+  border: 1px solid var(--line);
+}
+
+.rating-card-axis.is-top5 {
+  box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.12);
+}
+
+.rating-card-axis::before {
+  display: none;
+}
+
+.rating-card-rank {
+  font-style: normal;
+  font-size: 0.68rem;
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.rating-card-value-axis {
+  color: var(--rating-accent, var(--text));
+}
+
+.rating-card {
+  position: relative;
+  overflow: hidden;
+  padding: 0.85rem 0.95rem 0.9rem;
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+}
+
+.rating-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  background: var(--tier-color);
+  opacity: 0.85;
+}
+
+.rating-card.is-primary {
+  border-color: var(--tier-border);
+  background:
+    linear-gradient(180deg, var(--tier-soft), transparent 70%),
+    var(--surface-2);
+}
+
+.rating-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  min-height: 18px;
+}
+
+.rating-card-name {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-2);
+}
+
+.rating-card-flag {
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tier-color);
+  background: var(--tier-soft);
+}
+
+.rating-card-body {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.55rem;
+}
+
+.rating-card-value {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--tier-color);
+  font-variant-numeric: tabular-nums;
+}
+
+.rating-card-detail {
+  display: grid;
+  gap: 0.45rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.rating-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.rating-card-foot span {
+  color: var(--text-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.rating-card-foot span i {
+  font-style: normal;
+  color: var(--text-3);
+}
+
+.rating-card-foot em {
+  font-style: normal;
+  color: var(--tier-color);
+}
+
+/* Shared meter */
+
+.meter {
+  height: 5px;
+  border-radius: 99px;
+  background: rgba(27, 231, 255, 0.07);
+  overflow: hidden;
+}
+
+.meter i {
+  display: block;
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--tier-color) 55%, transparent), var(--tier-color));
+  transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.meter-sm {
+  height: 3px;
+}
+
+/* ── Profile DNA ─────────────────────────────────────────────────────────── */
+
+.profile-dna {
+  display: flex;
+  flex-direction: column;
+}
+
+.dna-stack {
+  display: flex;
+  gap: 3px;
+  height: 12px;
+  margin-bottom: 1rem;
+}
+
+.dna-seg {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--tone) 88%, white 12%), var(--tone));
+  transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dna-legend {
+  display: grid;
+  flex: 1;
+  align-content: space-evenly;
+  gap: 0.15rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dna-legend li {
+  display: grid;
+  grid-template-columns: 8px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(27, 231, 255, 0.04);
+}
+
+.dna-legend li:last-child {
+  border-bottom: 0;
+}
+
+.dna-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--tone);
+}
+
+.dna-label {
+  font-size: 0.84rem;
+  color: var(--text-2);
+}
+
+.dna-legend strong {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.dna-summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: auto 0 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+}
+
+.dna-summary strong {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.dna-summary em {
+  font-style: normal;
+  font-size: 0.74rem;
+  color: var(--text-3);
+}
+
+/* ── Skill index ─────────────────────────────────────────────────────────── */
+
+.skill-index {
+  min-height: 0;
+}
+
+.skill-index .skill-rows {
+  flex: 1;
+  align-content: space-between;
+}
+
+.skill-rows {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: minmax(0, 216px) minmax(0, 1fr) 78px;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0.5rem;
+  margin: 0 -0.5rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.16s ease;
+}
+
+.skill-row:hover {
+  background: rgba(27, 231, 255, 0.025);
+}
+
+.skill-label {
+  display: grid;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.skill-label strong {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.skill-label span {
+  font-size: 0.7rem;
+  color: var(--text-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.skill-meter {
+  position: relative;
+}
+
+.skill-track {
+  height: 7px;
+  border-radius: 99px;
+  background: rgba(27, 231, 255, 0.07);
+  overflow: hidden;
+}
+
+.skill-track i {
+  display: block;
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--tier-color) 50%, transparent), var(--tier-color));
+  transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.skill-mid {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1px;
+  height: 15px;
+  transform: translate(-50%, -50%);
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(233, 240, 248, 0.62) 0 2px,
+    transparent 2px 4px
+  );
+  pointer-events: none;
+}
+
+.skill-score {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 0.4rem;
+}
+
+.skill-score strong {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--tier-color);
+  font-variant-numeric: tabular-nums;
+}
+
+.skill-score em {
+  font-style: normal;
+  font-size: 0.66rem;
+  color: var(--text-3);
+}
+
+.skill-foot {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.7rem;
+  color: var(--text-3);
+}
+
+.skill-foot-mark {
+  width: 1px;
+  height: 11px;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(233, 240, 248, 0.5) 0 2px,
+    transparent 2px 4px
+  );
+}
+
+/* ── Aspect matrix ───────────────────────────────────────────────────────── */
+
+.aspect-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.aspect-groups-quad {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1320px) {
+  .aspect-groups-quad {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.aspect-group {
+  padding: 0.95rem 1rem 1.05rem;
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+}
+
+.aspect-group > header {
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.85rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.aspect-group h3 {
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.aspect-group > header p {
+  display: none;
+}
+
+.aspect-group ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0.35rem 0 0;
+  list-style: none;
+}
+
+.aspect-row-expand {
+  border-radius: 10px;
+  border: 1px solid rgba(27, 231, 255, 0.04);
+  background: linear-gradient(180deg, rgba(27, 231, 255, 0.025) 0%, rgba(27, 231, 255, 0.008) 100%);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.aspect-row-expand:hover {
+  border-color: rgba(27, 231, 255, 0.08);
+}
+
+.aspect-row-expand.is-open {
+  border-color: rgba(27, 231, 255, 0.1);
+  background: rgba(27, 231, 255, 0.03);
+}
+
+.aspect-row-expand.has-medal-gold {
+  border-color: rgba(235, 197, 91, 0.38);
+  box-shadow: inset 0 0 0 1px rgba(235, 197, 91, 0.1);
+}
+
+.aspect-row-expand.has-medal-silver {
+  border-color: rgba(197, 202, 211, 0.4);
+  box-shadow: inset 0 0 0 1px rgba(197, 202, 211, 0.1);
+}
+
+.aspect-row-expand.has-medal-bronze {
+  border-color: rgba(214, 143, 108, 0.4);
+  box-shadow: inset 0 0 0 1px rgba(214, 143, 108, 0.1);
+}
+
+.aspect-row-expand.has-medal-gold.is-open {
+  border-color: rgba(235, 197, 91, 0.48);
+}
+
+.aspect-row-expand.has-medal-silver.is-open {
+  border-color: rgba(197, 202, 211, 0.5);
+}
+
+.aspect-row-expand.has-medal-bronze.is-open {
+  border-color: rgba(214, 143, 108, 0.5);
+}
+
+.aspect-row-expand-trigger {
+  padding: 0.58rem 0.68rem;
+  border-radius: 10px;
+}
+
+.aspect-expand-panel {
+  padding: 0 0.62rem 0.62rem;
+}
+
+.aspect-expand-body {
+  display: grid;
+  gap: 0.55rem;
+  padding-top: 0.15rem;
+  border-top: 1px solid rgba(27, 231, 255, 0.05);
+}
+
+.aspect-bar-row {
+  display: grid;
+  gap: 0.28rem;
+}
+
+.aspect-bar-row-muted .aspect-bar-label {
+  color: var(--text-3);
+}
+
+.aspect-bar-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.45rem;
+}
+
+.aspect-bar-label {
+  font-size: 0.72rem;
+  color: var(--text-2);
+  letter-spacing: 0.02em;
+}
+
+.aspect-bar-value {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--tier-color);
+  font-variant-numeric: tabular-nums;
+}
+
+.aspect-row-metric {
+  padding: 0.55rem 0.62rem 0.62rem;
+  border-radius: 10px;
+  border: 1px solid rgba(27, 231, 255, 0.04);
+  background:
+    linear-gradient(180deg, rgba(27, 231, 255, 0.025) 0%, rgba(27, 231, 255, 0.008) 100%);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.aspect-row-metric:hover {
+  border-color: rgba(27, 231, 255, 0.08);
+  background: rgba(27, 231, 255, 0.03);
+}
+
+.aspect-metric-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.65rem;
+  margin-bottom: 0.42rem;
+}
+
+.aspect-metric-copy {
+  display: grid;
+  gap: 0.12rem;
+  min-width: 0;
+}
+
+.aspect-sublabel {
+  font-size: 0.64rem;
+  color: var(--text-3);
+  line-height: 1.25;
+}
+
+.aspect-metric-track {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.aspect-metric-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(27, 231, 255, 0.06);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.22);
+}
+
+.aspect-metric-bar i {
+  box-shadow: 0 0 10px color-mix(in srgb, var(--tier-color) 35%, transparent);
+}
+
+.aspect-metric-pct,
+.aspect-metric-value {
+  min-width: 1.55rem;
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--tier-color);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.aspect-metric-eff,
+.aspect-metric-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+  padding-top: 0.32rem;
+  border-top: 1px solid rgba(27, 231, 255, 0.05);
+}
+
+.aspect-metric-eff-label,
+.aspect-metric-secondary-label {
+  font-size: 0.62rem;
+  color: var(--text-3);
+  letter-spacing: 0.02em;
+}
+
+.aspect-metric-eff-value,
+.aspect-metric-secondary-value {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--tier-color);
+  font-variant-numeric: tabular-nums;
+}
+
+.aspect-row-efficiency .aspect-metric-secondary {
+  margin-top: 0.42rem;
+}
+
+/* ── Construction profile share bars ─────────────────────────────────────── */
+
+.aspect-group-constr {
+  align-self: start;
+}
+
+.aspect-group-constr > header {
+  padding-bottom: 0.45rem;
+  margin-bottom: 0.35rem;
+}
+
+.constr-share-stack {
+  display: grid;
+  gap: 0.85rem;
+}
+
+/* ── Spectrum fill bars (perfil construção / defensivo) ─────────────────── */
+
+.spectrum-fill-bar {
+  display: grid;
+  gap: 0.42rem;
+}
+
+.spectrum-fill-wrap {
+  display: grid;
+  gap: 0.22rem;
+}
+
+.spectrum-fill-track {
+  position: relative;
+  height: 6px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(30, 41, 59, 0.55);
+}
+
+.spectrum-fill-progress {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(27, 231, 255, 0.25) 0%, #1be7ff 100%);
+  transition: width 0.25s ease;
+}
+
+.spectrum-fill-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  transform: translateX(-50%);
+  background: rgba(27, 231, 255, 0.35);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.spectrum-fill-ticks {
+  position: relative;
+  height: 0.34rem;
+}
+
+.spectrum-fill-ticks span {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 0.28rem;
+  transform: translateX(-50%);
+  background: rgba(27, 231, 255, 0.55);
+  border-radius: 1px;
+}
+
+.spectrum-fill-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.56rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(27, 231, 255, 0.42);
+}
+
+.spectrum-fill-foot span.is-active {
+  color: #1be7ff;
+  font-weight: 700;
+  text-shadow: 0 0 14px rgba(27, 231, 255, 0.18);
+}
+
+.constr-share-bar {
+  display: grid;
+  gap: 0.32rem;
+}
+
+.constr-share-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.45rem;
+}
+
+.constr-share-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+
+.constr-gradient-bar .constr-share-label {
+  font-size: 0.76rem;
+}
+
+.constr-share-value {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--tier-color);
+  font-variant-numeric: tabular-nums;
+}
+
+.constr-share-track {
+  position: relative;
+  height: 1.15rem;
+  display: flex;
+  align-items: center;
+}
+
+.constr-share-rail {
+  position: absolute;
+  inset: 0;
+  margin: auto 0;
+  height: 0.38rem;
+  width: 100%;
+  border-radius: 999px;
+  background: rgba(27, 231, 255, 0.07);
+  border: 1px solid rgba(27, 231, 255, 0.05);
+}
+
+.constr-share-rail::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(27, 231, 255, 0.18);
+  transform: translateX(-50%);
+}
+
+.constr-share-center {
+  position: absolute;
+  top: 50%;
+  width: 2px;
+  height: 0.95rem;
+  transform: translate(-50%, -50%);
+  border-radius: 1px;
+  background: rgba(27, 231, 255, 0.42);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.constr-share-center::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 2px);
+  transform: translateX(-50%);
+  border: 3px solid transparent;
+  border-top-color: rgba(27, 231, 255, 0.35);
+}
+
+.constr-share-dot {
+  position: absolute;
+  top: 50%;
+  width: 0.72rem;
+  height: 0.72rem;
+  padding: 0;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--tier-color);
+  border: 2px solid rgba(27, 231, 255, 0.92);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 0 10px var(--tier-glow);
+  z-index: 2;
+}
+
+.constr-share-foot {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.54rem;
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.constr-share-foot span:last-child {
+  text-align: right;
+}
+
+.constr-share-avg {
+  color: var(--text-2);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.constr-share-bar.is-length .constr-share-rail {
+  height: 0.55rem;
+  border-color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(56, 189, 248, 0.72) 0%,
+    rgba(148, 163, 184, 0.28) 50%,
+    rgba(251, 191, 36, 0.78) 100%
+  );
+}
+
+.constr-share-bar.is-length .constr-share-foot span:first-child,
+.constr-share-bar.is-length .constr-share-foot span:last-child {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.constr-share-bar.is-length .constr-share-foot span:first-child {
+  color: #7dd3fc;
+}
+
+.constr-share-bar.is-length .constr-share-foot span:last-child {
+  color: #fbbf24;
+  text-align: right;
+}
+
+.constr-gradient-bar {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.constr-gradient-tip-wrap {
+  position: relative;
+}
+
+.constr-gradient-track {
+  position: relative;
+  height: 0.55rem;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.constr-gradient-fill {
+  display: none;
+}
+
+.constr-gradient-track::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(27, 231, 255, 0.2);
+  transform: translateX(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.constr-gradient-marker {
+  position: absolute;
+  top: 50%;
+  width: 0.62rem;
+  height: 0.62rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #1be7ff;
+  border: 2px solid rgba(13, 27, 42, 0.85);
+  box-shadow: 0 0 0 1px rgba(27, 231, 255, 0.35), 0 0 12px rgba(27, 231, 255, 0.25);
+  z-index: 2;
+}
+
+.constr-gradient-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.constr-gradient-tip {
+  position: absolute;
+  bottom: calc(100% + 0.55rem);
+  transform: translateX(-50%) translateY(4px);
+  z-index: 20;
+  display: grid;
+  gap: 0.15rem;
+  min-width: 168px;
+  padding: 0.55rem 0.65rem;
+  border-radius: 9px;
+  border: 1px solid rgba(27, 231, 255, 0.22);
+  background: linear-gradient(180deg, rgba(13, 27, 42, 0.98) 0%, rgba(13, 27, 42, 0.98) 100%);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.42);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+}
+
+.constr-gradient-tip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: rgba(13, 27, 42, 0.98);
+  filter: drop-shadow(0 1px 0 rgba(27, 231, 255, 0.12));
+}
+
+.constr-gradient-tip strong {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.constr-gradient-tip em {
+  font-style: normal;
+  font-size: 0.66rem;
+  color: var(--text-3);
+}
+
+.constr-gradient-tip-wrap:hover .constr-gradient-tip,
+.constr-gradient-tip-wrap:focus-within .constr-gradient-tip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.constr-metric-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.35rem 0 0.15rem;
+}
+
+.constr-metric-value {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* ── Club logos ──────────────────────────────────────────────────────────── */
+
+.club-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  background: rgba(27, 231, 255, 0.06);
+}
+
+.club-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.club-logo-fallback {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: calc(var(--club-logo-size, 18px) * 0.42);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-2);
+  background: rgba(27, 231, 255, 0.05);
+}
+
+.accuracy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.accuracy-badge .sc-medal {
+  line-height: 0;
+}
+
+.accuracy-badge .sc-medal-svg {
+  display: block;
+  filter: none;
+}
+
+.accuracy-badge-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.22rem;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--badge-text, var(--text-2));
+  line-height: 1;
+}
+
+.accuracy-badge-rank {
+  font-size: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  opacity: 0.78;
+  text-transform: none;
+}
+
+.aspect-row {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.aspect-row-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.42rem 0.5rem;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s ease;
+}
+
+.aspect-row-trigger:hover {
+  background: rgba(27, 231, 255, 0.03);
+}
+
+.aspect-row.is-open .aspect-row-trigger {
+  background: rgba(27, 231, 255, 0.04);
+}
+
+.aspect-name {
+  font-size: 0.82rem;
+  color: var(--text-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.aspect-row-end {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-shrink: 0;
+}
+
+.aspect-chevron {
+  color: var(--text-3);
+  transition: transform 0.18s ease;
+}
+
+.aspect-row.is-open .aspect-chevron {
+  transform: rotate(180deg);
+}
+
+.aspect-grade {
+  min-width: 1.6rem;
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: right;
+  color: var(--tier-color);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.aspect-stats {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.15rem 0.5rem 0.65rem 0.65rem;
+  border-left: 2px solid var(--line);
+  margin: 0.1rem 0 0.25rem 0.85rem;
+}
+
+.aspect-stat-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.28rem;
+}
+
+.aspect-stat-label {
+  font-size: 0.68rem;
+  color: var(--text-3);
+  line-height: 1.3;
+}
+
+.aspect-stat-pct {
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--tier-color);
+  font-variant-numeric: tabular-nums;
+}
+
+.aspect-stat-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(27, 231, 255, 0.06);
+  overflow: hidden;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.18);
+}
+
+.aspect-stat-bar i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  opacity: 0.95;
+}
+
+.aspect-stat-bar-gradient::before {
+  display: none;
+}
+
+.aspect-metric-bar i {
+  box-shadow: 0 0 8px color-mix(in srgb, #31e981 28%, transparent);
+}
+
+/* Pass aspects — certos/90 bar + accuracy badge */
+.aspect-row-pass {
+  padding: 0.35rem 0.5rem 0.55rem;
+}
+
+.aspect-pass-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-bottom: 0.32rem;
+}
+
+.aspect-pass-track {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.55rem;
+  cursor: help;
+}
+
+.aspect-pass-pct {
+  min-width: 1.4rem;
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--tier-color);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.aspect-pass-bar {
+  height: 5px;
+}
+
+.grade-chip {
+  min-width: 32px;
+  padding: 0.12rem 0.4rem;
+  border-radius: 5px;
+  font-family: "TASA Orbiter Variable", system-ui, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--tier-color);
+  background: var(--tier-soft);
+  border: 1px solid var(--tier-border);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Medals ──────────────────────────────────────────────────────────────── */
+
+.sc-medal {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  line-height: 1;
+}
+
+.sc-medal-svg {
+  display: block;
+  filter: none;
+}
+
+.sc-medal-caption {
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.sc-medal-gold .sc-medal-caption { color: #ebc55b; }
+.sc-medal-silver .sc-medal-caption { color: #c5cad3; }
+.sc-medal-bronze .sc-medal-caption { color: #d68f6c; }
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1280px) {
+  .skill-row {
+    grid-template-columns: minmax(0, 160px) minmax(0, 1fr) 70px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .scout-body {
+    grid-template-columns: 268px minmax(0, 1fr);
+  }
+
+  .dossier {
+    padding: 1.2rem 1.2rem 3rem;
+  }
+
+  .aspect-groups,
+  .aspect-groups-quad {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dossier-profile-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .position-tabs .tab-full {
+    display: none;
+  }
+
+  .position-tabs .tab-short {
+    display: inline;
+  }
+}
+
+@media (max-width: 900px) {
+  .scout-header-logo {
+    max-width: min(180px, 48vw);
+  }
+
+  .scout-header-logo-stacked {
+    max-width: min(112px, 40vw);
+    max-height: 36px;
+  }
+
+  .scout-body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .roster {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .roster-inner {
+    position: static;
+    height: auto;
+  }
+
+  .roster-list {
+    max-height: 300px;
+  }
+
+  .dossier-card {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas:
+      "portrait identity"
+      "dial dial"
+      "bar bar";
+  }
+
+  .cluster-map {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dossier-dial {
+    justify-self: stretch;
+    width: 100%;
+  }
+
+  .dossier-ratings {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dossier-rating-hero {
+    min-width: 0;
+  }
+
+  .dossier-rating-cluster {
+    width: 100%;
+  }
+
+  .scout-topbar {
+    height: auto;
+    flex-wrap: wrap;
+    row-gap: 0.55rem;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+  }
+
+  .topbar-links {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .topbar-links a {
+    font-size: 0.74rem;
+    padding: 0.32rem 0.58rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .scout-topbar {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .roster-inner {
+    top: 0;
+  }
+
+  .dossier {
+    padding: 1rem 0.9rem 2.5rem;
+  }
+
+  .dossier-card {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "portrait"
+      "identity"
+      "dial"
+      "bar";
+    justify-items: center;
+    text-align: center;
+    padding: 1.2rem 1.1rem 0;
+  }
+
+  .dossier-eyebrow,
+  .dossier-facts {
+    justify-content: center;
+  }
+
+  .dossier-bar {
+    margin: 0 -1.1rem;
+    padding: 0.9rem 1.1rem;
+    justify-content: center;
+  }
+
+  .bar-group {
+    gap: 1.25rem;
+  }
+
+  .bar-market {
+    padding-right: 0;
+  }
+
+  .bar-market::after {
+    display: none;
+  }
+
+  .bar-actions {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skill-row {
+    grid-template-columns: minmax(0, 1fr) 64px;
+    grid-template-areas:
+      "label score"
+      "meter meter";
+    gap: 0.45rem 0.75rem;
+  }
+
+  .skill-label { grid-area: label; }
+  .skill-score { grid-area: score; }
+  .skill-meter { grid-area: meter; }
+}

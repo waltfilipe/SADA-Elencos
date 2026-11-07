@@ -1,0 +1,37 @@
+{
+  "atacantes": {
+    "n": 2628,
+    "rmse_ridge": 0.8701,
+    "rmse_last_season": 1.1442,
+    "rmse_history_mean": 1.048,
+    "coverage_80": 0.825
+  },
+  "extremos": {
+    "n": 4305,
+    "rmse_ridge": 0.8928,
+    "rmse_last_season": 1.1824,
+    "rmse_history_mean": 1.0787,
+    "coverage_80": 0.8109
+  },
+  "laterais": {
+    "n": 4644,
+    "rmse_ridge": 1.3237,
+    "rmse_last_season": 1.5389,
+    "rmse_history_mean": 1.4449,
+    "coverage_80": 0.7946
+  },
+  "meio-campistas": {
+    "n": 4506,
+    "rmse_ridge": 1.1479,
+    "rmse_last_season": 1.3905,
+    "rmse_history_mean": 1.2945,
+    "coverage_80": 0.7983
+  },
+  "zagueiros": {
+    "n": 2551,
+    "rmse_ridge": 1.2901,
+    "rmse_last_season": 1.5566,
+    "rmse_history_mean": 1.4308,
+    "coverage_80": 0.7813
+  }
+}

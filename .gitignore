@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+.env*
+.DS_Store
+*.pyc
+__pycache__/
+.venv/
+venv/
+reference/zag_custo_def_ratios.csv
+.vercel
+*_run.done.json

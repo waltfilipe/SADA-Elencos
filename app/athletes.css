@@ -1,0 +1,205 @@
+.athletes-page {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1rem 1.1rem 2rem;
+}
+
+.athletes-page-head {
+  margin-bottom: 1rem;
+}
+
+.athletes-page-head h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.45rem;
+}
+
+.athletes-page-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.athletes-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 0.85rem;
+}
+
+.athletes-search {
+  flex: 1 1 14rem;
+  min-width: 0;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid rgba(27, 231, 255, 0.18);
+  background: rgba(13, 27, 42, 0.55);
+  color: var(--text);
+}
+
+.athletes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.55rem;
+}
+
+.athlete-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.55rem;
+  align-items: center;
+  padding: 0.55rem 0.65rem;
+  border-radius: 12px;
+  border: 1px solid rgba(27, 231, 255, 0.14);
+  background: rgba(13, 27, 42, 0.38);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.15s, transform 0.12s;
+}
+
+.athlete-card:hover {
+  border-color: rgba(249, 115, 22, 0.45);
+  transform: translateY(-1px);
+}
+
+.athlete-card-photo {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid rgba(27, 231, 255, 0.18);
+  background: rgba(15, 23, 42, 0.85);
+  object-fit: cover;
+  object-position: center 10%;
+}
+
+.athlete-card-photo-fallback {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.athlete-card-name {
+  display: block;
+  font-weight: 650;
+  font-size: 0.9rem;
+}
+
+.athlete-card-meta {
+  display: block;
+  margin-top: 0.12rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.athlete-card-seasons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.3rem;
+}
+
+.athlete-season-chip {
+  font-size: 0.62rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 999px;
+  border: 1px solid rgba(27, 231, 255, 0.16);
+  color: var(--muted);
+}
+
+.athlete-detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.athlete-detail-hero {
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(27, 231, 255, 0.16);
+  background: rgba(13, 27, 42, 0.45);
+  margin-bottom: 0.85rem;
+}
+
+.athlete-detail-photo {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 2px solid rgba(27, 231, 255, 0.22);
+  flex: 0 0 4.5rem;
+  object-fit: cover;
+  object-position: center 10%;
+}
+
+.athlete-detail-name {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.athlete-detail-meta {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.athlete-season-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.athlete-season-tab {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(27, 231, 255, 0.18);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.78rem;
+}
+
+.athlete-season-tab.is-active {
+  border-color: rgba(249, 115, 22, 0.55);
+  color: var(--text);
+  background: rgba(249, 115, 22, 0.12);
+}
+
+.athlete-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 0.45rem;
+}
+
+.athlete-stat-card {
+  padding: 0.55rem 0.6rem;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.athlete-stat-card b {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 0.15rem;
+}
+
+.athlete-stat-card span {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.athlete-detail-actions {
+  margin-top: 0.85rem;
+}

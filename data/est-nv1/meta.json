@@ -1,0 +1,642 @@
+{
+  "league_id": "est-nv1",
+  "league": "Estaduais Nv1",
+  "season": "2026",
+  "source": "xlsx",
+  "player_count": 1360,
+  "families": [
+    {
+      "key": "zagueiros",
+      "label": "Zagueiros",
+      "positions": [
+        "Zagueiro"
+      ],
+      "profiles": [
+        "Construtor",
+        "Defensivo",
+        "Híbrido"
+      ],
+      "count": 227
+    },
+    {
+      "key": "laterais",
+      "label": "Laterais",
+      "positions": [
+        "Lateral Direito",
+        "Lateral Esquerdo"
+      ],
+      "profiles": [
+        "Defensivo",
+        "Construtor",
+        "Ofensivo",
+        "Híbrido"
+      ],
+      "count": 260
+    },
+    {
+      "key": "meio-campistas",
+      "label": "Meio-campistas",
+      "positions": [
+        "Meio-campista"
+      ],
+      "profiles": [
+        "Contenção",
+        "Construtor",
+        "Box-to-box",
+        "Híbrido"
+      ],
+      "count": 298
+    },
+    {
+      "key": "extremos",
+      "label": "Meias Ofensivos",
+      "positions": [
+        "Extremo Direito",
+        "Extremo Esquerdo",
+        "Meia Ofensivo"
+      ],
+      "profiles": [
+        "Driblador",
+        "Meia Ponta",
+        "Ruptura",
+        "Híbrido"
+      ],
+      "count": 380
+    },
+    {
+      "key": "atacantes",
+      "label": "Atacantes",
+      "positions": [
+        "Atacante"
+      ],
+      "profiles": [
+        "Finalizador",
+        "Alvo",
+        "Móvel",
+        "Híbrido"
+      ],
+      "count": 195
+    }
+  ],
+  "clubs": [
+    "América Mineiro",
+    "Athletic Club",
+    "Atlético Mineiro",
+    "Avenida",
+    "Bangu",
+    "Betim",
+    "Boavista",
+    "Botafogo",
+    "Botafogo SP",
+    "Capivariano",
+    "Caxias",
+    "Corinthians",
+    "Cruzeiro",
+    "Democrata GV",
+    "EC São José",
+    "Flamengo",
+    "Fluminense",
+    "Grêmio",
+    "Grêmio Novorizontino",
+    "Guarani",
+    "Guarany de Bagé",
+    "Inter Santa Maria",
+    "Internacional",
+    "Itabirito",
+    "Juventude",
+    "Madureira",
+    "Maricá",
+    "Mirassol",
+    "Monsoon FC",
+    "Noroeste",
+    "North Esporte Clube",
+    "Nova Iguaçu",
+    "Novo Hamburgo",
+    "Palmeiras",
+    "Ponte Preta",
+    "Portuguesa",
+    "Portuguesa RJ",
+    "Pouso Alegre",
+    "Primavera SP",
+    "Red Bull Bragantino",
+    "Sampaio Corrêa RJ",
+    "Santos",
+    "São Bernardo FC",
+    "São Luiz",
+    "São Paulo",
+    "Tombense",
+    "URT",
+    "Uberlândia",
+    "Vasco da Gama",
+    "Velo Clube",
+    "Volta Redonda",
+    "Ypiranga Erechim"
+  ],
+  "nationalities": [
+    "Angola",
+    "Argentina",
+    "Belgium",
+    "Bolivia",
+    "Brazil",
+    "Chile",
+    "Colombia",
+    "Ecuador",
+    "Germany",
+    "Ghana",
+    "Guinea",
+    "Haiti",
+    "Italy",
+    "Netherlands",
+    "Nigeria",
+    "Panama",
+    "Paraguay",
+    "Peru",
+    "Portugal",
+    "Senegal",
+    "Switzerland",
+    "Uruguay",
+    "Venezuela"
+  ],
+  "filters": {
+    "height": [
+      160,
+      200
+    ],
+    "minutes": [
+      0,
+      1270
+    ],
+    "birth_year": [
+      1972,
+      2009
+    ],
+    "rating": [
+      5.9,
+      7.5
+    ]
+  },
+  "scatter_metrics": {
+    "zagueiros": [
+      {
+        "key": "duelos_def",
+        "label": "Duelos Defensivos",
+        "field": "DuelosDef"
+      },
+      {
+        "key": "Ações Defensivas",
+        "label": "Ações Defensivas (total)",
+        "field": ""
+      },
+      {
+        "key": "Rebatidas",
+        "label": "Rebatidas",
+        "field": ""
+      },
+      {
+        "key": "Interceptações",
+        "label": "Interceptações",
+        "field": ""
+      },
+      {
+        "key": "Chutes Bloqueados",
+        "label": "Chutes Bloqueados",
+        "field": ""
+      },
+      {
+        "key": "Aéreo",
+        "label": "Duelos Aéreos",
+        "field": ""
+      },
+      {
+        "key": "Passes Progressivos",
+        "label": "Passes Progressivos",
+        "field": ""
+      },
+      {
+        "key": "Passes para Terço Final",
+        "label": "Passes para Terço Final",
+        "field": ""
+      },
+      {
+        "key": "confrontos_of",
+        "label": "Disputas com Bola",
+        "field": "DuelosOf"
+      },
+      {
+        "key": "Conduções Progressivas",
+        "label": "Conduções Progressivas",
+        "field": ""
+      }
+    ],
+    "laterais": [
+      {
+        "key": "duelos_def",
+        "label": "Duelos Defensivos",
+        "field": "DuelosDef"
+      },
+      {
+        "key": "Ações Defensivas",
+        "label": "Ações Defensivas (total)",
+        "field": ""
+      },
+      {
+        "key": "Rebatidas",
+        "label": "Rebatidas",
+        "field": ""
+      },
+      {
+        "key": "Interceptações",
+        "label": "Interceptações",
+        "field": ""
+      },
+      {
+        "key": "Chutes Bloqueados",
+        "label": "Chutes Bloqueados",
+        "field": ""
+      },
+      {
+        "key": "Aéreo",
+        "label": "Duelos Aéreos",
+        "field": ""
+      },
+      {
+        "key": "Passes",
+        "label": "Passes",
+        "field": ""
+      },
+      {
+        "key": "Passes Progressivos",
+        "label": "Passes Progressivos",
+        "field": ""
+      },
+      {
+        "key": "Passes para Terço Final",
+        "label": "Passes para Terço Final",
+        "field": ""
+      },
+      {
+        "key": "Conduções Progressivas",
+        "label": "Conduções Progressivas",
+        "field": ""
+      },
+      {
+        "key": "1v1 - Ofensivo",
+        "label": "Dribles (1v1)",
+        "field": ""
+      },
+      {
+        "key": "Cruzamentos",
+        "label": "Cruzamentos",
+        "field": ""
+      },
+      {
+        "key": "Assistências para remate",
+        "label": "Passes Chave",
+        "field": ""
+      },
+      {
+        "key": "Passes para área",
+        "label": "Passes para Área",
+        "field": ""
+      },
+      {
+        "key": "xA",
+        "label": "xA",
+        "field": ""
+      },
+      {
+        "key": "Pré Assistências",
+        "label": "Pré Assistências",
+        "field": ""
+      },
+      {
+        "key": "Ações Ofensivas",
+        "label": "Ações Ofensivas",
+        "field": ""
+      },
+      {
+        "key": "Toques na área",
+        "label": "Toques na Área",
+        "field": ""
+      }
+    ],
+    "meio-campistas": [
+      {
+        "key": "duelos_def",
+        "label": "Duelos Defensivos",
+        "field": "DuelosDef"
+      },
+      {
+        "key": "Ações Defensivas",
+        "label": "Ações Defensivas (total)",
+        "field": ""
+      },
+      {
+        "key": "Rebatidas",
+        "label": "Rebatidas",
+        "field": ""
+      },
+      {
+        "key": "Interceptações",
+        "label": "Interceptações",
+        "field": ""
+      },
+      {
+        "key": "Chutes Bloqueados",
+        "label": "Chutes Bloqueados",
+        "field": ""
+      },
+      {
+        "key": "Aéreo",
+        "label": "Duelos Aéreos",
+        "field": ""
+      },
+      {
+        "key": "Passes",
+        "label": "Passes",
+        "field": ""
+      },
+      {
+        "key": "Passes Progressivos",
+        "label": "Passes Progressivos",
+        "field": ""
+      },
+      {
+        "key": "Passes para Terço Final",
+        "label": "Passes para Terço Final",
+        "field": ""
+      },
+      {
+        "key": "Passes Longos",
+        "label": "Passes Longos",
+        "field": ""
+      },
+      {
+        "key": "Passes Criativos",
+        "label": "Passes Criativos",
+        "field": ""
+      },
+      {
+        "key": "Conduções Progressivas",
+        "label": "Conduções Progressivas",
+        "field": ""
+      },
+      {
+        "key": "1v1 - Ofensivo",
+        "label": "Dribles (1v1)",
+        "field": ""
+      },
+      {
+        "key": "Assistências para remate",
+        "label": "Passes Chave",
+        "field": ""
+      },
+      {
+        "key": "Passes para área",
+        "label": "Passes para Área",
+        "field": ""
+      },
+      {
+        "key": "xA",
+        "label": "xA",
+        "field": ""
+      },
+      {
+        "key": "Pré Assistências",
+        "label": "Pré Assistências",
+        "field": ""
+      },
+      {
+        "key": "Finalizações",
+        "label": "Finalizações",
+        "field": ""
+      },
+      {
+        "key": "xG",
+        "label": "xG",
+        "field": ""
+      },
+      {
+        "key": "Ações Ofensivas",
+        "label": "Ações Ofensivas",
+        "field": ""
+      },
+      {
+        "key": "Toques na área",
+        "label": "Toques na Área",
+        "field": ""
+      }
+    ],
+    "extremos": [
+      {
+        "key": "Duelos Vencidos",
+        "label": "Duelos Vencidos",
+        "field": ""
+      },
+      {
+        "key": "Ações Defensivas",
+        "label": "Ações Defensivas",
+        "field": ""
+      },
+      {
+        "key": "Passes",
+        "label": "Passes",
+        "field": ""
+      },
+      {
+        "key": "Passes Progressivos",
+        "label": "Passes Progressivos",
+        "field": ""
+      },
+      {
+        "key": "Passes para Terço Final",
+        "label": "Passes para Terço Final",
+        "field": ""
+      },
+      {
+        "key": "Passes Longos",
+        "label": "Passes Longos",
+        "field": ""
+      },
+      {
+        "key": "Passes Criativos",
+        "label": "Passes Criativos",
+        "field": ""
+      },
+      {
+        "key": "Assistências para remate",
+        "label": "Passes Chave",
+        "field": ""
+      },
+      {
+        "key": "Passes para área",
+        "label": "Passes para Área",
+        "field": ""
+      },
+      {
+        "key": "xA",
+        "label": "xA",
+        "field": ""
+      },
+      {
+        "key": "Pré Assistências",
+        "label": "Pré Assistências",
+        "field": ""
+      },
+      {
+        "key": "Cruzamentos",
+        "label": "Cruzamentos",
+        "field": ""
+      },
+      {
+        "key": "1v1 - Ofensivo",
+        "label": "Dribles (1v1)",
+        "field": ""
+      },
+      {
+        "key": "Conduções Progressivas",
+        "label": "Conduções Progressivas",
+        "field": ""
+      },
+      {
+        "key": "Acelerações",
+        "label": "Acelerações",
+        "field": ""
+      },
+      {
+        "key": "Gols",
+        "label": "Gols",
+        "field": ""
+      },
+      {
+        "key": "xG",
+        "label": "xG",
+        "field": ""
+      },
+      {
+        "key": "Finalizações",
+        "label": "Finalizações",
+        "field": ""
+      },
+      {
+        "key": "Ações Ofensivas",
+        "label": "Ações Ofensivas",
+        "field": ""
+      },
+      {
+        "key": "Toques na área",
+        "label": "Toques na Área",
+        "field": ""
+      },
+      {
+        "key": "Recepção de Passes Longos",
+        "label": "Recepção de Passes Longos",
+        "field": ""
+      }
+    ],
+    "atacantes": [
+      {
+        "key": "Gols",
+        "label": "Gols",
+        "field": ""
+      },
+      {
+        "key": "xG",
+        "label": "xG",
+        "field": ""
+      },
+      {
+        "key": "Finalizações",
+        "label": "Finalizações",
+        "field": ""
+      },
+      {
+        "key": "Ações Ofensivas",
+        "label": "Ações Ofensivas",
+        "field": ""
+      },
+      {
+        "key": "Toques na área",
+        "label": "Toques na Área",
+        "field": ""
+      },
+      {
+        "key": "Aéreo",
+        "label": "Duelos Aéreos",
+        "field": ""
+      },
+      {
+        "key": "Disputas com Bola",
+        "label": "Disputas com Bola",
+        "field": ""
+      },
+      {
+        "key": "1v1 - Ofensivo",
+        "label": "Dribles (1v1)",
+        "field": ""
+      },
+      {
+        "key": "Conduções Progressivas",
+        "label": "Conduções Progressivas",
+        "field": ""
+      },
+      {
+        "key": "Passes",
+        "label": "Passes",
+        "field": ""
+      },
+      {
+        "key": "Passes Progressivos",
+        "label": "Passes Progressivos",
+        "field": ""
+      },
+      {
+        "key": "Passes para Terço Final",
+        "label": "Passes para Terço Final",
+        "field": ""
+      },
+      {
+        "key": "Passes Longos",
+        "label": "Passes Longos",
+        "field": ""
+      },
+      {
+        "key": "Passes Criativos",
+        "label": "Passes Criativos",
+        "field": ""
+      },
+      {
+        "key": "Assistências para remate",
+        "label": "Passes Chave",
+        "field": ""
+      },
+      {
+        "key": "Passes para área",
+        "label": "Passes para Área",
+        "field": ""
+      },
+      {
+        "key": "xA",
+        "label": "xA",
+        "field": ""
+      },
+      {
+        "key": "Pré Assistências",
+        "label": "Pré Assistências",
+        "field": ""
+      },
+      {
+        "key": "Cruzamentos",
+        "label": "Cruzamentos",
+        "field": ""
+      },
+      {
+        "key": "Recepção de Passes Longos",
+        "label": "Recepção de Passes Longos",
+        "field": ""
+      }
+    ]
+  },
+  "heatmaps_enabled": false,
+  "physical_run_enabled": false
+}
