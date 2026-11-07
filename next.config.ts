@@ -1,9 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Montado sob o domínio do sada-test em /elencos/* (rewrite lá). Mantém a
-  // mesma origem para compartilhar o localStorage do time sombra.
-  basePath: "/elencos",
   // Hobby permite 12 funções por deploy. A Vercel empacota rotas Node no
   // mesmo lambda até ~225 MB; acima disso cada rota vira uma função. Os
   // perfis por jogador repetem o que já está em family-*.json (~110 MB).

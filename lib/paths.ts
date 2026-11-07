@@ -1,10 +1,8 @@
 /**
- * O app roda com basePath "/elencos" para ser montado sob o domínio do
- * sada-test (rewrite /elencos/* → este deploy). Links/redirects do Next
- * recebem o prefixo automaticamente; fetch() e <img src> não — daí este
- * helper para URLs de API e assets estáticos.
+ * O app roda no domínio próprio, sem basePath. O helper fica centralizado
+ * para o caso de um dia ser montado sob um prefixo de novo.
  */
-export const BASE_PATH = "/elencos";
+export const BASE_PATH = "";
 
 export function appPath(path: string): string {
   return `${BASE_PATH}${path.startsWith("/") ? path : `/${path}`}`;
