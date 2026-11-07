@@ -7,9 +7,56 @@ import {
   type Formation,
 } from "@/lib/formations";
 import type { LeagueId } from "@/lib/leagues";
+import { BASE_PATH } from "@/lib/paths";
 import type { PositionFamily } from "@/lib/types";
 
 export type ShadowScope = LeagueId | "todas" | "estaduais";
+
+/**
+ * Sync do time sombra com a nuvem (/api/shadow/{scope} — Upstash no deploy
+ * do SADA-Elencos). Sem backend configurado o fetch falha em silêncio e o
+ * localStorage continua sendo a única fonte. Push é debounced por escopo.
+ */
+const pushTimers = new Map<ShadowScope, ReturnType<typeof setTimeout>>();
+
+function shadowApi(scope: ShadowScope): string {
+  return `${BASE_PATH}/api/shadow/${scope}`;
+}
+
+function pushShadowToCloud(scope: ShadowScope, state: ShadowTeamState): void {
+  const prev = pushTimers.get(scope);
+  if (prev) clearTimeout(prev);
+  pushTimers.set(
+    scope,
+    setTimeout(() => {
+      pushTimers.delete(scope);
+      fetch(shadowApi(scope), {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(state),
+      }).catch(() => {
+        /* sync indisponível — localStorage segue valendo */
+      });
+    }, 400),
+  );
+}
+
+/** Baixa o estado compartilhado e atualiza o localStorage + listeners. */
+export async function hydrateShadowFromCloud(scope: ShadowScope): Promise<void> {
+  if (typeof window === "undefined") return;
+  try {
+    const res = await fetch(shadowApi(scope), { cache: "no-store" });
+    if (!res.ok) return;
+    const data = (await res.json()) as { enabled?: boolean; state?: ShadowTeamState | null };
+    if (!data.enabled || !data.state) return;
+    const serialized = JSON.stringify(data.state);
+    if (localStorage.getItem(storageKey(scope)) === serialized) return;
+    localStorage.setItem(storageKey(scope), serialized);
+    window.dispatchEvent(new Event(shadowChangeEvent(scope)));
+  } catch {
+    /* sync indisponível — localStorage segue valendo */
+  }
+}
 
 export function storageKey(scope: ShadowScope) {
   if (scope === "todas") return "all-competitions-scout:shadow-team-v1";
@@ -91,6 +138,7 @@ export function saveShadowTeamState(state: ShadowTeamState, league: ShadowScope 
   if (typeof window === "undefined") return;
   localStorage.setItem(storageKey(league), JSON.stringify(state));
   window.dispatchEvent(new Event(shadowChangeEvent(league)));
+  pushShadowToCloud(league, state);
 }
 
 function takenSlots(assignments: Record<string, string | null>): Set<string> {

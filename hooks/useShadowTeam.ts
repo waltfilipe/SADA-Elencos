@@ -7,6 +7,7 @@ import {
   addToSquad,
   addToWatchlist,
   assignPlayer,
+  hydrateShadowFromCloud,
   loadShadowTeamState,
   removeFromSquad,
   removeFromWatchlist,
@@ -29,6 +30,8 @@ export function useShadowTeam(scope?: ShadowScope) {
 
   useEffect(() => {
     setState(loadShadowTeamState(active));
+    // Nuvem (se habilitada) sobrescreve o local — dispara o change event.
+    hydrateShadowFromCloud(active);
 
     const key = storageKey(active);
     const changeEvent = shadowChangeEvent(active);

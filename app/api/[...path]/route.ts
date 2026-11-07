@@ -14,6 +14,8 @@ import { athleteSeasonRows } from "@/lib/athleteRows.server";
 import { findPlayerInSeason } from "@/lib/playerSeasonMatch.server";
 import { rankCrossLeagueSimilarity } from "@/lib/crossLeagueSimilarity";
 import { isLeagueId, type LeagueId } from "@/lib/leagues";
+import { isShadowScope, readCloudShadow, shadowSyncEnabled, writeCloudShadow } from "@/lib/shadowSync.server";
+import type { ShadowTeamState } from "@/lib/shadowTeamStorage";
 import { ESTADUAIS_LEAGUE_IDS } from "@/lib/estaduaisHub";
 import { CURRENT_SEASON, parseSeasonParam } from "@/lib/seasons";
 import type { PlayerProfile, PositionFamily } from "@/lib/types";
@@ -34,6 +36,16 @@ export async function GET(request: Request, { params }: Params) {
   const { path } = await params;
   const url = new URL(request.url);
   const [resource, id] = path;
+
+  if (resource === "shadow" && path.length === 2) {
+    // Time sombra compartilhado entre os apps SADA (ver lib/shadowSync.server).
+    if (!isShadowScope(id)) return NextResponse.json({ error: "invalid_scope" }, { status: 400 });
+    const state = await readCloudShadow(id);
+    return NextResponse.json(
+      { enabled: shadowSyncEnabled(), state },
+      { headers: { "Cache-Control": "no-store" } },
+    );
+  }
 
   if (resource === "meta" && path.length === 1) {
     const league = url.searchParams.get("league") ?? undefined;
@@ -156,6 +168,30 @@ export async function GET(request: Request, { params }: Params) {
   }
 
   return NextResponse.json({ error: "not_found" }, { status: 404 });
+}
+
+/** PUT /api/shadow/{scope} — grava o estado do time sombra compartilhado. */
+export async function PUT(request: Request, { params }: Params) {
+  const { path } = await params;
+  const [resource, id] = path;
+
+  if (resource !== "shadow" || path.length !== 2 || !isShadowScope(id)) {
+    return NextResponse.json({ error: "not_found" }, { status: 404 });
+  }
+  if (!shadowSyncEnabled()) {
+    return NextResponse.json({ enabled: false, saved: false }, { status: 503 });
+  }
+  let state: ShadowTeamState;
+  try {
+    state = (await request.json()) as ShadowTeamState;
+    if (!state || typeof state.formationId !== "string" || !Array.isArray(state.squadIds)) {
+      return NextResponse.json({ error: "invalid_state" }, { status: 400 });
+    }
+  } catch {
+    return NextResponse.json({ error: "invalid_json" }, { status: 400 });
+  }
+  const saved = await writeCloudShadow(id, state);
+  return NextResponse.json({ enabled: true, saved });
 }
 
 function listPlayers(url: URL) {
