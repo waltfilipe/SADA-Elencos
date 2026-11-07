@@ -1,5 +1,6 @@
 "use client";
 
+import { BASE_PATH } from "@/lib/paths";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
@@ -191,7 +192,7 @@ export function SimilarCrossLeagueModal({
         });
         if (sourceSeason !== CURRENT_SEASON) params.set("season", sourceSeason);
         if (metricLabels?.length) params.set("metrics", metricLabels.join("|"));
-        const res = await fetch(`/api/similar?${params.toString()}`);
+        const res = await fetch(`${BASE_PATH}/api/similar?${params.toString()}`);
         const data = await res.json();
         if (!res.ok) {
           throw new Error(data.error ?? "request_failed");

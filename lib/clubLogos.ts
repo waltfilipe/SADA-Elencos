@@ -1,3 +1,5 @@
+import { appPath } from "./paths";
+
 /** Normalized slug for static logo paths under `/public/clubs/`. */
 export function clubSlug(club: string): string {
   return club
@@ -72,7 +74,7 @@ const LOGO_ALIASES: Record<string, string> = {
 
 export function clubLogoSrc(club: string): string {
   const slug = clubSlug(club);
-  return `/clubs/${LOGO_ALIASES[slug] ?? slug}.png`;
+  return appPath(`/clubs/${LOGO_ALIASES[slug] ?? slug}.png`);
 }
 
 export function clubInitials(club: string): string {

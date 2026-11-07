@@ -1,5 +1,6 @@
 "use client";
 
+import { appPath, BASE_PATH } from "@/lib/paths";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { ClubLogo } from "@/components/ClubLogo";
@@ -516,7 +517,7 @@ function ReportBanner({
 }) {
   return (
     <header className="player-report-banner">
-      <img src="/brand/sada-wordmark.png" alt="SADA — Sistema de Análise de Dados de Atletas" className="player-report-logo" />
+      <img src={appPath("/brand/sada-wordmark.png")} alt="SADA — Sistema de Análise de Dados de Atletas" className="player-report-logo" />
       <p className="player-report-kicker">{kicker}</p>
       <p className="player-report-league">
         {league}
@@ -1868,7 +1869,7 @@ export function PlayerReportButton({
     qs.set("season", primaryArchiveLabel ?? currentSeason);
     qs.set("player_id", scout.player_id);
     let cancelled = false;
-    fetch(`/api/athlete-rows?${qs}`)
+    fetch(`${BASE_PATH}/api/athlete-rows?${qs}`)
       .then((res) => (res.ok ? res.json() : null))
       .then((data: { rows?: { league: string; season: string }[] } | null) => {
         if (!cancelled) setRegistryRows(data?.rows ?? null);
@@ -1949,7 +1950,7 @@ export function PlayerReportButton({
     });
     if (scout.athlete_id) qs.set("athlete_id", scout.athlete_id);
     if (scout.person_key) qs.set("person_key", scout.person_key);
-    const res = await fetch(`/api/player-season?${qs}`);
+    const res = await fetch(`${BASE_PATH}/api/player-season?${qs}`);
     if (!res.ok) return null;
     return { profile: (await res.json()) as PlayerProfile, league };
   }

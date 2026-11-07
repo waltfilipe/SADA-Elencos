@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
+import { appPath } from "@/lib/paths";
 import { ScatterPlot } from "@/components/scatter/ScatterPlot";
 import { ReportSheet, SeasonSummarySheet } from "@/components/position/profile/PlayerReport";
 import { useLeague } from "@/components/LeagueProvider";
@@ -95,7 +96,7 @@ export function ScatterExportSheet({ family, players, savedCharts, focusPlayer, 
       {chartPages.map((charts, pageIndex) => (
         <div key={pageIndex} className="player-report-page scatter-report-page scatter-report-landscape">
           <header className="player-report-banner">
-            <img src="/brand/sada-wordmark.png" alt="SADA — Sistema de Análise de Dados de Atletas" className="player-report-logo" />
+            <img src={appPath("/brand/sada-wordmark.png")} alt="SADA — Sistema de Análise de Dados de Atletas" className="player-report-logo" />
             <p className="player-report-kicker">{copy.summaryKicker}</p>
             <p className="player-report-league">
               {league.name}

@@ -1,5 +1,6 @@
 "use client";
 
+import { BASE_PATH } from "@/lib/paths";
 import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useLeague } from "@/components/LeagueProvider";
@@ -49,7 +50,7 @@ export function PositionProfileView({ player, family, players, currentPlayers, h
     if (player.athlete_id) qs.set("athlete_id", player.athlete_id);
     else qs.set("person_key", player.person_key!);
     let cancelled = false;
-    fetch(`/api/athlete-rows?${qs}`)
+    fetch(`${BASE_PATH}/api/athlete-rows?${qs}`)
       .then((res) => (res.ok ? res.json() : null))
       .then((data: { rows?: AthleteSeasonRow[] } | null) => {
         if (!cancelled) setAthleteRows(data?.rows ?? []);

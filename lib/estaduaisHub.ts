@@ -1,4 +1,5 @@
 import type { LeagueId } from "./leagues";
+import { appPath } from "./paths";
 
 export type ChampionshipMark = {
   id: string;
@@ -19,48 +20,48 @@ export const ESTADUAIS_LEVELS: EstadualLevel[] = [
     id: "est-nv1",
     name: "Estaduais Nv1",
     hint: "Notas calculadas só entre Paulista, Gaúcho, Mineiro e Carioca.",
-    logo: "/competitions/serie-a.svg",
+    logo: appPath("/competitions/serie-a.svg"),
     members: [
-      { id: "paulista", name: "Paulista", logo: "/competitions/paulista.png" },
-      { id: "gaucho", name: "Gaúcho", logo: "/competitions/gaucho.png" },
-      { id: "mineiro", name: "Mineiro", logo: "/competitions/mineiro.svg" },
-      { id: "carioca", name: "Carioca", logo: "/competitions/carioca.svg" },
+      { id: "paulista", name: "Paulista", logo: appPath("/competitions/paulista.png") },
+      { id: "gaucho", name: "Gaúcho", logo: appPath("/competitions/gaucho.png") },
+      { id: "mineiro", name: "Mineiro", logo: appPath("/competitions/mineiro.svg") },
+      { id: "carioca", name: "Carioca", logo: appPath("/competitions/carioca.svg") },
     ],
   },
   {
     id: "est-nv2",
     name: "Estaduais Nv2",
     hint: "Notas calculadas só entre Paranaense, Catarinense, Paulista A2 e Baiano.",
-    logo: "/competitions/serie-b.svg",
+    logo: appPath("/competitions/serie-b.svg"),
     members: [
-      { id: "paranaense", name: "Paranaense", logo: "/competitions/paranaense.png" },
-      { id: "catarinense", name: "Catarinense", logo: "/competitions/catarinense.jpg" },
-      { id: "paulista-a2", name: "Paulista A2", logo: "/competitions/paulista-a2.png" },
-      { id: "baiano", name: "Baiano", logo: "/competitions/baiano.svg" },
+      { id: "paranaense", name: "Paranaense", logo: appPath("/competitions/paranaense.png") },
+      { id: "catarinense", name: "Catarinense", logo: appPath("/competitions/catarinense.jpg") },
+      { id: "paulista-a2", name: "Paulista A2", logo: appPath("/competitions/paulista-a2.png") },
+      { id: "baiano", name: "Baiano", logo: appPath("/competitions/baiano.svg") },
     ],
   },
   {
     id: "est-nv3",
     name: "Estaduais Nv3",
     hint: "Notas calculadas só entre Cearense, Pernambucano, Paulista A3 e Goiano.",
-    logo: "/competitions/serie-c.svg",
+    logo: appPath("/competitions/serie-c.svg"),
     members: [
-      { id: "cearense", name: "Cearense", logo: "/competitions/cearense.svg" },
-      { id: "pernambucano", name: "Pernambucano", logo: "/competitions/pernambucano.svg" },
-      { id: "paulista-a3", name: "Paulista A3", logo: "/competitions/paulista-a3.png" },
-      { id: "goiano", name: "Goiano", logo: "/competitions/goiano.svg" },
+      { id: "cearense", name: "Cearense", logo: appPath("/competitions/cearense.svg") },
+      { id: "pernambucano", name: "Pernambucano", logo: appPath("/competitions/pernambucano.svg") },
+      { id: "paulista-a3", name: "Paulista A3", logo: appPath("/competitions/paulista-a3.png") },
+      { id: "goiano", name: "Goiano", logo: appPath("/competitions/goiano.svg") },
     ],
   },
   {
     id: "est-nv4",
     name: "Estaduais Nv4",
     hint: "Notas calculadas só entre Paraense, Alagoano, Potiguar e Paulista A4.",
-    logo: "/competitions/outros.svg",
+    logo: appPath("/competitions/outros.svg"),
     members: [
-      { id: "paraense", name: "Paraense", logo: "/competitions/paraense.svg" },
-      { id: "alagoano", name: "Alagoano", logo: "/competitions/alagoano.svg" },
-      { id: "potiguar", name: "Potiguar", logo: "/competitions/potiguar.svg" },
-      { id: "paulista-a4", name: "Paulista A4", logo: "/competitions/paulista-a4.svg" },
+      { id: "paraense", name: "Paraense", logo: appPath("/competitions/paraense.svg") },
+      { id: "alagoano", name: "Alagoano", logo: appPath("/competitions/alagoano.svg") },
+      { id: "potiguar", name: "Potiguar", logo: appPath("/competitions/potiguar.svg") },
+      { id: "paulista-a4", name: "Paulista A4", logo: appPath("/competitions/paulista-a4.svg") },
     ],
   },
 ];

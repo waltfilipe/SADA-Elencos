@@ -1,5 +1,6 @@
 "use client";
 
+import { BASE_PATH } from "@/lib/paths";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLeague } from "@/components/LeagueProvider";
@@ -39,7 +40,7 @@ export function ScatterExportModal({ athletes, pickedSeasons, onClose, onExport 
     qs.set("season", viewedSeason);
     qs.set("player_id", player.player_id);
     let cancelled = false;
-    fetch(`/api/athlete-rows?${qs}`)
+    fetch(`${BASE_PATH}/api/athlete-rows?${qs}`)
       .then((res) => (res.ok ? res.json() : null))
       .then((data: { rows?: ExportSeasonPick[] } | null) => {
         if (!cancelled && data?.rows) setRowsById((map) => ({ ...map, [pickedId]: data.rows! }));

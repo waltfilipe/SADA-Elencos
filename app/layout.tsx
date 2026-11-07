@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: "SADA | Elencos",
   description: "Elencos do Brasileirão e estaduais 2026 — escalações, temporadas anteriores e times sombra.",
   icons: {
-    icon: [{ url: "/favicon.png", type: "image/png" }],
-    apple: [{ url: "/favicon.png", type: "image/png" }],
+    icon: [{ url: "/elencos/favicon.png", type: "image/png" }],
+    apple: [{ url: "/elencos/favicon.png", type: "image/png" }],
   },
 };
 

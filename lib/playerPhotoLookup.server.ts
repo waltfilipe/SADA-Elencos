@@ -5,6 +5,7 @@ import path from "path";
 import { CURRENT_SEASON } from "@/lib/seasons";
 import type { LeagueId } from "@/lib/leagues";
 import { POSITION_FAMILIES } from "@/lib/positions";
+import { BASE_PATH } from "@/lib/paths";
 import type { PlayerProfile, PlayerSummary, TransfermarktInfo } from "@/lib/types";
 
 const DATA_DIR = path.join(process.cwd(), "data");
@@ -189,7 +190,7 @@ function loadPhotoManifest(maps: PhotoIndex) {
     if (!row.file || !row.name) continue;
     const tm: TransfermarktInfo = {
       id: null,
-      photo: `/photos/${row.file}`,
+      photo: `${BASE_PATH}/photos/${row.file}`,
       market_value: null,
       market_value_eur: null,
       contract_until: null,

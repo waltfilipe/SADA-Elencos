@@ -1,4 +1,5 @@
 import { ESTADUAIS_LEAGUE_IDS, ESTADUAIS_LEVELS, type EstadualLeagueId } from "./estaduaisHub";
+import { appPath } from "./paths";
 
 export type LeagueId = "serie-a" | "serie-b" | "serie-c" | "serie-d" | EstadualLeagueId;
 
@@ -24,7 +25,7 @@ const BRASILEIRAO: LeagueInfo[] = [
     tagline: "Brasileirão",
     heatmaps: true,
     physicalRun: true,
-    logo: "/competitions/serie-a.svg",
+    logo: appPath("/competitions/serie-a.svg"),
   },
   {
     id: "serie-b",
@@ -35,7 +36,7 @@ const BRASILEIRAO: LeagueInfo[] = [
     tagline: "Brasileirão",
     heatmaps: true,
     physicalRun: false,
-    logo: "/competitions/serie-b.svg",
+    logo: appPath("/competitions/serie-b.svg"),
   },
   {
     id: "serie-c",
@@ -46,7 +47,7 @@ const BRASILEIRAO: LeagueInfo[] = [
     tagline: "Brasileirão",
     heatmaps: true,
     physicalRun: false,
-    logo: "/competitions/serie-c.svg",
+    logo: appPath("/competitions/serie-c.svg"),
   },
   {
     id: "serie-d",
@@ -57,7 +58,7 @@ const BRASILEIRAO: LeagueInfo[] = [
     tagline: "Brasileirão",
     heatmaps: true,
     physicalRun: false,
-    logo: "/competitions/serie-d.svg",
+    logo: appPath("/competitions/serie-d.svg"),
   },
 ];
 
@@ -70,7 +71,7 @@ const ESTADUAIS: LeagueInfo[] = ESTADUAIS_LEVELS.map((level) => ({
   tagline: "Estaduais",
   heatmaps: false,
   physicalRun: false,
-  logo: level.members[0]?.logo ?? "/competitions/outros.svg",
+  logo: level.members[0]?.logo ?? appPath("/competitions/outros.svg"),
 }));
 
 /** Ligas publicadas no site. Estaduais entram por nível, não por campeonato. */

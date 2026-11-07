@@ -1,5 +1,6 @@
 "use client";
 
+import { BASE_PATH } from "@/lib/paths";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLoading } from "@/components/LoadingProvider";
@@ -89,7 +90,7 @@ export function ScatterExportButton({ family, players, savedCharts, pickedSeason
       });
       if (target.athlete_id) qs.set("athlete_id", target.athlete_id);
       if (target.person_key) qs.set("person_key", target.person_key);
-      const res = await fetch(`/api/player-season?${qs}`).catch(() => null);
+      const res = await fetch(`${BASE_PATH}/api/player-season?${qs}`).catch(() => null);
       return res?.ok ? ((await res.json()) as PlayerProfile) : null;
     };
     const [main, ...extras] = await Promise.all([

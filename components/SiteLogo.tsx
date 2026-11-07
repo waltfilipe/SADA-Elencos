@@ -1,11 +1,13 @@
+import { appPath } from "@/lib/paths";
+
 export const SITE_NAME = "SADA | Scout";
 
 const SOURCES = {
-  wordmark: "/brand/sada-wordmark.png",
-  horizontal: "/brand/sada-lockup-horizontal.png",
-  stacked: "/brand/sada-lockup-stacked.png",
-  mark: "/brand/sada-mark.png",
-  header: "/brand/sada-scout-header.png",
+  wordmark: appPath("/brand/sada-wordmark.png"),
+  horizontal: appPath("/brand/sada-lockup-horizontal.png"),
+  stacked: appPath("/brand/sada-lockup-stacked.png"),
+  mark: appPath("/brand/sada-mark.png"),
+  header: appPath("/brand/sada-scout-header.png"),
 } as const;
 
 type Variant = keyof typeof SOURCES;

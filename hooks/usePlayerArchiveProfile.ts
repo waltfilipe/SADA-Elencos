@@ -1,5 +1,6 @@
 "use client";
 
+import { BASE_PATH } from "@/lib/paths";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useLeague } from "@/components/LeagueProvider";
@@ -63,7 +64,7 @@ export function usePlayerArchiveProfile(basePlayer: PlayerProfile, _family: Posi
       basePlayer.cross_season?.seasons.find((s) => s.year === fichaSeason && s.league === league)?.club ??
       basePlayer.club;
     if (expectedClub) qs.set("club", expectedClub);
-    fetch(`/api/player-season?${qs}`)
+    fetch(`${BASE_PATH}/api/player-season?${qs}`)
       .then((res) => (res.ok ? res.json() : null))
       .then((data: PlayerProfile | null) => {
         if (cancelled) return;

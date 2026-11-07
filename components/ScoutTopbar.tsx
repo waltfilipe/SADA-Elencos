@@ -6,6 +6,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { SiteLogo } from "@/components/SiteLogo";
 import { useLeagueOptional } from "@/components/LeagueProvider";
 import { getLeague, leaguePath, LEAGUES, type LeagueInfo } from "@/lib/leagues";
+import { BASE_PATH } from "@/lib/paths";
 import { isBrasileiraoLeague, withSeasonQuery } from "@/lib/seasons";
 
 const NAV_SCOUT = [
@@ -56,7 +57,8 @@ export function ScoutTopbar({ active, subnav, hubMode = false }: Props) {
   }, [leagueMenuOpen]);
 
   function switchHref(target: LeagueInfo) {
-    const rest = pathname.replace(/^\/[^/]+/, "") || "/";
+    const clean = pathname.startsWith(`${BASE_PATH}/`) ? pathname.slice(BASE_PATH.length) : pathname;
+    const rest = clean.replace(/^\/[^/]+/, "") || "/";
     const base = leaguePath(target.id, rest);
     return isBrasileiraoLeague(target.id) ? withSeasonQuery(base, league?.season ?? "2026") : base;
   }

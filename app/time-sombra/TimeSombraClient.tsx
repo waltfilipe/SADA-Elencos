@@ -1,5 +1,6 @@
 "use client";
 
+import { BASE_PATH } from "@/lib/paths";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useLeague } from "@/components/LeagueProvider";
@@ -117,7 +118,7 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
       if (playersByLeague[id] || requestedRef.current.has(id)) return;
       requestedRef.current.add(id);
       setPendingCount((n) => n + 1);
-      fetch(`/api/search-rows?league=${id}&slim=1`)
+      fetch(`${BASE_PATH}/api/search-rows?league=${id}&slim=1`)
         .then((res) => (res.ok ? res.json() : Promise.reject(new Error("squad_rows_failed"))))
         .then((data: { players?: PlayerSearchRow[] }) => {
           setRemoteLeagues((prev) => ({ ...prev, [id]: data.players ?? [] }));
@@ -173,7 +174,7 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
     setPrevRows(null);
     setPrevLoading(true);
     setPrevFailed(false);
-    fetch(`/api/search-rows?league=${prevLeague}&season=${prevSeason}&slim=1`)
+    fetch(`${BASE_PATH}/api/search-rows?league=${prevLeague}&season=${prevSeason}&slim=1`)
       .then((res) => (res.ok ? res.json() : Promise.reject(new Error("previos_fetch_failed"))))
       .then((data: { players?: PlayerSearchRow[] }) => {
         if (cancelled) return;
@@ -196,7 +197,7 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
     if (!isPrevios) return;
     let cancelled = false;
     setPrevStandings(null);
-    fetch(`/api/standings?league=${prevLeague}&season=${prevSeason}`)
+    fetch(`${BASE_PATH}/api/standings?league=${prevLeague}&season=${prevSeason}`)
       .then((res) => (res.ok ? res.json() : Promise.reject(new Error("standings_fetch_failed"))))
       .then((data: { clubs?: string[] }) => {
         if (!cancelled) setPrevStandings(data.clubs ?? []);
@@ -1217,7 +1218,7 @@ function PreviosSimilarSection({
             limit: "5",
           });
           if (season !== CURRENT_SEASON) params.set("season", season);
-          const res = await fetch(`/api/similar?${params.toString()}`);
+          const res = await fetch(`${BASE_PATH}/api/similar?${params.toString()}`);
           if (!res.ok) return [player.player_id, []] as const;
           const data = (await res.json()) as { matches?: SimilarPlayerHit[] };
           return [player.player_id, data.matches ?? []] as const;
