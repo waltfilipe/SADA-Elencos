@@ -41,6 +41,21 @@ function pushShadowToCloud(scope: ShadowScope, state: ShadowTeamState): void {
   );
 }
 
+/** Estado sem nenhum atleta em nenhum board — não deve sobrescrever o local. */
+export function isShadowStateEmpty(state: ShadowTeamState): boolean {
+  const anyAssigned = (a?: Record<string, string | null>) => Object.values(a ?? {}).some(Boolean);
+  const anyReserve = (r?: Record<string, string[]>) => Object.values(r ?? {}).some((ids) => (ids?.length ?? 0) > 0);
+  return (
+    !(state.squadIds?.length ?? 0) &&
+    !(state.watchlistIds?.length ?? 0) &&
+    !(state.ownSquadIds?.length ?? 0) &&
+    !anyAssigned(state.assignments) &&
+    !anyAssigned(state.ownAssignments) &&
+    !anyReserve(state.reserves) &&
+    !anyReserve(state.ownReserves)
+  );
+}
+
 /** Baixa o estado compartilhado e atualiza o localStorage + listeners. */
 export async function hydrateShadowFromCloud(scope: ShadowScope): Promise<void> {
   if (typeof window === "undefined") return;
@@ -48,7 +63,13 @@ export async function hydrateShadowFromCloud(scope: ShadowScope): Promise<void> 
     const res = await fetch(shadowApi(scope), { cache: "no-store" });
     if (!res.ok) return;
     const data = (await res.json()) as { enabled?: boolean; state?: ShadowTeamState | null };
-    if (!data.enabled || !data.state) return;
+    if (!data.enabled) return;
+    const local = loadShadowTeamState(scope);
+    // Nuvem vazia nunca apaga o local — se houver conteúdo local, sobe ele.
+    if (!data.state || isShadowStateEmpty(data.state)) {
+      if (!isShadowStateEmpty(local)) pushShadowToCloud(scope, local);
+      return;
+    }
     const serialized = JSON.stringify(data.state);
     if (localStorage.getItem(storageKey(scope)) === serialized) return;
     localStorage.setItem(storageKey(scope), serialized);
