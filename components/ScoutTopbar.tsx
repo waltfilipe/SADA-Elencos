@@ -64,7 +64,8 @@ export function ScoutTopbar({ active, subnav, hubMode = false }: Props) {
   }
 
   function navHref(item: { path: string; global: boolean; anywhere?: boolean }) {
-    if (item.global) return item.path;
+    // "Início" preserva a liga atual (o /{liga} redireciona para /{liga}/elenco).
+    if (item.global) return league ? league.href("/") : item.path;
     if (hubMode || !league) return item.anywhere ? item.path : "/";
     return league.href(item.path);
   }
