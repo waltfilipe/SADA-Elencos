@@ -116,34 +116,81 @@
 .scout-topbar-compact {
   min-height: 64px;
   flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0.4rem clamp(1rem, 3vw, 2rem);
+  background: linear-gradient(180deg, rgba(13, 27, 42, 0.96), rgba(13, 27, 42, 0.88));
 }
 
-.scout-topbar-compact .topbar-links-primary,
+.scout-topbar-compact .scout-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.scout-brand-app {
+  padding-left: 0.85rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+
 .scout-topbar-compact .topbar-links-squad {
-  gap: 0.15rem;
-  padding: 0.22rem;
+  margin-left: 0;
+  width: auto;
+  flex-shrink: 0;
+  gap: 0.2rem;
+  padding: 0.28rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
 }
 
-.scout-topbar-compact .topbar-links-squad {
-  margin-left: auto;
-  flex-shrink: 0;
-  border-color: rgba(250, 204, 21, 0.3);
-}
-
-.scout-topbar-compact .topbar-links-primary a,
 .scout-topbar-compact .topbar-links-squad a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   border-radius: 999px;
-  padding: 0.45rem 0.85rem;
+  padding: 0.5rem 1rem;
   font-size: 0.84rem;
+  font-weight: 500;
 }
 
-.topbar-links-squad a.active {
+.scout-topbar-compact .topbar-links-squad a i {
+  font-size: 0.78rem;
+  opacity: 0.75;
+}
+
+.scout-topbar-compact .topbar-links-squad a.active {
   color: #0d1b2a;
   font-weight: 650;
-  background: var(--gold);
+  background: #1be7ff;
+  box-shadow: 0 0 18px rgba(27, 231, 255, 0.35);
+}
+
+.scout-topbar-compact .topbar-links-squad a.active i {
+  opacity: 1;
+}
+
+@media (max-width: 760px) {
+  .scout-brand-app {
+    display: none;
+  }
+
+  .scout-topbar-compact .topbar-links-squad a {
+    padding: 0.5rem 0.7rem;
+  }
+
+  .scout-topbar-compact .topbar-links-squad a span {
+    display: none;
+  }
+
+  .scout-topbar-compact .topbar-links-squad a.active span {
+    display: inline;
+  }
 }
 
 .topbar-link-muted {
