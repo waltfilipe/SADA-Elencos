@@ -11,6 +11,7 @@ const NAV_SQUAD = [
   { key: "elencos-previos", path: "/elencos-previos", label: "Elencos Prévios", icon: "fa-clock-rotate-left" },
   { key: "time-sombra", path: "/time-sombra", label: "Time Sombra", icon: "fa-chess-board" },
   { key: "saltos", path: "/saltos", label: "Saltos", icon: "fa-arrow-trend-up" },
+  { key: "valores", path: "/valores", label: "Valores", icon: "fa-tag" },
 ] as const;
 
 export type ScoutSection =

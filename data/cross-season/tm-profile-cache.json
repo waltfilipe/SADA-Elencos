@@ -7,7 +7,9 @@
  "166032": {
   "joined": "2026-01-15",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/marllon/profil/spieler/166032"
+  "profile_url": "https://www.transfermarkt.com.br/marllon/profil/spieler/166032",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "375690": {
   "joined": "2025-01-03",
@@ -22,7 +24,12 @@
  "428783": {
   "joined": "2026-01-09",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/vitao/profil/spieler/428783"
+  "profile_url": "https://www.transfermarkt.com.br/vitao/profil/spieler/428783",
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true
  },
  "514297": {
   "joined": "2026-07-08",
@@ -47,12 +54,19 @@
    "fee": "custo zero",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/junior-alonso/profil/spieler/273000"
+  "profile_url": "https://www.transfermarkt.com.br/junior-alonso/profil/spieler/273000",
+  "caps": 77,
+  "caps_goals": 3,
+  "caps_team": "Paraguai",
+  "contract_until": "2029-06-30",
+  "caps_checked": true
  },
  "403296": {
   "joined": "2025-01-02",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/leotm/profil/spieler/403296"
+  "profile_url": "https://www.transfermarkt.com.br/leotm/profil/spieler/403296",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "236202": {
   "joined": "2025-02-28",
@@ -72,7 +86,9 @@
    "fee": "€500mil",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/pedro-henrique/profil/spieler/329720"
+  "profile_url": "https://www.transfermarkt.com.br/pedro-henrique/profil/spieler/329720",
+  "contract_until": "2028-06-30",
+  "caps_checked": true
  },
  "401539": {
   "joined": "2026-01-01",
@@ -92,12 +108,19 @@
  "374136": {
   "joined": "2024-03-06",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/leo-ortiz/profil/spieler/374136"
+  "profile_url": "https://www.transfermarkt.com.br/leo-ortiz/profil/spieler/374136",
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "84695": {
   "joined": "2026-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/maicon/profil/spieler/84695"
+  "profile_url": "https://www.transfermarkt.com.br/maicon/profil/spieler/84695",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "256453": {
   "joined": "2026-02-05",
@@ -112,7 +135,9 @@
    "fee": "custo zero",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/matheus-felipe/profil/spieler/882916"
+  "profile_url": "https://www.transfermarkt.com.br/matheus-felipe/profil/spieler/882916",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "686333": {
   "joined": "2026-01-05",
@@ -127,12 +152,19 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/arthur-chaves/profil/spieler/875332"
+  "profile_url": "https://www.transfermarkt.com.br/arthur-chaves/profil/spieler/875332",
+  "caps": 6,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "524446": {
   "joined": "2023-08-22",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/kanu/profil/spieler/524446"
+  "profile_url": "https://www.transfermarkt.com.br/kanu/profil/spieler/524446",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "103146": {
   "joined": "2026-01-01",
@@ -162,17 +194,32 @@
  "119434": {
   "joined": "2025-01-06",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/rodrigo-moledo/profil/spieler/119434"
+  "profile_url": "https://www.transfermarkt.com.br/rodrigo-moledo/profil/spieler/119434",
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "432773": {
   "joined": "2025-01-10",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/fabricio-bruno/profil/spieler/432773"
+  "profile_url": "https://www.transfermarkt.com.br/fabricio-bruno/profil/spieler/432773",
+  "caps": 6,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2030-12-31",
+  "caps_checked": true
  },
  "285548": {
   "joined": "2025-07-26",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/fabian-balbuena/profil/spieler/285548"
+  "profile_url": "https://www.transfermarkt.com.br/fabian-balbuena/profil/spieler/285548",
+  "caps": 48,
+  "caps_goals": 2,
+  "caps_team": "Paraguai",
+  "contract_until": "2027-06-30",
+  "caps_checked": true
  },
  "258254": {
   "joined": "2026-03-19",
@@ -197,7 +244,12 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/robert-renan/profil/spieler/958598"
+  "profile_url": "https://www.transfermarkt.com.br/robert-renan/profil/spieler/958598",
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "466336": {
   "joined": "2026-08-19",
@@ -207,7 +259,12 @@
    "fee": "€3.50mi",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/nahuel-ferraresi/profil/spieler/466336"
+  "profile_url": "https://www.transfermarkt.com.br/nahuel-ferraresi/profil/spieler/466336",
+  "caps": 47,
+  "caps_goals": 1,
+  "caps_team": "Venezuela",
+  "contract_until": "2029-12-31",
+  "caps_checked": true
  },
  "53226": {
   "joined": "2026-06-18",
@@ -222,7 +279,12 @@
  "341701": {
   "joined": "2025-08-22",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/igor-rabello/profil/spieler/341701"
+  "profile_url": "https://www.transfermarkt.com.br/igor-rabello/profil/spieler/341701",
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "979629": {
   "joined": "2026-01-01",
@@ -242,12 +304,19 @@
  "626110": {
   "joined": "2025-07-24",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/joao-victor/profil/spieler/626110"
+  "profile_url": "https://www.transfermarkt.com.br/joao-victor/profil/spieler/626110",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "208681": {
   "joined": "2024-01-15",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/gustavo-henrique/profil/spieler/208681"
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-henrique/profil/spieler/208681",
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "67207": {
   "joined": "2026-08-01",
@@ -262,7 +331,9 @@
  "607817": {
   "joined": "2023-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/camutanga/profil/spieler/607817"
+  "profile_url": "https://www.transfermarkt.com.br/camutanga/profil/spieler/607817",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "977465": {
   "joined": "2026-07-01",
@@ -272,12 +343,16 @@
    "fee": "€3.50mi",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/gustavo-marques/profil/spieler/977465"
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-marques/profil/spieler/977465",
+  "contract_until": "2030-06-30",
+  "caps_checked": true
  },
  "406676": {
   "joined": "2023-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/juninho-capixaba/profil/spieler/406676"
+  "profile_url": "https://www.transfermarkt.com.br/juninho-capixaba/profil/spieler/406676",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "547932": {
   "joined": "2026-10-15",
@@ -307,7 +382,12 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/luan-candido/profil/spieler/432166"
+  "profile_url": "https://www.transfermarkt.com.br/luan-candido/profil/spieler/432166",
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "520430": {
   "joined": "2026-03-23",
@@ -322,12 +402,16 @@
  "212209": {
   "joined": "2025-01-09",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/rene/profil/spieler/212209"
+  "profile_url": "https://www.transfermarkt.com.br/rene/profil/spieler/212209",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "435163": {
   "joined": "2026-01-13",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/bruno-pacheco/profil/spieler/435163"
+  "profile_url": "https://www.transfermarkt.com.br/bruno-pacheco/profil/spieler/435163",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "72451": {
   "joined": "2026-07-04",
@@ -347,7 +431,9 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/joao-lucas/profil/spieler/672292"
+  "profile_url": "https://www.transfermarkt.com.br/joao-lucas/profil/spieler/672292",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "443721": {
   "joined": "2026-08-13",
@@ -357,12 +443,19 @@
    "fee": "?",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/marlon/profil/spieler/443721"
+  "profile_url": "https://www.transfermarkt.com.br/marlon/profil/spieler/443721",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "594226": {
   "joined": "2024-02-16",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/matheuzinho/profil/spieler/594226"
+  "profile_url": "https://www.transfermarkt.com.br/matheuzinho/profil/spieler/594226",
+  "caps": 3,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "177845": {
   "joined": "2026-08-03",
@@ -377,12 +470,22 @@
  "653348": {
   "joined": "2025-08-05",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/khellven/profil/spieler/653348"
+  "profile_url": "https://www.transfermarkt.com.br/khellven/profil/spieler/653348",
+  "caps": 7,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2030-06-30",
+  "caps_checked": true
  },
  "587786": {
   "joined": "2026-02-16",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/felipe-jonatan/profil/spieler/587786"
+  "profile_url": "https://www.transfermarkt.com.br/felipe-jonatan/profil/spieler/587786",
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "350766": {
   "joined": "2026-03-26",
@@ -397,22 +500,36 @@
    "fee": "?",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/emanuel-britez/profil/spieler/262851"
+  "profile_url": "https://www.transfermarkt.com.br/emanuel-britez/profil/spieler/262851",
+  "contract_until": "2027-06-30",
+  "caps_checked": true
  },
  "670201": {
   "joined": "2023-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/lucas-piton/profil/spieler/670201"
+  "profile_url": "https://www.transfermarkt.com.br/lucas-piton/profil/spieler/670201",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "346766": {
   "joined": "2026-01-02",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/guilherme-arana/profil/spieler/346766"
+  "profile_url": "https://www.transfermarkt.com.br/guilherme-arana/profil/spieler/346766",
+  "caps": 13,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true
  },
  "592344": {
   "joined": "2023-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/guga/profil/spieler/592344"
+  "profile_url": "https://www.transfermarkt.com.br/guga/profil/spieler/592344",
+  "caps": 13,
+  "caps_goals": 1,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true
  },
  "601011": {
   "joined": "2026-01-01",
@@ -422,7 +539,9 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/caio-paulista/profil/spieler/601011"
+  "profile_url": "https://www.transfermarkt.com.br/caio-paulista/profil/spieler/601011",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "922247": {
   "joined": "2026-08-25",
@@ -437,17 +556,26 @@
  "412594": {
   "joined": "2024-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/paulo-henrique/profil/spieler/412594"
+  "profile_url": "https://www.transfermarkt.com.br/paulo-henrique/profil/spieler/412594",
+  "caps": 2,
+  "caps_goals": 1,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "225617": {
   "joined": "2025-01-06",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/reinaldo/profil/spieler/225617"
+  "profile_url": "https://www.transfermarkt.com.br/reinaldo/profil/spieler/225617",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "740295": {
   "joined": "2025-01-18",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/natanael/profil/spieler/740295"
+  "profile_url": "https://www.transfermarkt.com.br/natanael/profil/spieler/740295",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "538978": {
   "joined": "2026-01-01",
@@ -487,12 +615,19 @@
  "552240": {
   "joined": "2025-07-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/igor-vinicius/profil/spieler/552240"
+  "profile_url": "https://www.transfermarkt.com.br/igor-vinicius/profil/spieler/552240",
+  "contract_until": "2028-06-30",
+  "caps_checked": true
  },
  "273442": {
   "joined": "2026-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/tinga/profil/spieler/273442"
+  "profile_url": "https://www.transfermarkt.com.br/tinga/profil/spieler/273442",
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "271666": {
   "joined": "2025-01-13",
@@ -507,7 +642,12 @@
  "47592": {
   "joined": "2026-01-07",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/fagner/profil/spieler/47592"
+  "profile_url": "https://www.transfermarkt.com.br/fagner/profil/spieler/47592",
+  "caps": 10,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "281837": {
   "joined": "2026-01-30",
@@ -527,7 +667,9 @@
    "fee": "-",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/savio/profil/spieler/607093"
+  "profile_url": "https://www.transfermarkt.com.br/savio/profil/spieler/607093",
+  "contract_until": "2026-11-30",
+  "caps_checked": true
  },
  "980022": {
   "joined": "2026-08-21",
@@ -577,7 +719,9 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/nathan-mendes/profil/spieler/887801"
+  "profile_url": "https://www.transfermarkt.com.br/nathan-mendes/profil/spieler/887801",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "896860": {
   "joined": "2026-03-01",
@@ -592,12 +736,19 @@
  "538230": {
   "joined": "2025-01-11",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/bruno-melo/profil/spieler/538230"
+  "profile_url": "https://www.transfermarkt.com.br/bruno-melo/profil/spieler/538230",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "406675": {
   "joined": "2026-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/marlon/profil/spieler/406675"
+  "profile_url": "https://www.transfermarkt.com.br/marlon/profil/spieler/406675",
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "867461": {
   "joined": "2025-08-01",
@@ -632,7 +783,9 @@
  "373446": {
   "joined": "2024-01-10",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/david-duarte/profil/spieler/373446"
+  "profile_url": "https://www.transfermarkt.com.br/david-duarte/profil/spieler/373446",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "678502": {
   "joined": "2026-01-01",
@@ -857,7 +1010,12 @@
  "703322": {
   "joined": "2024-02-16",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/bruno-gomes/profil/spieler/703322"
+  "profile_url": "https://www.transfermarkt.com.br/bruno-gomes/profil/spieler/703322",
+  "caps": 5,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "982617": {
   "joined": "2025-01-01",
@@ -1057,7 +1215,12 @@
  "131101": {
   "joined": "2025-07-10",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/stiven-mendoza/profil/spieler/131101"
+  "profile_url": "https://www.transfermarkt.com.br/stiven-mendoza/profil/spieler/131101",
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Colômbia",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "75111": {
   "joined": "2026-02-24",
@@ -1142,7 +1305,9 @@
    "fee": "custo zero",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/vitinho/profil/spieler/670965"
+  "profile_url": "https://www.transfermarkt.com.br/vitinho/profil/spieler/670965",
+  "contract_until": "2030-06-30",
+  "caps_checked": true
  },
  "457533": {
   "joined": "2025-01-10",
@@ -1192,7 +1357,12 @@
  "288431": {
   "joined": "2020-01-31",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/leo-pereira/profil/spieler/288431"
+  "profile_url": "https://www.transfermarkt.com.br/leo-pereira/profil/spieler/288431",
+  "caps": 4,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "232847": {
   "joined": "2026-01-29",
@@ -1232,7 +1402,9 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/ronald/profil/spieler/688684"
+  "profile_url": "https://www.transfermarkt.com.br/ronald/profil/spieler/688684",
+  "contract_until": "2026-11-30",
+  "caps_checked": true
  },
  "689521": {
   "joined": "2026-01-16",
@@ -1297,7 +1469,12 @@
  "373170": {
   "joined": "2024-02-16",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/cristian-pavon/profil/spieler/373170"
+  "profile_url": "https://www.transfermarkt.com.br/cristian-pavon/profil/spieler/373170",
+  "caps": 11,
+  "caps_goals": 0,
+  "caps_team": "Argentina",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "942644": {
   "joined": "2026-03-26",
@@ -1602,7 +1779,12 @@
  "468249": {
   "joined": "2024-08-30",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/vitinho/profil/spieler/468249"
+  "profile_url": "https://www.transfermarkt.com.br/vitinho/profil/spieler/468249",
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true
  },
  "977549": {
   "joined": "2026-03-30",
@@ -1677,12 +1859,16 @@
  "698784": {
   "joined": "2024-08-30",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/doma/profil/spieler/698784"
+  "profile_url": "https://www.transfermarkt.com.br/doma/profil/spieler/698784",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "592340": {
   "joined": "2026-01-06",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/willian-machado/profil/spieler/592340"
+  "profile_url": "https://www.transfermarkt.com.br/willian-machado/profil/spieler/592340",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "603122": {
   "joined": "2026-02-26",
@@ -1692,17 +1878,23 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/caca/profil/spieler/603122"
+  "profile_url": "https://www.transfermarkt.com.br/caca/profil/spieler/603122",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "593382": {
   "joined": "2025-05-22",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/jacy/profil/spieler/593382"
+  "profile_url": "https://www.transfermarkt.com.br/jacy/profil/spieler/593382",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "546033": {
   "joined": "2024-03-15",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/sabino/profil/spieler/546033"
+  "profile_url": "https://www.transfermarkt.com.br/sabino/profil/spieler/546033",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "555015": {
   "joined": "2026-07-01",
@@ -1712,7 +1904,9 @@
    "fee": "€3.50mi",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/ruan/profil/spieler/555015"
+  "profile_url": "https://www.transfermarkt.com.br/ruan/profil/spieler/555015",
+  "contract_until": "2030-06-30",
+  "caps_checked": true
  },
  "379752": {
   "joined": "2026-07-01",
@@ -1722,17 +1916,29 @@
    "fee": "€3.40mi",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/alexander-barboza/profil/spieler/379752"
+  "profile_url": "https://www.transfermarkt.com.br/alexander-barboza/profil/spieler/379752",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "411662": {
   "joined": "2026-03-03",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/lucas-verissimo/profil/spieler/411662"
+  "profile_url": "https://www.transfermarkt.com.br/lucas-verissimo/profil/spieler/411662",
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "1083207": {
   "joined": "2024-07-10",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/jonathan-jesus/profil/spieler/1083207"
+  "profile_url": "https://www.transfermarkt.com.br/jonathan-jesus/profil/spieler/1083207",
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-06-30",
+  "caps_checked": true
  },
  "468174": {
   "joined": "2026-01-18",
@@ -1742,12 +1948,19 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/felix-torres/profil/spieler/468174"
+  "profile_url": "https://www.transfermarkt.com.br/felix-torres/profil/spieler/468174",
+  "caps": 52,
+  "caps_goals": 5,
+  "caps_team": "Equador",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "1141364": {
   "joined": "2026-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/jemmes/profil/spieler/1141364"
+  "profile_url": "https://www.transfermarkt.com.br/jemmes/profil/spieler/1141364",
+  "contract_until": "2030-12-31",
+  "caps_checked": true
  },
  "729587": {
   "joined": "2026-08-08",
@@ -1757,17 +1970,25 @@
    "fee": "?",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/bruno-leonardo/profil/spieler/729587"
+  "profile_url": "https://www.transfermarkt.com.br/bruno-leonardo/profil/spieler/729587",
+  "caps_checked": true
  },
  "834444": {
   "joined": "2026-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/victor-gabriel/profil/spieler/834444"
+  "profile_url": "https://www.transfermarkt.com.br/victor-gabriel/profil/spieler/834444",
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true
  },
  "624291": {
   "joined": "2024-07-19",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/ignacio/profil/spieler/624291"
+  "profile_url": "https://www.transfermarkt.com.br/ignacio/profil/spieler/624291",
+  "contract_until": "2028-06-30",
+  "caps_checked": true
  },
  "950393": {
   "joined": "2026-07-01",
@@ -1777,7 +1998,9 @@
    "fee": "€15.00mi",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/viery/profil/spieler/950393"
+  "profile_url": "https://www.transfermarkt.com.br/viery/profil/spieler/950393",
+  "contract_until": "2031-06-30",
+  "caps_checked": true
  },
  "503343": {
   "joined": "2026-07-15",
@@ -1787,12 +2010,22 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/alan-franco/profil/spieler/503343"
+  "profile_url": "https://www.transfermarkt.com.br/alan-franco/profil/spieler/503343",
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Argentina",
+  "contract_until": "2027-06-30",
+  "caps_checked": true
  },
  "149752": {
   "joined": "2026-01-09",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/vitor-hugo/profil/spieler/149752"
+  "profile_url": "https://www.transfermarkt.com.br/vitor-hugo/profil/spieler/149752",
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "484848": {
   "joined": "2026-07-20",
@@ -1802,7 +2035,9 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/ze-ivaldo/profil/spieler/484848"
+  "profile_url": "https://www.transfermarkt.com.br/ze-ivaldo/profil/spieler/484848",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "1219466": {
   "joined": "2026-07-01",
@@ -1812,12 +2047,16 @@
    "fee": "€506mil",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/wallace/profil/spieler/1219466"
+  "profile_url": "https://www.transfermarkt.com.br/wallace/profil/spieler/1219466",
+  "contract_until": "2031-06-30",
+  "caps_checked": true
  },
  "671572": {
   "joined": "2025-02-14",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/wagner-leonardo/profil/spieler/671572"
+  "profile_url": "https://www.transfermarkt.com.br/wagner-leonardo/profil/spieler/671572",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "811219": {
   "joined": "2026-07-17",
@@ -1827,22 +2066,33 @@
    "fee": "€3.00mi",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/newton/profil/spieler/811219"
+  "profile_url": "https://www.transfermarkt.com.br/newton/profil/spieler/811219",
+  "contract_until": "2029-12-31",
+  "caps_checked": true
  },
  "592373": {
   "joined": "2026-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/lucas-oliveira/profil/spieler/592373"
+  "profile_url": "https://www.transfermarkt.com.br/lucas-oliveira/profil/spieler/592373",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "563692": {
   "joined": "2026-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/bruno-fuchs/profil/spieler/563692"
+  "profile_url": "https://www.transfermarkt.com.br/bruno-fuchs/profil/spieler/563692",
+  "caps": 8,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true
  },
  "736652": {
   "joined": "2026-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/joao-paulo/profil/spieler/736652"
+  "profile_url": "https://www.transfermarkt.com.br/joao-paulo/profil/spieler/736652",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "1089609": {
   "joined": "2026-07-16",
@@ -1852,7 +2102,9 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/kayky-almeida/profil/spieler/1089609"
+  "profile_url": "https://www.transfermarkt.com.br/kayky-almeida/profil/spieler/1089609",
+  "contract_until": "2026-11-30",
+  "caps_checked": true
  },
  "740501": {
   "joined": "2026-06-18",
@@ -1862,37 +2114,51 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/gabriel-xavier/profil/spieler/740501"
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-xavier/profil/spieler/740501",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "410183": {
   "joined": "2026-03-25",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/joao-basso/profil/spieler/410183"
+  "profile_url": "https://www.transfermarkt.com.br/joao-basso/profil/spieler/410183",
+  "contract_until": "2026-11-30",
+  "caps_checked": true
  },
  "265693": {
   "joined": "2019-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/luiz-otavio/profil/spieler/265693"
+  "profile_url": "https://www.transfermarkt.com.br/luiz-otavio/profil/spieler/265693",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "688690": {
   "joined": "2026-01-16",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/igor-formiga/profil/spieler/688690"
+  "profile_url": "https://www.transfermarkt.com.br/igor-formiga/profil/spieler/688690",
+  "contract_until": "2027-12-10",
+  "caps_checked": true
  },
  "670021": {
   "joined": "2023-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/matheus-bidu/profil/spieler/670021"
+  "profile_url": "https://www.transfermarkt.com.br/matheus-bidu/profil/spieler/670021",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "440377": {
   "joined": "2025-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/gonzalo-escobar/profil/spieler/440377"
+  "profile_url": "https://www.transfermarkt.com.br/gonzalo-escobar/profil/spieler/440377",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "681494": {
   "joined": "2025-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/marcelinho/profil/spieler/681494"
+  "profile_url": "https://www.transfermarkt.com.br/marcelinho/profil/spieler/681494",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "663578": {
   "joined": "2025-08-08",
@@ -1902,12 +2168,19 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/ramon/profil/spieler/663578"
+  "profile_url": "https://www.transfermarkt.com.br/ramon/profil/spieler/663578",
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "378189": {
   "joined": "2026-02-03",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/lucas-ramon/profil/spieler/378189"
+  "profile_url": "https://www.transfermarkt.com.br/lucas-ramon/profil/spieler/378189",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "879217": {
   "joined": "2026-07-02",
@@ -1917,7 +2190,12 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/kaiki/profil/spieler/879217"
+  "profile_url": "https://www.transfermarkt.com.br/kaiki/profil/spieler/879217",
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-06-30",
+  "caps_checked": true
  },
  "891353": {
   "joined": "2026-02-05",
@@ -1927,17 +2205,26 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/cuiabano/profil/spieler/891353"
+  "profile_url": "https://www.transfermarkt.com.br/cuiabano/profil/spieler/891353",
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "856990": {
   "joined": "2025-03-28",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/everton/profil/spieler/856990"
+  "profile_url": "https://www.transfermarkt.com.br/everton/profil/spieler/856990",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "603423": {
   "joined": "2026-03-27",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/mayk/profil/spieler/603423"
+  "profile_url": "https://www.transfermarkt.com.br/mayk/profil/spieler/603423",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "231614": {
   "joined": "2026-07-01",
@@ -1947,7 +2234,12 @@
    "fee": "custo zero",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/gilberto/profil/spieler/231614"
+  "profile_url": "https://www.transfermarkt.com.br/gilberto/profil/spieler/231614",
+  "caps": 4,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "613641": {
   "joined": "2025-02-07",
@@ -1957,12 +2249,16 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/jamerson/profil/spieler/613641"
+  "profile_url": "https://www.transfermarkt.com.br/jamerson/profil/spieler/613641",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "741021": {
   "joined": "2026-02-14",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/matheus-bahia/profil/spieler/741021"
+  "profile_url": "https://www.transfermarkt.com.br/matheus-bahia/profil/spieler/741021",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "1089955": {
   "joined": "2026-09-25",
@@ -1972,7 +2268,12 @@
    "fee": "?",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/jp-chermont/profil/spieler/1089955"
+  "profile_url": "https://www.transfermarkt.com.br/jp-chermont/profil/spieler/1089955",
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-06-30",
+  "caps_checked": true
  },
  "415843": {
   "joined": "2026-07-11",
@@ -1982,7 +2283,9 @@
    "fee": "custo zero",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/walter-clar/profil/spieler/415843"
+  "profile_url": "https://www.transfermarkt.com.br/walter-clar/profil/spieler/415843",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "520468": {
   "joined": "2026-08-06",
@@ -1992,7 +2295,12 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/iago/profil/spieler/520468"
+  "profile_url": "https://www.transfermarkt.com.br/iago/profil/spieler/520468",
+  "caps": 7,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "1092620": {
   "joined": "2026-07-24",
@@ -2002,12 +2310,16 @@
    "fee": null,
    "kind": "loan"
   },
-  "profile_url": "https://www.transfermarkt.com.br/diego-caito/profil/spieler/1092620"
+  "profile_url": "https://www.transfermarkt.com.br/diego-caito/profil/spieler/1092620",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "870778": {
   "joined": "2026-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/mateus-silva/profil/spieler/870778"
+  "profile_url": "https://www.transfermarkt.com.br/mateus-silva/profil/spieler/870778",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "594006": {
   "joined": "2026-08-04",
@@ -2017,7 +2329,9 @@
    "fee": "?",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/marcos-vinicius/profil/spieler/594006"
+  "profile_url": "https://www.transfermarkt.com.br/marcos-vinicius/profil/spieler/594006",
+  "contract_until": "2026-11-30",
+  "caps_checked": true
  },
  "731057": {
   "joined": "2026-07-24",
@@ -2027,7 +2341,9 @@
    "fee": "?",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/fernando/profil/spieler/731057"
+  "profile_url": "https://www.transfermarkt.com.br/fernando/profil/spieler/731057",
+  "contract_until": "2029-12-31",
+  "caps_checked": true
  },
  "341705": {
   "joined": "2026-01-10",
@@ -2432,7 +2748,9 @@
  "292152": {
   "joined": "2026-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/rafael-thyere/profil/spieler/292152"
+  "profile_url": "https://www.transfermarkt.com.br/rafael-thyere/profil/spieler/292152",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "555421": {
   "joined": "2026-01-01",
@@ -3347,7 +3665,12 @@
  "371250": {
   "joined": "2024-07-26",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/edu-ribeiro/profil/spieler/371250"
+  "profile_url": "https://www.transfermarkt.com.br/edu-ribeiro/profil/spieler/371250",
+  "caps": 4,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2028-12-31",
+  "caps_checked": true
  },
  "76474": {
   "joined": "2026-03-31",
@@ -3357,7 +3680,12 @@
  "79960": {
   "joined": "2024-08-26",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/alex-sandro/profil/spieler/79960"
+  "profile_url": "https://www.transfermarkt.com.br/alex-sandro/profil/spieler/79960",
+  "caps": 46,
+  "caps_goals": 2,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "329845": {
   "joined": "2026-01-01",
@@ -3707,7 +4035,9 @@
    "fee": "?",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/neris/profil/spieler/349513"
+  "profile_url": "https://www.transfermarkt.com.br/neris/profil/spieler/349513",
+  "contract_until": "2027-06-30",
+  "caps_checked": true
  },
  "435170": {
   "joined": "2026-01-12",
@@ -4187,7 +4517,9 @@
  "1223243": {
   "joined": "2026-01-28",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/claudinho/profil/spieler/1223243"
+  "profile_url": "https://www.transfermarkt.com.br/claudinho/profil/spieler/1223243",
+  "contract_until": "2030-12-31",
+  "caps_checked": true
  },
  "520377": {
   "joined": "2026-02-20",
@@ -4267,7 +4599,9 @@
    "fee": "custo zero",
    "kind": "permanent"
   },
-  "profile_url": "https://www.transfermarkt.com.br/leo-duarte/profil/spieler/312678"
+  "profile_url": "https://www.transfermarkt.com.br/leo-duarte/profil/spieler/312678",
+  "contract_until": "2030-12-31",
+  "caps_checked": true
  },
  "226871": {
   "joined": "2025-07-31",
@@ -5182,7 +5516,12 @@
  "228433": {
   "joined": "2025-01-31",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/wendell/profil/spieler/228433"
+  "profile_url": "https://www.transfermarkt.com.br/wendell/profil/spieler/228433",
+  "caps": 6,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true
  },
  "480274": {
   "joined": "2025-08-26",
@@ -5262,12 +5601,22 @@
  "341710": {
   "joined": "2023-01-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/william/profil/spieler/341710"
+  "profile_url": "https://www.transfermarkt.com.br/william/profil/spieler/341710",
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true
  },
  "676035": {
   "joined": "2023-09-01",
   "move": null,
-  "profile_url": "https://www.transfermarkt.com.br/luciano-juba/profil/spieler/676035"
+  "profile_url": "https://www.transfermarkt.com.br/luciano-juba/profil/spieler/676035",
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true
  },
  "722613": {
   "joined": "2026-08-17",
@@ -5823,5 +6172,1325 @@
    "kind": "permanent"
   },
   "profile_url": "https://www.transfermarkt.com.br/lucas-alves/profil/spieler/870487"
+ },
+ "1233473": {
+  "joined": "2026-01-01",
+  "move": null,
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/arthur-dias/profil/spieler/1233473"
+ },
+ "215390": {
+  "joined": "2020-07-01",
+  "move": null,
+  "caps": 96,
+  "caps_goals": 4,
+  "caps_team": "Paraguai",
+  "contract_until": "2030-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-gomez/profil/spieler/215390"
+ },
+ "458710": {
+  "joined": "2022-01-19",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/murilo/profil/spieler/458710"
+ },
+ "570521": {
+  "joined": "2025-07-08",
+  "move": null,
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/juan-felipe-aguirre/profil/spieler/570521"
+ },
+ "347913": {
+  "joined": "2024-09-02",
+  "move": null,
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/luan-peres/profil/spieler/347913"
+ },
+ "834443": {
+  "joined": "2025-02-21",
+  "move": null,
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/tiago-coser/profil/spieler/834443"
+ },
+ "149498": {
+  "joined": "2026-01-12",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-paulista/profil/spieler/149498"
+ },
+ "45319": {
+  "joined": "2021-07-05",
+  "move": null,
+  "caps": 24,
+  "caps_goals": 4,
+  "caps_team": "Argentina",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-mercado/profil/spieler/45319"
+ },
+ "829969": {
+  "joined": "2023-07-03",
+  "move": null,
+  "caps": 6,
+  "caps_goals": 0,
+  "caps_team": "Argentina",
+  "contract_until": "2029-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-esquivel/profil/spieler/829969"
+ },
+ "874223": {
+  "joined": "2023-01-01",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/gustavo-martins/profil/spieler/874223"
+ },
+ "490760": {
+  "joined": "2026-03-03",
+  "move": null,
+  "caps": 5,
+  "caps_goals": 0,
+  "caps_team": "Camarões",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/tchamba/profil/spieler/490760"
+ },
+ "880217": {
+  "joined": "2026-01-06",
+  "move": null,
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/alix/profil/spieler/880217"
+ },
+ "628750": {
+  "joined": "2025-01-02",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Argentina",
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/juan-pablo-freytes/profil/spieler/628750"
+ },
+ "139867": {
+  "joined": "2017-07-05",
+  "move": null,
+  "caps": 39,
+  "caps_goals": 2,
+  "caps_team": "Equador",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/robert-arboleda/profil/spieler/139867"
+ },
+ "474589": {
+  "joined": "2025-09-01",
+  "move": {
+   "from_club": "Galatasaray",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "caps": 24,
+  "caps_goals": 0,
+  "caps_team": "Colômbia",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/carlos-cuesta/profil/spieler/474589"
+ },
+ "989455": {
+  "joined": "2026-01-09",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Uruguai",
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/alan-saldivia/profil/spieler/989455"
+ },
+ "240913": {
+  "joined": "2025-01-03",
+  "move": null,
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Argentina",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-villalba/profil/spieler/240913"
+ },
+ "744024": {
+  "joined": "2024-07-01",
+  "move": null,
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/joao-marcelo/profil/spieler/744024"
+ },
+ "649184": {
+  "joined": "2025-08-25",
+  "move": null,
+  "caps": 3,
+  "caps_goals": 0,
+  "caps_team": "Colômbia",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/carlos-teran/profil/spieler/649184"
+ },
+ "1082707": {
+  "joined": "2026-01-01",
+  "move": null,
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/kauan-faria/profil/spieler/1082707"
+ },
+ "379807": {
+  "joined": "2024-07-10",
+  "move": null,
+  "caps": 10,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/lyanco/profil/spieler/379807"
+ },
+ "249730": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Torino FC",
+   "date": "2026-07-01",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "caps": 62,
+  "caps_goals": 2,
+  "caps_team": "Chile",
+  "contract_until": "2028-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/guillermo-maripan/profil/spieler/249730"
+ },
+ "1127043": {
+  "joined": "2026-04-01",
+  "move": null,
+  "contract_until": "2028-11-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-justino/profil/spieler/1127043"
+ },
+ "72441": {
+  "joined": "2025-08-15",
+  "move": null,
+  "caps": 14,
+  "caps_goals": 0,
+  "caps_team": "Itália",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/rafael-toloi/profil/spieler/72441"
+ },
+ "383638": {
+  "joined": "2025-02-28",
+  "move": null,
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/juninho/profil/spieler/383638"
+ },
+ "732899": {
+  "joined": "2025-01-03",
+  "move": null,
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/guzman-rodriguez/profil/spieler/732899"
+ },
+ "137745": {
+  "joined": "2025-03-26",
+  "move": null,
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/marcal/profil/spieler/137745"
+ },
+ "495689": {
+  "joined": "2026-03-03",
+  "move": null,
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/julian-millan/profil/spieler/495689"
+ },
+ "175792": {
+  "joined": "2024-07-16",
+  "move": null,
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/andre-ramalho/profil/spieler/175792"
+ },
+ "598838": {
+  "joined": "2026-08-26",
+  "move": {
+   "from_club": "Santos FC",
+   "date": "2026-08-26",
+   "fee": "€3.10mi",
+   "kind": "permanent"
+  },
+  "contract_until": "2029-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/adonis-frias/profil/spieler/598838"
+ },
+ "145707": {
+  "joined": "2025-01-29",
+  "move": null,
+  "caps": 75,
+  "caps_goals": 1,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/danilo/profil/spieler/145707"
+ },
+ "636507": {
+  "joined": "2024-08-29",
+  "move": null,
+  "contract_until": "2027-12-15",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/victor-caetano/profil/spieler/636507"
+ },
+ "174570": {
+  "joined": "2026-01-01",
+  "move": null,
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel/profil/spieler/174570"
+ },
+ "145400": {
+  "joined": "2016-07-15",
+  "move": null,
+  "caps": 6,
+  "caps_goals": 0,
+  "caps_team": "Argentina",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/walter-kannemann/profil/spieler/145400"
+ },
+ "195810": {
+  "joined": "2026-09-16",
+  "move": {
+   "from_club": "Botafogo FR",
+   "date": "2026-09-16",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "caps": 54,
+  "caps_goals": 2,
+  "caps_team": "Angola",
+  "contract_until": "2026-11-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/bastos/profil/spieler/195810"
+ },
+ "1221747": {
+  "joined": "2026-06-01",
+  "move": null,
+  "contract_until": "2030-02-28",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/luis-osorio/profil/spieler/1221747"
+ },
+ "796973": {
+  "joined": "2026-07-20",
+  "move": {
+   "from_club": "Racing Club de Montevideo",
+   "date": "2026-07-20",
+   "fee": "€700mil",
+   "kind": "permanent"
+  },
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Uruguai",
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-monzon/profil/spieler/796973"
+ },
+ "29241": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "FC Porto",
+   "date": "2026-07-01",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "caps": 113,
+  "caps_goals": 7,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/thiago-silva/profil/spieler/29241"
+ },
+ "1093924": {
+  "joined": "2026-01-25",
+  "move": null,
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/joao-scapin/profil/spieler/1093924"
+ },
+ "1339551": {
+  "joined": "2026-01-01",
+  "move": null,
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/indio/profil/spieler/1339551"
+ },
+ "1005650": {
+  "joined": "2024-02-01",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2030-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/joao-pedro-tchoca/profil/spieler/1005650"
+ },
+ "257376": {
+  "joined": "2026-08-06",
+  "move": {
+   "from_club": "Getafe CF",
+   "date": "2026-08-06",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "caps": 3,
+  "caps_goals": 0,
+  "caps_team": "Portugal",
+  "contract_until": "2028-07-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/domingos-duarte/profil/spieler/257376"
+ },
+ "1256755": {
+  "joined": "2026-04-24",
+  "move": null,
+  "caps": 4,
+  "caps_goals": 1,
+  "caps_team": "Brasil",
+  "contract_until": "2030-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/joao-ananias/profil/spieler/1256755"
+ },
+ "539135": {
+  "joined": "2026-01-09",
+  "move": null,
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/leo-andrade/profil/spieler/539135"
+ },
+ "534376": {
+  "joined": "2026-07-02",
+  "move": {
+   "from_club": "SD Eibar",
+   "date": "2026-07-02",
+   "fee": "€1.50mi",
+   "kind": "permanent"
+  },
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Espanha",
+  "contract_until": "2031-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/marco-moreno/profil/spieler/534376"
+ },
+ "540541": {
+  "joined": "2026-01-02",
+  "move": null,
+  "contract_until": "2026-11-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/eduardo/profil/spieler/540541"
+ },
+ "1117807": {
+  "joined": "2026-04-24",
+  "move": null,
+  "contract_until": "2030-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/joao-alencar/profil/spieler/1117807"
+ },
+ "213841": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Sem clube",
+   "date": "2026-07-01",
+   "fee": "-",
+   "kind": "permanent"
+  },
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/matheus-doria/profil/spieler/213841"
+ },
+ "809716": {
+  "joined": "2025-01-14",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-freitas/profil/spieler/809716"
+ },
+ "742095": {
+  "joined": "2026-09-11",
+  "move": {
+   "from_club": "FC Copenhague",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "contract_until": "2027-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-pereira/profil/spieler/742095"
+ },
+ "1355268": {
+  "joined": "2026-01-01",
+  "move": null,
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2028-05-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/luis-eduardo/profil/spieler/1355268"
+ },
+ "323850": {
+  "joined": "2025-01-01",
+  "move": {
+   "from_club": null,
+   "date": "2026-07-14",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "caps": 6,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/ze-marcos/profil/spieler/323850"
+ },
+ "1497709": {
+  "joined": "2026-08-01",
+  "move": {
+   "from_club": null,
+   "date": "2026-08-01",
+   "fee": null,
+   "kind": "permanent"
+  },
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2028-04-16",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/iago-machado/profil/spieler/1497709"
+ },
+ "646677": {
+  "joined": "2026-01-05",
+  "move": {
+   "from_club": "FC Famalicão",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/riccieli/profil/spieler/646677"
+ },
+ "491587": {
+  "joined": "2025-09-02",
+  "move": null,
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Paraguai",
+  "contract_until": "2029-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/alexis-duarte/profil/spieler/491587"
+ },
+ "1362669": {
+  "joined": "2026-06-03",
+  "move": null,
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-baldini/profil/spieler/1362669"
+ },
+ "1141141": {
+  "joined": "2026-01-01",
+  "move": null,
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/vinicius-eduardo/profil/spieler/1141141"
+ },
+ "1193868": {
+  "joined": "2024-01-01",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/joao-souza/profil/spieler/1193868"
+ },
+ "1253807": {
+  "joined": "2025-01-07",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/luis-benedetti/profil/spieler/1253807"
+ },
+ "980854": {
+  "joined": "2026-09-02",
+  "move": {
+   "from_club": "Botafogo FR",
+   "date": "2026-09-02",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "contract_until": "2029-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/ythallo/profil/spieler/980854"
+ },
+ "1355817": {
+  "joined": null,
+  "move": null,
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/kauan-stabelini/profil/spieler/1355817"
+ },
+ "719635": {
+  "joined": "2025-01-09",
+  "move": null,
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Argentina",
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/alexandro-bernabei/profil/spieler/719635"
+ },
+ "476352": {
+  "joined": "2026-01-01",
+  "move": null,
+  "caps": 19,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2030-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/renan-lodi/profil/spieler/476352"
+ },
+ "255755": {
+  "joined": "2024-09-03",
+  "move": null,
+  "caps": 12,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/alex-telles/profil/spieler/255755"
+ },
+ "188862": {
+  "joined": "2023-01-12",
+  "move": null,
+  "caps": 32,
+  "caps_goals": 0,
+  "caps_team": "Uruguai",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/guillermo-varela/profil/spieler/188862"
+ },
+ "696719": {
+  "joined": "2026-01-01",
+  "move": null,
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/gaston-benavidez/profil/spieler/696719"
+ },
+ "849582": {
+  "joined": "2024-07-10",
+  "move": null,
+  "caps": 6,
+  "caps_goals": 0,
+  "caps_team": "Argentina",
+  "contract_until": "2030-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/agustin-giay/profil/spieler/849582"
+ },
+ "430339": {
+  "joined": "2023-01-04",
+  "move": null,
+  "caps": 5,
+  "caps_goals": 0,
+  "caps_team": "Uruguai",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/jose-luis-rodriguez/profil/spieler/430339"
+ },
+ "198250": {
+  "joined": "2021-03-05",
+  "move": null,
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/samuel-xavier/profil/spieler/198250"
+ },
+ "1115722": {
+  "joined": "2026-01-01",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2030-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/arthur-gabriel/profil/spieler/1115722"
+ },
+ "829378": {
+  "joined": "2024-09-02",
+  "move": null,
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/braian-aguirre/profil/spieler/829378"
+ },
+ "496268": {
+  "joined": "2021-07-31",
+  "move": null,
+  "caps": 22,
+  "caps_goals": 0,
+  "caps_team": "Uruguai",
+  "contract_until": "2030-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/joaquin-piquerez/profil/spieler/496268"
+ },
+ "680506": {
+  "joined": "2022-01-18",
+  "move": null,
+  "caps": 11,
+  "caps_goals": 0,
+  "caps_team": "Equador",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/jose-andres-hurtado/profil/spieler/680506"
+ },
+ "1241022": {
+  "joined": "2026-01-08",
+  "move": null,
+  "contract_until": "2030-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/roman-gomez/profil/spieler/1241022"
+ },
+ "476344": {
+  "joined": "2025-07-26",
+  "move": null,
+  "caps": 10,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/emerson-royal/profil/spieler/476344"
+ },
+ "349585": {
+  "joined": "2023-01-01",
+  "move": null,
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/ayrton-lucas/profil/spieler/349585"
+ },
+ "1253927": {
+  "joined": "2026-01-01",
+  "move": null,
+  "caps": 4,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/pedro-gabriel/profil/spieler/1253927"
+ },
+ "540458": {
+  "joined": "2026-01-01",
+  "move": null,
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/enzo-diaz/profil/spieler/540458"
+ },
+ "400661": {
+  "joined": "2025-02-05",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Uruguai",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/agustin-santanna/profil/spieler/400661"
+ },
+ "268506": {
+  "joined": "2025-02-27",
+  "move": null,
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/fabrizio-angileri/profil/spieler/268506"
+ },
+ "450241": {
+  "joined": "2026-01-16",
+  "move": null,
+  "caps": 62,
+  "caps_goals": 0,
+  "caps_team": "Equador",
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/angelo-preciado/profil/spieler/450241"
+ },
+ "185966": {
+  "joined": "2026-09-02",
+  "move": {
+   "from_club": "Olympiacos Pireu",
+   "date": "2026-09-02",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/rodinei/profil/spieler/185966"
+ },
+ "1311456": {
+  "joined": "2026-03-01",
+  "move": null,
+  "caps": 7,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-01-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/ryan-augusto/profil/spieler/1311456"
+ },
+ "159372": {
+  "joined": "2024-07-01",
+  "move": null,
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/felipe-anderson/profil/spieler/159372"
+ },
+ "1355484": {
+  "joined": "2026-01-01",
+  "move": null,
+  "caps": 4,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2030-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/kaua-pascini/profil/spieler/1355484"
+ },
+ "856047": {
+  "joined": "2023-08-02",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Uruguai",
+  "contract_until": "2028-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/mateo-ponte/profil/spieler/856047"
+ },
+ "342024": {
+  "joined": "2023-01-13",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/joao-pedro/profil/spieler/342024"
+ },
+ "471639": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "Racing Club",
+   "date": "2026-07-01",
+   "fee": "€5.25mi",
+   "kind": "permanent"
+  },
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Argentina",
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/gabriel-rojas/profil/spieler/471639"
+ },
+ "980463": {
+  "joined": "2023-01-01",
+  "move": null,
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/marcos-victor/profil/spieler/980463"
+ },
+ "1052819": {
+  "joined": "2025-01-14",
+  "move": null,
+  "caps": 4,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/leo-derik/profil/spieler/1052819"
+ },
+ "1193867": {
+  "joined": "2026-09-11",
+  "move": {
+   "from_club": "Wolverhampton Wanderers",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/pedro-lima/profil/spieler/1193867"
+ },
+ "1388409": {
+  "joined": "2025-09-02",
+  "move": null,
+  "contract_until": "2030-08-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/kaua-moraes/profil/spieler/1388409"
+ },
+ "657743": {
+  "joined": "2026-01-21",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Uruguai",
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/pedro-milans/profil/spieler/657743"
+ },
+ "1084816": {
+  "joined": "2026-01-01",
+  "move": null,
+  "caps": 5,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/ze-guilherme/profil/spieler/1084816"
+ },
+ "1220008": {
+  "joined": "2026-01-18",
+  "move": null,
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/allex/profil/spieler/1220008"
+ },
+ "276877": {
+  "joined": "2025-01-03",
+  "move": null,
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/daniel-borges/profil/spieler/276877"
+ },
+ "1027026": {
+  "joined": "2026-09-04",
+  "move": {
+   "from_club": "São Paulo FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "contract_until": "2027-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/maik/profil/spieler/1027026"
+ },
+ "1253844": {
+  "joined": "2025-01-29",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-03-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/vinicius-lira/profil/spieler/1253844"
+ },
+ "550178": {
+  "joined": "2026-07-23",
+  "move": {
+   "from_club": "Persija Jakarta",
+   "date": "2026-07-23",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-tubarao/profil/spieler/550178"
+ },
+ "670969": {
+  "joined": "2026-08-11",
+  "move": {
+   "from_club": "Portimonense SAD",
+   "date": "2026-08-11",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/heitor/profil/spieler/670969"
+ },
+ "234538": {
+  "joined": "2026-02-12",
+  "move": null,
+  "contract_until": "2026-12-10",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/victor-luis/profil/spieler/234538"
+ },
+ "1093864": {
+  "joined": "2026-01-07",
+  "move": {
+   "from_club": "SE Palmeiras",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/gilberto-junior/profil/spieler/1093864"
+ },
+ "112988": {
+  "joined": "2025-01-29",
+  "move": null,
+  "caps": 34,
+  "caps_goals": 1,
+  "caps_team": "Portugal",
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/cedric-soares/profil/spieler/112988"
+ },
+ "617687": {
+  "joined": "2026-03-22",
+  "move": {
+   "from_club": "Sport Recife",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/matheus-alexandre/profil/spieler/617687"
+ },
+ "275381": {
+  "joined": "2026-09-16",
+  "move": {
+   "from_club": "CA River Plate",
+   "date": "2026-09-16",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "caps": 4,
+  "caps_goals": 0,
+  "caps_team": "Argentina",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/fabricio-bustos/profil/spieler/275381"
+ },
+ "1223728": {
+  "joined": "2026-01-10",
+  "move": null,
+  "contract_until": "2029-02-27",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/caue-nascimento/profil/spieler/1223728"
+ },
+ "381724": {
+  "joined": "2026-07-01",
+  "move": {
+   "from_club": "FK Krasnodar",
+   "date": "2026-07-01",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "contract_until": "2029-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/victor-sa/profil/spieler/381724"
+ },
+ "851595": {
+  "joined": "2025-08-20",
+  "move": null,
+  "caps": 0,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2030-07-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/jefte/profil/spieler/851595"
+ },
+ "147361": {
+  "joined": null,
+  "move": null,
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/mayke/profil/spieler/147361"
+ },
+ "1423021": {
+  "joined": "2026-07-16",
+  "move": {
+   "from_club": null,
+   "date": "2026-07-16",
+   "fee": null,
+   "kind": "permanent"
+  },
+  "caps": 2,
+  "caps_goals": 2,
+  "caps_team": "Brasil",
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/kaue-furquim/profil/spieler/1423021"
+ },
+ "438202": {
+  "joined": "2026-07-23",
+  "move": {
+   "from_club": "SC Internacional",
+   "date": "2026-07-23",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "caps": 7,
+  "caps_goals": 1,
+  "caps_team": "Brasil",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/bruno-tabata/profil/spieler/438202"
+ },
+ "657387": {
+  "joined": "2026-07-05",
+  "move": {
+   "from_club": "Moreirense FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "contract_until": "2027-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/fabiano/profil/spieler/657387"
+ },
+ "1119008": {
+  "joined": "2026-01-01",
+  "move": null,
+  "contract_until": "2031-04-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/julio-fidelis/profil/spieler/1119008"
+ },
+ "75435": {
+  "joined": "2025-08-19",
+  "move": null,
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/marcos-rocha/profil/spieler/75435"
+ },
+ "476362": {
+  "joined": "2026-09-16",
+  "move": {
+   "from_club": "Guarani FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "caps": 13,
+  "caps_goals": 1,
+  "caps_team": "Brasil",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/dudu/profil/spieler/476362"
+ },
+ "1365159": {
+  "joined": null,
+  "move": null,
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/lucas-taverna/profil/spieler/1365159"
+ },
+ "789856": {
+  "joined": "2026-01-02",
+  "move": {
+   "from_club": null,
+   "date": "2026-08-25",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "contract_until": "2027-11-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/caio-roque/profil/spieler/789856"
+ },
+ "1355262": {
+  "joined": "2026-03-03",
+  "move": null,
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/jv-fonseca/profil/spieler/1355262"
+ },
+ "697845": {
+  "joined": "2026-07-06",
+  "move": {
+   "from_club": "EC Vitória",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/claudinho/profil/spieler/697845"
+ },
+ "439072": {
+  "joined": "2026-09-11",
+  "move": {
+   "from_club": "CR Flamengo",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "caps": 44,
+  "caps_goals": 1,
+  "caps_team": "Uruguai",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/matias-vina/profil/spieler/439072"
+ },
+ "1279318": {
+  "joined": "2026-01-01",
+  "move": null,
+  "caps": 1,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-05-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/rafael-gonzaga/profil/spieler/1279318"
+ },
+ "525510": {
+  "joined": "2026-07-10",
+  "move": {
+   "from_club": "Vila Nova FC",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/elias/profil/spieler/525510"
+ },
+ "520492": {
+  "joined": "2026-07-20",
+  "move": {
+   "from_club": "FC Midtjylland",
+   "date": "2026-07-20",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "contract_until": "2028-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/paulinho/profil/spieler/520492"
+ },
+ "1083600": {
+  "joined": "2026-07-21",
+  "move": {
+   "from_club": "Botafogo FR",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "caps": 5,
+  "caps_goals": 0,
+  "caps_team": "Brasil",
+  "contract_until": "2027-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/nathan-fernandes/profil/spieler/1083600"
+ },
+ "1014555": {
+  "joined": "2024-01-01",
+  "move": {
+   "from_club": null,
+   "date": "2026-09-03",
+   "fee": "Fim do empréstimo",
+   "kind": "loan"
+  },
+  "contract_until": "2027-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/rodrigo-gelado/profil/spieler/1014555"
+ },
+ "258039": {
+  "joined": "2026-07-20",
+  "move": {
+   "from_club": "FC Copenhague",
+   "date": "2026-07-20",
+   "fee": "custo zero",
+   "kind": "permanent"
+  },
+  "caps": 5,
+  "caps_goals": 0,
+  "caps_team": "Portugal",
+  "contract_until": "2027-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/aurelio-buta/profil/spieler/258039"
+ },
+ "816129": {
+  "joined": "2025-08-13",
+  "move": null,
+  "contract_until": "2030-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/vanderlan/profil/spieler/816129"
+ },
+ "445101": {
+  "joined": "2026-07-12",
+  "move": {
+   "from_club": "Mirassol FC",
+   "date": "2026-07-12",
+   "fee": "?",
+   "kind": "permanent"
+  },
+  "contract_until": "2027-06-30",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/rodrigues/profil/spieler/445101"
+ },
+ "1362490": {
+  "joined": "2025-02-27",
+  "move": null,
+  "contract_until": "2030-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/luiz-felipe/profil/spieler/1362490"
+ },
+ "1355258": {
+  "joined": "2024-01-01",
+  "move": null,
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/riquelme-avellar/profil/spieler/1355258"
+ },
+ "1112486": {
+  "joined": "2026-02-10",
+  "move": {
+   "from_club": "Millonarios Bogotá",
+   "date": null,
+   "fee": null,
+   "kind": "loan"
+  },
+  "caps": 2,
+  "caps_goals": 0,
+  "caps_team": "Colômbia",
+  "contract_until": "2026-12-31",
+  "caps_checked": true,
+  "profile_url": "https://www.transfermarkt.com.br/jhoan-hernandez/profil/spieler/1112486"
  }
 }
