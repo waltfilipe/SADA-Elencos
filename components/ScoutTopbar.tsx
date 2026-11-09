@@ -4,11 +4,13 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { SiteLogo } from "@/components/SiteLogo";
 import { useLeagueOptional } from "@/components/LeagueProvider";
+import { SALTO_LEAGUES } from "@/lib/saltos";
 
 const NAV_SQUAD = [
   { key: "elenco", path: "/elenco", label: "Elenco", icon: "fa-shirt" },
   { key: "elencos-previos", path: "/elencos-previos", label: "Elencos Prévios", icon: "fa-clock-rotate-left" },
   { key: "time-sombra", path: "/time-sombra", label: "Time Sombra", icon: "fa-chess-board" },
+  { key: "saltos", path: "/saltos", label: "Saltos", icon: "fa-arrow-trend-up" },
 ] as const;
 
 export type ScoutSection =
@@ -37,7 +39,11 @@ export function ScoutTopbar({ active, subnav }: Props) {
         </Link>
 
         <nav className="topbar-links topbar-links-squad" aria-label="Seções de elenco">
-          {NAV_SQUAD.map((item) => {
+          {NAV_SQUAD.filter(
+            (item) =>
+              item.key !== "saltos" ||
+              (league != null && (SALTO_LEAGUES as readonly string[]).includes(league.leagueId)),
+          ).map((item) => {
             const isActive = item.key === active;
             return (
               <Link
