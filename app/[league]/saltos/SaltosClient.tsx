@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import { ScoutTopbar } from "@/components/ScoutTopbar";
 import { appPath } from "@/lib/paths";
 import type { LeagueId } from "@/lib/leagues";
@@ -35,10 +36,16 @@ const TARGET_OPTIONS = [
   { value: "estaduais", label: "Estaduais" },
 ];
 
+const SERIE_OPTIONS = [
+  { value: "serie-c", label: "Série C" },
+  { value: "serie-b", label: "Série B" },
+  { value: "serie-a", label: "Série A" },
+];
+
 function destLabel(player: SaltoPlayer): string {
-  return player.to.kind === "league"
-    ? `${player.to.leagueName} · ${player.to.club}`
-    : `Exterior${player.to.club ? ` · ${player.to.club}` : ""}`;
+  if (player.to.kind === "league") return `${player.to.leagueName} · ${player.to.club}`;
+  const prefix = player.to.region === "europa" ? "Europa" : "Exterior";
+  return `${prefix}${player.to.club ? ` · ${player.to.club}` : ""}`;
 }
 
 export function SaltosClient({
@@ -50,6 +57,8 @@ export function SaltosClient({
   leagueName: string;
   groups: SaltoSeasonGroup[];
 }) {
+  const router = useRouter();
+  const [season, setSeason] = useState("todas");
   const [minRating, setMinRating] = useState(7);
   const [minMinutes, setMinMinutes] = useState(600);
   const [dest, setDest] = useState<DestFilter>("todos");
@@ -58,6 +67,7 @@ export function SaltosClient({
   const filtered = useMemo(
     () =>
       groups
+        .filter((group) => season === "todas" || group.season === season)
         .map((group) => ({
           ...group,
           players: group.players.filter(
@@ -68,7 +78,7 @@ export function SaltosClient({
           ),
         }))
         .filter((group) => group.players.length > 0),
-    [groups, minRating, minMinutes, dest],
+    [groups, season, minRating, minMinutes, dest],
   );
 
   const total = filtered.reduce((sum, group) => sum + group.players.length, 0);
@@ -109,12 +119,35 @@ export function SaltosClient({
           <span className="saltos-eyebrow">{leagueName} · temporadas 2022–2025</span>
           <h1>Atletas que deram salto</h1>
           <p>
-            Boas temporadas na {leagueName} que renderam um contrato numa divisão superior — ou fora
-            do país. Compare cada atleta com quem joga a temporada atual e encontre o próximo salto.
+            {leagueId === "serie-a"
+              ? "Boas temporadas na Série A que renderam uma transferência para a Europa. Compare cada atleta com quem joga a temporada atual."
+              : `Boas temporadas na ${leagueName} que renderam um contrato numa divisão superior — ou fora
+            do país. Compare cada atleta com quem joga a temporada atual e encontre o próximo salto.`}
           </p>
         </header>
 
         <div className="saltos-filters">
+          <label className="saltos-filter saltos-filter-select">
+            <span>Série</span>
+            <select value={leagueId} onChange={(event) => router.push(`/${event.target.value}/saltos`)}>
+              {SERIE_OPTIONS.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="saltos-filter saltos-filter-select">
+            <span>Ano</span>
+            <select value={season} onChange={(event) => setSeason(event.target.value)}>
+              <option value="todas">Todas</option>
+              {groups.map((group) => (
+                <option key={group.season} value={group.season}>
+                  {group.season}
+                </option>
+              ))}
+            </select>
+          </label>
           <label className="saltos-filter">
             <span>
               Rating mínimo <strong>{minRating.toFixed(1)}</strong>

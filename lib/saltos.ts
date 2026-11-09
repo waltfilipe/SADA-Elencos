@@ -7,7 +7,7 @@ import type { PositionFamily } from "./types";
  */
 export type SaltoDestination =
   | { kind: "league"; league: LeagueId; leagueName: string; club: string }
-  | { kind: "exterior"; club: string | null };
+  | { kind: "exterior"; club: string | null; region: "europa" | "outras" };
 
 export type SaltoPlayer = {
   /** player_id da linha de origem — âncora do /api/similar (from+season). */

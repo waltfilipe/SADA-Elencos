@@ -105,6 +105,101 @@ function isBrazilianClub(club: string): boolean {
   return false;
 }
 
+/**
+ * Clubes de ligas europeias (nomes como aparecem no cache .com.br do TM,
+ * normalizados por normClub). Cobre os destinos reais observados nas saídas
+ * das séries A–C + os principais clubes da Europa.
+ */
+const EUROPE_CLUBS_RAW = [
+  // Portugal
+  "fc porto", "sl benfica", "sporting cp", "sporting", "sc braga", "vitoria guimaraes", "vitória guimarães",
+  "boavista", "estoril", "famalicao", "casa pia", "arouca", "moreirense", "cd nacional", "santa clara",
+  "rio ave", "gil vicente", "sc farense", "estrela amadora", "avs futebol", "cd tondela", "pacos ferreira",
+  "portimonense", "fc vizela", "gd chaves", "cs maritimo", "fc alverca", "gil vicente fc",
+  // Espanha
+  "real madrid", "real madrid cf", "fc barcelona", "atletico de madrid", "atlético de madrid", "sevilla",
+  "villarreal", "valencia", "athletic bilbao", "real sociedad", "real betis", "getafe", "girona",
+  "celta vigo", "osasuna", "rcd mallorca", "mallorca", "rcd espanyol", "espanyol", "deportivo alaves",
+  "alaves", "rayo vallecano", "elche", "levante", "granada", "cadiz", "ud almeria", "almeria",
+  "cd leganes", "leganes", "real valladolid", "valladolid", "ud las palmas", "las palmas",
+  // Inglaterra
+  "chelsea", "arsenal", "liverpool", "manchester united", "manchester city", "tottenham", "newcastle",
+  "aston villa", "west ham", "everton", "brighton", "wolverhampton", "wolves", "leicester",
+  "southampton", "nottingham forest", "fulham", "crystal palace", "bournemouth", "brentford",
+  "leeds united", "burnley", "sheffield united", "ipswich", "luton", "watford", "sunderland",
+  "middlesbrough", "norwich", "west bromwich", "stoke city", "hull city", "qpr", "blackburn",
+  "coventry", "birmingham city", "cardiff city", "swansea", "derby county",
+  // Itália
+  "inter de milao", "inter de milão", "inter milan", "inter", "ac milan", "milan", "juventus",
+  "as roma", "roma", "napoli", "lazio", "atalanta", "fiorentina", "torino", "bologna", "genoa",
+  "sampdoria", "udinese", "sassuolo", "empoli", "ac monza", "monza", "lecce", "cagliari",
+  "hellas verona", "parma", "como", "venezia", "salernitana", "frosinone", "spezia", "pisa",
+  // Alemanha
+  "bayern munique", "bayern", "borussia dortmund", "dortmund", "rb leipzig", "bayer leverkusen",
+  "leverkusen", "vfb stuttgart", "stuttgart", "wolfsburg", "eintracht frankfurt", "frankfurt",
+  "borussia monchengladbach", "gladbach", "sc freiburg", "freiburg", "tsg 1899 hoffenheim",
+  "hoffenheim", "mainz", "union berlin", "fc augsburg", "augsburg", "werder bremen",
+  "fc koln", "koln", "hertha berlin", "schalke", "hamburg", "vfl bochum", "heidenheim",
+  // França
+  "paris saint-germain", "psg", "olympique de marseille", "marseille", "olympique lyonnais", "lyon",
+  "as monaco", "monaco", "losc lille", "lille", "ogc nice", "nice", "stade rennais", "rennes",
+  "rc lens", "lens", "rc strasbourg", "strasbourg", "fc nantes", "nantes", "montpellier",
+  "toulouse", "stade de reims", "reims", "stade brestois", "brest", "auxerre", "angers",
+  "saint-etienne", "lorient", "fc metz", "le havre", "clermont",
+  // Holanda
+  "ajax", "psv eindhoven", "psv", "feyenoord", "az alkmaar", "fc twente", "twente", "utrecht",
+  "vitesse", "heerenveen", "sparta rotterdam", "nec nijmegen", "fortuna sittard", "go ahead eagles",
+  // Rússia / Ucrânia
+  "zenit sao petersburgo", "zenit são petersburgo", "zenit", "dinamo moscou", "dínamo moscou",
+  "dynamo moscow", "cska moscou", "cska moscow", "spartak moscou", "spartak moscow", "lokomotiv",
+  "fk krasnodar", "krasnodar", "rostov", "rubin kazan", "pfk sochi", "shakhtar donetsk",
+  "dynamo kyiv", "dinamo kiev", "karpaty lviv", "dnipro", "zorya luhansk", "oleksandriya",
+  // Turquia
+  "galatasaray", "fenerbahce", "besiktas", "trabzonspor", "basaksehir", "goztepe", "samsunspor",
+  "antalyaspor", "adana demirspor", "konyaspor", "kayserispor", "rizespor", "alanyaspor",
+  "sivasspor", "kasimpasa", "hatayspor", "istanbulspor", "pendikspor", "fatih karagumruk",
+  // Bélgica / Suíça / Áustria
+  "club brugge", "rsc anderlecht", "anderlecht", "krc genk", "genk", "standard liege",
+  "royal antwerp", "antwerp", "kaa gent", "gent", "union saint-gilloise", "charleroi",
+  "cercle brugge", "fc basel", "bsc young boys", "young boys", "fc zurich", "fc lugano",
+  "servette", "fc st gallen", "fc luzern", "rb salzburg", "red bull salzburg", "sturm graz",
+  "rapid wien", "austria wien", "lask",
+  // Dinamarca / Escócia / Grécia / resto da UEFA
+  "fc copenhague", "fc copenhagen", "midtjylland", "brondby", "fc nordsjaelland", "agf aarhus",
+  "celtic", "rangers", "olympiacos", "olympiakos", "panathinaikos", "aek atenas", "aek athens",
+  "paok", "aris salonica", "estrela vermelha", "red star belgrade", "crvena zvezda", "partizan",
+  "dinamo zagreb", "hajduk split", "cska sofia", "ludogorets", "levski sofia", "legia warszawa",
+  "legia", "lech poznan", "rakow", "slavia praga", "slavia praha", "sparta praga", "sparta praha",
+  "viktoria plzen", "apoel", "omonia", "pafos fc", "aek larnaca", "hapoel tel aviv",
+  "maccabi tel aviv", "maccabi haifa", "bodo glimt", "molde", "rosenborg", "brann", "viking fk",
+  "malmo", "djurgarden", "hammarby", "aik", "ifk goteborg", "elfsborg", "bk hacken", "riga fc",
+  "fcsb", "steaua", "cfr cluj", "dinamo bucuresti", "ferencvaros", "slovan bratislava",
+  "olimpija ljubljana", "fk astana", "kairat", "qarabag", "sheriff tiraspol", "hjk helsinki",
+  "zalgiris", "shamrock rovers", "sabah fk", "dinamo tbilisi",
+];
+
+let europeanClubSet: Set<string> | null = null;
+
+function europeanClubs(): Set<string> {
+  if (!europeanClubSet) {
+    europeanClubSet = new Set(
+      EUROPE_CLUBS_RAW.map(normClub).filter((name) => name.length >= 4),
+    );
+  }
+  return europeanClubSet;
+}
+
+function isEuropeanClub(club: string): boolean {
+  const norm = normClub(club);
+  if (norm.length < 4) return false;
+  const set = europeanClubs();
+  if (set.has(norm)) return true;
+  for (const known of set) {
+    if (known.includes(norm) || norm.includes(known)) return true;
+  }
+  return false;
+}
+
 let peopleCache: Record<string, PeopleRecord> | null = null;
 
 function peopleIndex(): Record<string, PeopleRecord> {
@@ -208,7 +303,11 @@ export function getSaltos(league: LeagueId): SaltoSeasonGroup[] {
         if (!inAnyNext && player.person_key) {
           const tmClub = peopleIndex()[player.person_key]?.tm_club ?? null;
           if (tmClub && !IGNORED_TM_CLUBS.has(tmClub.toLowerCase()) && !isBrazilianClub(tmClub)) {
-            destination = { kind: "exterior", club: tmClub };
+            const region = isEuropeanClub(tmClub) ? "europa" : "outras";
+            // Série A não tem divisão acima: salto só conta se foi para a Europa.
+            if (league !== "serie-a" || region === "europa") {
+              destination = { kind: "exterior", club: tmClub, region };
+            }
           }
         }
       }
