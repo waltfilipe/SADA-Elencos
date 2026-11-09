@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 import { getPlayers } from "./data.server";
 import { getLeague, isLeagueId, type LeagueId } from "./leagues";
-import { isBrazilianClub, isEuropeanClub } from "./clubGeo.server";
+import { isBrazilianClub, isEuropeanClub, normClub } from "./clubGeo.server";
 import { SALTO_LEAGUES, type SaltoPlayer, type SaltoSeasonGroup } from "./saltos";
 import type { PlayerSummary } from "./types";
 
@@ -107,6 +107,13 @@ export function getSaltos(league: LeagueId): SaltoSeasonGroup[] {
         if (!isLeagueId(targetLeague) || (LEVEL[targetLeague] ?? 0) <= fromLevel) continue;
         const hit = keys.map((key) => index.get(key)).find(Boolean);
         if (hit) {
+          const a = normClub(player.club);
+          const b = normClub(hit.club);
+          const sameClub =
+            a === b || (a.length >= 4 && b.includes(a)) || (b.length >= 4 && a.includes(b));
+          // Subiu junto com o clube (mesmo time promovido) e ficou no banco:
+          // ignora este hit — pode ainda haver venda real para divisão acima.
+          if (sameClub && (hit.minutes_pct ?? 0) < 50) continue;
           destination = {
             kind: "league",
             league: targetLeague,
