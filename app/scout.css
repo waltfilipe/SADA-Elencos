@@ -51,6 +51,15 @@
   background: rgba(27, 231, 255, 0.24);
 }
 
+/* Dropdowns nativos escuros em todo o site (popup de <option> usa cores do sistema). */
+html {
+  color-scheme: dark;
+}
+select option {
+  background: #0f1a26;
+  color: #e8eef6;
+}
+
 /* ── Profile accent tones ────────────────────────────────────────────────── */
 
 .tone-combativo,

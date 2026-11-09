@@ -1,12 +1,23 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import { ScoutTopbar } from "@/components/ScoutTopbar";
-import type { LeagueId } from "@/lib/leagues";
+import { LEAGUES, type LeagueId } from "@/lib/leagues";
 import { formatEur, type ValorPlayer, type ValorSide, type ValorSummary } from "@/lib/valores";
 
 type SideFilter = "todos" | ValorSide;
-type SortKey = "sada" | "tm" | "ratio" | "rating";
+type SortKey =
+  | "name"
+  | "position"
+  | "age"
+  | "rating"
+  | "minutes"
+  | "contract"
+  | "caps"
+  | "tm"
+  | "sada"
+  | "ratio";
 
 const SIDE_META: Record<ValorSide, { label: string; hint: string }> = {
   acima: { label: "Acima do valor", hint: "produção acima do que o mercado paga" },
@@ -15,12 +26,43 @@ const SIDE_META: Record<ValorSide, { label: string; hint: string }> = {
   sem_tm: { label: "Sem valor TM", hint: "estimativa SADA preenche o mercado" },
 };
 
-const SORT_OPTIONS: { value: SortKey; label: string }[] = [
-  { value: "sada", label: "Valor SADA" },
-  { value: "tm", label: "Valor TM" },
-  { value: "ratio", label: "Diferença SADA×TM" },
-  { value: "rating", label: "Rating" },
-];
+const SORT_DIR_DEFAULT: Record<SortKey, 1 | -1> = {
+  name: 1,
+  position: 1,
+  age: 1,
+  rating: -1,
+  minutes: -1,
+  contract: -1,
+  caps: -1,
+  tm: -1,
+  sada: -1,
+  ratio: -1,
+};
+
+function sortValue(player: ValorPlayer, key: SortKey): string | number {
+  switch (key) {
+    case "name":
+      return player.name.toLowerCase();
+    case "position":
+      return player.position;
+    case "age":
+      return player.age ?? 999;
+    case "rating":
+      return player.rating;
+    case "minutes":
+      return player.minutes;
+    case "contract":
+      return player.contractYears ?? -1;
+    case "caps":
+      return player.caps ?? -1;
+    case "tm":
+      return player.marketValueEur ?? -1;
+    case "sada":
+      return player.sadaValue;
+    case "ratio":
+      return player.ratio ?? -1;
+  }
+}
 
 function factorChips(player: ValorPlayer): { label: string; value: number }[] {
   const f = player.factors;
@@ -48,18 +90,17 @@ export function ValoresClient({
   players: ValorPlayer[];
   summary: ValorSummary;
 }) {
+  const router = useRouter();
   const [query, setQuery] = useState("");
-  const [family, setFamily] = useState("todas");
+  const [position, setPosition] = useState("todas");
   const [profile, setProfile] = useState("todos");
-  const [club, setClub] = useState("todos");
   const [side, setSide] = useState<SideFilter>("todos");
-  const [minRating, setMinRating] = useState(0);
-  const [sort, setSort] = useState<SortKey>("sada");
+  const [sortKey, setSortKey] = useState<SortKey>("sada");
+  const [sortDir, setSortDir] = useState<1 | -1>(-1);
   const [open, setOpen] = useState<string | null>(null);
 
-  const families = useMemo(
-    () =>
-      [...new Set(players.map((p) => p.positionFamily).filter((f) => f != null))].sort() as string[],
+  const positions = useMemo(
+    () => [...new Set(players.map((p) => p.position))].sort(),
     [players],
   );
   const profiles = useMemo(
@@ -67,34 +108,57 @@ export function ValoresClient({
       [
         ...new Set(
           players
-            .filter((p) => family === "todas" || p.positionFamily === family)
+            .filter((p) => position === "todas" || p.position === position)
             .map((p) => p.profile)
             .filter((s): s is string => Boolean(s)),
         ),
       ].sort(),
-    [players, family],
+    [players, position],
   );
-  const clubs = useMemo(() => [...new Set(players.map((p) => p.club))].sort(), [players]);
+
+  function toggleSort(key: SortKey) {
+    if (key === sortKey) {
+      setSortDir((dir) => (dir === 1 ? -1 : 1));
+    } else {
+      setSortKey(key);
+      setSortDir(SORT_DIR_DEFAULT[key]);
+    }
+  }
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const list = players.filter(
-      (p) =>
-        (!q || p.name.toLowerCase().includes(q)) &&
-        (family === "todas" || p.positionFamily === family) &&
-        (profile === "todos" || p.profile === profile) &&
-        (club === "todos" || p.club === club) &&
-        (side === "todos" || p.side === side) &&
-        p.rating >= minRating,
+    return players
+      .filter(
+        (p) =>
+          (!q || p.name.toLowerCase().includes(q) || p.club.toLowerCase().includes(q)) &&
+          (position === "todas" || p.position === position) &&
+          (profile === "todos" || p.profile === profile) &&
+          (side === "todos" || p.side === side),
+      )
+      .sort((a, b) => {
+        const va = sortValue(a, sortKey);
+        const vb = sortValue(b, sortKey);
+        const cmp =
+          typeof va === "string"
+            ? va.localeCompare(vb as string, "pt-BR")
+            : va - (vb as number);
+        return cmp * sortDir;
+      });
+  }, [players, query, position, profile, side, sortKey, sortDir]);
+
+  function th(key: SortKey, label: string, numeric = true) {
+    const active = sortKey === key;
+    return (
+      <th
+        className={`valores-th ${numeric ? "num" : ""} ${active ? "sorted" : ""}`}
+        onClick={() => toggleSort(key)}
+        aria-sort={active ? (sortDir === 1 ? "ascending" : "descending") : undefined}
+      >
+        {label}
+        <span className="valores-sort-arrow">{active ? (sortDir === 1 ? "▲" : "▼") : "↕"}</span>
+      </th>
     );
-    const by: Record<SortKey, (a: ValorPlayer, b: ValorPlayer) => number> = {
-      sada: (a, b) => b.sadaValue - a.sadaValue,
-      tm: (a, b) => (b.marketValueEur ?? -1) - (a.marketValueEur ?? -1),
-      ratio: (a, b) => (b.ratio ?? -1) - (a.ratio ?? -1),
-      rating: (a, b) => b.rating - a.rating || b.minutes - a.minutes,
-    };
-    return list.sort(by[sort]);
-  }, [players, query, family, profile, club, side, minRating, sort]);
+  }
 
   return (
     <div className="scout-root profile-page">
@@ -134,24 +198,34 @@ export function ValoresClient({
             <span>Buscar</span>
             <input
               type="search"
-              placeholder="Nome do atleta…"
+              placeholder="Nome ou clube…"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
             />
           </label>
           <label className="saltos-filter saltos-filter-select">
-            <span>Família</span>
+            <span>Série</span>
+            <select value={leagueId} onChange={(e) => router.push(`/${e.target.value}/valores`)}>
+              {LEAGUES.map((league) => (
+                <option key={league.id} value={league.id}>
+                  {league.name}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="saltos-filter saltos-filter-select">
+            <span>Posição</span>
             <select
-              value={family}
+              value={position}
               onChange={(e) => {
-                setFamily(e.target.value);
+                setPosition(e.target.value);
                 setProfile("todos");
               }}
             >
               <option value="todas">Todas</option>
-              {families.map((f) => (
-                <option key={f} value={f}>
-                  {f}
+              {positions.map((p) => (
+                <option key={p} value={p}>
+                  {p}
                 </option>
               ))}
             </select>
@@ -166,40 +240,6 @@ export function ValoresClient({
                 </option>
               ))}
             </select>
-          </label>
-          <label className="saltos-filter saltos-filter-select">
-            <span>Clube</span>
-            <select value={club} onChange={(e) => setClub(e.target.value)}>
-              <option value="todos">Todos</option>
-              {clubs.map((c) => (
-                <option key={c} value={c}>
-                  {c}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label className="saltos-filter saltos-filter-select">
-            <span>Ordenar</span>
-            <select value={sort} onChange={(e) => setSort(e.target.value as SortKey)}>
-              {SORT_OPTIONS.map((o) => (
-                <option key={o.value} value={o.value}>
-                  {o.label}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label className="saltos-filter">
-            <span>
-              Rating mínimo <strong>{minRating.toFixed(1)}</strong>
-            </span>
-            <input
-              type="range"
-              min={0}
-              max={7.2}
-              step={0.1}
-              value={minRating}
-              onChange={(e) => setMinRating(Number(e.target.value))}
-            />
           </label>
           <div className="saltos-filter saltos-filter-dest">
             <span>Mercado</span>
@@ -230,16 +270,25 @@ export function ValoresClient({
           <table className="valores-table">
             <thead>
               <tr>
-                <th>Atleta</th>
-                <th>Posição · Perfil</th>
-                <th className="num">Idade</th>
-                <th className="num">Rating</th>
-                <th className="num">Min</th>
-                <th className="num">Contrato</th>
-                <th className="num">Seleção</th>
-                <th className="num">Valor TM</th>
-                <th className="num valores-sada-col">Valor SADA</th>
-                <th className="num">Mercado</th>
+                {th("name", "Atleta", false)}
+                {th("position", "Posição · Perfil", false)}
+                {th("age", "Idade")}
+                {th("rating", "Rating")}
+                {th("minutes", "Min")}
+                {th("contract", "Contrato")}
+                {th("caps", "Seleção")}
+                {th("tm", "Valor TM")}
+                <th
+                  className={`valores-th num valores-sada-col ${sortKey === "sada" ? "sorted" : ""}`}
+                  onClick={() => toggleSort("sada")}
+                  aria-sort={sortKey === "sada" ? (sortDir === 1 ? "ascending" : "descending") : undefined}
+                >
+                  Valor SADA
+                  <span className="valores-sort-arrow">
+                    {sortKey === "sada" ? (sortDir === 1 ? "▲" : "▼") : "↕"}
+                  </span>
+                </th>
+                {th("ratio", "Mercado")}
               </tr>
             </thead>
             <tbody>
