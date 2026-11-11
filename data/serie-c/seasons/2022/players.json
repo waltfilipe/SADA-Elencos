@@ -33,21 +33,6 @@
           "combativo": 5.0
         }
       },
-      "transfermarkt": {
-        "id": "1223984",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "Retrô FC Brasil U20",
-        "profile_url": "https://www.transfermarkt.com.br/caua-guerra/profil/spieler/1223984",
-        "foot": "Destro",
-        "height": null,
-        "matched_name": "Cauã Guerra",
-        "match_via": "Retrô 2025"
-      },
       "discipline": {
         "fouls_per90": 1.23,
         "fouls_total": 31,
@@ -664,19 +649,6 @@
           "combativo": 5.8
         }
       },
-      "transfermarkt": {
-        "id": "443721",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/443721-1682803292.jpg?lm=4711",
-        "market_value": "€ 300 mil",
-        "market_value_eur": 300000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "2 meses",
-        "on_loan_from": null,
-        "club": "Clube do Remo",
-        "profile_url": "https://www.transfermarkt.com.br/marlon/profil/spieler/443721",
-        "matched_name": "Marlon",
-        "match_score": 111.0
-      },
       "discipline": {
         "fouls_per90": 0.61,
         "fouls_total": 12,
@@ -1096,7 +1068,20 @@
           "combativo": 5.9
         }
       },
-      "transfermarkt": null,
+      "transfermarkt": {
+        "id": "347529",
+        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
+        "market_value": null,
+        "market_value_eur": null,
+        "contract_until": null,
+        "contract_remaining": null,
+        "on_loan_from": null,
+        "club": "União Rondonópolis EC",
+        "profile_url": "https://www.transfermarkt.com.br/alemao/profil/spieler/347529",
+        "foot": "Destro",
+        "height": 185,
+        "matched_name": "Alemão"
+      },
       "discipline": {
         "fouls_per90": 0.91,
         "fouls_total": 16,
@@ -1210,19 +1195,6 @@
           "combativo": 6.7
         }
       },
-      "transfermarkt": {
-        "id": "1082825",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/1082825-1759510351.jpg?lm=4711",
-        "market_value": "€ 200 mil",
-        "market_value_eur": 200000,
-        "contract_until": "2026-11-30",
-        "contract_remaining": "1 mes",
-        "on_loan_from": "Chapecoense",
-        "club": "Figueirense FC",
-        "profile_url": "https://www.transfermarkt.com.br/mailson/profil/spieler/1082825",
-        "matched_name": "Mailson",
-        "match_score": 111.0
-      },
       "discipline": {
         "fouls_per90": 0.63,
         "fouls_total": 11,
@@ -1335,17 +1307,6 @@
           "construtor": 7.5,
           "combativo": 7.6
         }
-      },
-      "transfermarkt": {
-        "id": "428783",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/428783-1641992592.png?lm=4711",
-        "market_value": "€ 10.00 mi.",
-        "market_value_eur": 10000000,
-        "contract_until": "2029-12-31",
-        "contract_remaining": "3 anos e 4 meses",
-        "club": "CR Flamengo",
-        "profile_url": "https://www.transfermarkt.com.br/vitao/profil/spieler/428783",
-        "on_loan_from": null
       },
       "discipline": {
         "fouls_per90": 0.81,
@@ -1746,7 +1707,20 @@
           "combativo": 6.8
         }
       },
-      "transfermarkt": null,
+      "transfermarkt": {
+        "id": "863113",
+        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
+        "market_value": "€ 100 mil",
+        "market_value_eur": 100000,
+        "contract_until": null,
+        "contract_remaining": null,
+        "on_loan_from": null,
+        "club": "Sem clube",
+        "profile_url": "https://www.transfermarkt.com.br/caio-acarau/profil/spieler/863113",
+        "foot": "Destro",
+        "height": 183,
+        "matched_name": "Caio Acaraú"
+      },
       "discipline": {
         "fouls_per90": 1.95,
         "fouls_total": 32,
@@ -1795,17 +1769,6 @@
           "construtor": 7.1,
           "combativo": 7.5
         }
-      },
-      "transfermarkt": {
-        "id": "1116366",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/1116366-1682801509.jpg?lm=4711",
-        "market_value": "€ 800 mil",
-        "market_value_eur": 800000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "2 meses",
-        "on_loan_from": "Atlético Mineiro",
-        "club": "Avaí FC",
-        "profile_url": "https://www.transfermarkt.com.br/paulo-vitor/profil/spieler/1116366"
       },
       "discipline": {
         "fouls_per90": 1.57,
@@ -2398,19 +2361,6 @@
           "combativo": 6.6
         }
       },
-      "transfermarkt": {
-        "id": "726103",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": "2026-11-30",
-        "contract_remaining": "1 mes",
-        "on_loan_from": "Tombense FC",
-        "club": "AO Itabaiana",
-        "profile_url": "https://www.transfermarkt.com.br/cleiton/profil/spieler/726103",
-        "matched_name": "Cleiton",
-        "match_score": 107.0
-      },
       "discipline": {
         "fouls_per90": 0.24,
         "fouls_total": 3,
@@ -2638,21 +2588,6 @@
           "combativo": 7.3
         }
       },
-      "transfermarkt": {
-        "id": "346072",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/346072-1625151770.jpg?lm=4711",
-        "market_value": "€ 50 mil",
-        "market_value_eur": 50000,
-        "contract_until": "2026-11-30",
-        "contract_remaining": "29 dia(s)",
-        "on_loan_from": null,
-        "club": "São Bernardo FC",
-        "profile_url": "https://www.transfermarkt.com.br/marcao/profil/spieler/346072",
-        "foot": "Destro",
-        "height": 183,
-        "matched_name": "Marcão",
-        "match_via": "Goiás 2024"
-      },
       "discipline": {
         "fouls_per90": 1.01,
         "fouls_total": 11,
@@ -2876,21 +2811,6 @@
           "combativo": 5.9
         }
       },
-      "transfermarkt": {
-        "id": "208681",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/208681-1725326922.jpg?lm=4711",
-        "market_value": "€ 600 mil",
-        "market_value_eur": 600000,
-        "contract_until": "2027-12-31",
-        "contract_remaining": "1 ano e 1 mes",
-        "on_loan_from": null,
-        "club": "SC Corinthians",
-        "profile_url": "https://www.transfermarkt.com.br/gustavo-henrique/profil/spieler/208681",
-        "foot": "Destro",
-        "height": 194,
-        "matched_name": "Gustavo Henrique",
-        "match_via": "Corinthians 2025"
-      },
       "discipline": {
         "fouls_per90": 0.8,
         "fouls_total": 8,
@@ -2939,17 +2859,6 @@
           "construtor": 6.3,
           "combativo": 7.2
         }
-      },
-      "transfermarkt": {
-        "id": "1115017",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/1115017-1780493824.jpg?lm=4711",
-        "market_value": "-",
-        "market_value_eur": null,
-        "contract_until": "2029-12-31",
-        "contract_remaining": "3 anos e 2 meses",
-        "on_loan_from": null,
-        "club": "Goiás EC",
-        "profile_url": "https://www.transfermarkt.com.br/kadu/profil/spieler/1115017"
       },
       "discipline": {
         "fouls_per90": 1.37,
@@ -4013,21 +3922,6 @@
           "construtor": 6.5,
           "combativo": 6.6
         }
-      },
-      "transfermarkt": {
-        "id": "550495",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/550495-1722524493.png?lm=4711",
-        "market_value": "€ 1.50 mi",
-        "market_value_eur": 1500000,
-        "contract_until": "2028-12-31",
-        "contract_remaining": "2 anos e 1 mes",
-        "on_loan_from": null,
-        "club": "RB Bragantino",
-        "profile_url": "https://www.transfermarkt.com.br/fernando/profil/spieler/550495",
-        "foot": "Destro",
-        "height": 176,
-        "matched_name": "Fernando",
-        "match_via": "Red Bull Bragantino 2025"
       },
       "discipline": {
         "fouls_per90": 0.3,
@@ -5600,21 +5494,6 @@
           "combativo": 6.4
         }
       },
-      "transfermarkt": {
-        "id": "978618",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/978618-1785705386.png?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "Betim Futebol",
-        "profile_url": "https://www.transfermarkt.com.br/gabriel-marques/profil/spieler/978618",
-        "foot": "Destro",
-        "height": 197,
-        "matched_name": "Gabriel Marques",
-        "match_score": 107.0
-      },
       "discipline": {
         "fouls_per90": 1.48,
         "fouls_total": 2,
@@ -5663,21 +5542,6 @@
           "construtor": 6.6,
           "combativo": 6.5
         }
-      },
-      "transfermarkt": {
-        "id": "863033",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/863033-1662692931.jpg?lm=4711",
-        "market_value": "€ 400 mil",
-        "market_value_eur": 400000,
-        "contract_until": "2027-06-30",
-        "contract_remaining": "7 meses",
-        "on_loan_from": null,
-        "club": "Hapoel Ramat Gan",
-        "profile_url": "https://www.transfermarkt.com.br/marcio-silva/profil/spieler/863033",
-        "foot": "Canhoto",
-        "height": 192,
-        "matched_name": "Márcio Silva",
-        "match_via": "Hapoel Ramat Gan 2026"
       },
       "discipline": {
         "fouls_per90": 0.0,
@@ -6494,21 +6358,6 @@
           "ofensivo": 7.1
         }
       },
-      "transfermarkt": {
-        "id": "560417",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/560417-1775761327.jpg?lm=4711",
-        "market_value": "€ 4.00 mi",
-        "market_value_eur": 4000000,
-        "contract_until": "2030-06-30",
-        "contract_remaining": "3 anos e 7 meses",
-        "on_loan_from": null,
-        "club": "Rayo Vallecano",
-        "profile_url": "https://www.transfermarkt.com.br/alemao/profil/spieler/560417",
-        "foot": "Destro",
-        "height": 182,
-        "matched_name": "Alemão",
-        "match_via": "Internacional 2022"
-      },
       "discipline": {
         "fouls_per90": 1.71,
         "fouls_total": 36,
@@ -6557,19 +6406,6 @@
           "construtor": 7.4,
           "ofensivo": 7.5
         }
-      },
-      "transfermarkt": {
-        "id": "312678",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/312678-1759746750.jpg?lm=4711",
-        "market_value": "€ 2.00 mi.",
-        "market_value_eur": 2000000,
-        "contract_until": "2030-12-31",
-        "contract_remaining": "4 anos e 2 meses",
-        "on_loan_from": null,
-        "club": "Atlético Mineiro",
-        "profile_url": "https://www.transfermarkt.com.br/leo-duarte/profil/spieler/312678",
-        "foot": "Destro",
-        "height": 183
       },
       "discipline": {
         "fouls_per90": 2.09,
@@ -6670,7 +6506,20 @@
           "ofensivo": 7.3
         }
       },
-      "transfermarkt": null,
+      "transfermarkt": {
+        "id": "1459907",
+        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
+        "market_value": null,
+        "market_value_eur": null,
+        "contract_until": null,
+        "contract_remaining": null,
+        "on_loan_from": null,
+        "club": "Fim de carreira",
+        "profile_url": "https://www.transfermarkt.com.br/fabio-alves/profil/spieler/1459907",
+        "foot": null,
+        "height": null,
+        "matched_name": "Fabio Alves"
+      },
       "discipline": {
         "fouls_per90": 1.31,
         "fouls_total": 27,
@@ -7218,7 +7067,20 @@
           "ofensivo": 5.7
         }
       },
-      "transfermarkt": null,
+      "transfermarkt": {
+        "id": "1422886",
+        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
+        "market_value": null,
+        "market_value_eur": null,
+        "contract_until": null,
+        "contract_remaining": null,
+        "on_loan_from": null,
+        "club": "Fim de carreira",
+        "profile_url": "https://www.transfermarkt.com.br/ceara/profil/spieler/1422886",
+        "foot": null,
+        "height": null,
+        "matched_name": "Ceará"
+      },
       "discipline": {
         "fouls_per90": 0.52,
         "fouls_total": 9,
@@ -7521,21 +7383,6 @@
           "construtor": 5.6,
           "ofensivo": 6.2
         }
-      },
-      "transfermarkt": {
-        "id": "981271",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "Ituano FC",
-        "profile_url": "https://www.transfermarkt.com.br/ze-carlos/profil/spieler/981271",
-        "foot": "Destro",
-        "height": 177,
-        "matched_name": "Zé Carlos",
-        "match_score": 107.0
       },
       "discipline": {
         "fouls_per90": 0.92,
@@ -8148,19 +7995,6 @@
           "ofensivo": 5.8
         }
       },
-      "transfermarkt": {
-        "id": "1365896",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
-        "market_value": "-",
-        "market_value_eur": null,
-        "contract_until": "2027-12-31",
-        "contract_remaining": "1 ano e 1 mes",
-        "on_loan_from": null,
-        "club": "Sport Recife U20",
-        "profile_url": "https://www.transfermarkt.com.br/adriel/profil/spieler/1365896",
-        "foot": "Destro",
-        "height": null
-      },
       "discipline": {
         "fouls_per90": 1.88,
         "fouls_total": 22,
@@ -8616,19 +8450,6 @@
           "ofensivo": 5.8
         }
       },
-      "transfermarkt": {
-        "id": "333159",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/333159-1675216507.jpg?lm=4711",
-        "market_value": "€ 600 mil",
-        "market_value_eur": 600000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "4 meses",
-        "club": "Clube do Remo",
-        "profile_url": "https://www.transfermarkt.com.br/patrick/profil/spieler/333159",
-        "matched_name": "Patrick",
-        "match_score": 111.0,
-        "on_loan_from": "Santos FC"
-      },
       "discipline": {
         "fouls_per90": 2.0,
         "fouls_total": 18,
@@ -8839,19 +8660,6 @@
           "construtor": 6.5,
           "ofensivo": 7.0
         }
-      },
-      "transfermarkt": {
-        "id": "1222210",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
-        "market_value": "-",
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "Ituano FC U20",
-        "profile_url": "https://www.transfermarkt.com.br/matheus-rocha/profil/spieler/1222210",
-        "foot": "Destro",
-        "height": null
       },
       "discipline": {
         "fouls_per90": 0.72,
@@ -9990,21 +9798,6 @@
           "ofensivo": 6.6
         }
       },
-      "transfermarkt": {
-        "id": "867461",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/867461-1748479663.jpg?lm=4711",
-        "market_value": "€ 2.50 mi",
-        "market_value_eur": 2500000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "1 mes",
-        "on_loan_from": "SE Palmeiras",
-        "club": "Grêmio Novorizontino",
-        "profile_url": "https://www.transfermarkt.com.br/romulo/profil/spieler/867461",
-        "foot": "Destro",
-        "height": 177,
-        "matched_name": "Rômulo",
-        "match_via": "Grêmio Novorizontino 2025"
-      },
       "discipline": {
         "fouls_per90": 1.03,
         "fouls_total": 5,
@@ -10053,21 +9846,6 @@
           "construtor": 6.1,
           "ofensivo": 5.9
         }
-      },
-      "transfermarkt": {
-        "id": "114937",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/114937-1483707641.jpg?lm=4711",
-        "market_value": "€ 800 mil",
-        "market_value_eur": 800000,
-        "contract_until": "2027-12-31",
-        "contract_remaining": "1 ano e 1 mes",
-        "on_loan_from": null,
-        "club": "Atlético Mineiro",
-        "profile_url": "https://www.transfermarkt.com.br/dudu/profil/spieler/114937",
-        "foot": "Destro",
-        "height": 166,
-        "matched_name": "Dudu",
-        "match_via": "Atlético Mineiro 2025"
       },
       "discipline": {
         "fouls_per90": 2.42,
@@ -10359,21 +10137,6 @@
           "construtor": 6.7,
           "ofensivo": 6.8
         }
-      },
-      "transfermarkt": {
-        "id": "798167",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/798167-1682388129.jpg?lm=4711",
-        "market_value": "€ 900 mil",
-        "market_value_eur": 900000,
-        "contract_until": "2027-12-31",
-        "contract_remaining": "1 ano e 1 mes",
-        "on_loan_from": null,
-        "club": "Sport Recife",
-        "profile_url": "https://www.transfermarkt.com.br/felipinho/profil/spieler/798167",
-        "foot": "Canhoto",
-        "height": 177,
-        "matched_name": "Felipinho",
-        "match_via": "Sport Recife 2024"
       },
       "discipline": {
         "fouls_per90": 1.74,
@@ -10876,21 +10639,6 @@
           "ofensivo": 7.0
         }
       },
-      "transfermarkt": {
-        "id": "738502",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/738502-1716603016.jpg?lm=4711",
-        "market_value": "€ 350 mil",
-        "market_value_eur": 350000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "1 mes",
-        "on_loan_from": null,
-        "club": "Criciúma EC",
-        "profile_url": "https://www.transfermarkt.com.br/joao-carlos/profil/spieler/738502",
-        "foot": "Destro",
-        "height": 168,
-        "matched_name": "João Carlos",
-        "match_via": "Criciúma 2025"
-      },
       "discipline": {
         "fouls_per90": 1.55,
         "fouls_total": 4,
@@ -10940,21 +10688,6 @@
           "ofensivo": 6.3
         }
       },
-      "transfermarkt": {
-        "id": "736652",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/736652-1685123350.jpg?lm=4711",
-        "market_value": "€ 600 mil",
-        "market_value_eur": 600000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "1 mes",
-        "on_loan_from": null,
-        "club": "Chapecoense",
-        "profile_url": "https://www.transfermarkt.com.br/joao-paulo/profil/spieler/736652",
-        "foot": "Canhoto",
-        "height": 187,
-        "matched_name": "João Paulo",
-        "match_via": "Chapecoense 2025"
-      },
       "discipline": {
         "fouls_per90": 1.73,
         "fouls_total": 4,
@@ -11003,21 +10736,6 @@
           "construtor": 6.6,
           "ofensivo": 6.7
         }
-      },
-      "transfermarkt": {
-        "id": "1362912",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": "2029-01-31",
-        "contract_remaining": "2 anos e 2 meses",
-        "on_loan_from": null,
-        "club": "RB Bragantino U20",
-        "profile_url": "https://www.transfermarkt.com.br/breno/profil/spieler/1362912",
-        "foot": "Destro",
-        "height": 184,
-        "matched_name": "Breno",
-        "match_via": "Red Bull Bragantino U20 2026"
       },
       "discipline": {
         "fouls_per90": 1.3,
@@ -11294,19 +11012,6 @@
           "ofensivo": 6.8
         }
       },
-      "transfermarkt": {
-        "id": "832313",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/832313-1663839332.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "CN Marcílio Dias",
-        "profile_url": "https://www.transfermarkt.com.br/cesinha/profil/spieler/832313",
-        "matched_name": "Cesinha",
-        "match_score": 106.0
-      },
       "discipline": {
         "fouls_per90": 3.5,
         "fouls_total": 7,
@@ -11505,21 +11210,6 @@
           "construtor": 6.5,
           "ofensivo": 7.1
         }
-      },
-      "transfermarkt": {
-        "id": "1109028",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/1109028-1769163585.png?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": "2027-06-30",
-        "contract_remaining": "7 meses",
-        "on_loan_from": null,
-        "club": "CD Trofense",
-        "profile_url": "https://www.transfermarkt.com.br/juninho/profil/spieler/1109028",
-        "foot": "Destro",
-        "height": null,
-        "matched_name": "Juninho",
-        "match_via": "Trofense 2026"
       },
       "discipline": {
         "fouls_per90": 6.73,
@@ -11943,21 +11633,6 @@
           "ofensivo": 6.2
         }
       },
-      "transfermarkt": {
-        "id": "974379",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/974379-1769287344.jpeg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "A'Ali SC  (Bahrain)",
-        "profile_url": "https://www.transfermarkt.com.br/lucas-gabriel/profil/spieler/974379",
-        "foot": "Ambidestro",
-        "height": 180,
-        "matched_name": "Lucas Gabriel",
-        "match_via": "Confiança 2022"
-      },
       "discipline": {
         "fouls_per90": 2.02,
         "fouls_total": 2,
@@ -12206,17 +11881,6 @@
           "construtor": 6.2,
           "ofensivo": 6.2
         }
-      },
-      "transfermarkt": {
-        "id": "177845",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/177845-1515772267.jpg?lm=4711",
-        "market_value": "€ 175 mil",
-        "market_value_eur": 175000,
-        "contract_until": "2026-11-30",
-        "contract_remaining": "1 mes",
-        "on_loan_from": null,
-        "club": "Grêmio Novorizontino",
-        "profile_url": "https://www.transfermarkt.com.br/madson/profil/spieler/177845"
       },
       "discipline": {
         "fouls_per90": 1.55,
@@ -12731,17 +12395,6 @@
           "boxtobox": 7.3
         }
       },
-      "transfermarkt": {
-        "id": "743593",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/743593-1690218912.jpg?lm=4711",
-        "market_value": "€ 6.00 mi.",
-        "market_value_eur": 6000000,
-        "contract_until": "2030-12-31",
-        "contract_remaining": "4 anos e 4 meses",
-        "club": "RB Bragantino",
-        "profile_url": "https://www.transfermarkt.com.br/rodriguinho/profil/spieler/743593",
-        "on_loan_from": null
-      },
       "discipline": {
         "fouls_per90": 1.58,
         "fouls_total": 33,
@@ -13220,21 +12873,6 @@
           "construtor": 6.4,
           "boxtobox": 7.4
         }
-      },
-      "transfermarkt": {
-        "id": "642689",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/642689-1643621740.jpg?lm=4711",
-        "market_value": "€ 800 mil",
-        "market_value_eur": 800000,
-        "contract_until": "2027-11-30",
-        "contract_remaining": "1 ano",
-        "on_loan_from": null,
-        "club": "CRB",
-        "profile_url": "https://www.transfermarkt.com.br/mikael/profil/spieler/642689",
-        "foot": "Canhoto",
-        "height": 184,
-        "matched_name": "Mikael",
-        "match_via": "CRB 2025"
       },
       "discipline": {
         "fouls_per90": 2.92,
@@ -14033,7 +13671,20 @@
           "boxtobox": 7.1
         }
       },
-      "transfermarkt": null,
+      "transfermarkt": {
+        "id": "552801",
+        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
+        "market_value": null,
+        "market_value_eur": null,
+        "contract_until": null,
+        "contract_remaining": null,
+        "on_loan_from": null,
+        "club": "GE Glória",
+        "profile_url": "https://www.transfermarkt.com.br/leylon/profil/spieler/552801",
+        "foot": "Destro",
+        "height": 181,
+        "matched_name": "Leylon"
+      },
       "discipline": {
         "fouls_per90": 0.76,
         "fouls_total": 11,
@@ -14943,19 +14594,6 @@
           "boxtobox": 6.7
         }
       },
-      "transfermarkt": {
-        "id": "129129",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/129129-1665589260.png?lm=4711",
-        "market_value": "€ 1.50 mi",
-        "market_value_eur": 1500000,
-        "contract_until": "2027-06-30",
-        "contract_remaining": "7 meses",
-        "on_loan_from": null,
-        "club": "Atlético de San Luis",
-        "profile_url": "https://www.transfermarkt.com.br/joao-pedro/profil/spieler/129129",
-        "foot": "Destro",
-        "height": 174
-      },
       "discipline": {
         "fouls_per90": 2.73,
         "fouls_total": 26,
@@ -15129,21 +14767,6 @@
           "boxtobox": 5.9
         }
       },
-      "transfermarkt": {
-        "id": "353108",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/353108-1733188857.jpg?lm=4711",
-        "market_value": "€ 750 mil",
-        "market_value_eur": 750000,
-        "contract_until": "2027-12-31",
-        "contract_remaining": "1 ano e 1 mes",
-        "on_loan_from": null,
-        "club": "CR Flamengo",
-        "profile_url": "https://www.transfermarkt.com.br/bruno-henrique/profil/spieler/353108",
-        "foot": "Destro",
-        "height": 184,
-        "matched_name": "Bruno Henrique",
-        "match_via": "Flamengo 2025"
-      },
       "discipline": {
         "fouls_per90": 2.27,
         "fouls_total": 20,
@@ -15192,21 +14815,6 @@
           "construtor": 6.9,
           "boxtobox": 7.0
         }
-      },
-      "transfermarkt": {
-        "id": "140547",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/140547-1663032346.jpeg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": "Brasiliense FC",
-        "club": "Maringá FC",
-        "profile_url": "https://www.transfermarkt.com.br/serginho/profil/spieler/140547",
-        "foot": "Destro",
-        "height": 166,
-        "matched_name": "Serginho",
-        "match_via": "Maringá 2026"
       },
       "discipline": {
         "fouls_per90": 2.18,
@@ -15494,21 +15102,6 @@
           "construtor": 6.4,
           "boxtobox": 6.9
         }
-      },
-      "transfermarkt": {
-        "id": "674732",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/674732-1762261557.jpg?lm=4711",
-        "market_value": "€ 7.50 mi",
-        "market_value_eur": 7500000,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "Al-Rayyan SC",
-        "profile_url": "https://www.transfermarkt.com.br/wesley/profil/spieler/674732",
-        "foot": "Destro",
-        "height": 175,
-        "matched_name": "Wesley",
-        "match_via": "Internacional 2024"
       },
       "discipline": {
         "fouls_per90": 2.01,
@@ -16641,19 +16234,6 @@
           "boxtobox": 6.4
         }
       },
-      "transfermarkt": {
-        "id": "148765",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/148765-1780481139.png?lm=4711",
-        "market_value": "€ 350 mil",
-        "market_value_eur": 350000,
-        "contract_until": "2026-11-30",
-        "contract_remaining": "1 mes",
-        "on_loan_from": null,
-        "club": "Operário FEC",
-        "profile_url": "https://www.transfermarkt.com.br/pablo/profil/spieler/148765",
-        "matched_name": "Pablo",
-        "match_score": 111.0
-      },
       "discipline": {
         "fouls_per90": 0.41,
         "fouls_total": 2,
@@ -17006,21 +16586,6 @@
           "construtor": 6.3,
           "boxtobox": 6.9
         }
-      },
-      "transfermarkt": {
-        "id": "546033",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/546033-1783988577.png?lm=4711",
-        "market_value": "€ 1.00 mi",
-        "market_value_eur": 1000000,
-        "contract_until": "2028-12-31",
-        "contract_remaining": "2 anos e 1 mes",
-        "on_loan_from": null,
-        "club": "São Paulo FC",
-        "profile_url": "https://www.transfermarkt.com.br/sabino/profil/spieler/546033",
-        "foot": "Canhoto",
-        "height": 185,
-        "matched_name": "Sabino",
-        "match_via": "São Paulo 2025"
       },
       "discipline": {
         "fouls_per90": 1.97,
@@ -18339,21 +17904,6 @@
           "boxtobox": 6.0
         }
       },
-      "transfermarkt": {
-        "id": "982617",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/982617-1684807166.jpg?lm=4711",
-        "market_value": "€ 15.00 mi",
-        "market_value_eur": 15000000,
-        "contract_until": "2029-12-31",
-        "contract_remaining": "3 anos e 1 mes",
-        "on_loan_from": null,
-        "club": "Fluminense FC",
-        "profile_url": "https://www.transfermarkt.com.br/hercules/profil/spieler/982617",
-        "foot": "Destro",
-        "height": 178,
-        "matched_name": "Hércules",
-        "match_via": "Fluminense 2025"
-      },
       "discipline": {
         "fouls_per90": 2.87,
         "fouls_total": 5,
@@ -19059,17 +18609,6 @@
           "boxtobox": 6.1
         }
       },
-      "transfermarkt": {
-        "id": "672292",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/672292-1662430855.jpg?lm=4711",
-        "market_value": "€ 1.50 mi.",
-        "market_value_eur": 1500000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "4 meses",
-        "club": "Clube do Remo",
-        "profile_url": "https://www.transfermarkt.com.br/joao-lucas/profil/spieler/672292",
-        "on_loan_from": "Grêmio FBPA"
-      },
       "discipline": {
         "fouls_per90": 1.59,
         "fouls_total": 2,
@@ -19675,21 +19214,6 @@
           "boxtobox": 6.5
         }
       },
-      "transfermarkt": {
-        "id": "52769",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/52769-1740646449.jpg?lm=4711",
-        "market_value": "€ 300 mil",
-        "market_value_eur": 300000,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "Sem clube",
-        "profile_url": "https://www.transfermarkt.com.br/willian/profil/spieler/52769",
-        "foot": "Destro",
-        "height": 175,
-        "matched_name": "Willian",
-        "match_score": 111.0
-      },
       "discipline": {
         "fouls_per90": 1.02,
         "fouls_total": 1,
@@ -20062,17 +19586,6 @@
           "construtor": 6.5,
           "boxtobox": 6.3
         }
-      },
-      "transfermarkt": {
-        "id": "267849",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/267849-1780494552.jpg?lm=4711",
-        "market_value": "€ 550 mil",
-        "market_value_eur": 550000,
-        "contract_until": "2026-11-30",
-        "contract_remaining": "1 mes",
-        "on_loan_from": null,
-        "club": "Criciúma EC",
-        "profile_url": "https://www.transfermarkt.com.br/romarinho/profil/spieler/267849"
       },
       "discipline": {
         "fouls_per90": 2.86,
@@ -20450,8 +19963,7 @@
           "red_per90": 0.02
         }
       },
-      "athlete_id": "ath-002861",
-      "person_key": "name:marlon|1994|1"
+      "athlete_id": "ath-004447"
     },
     {
       "player_id": "serie-c-jos-aldo-paysandu-19",
@@ -20677,21 +20189,6 @@
           "meia_ponta": 6.7,
           "ruptura": 6.4
         }
-      },
-      "transfermarkt": {
-        "id": "843472",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/843472-1733329266.jpg?lm=4711",
-        "market_value": "€ 225 mil",
-        "market_value_eur": 225000,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "Ulsan HD FC",
-        "profile_url": "https://www.transfermarkt.com.br/pedrinho/profil/spieler/843472",
-        "foot": "Canhoto",
-        "height": 172,
-        "matched_name": "Pedrinho",
-        "match_via": "Volta Redonda 2022"
       },
       "discipline": {
         "fouls_per90": 2.26,
@@ -21452,21 +20949,6 @@
           "ruptura": 7.2
         }
       },
-      "transfermarkt": {
-        "id": "816129",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/816129-1658806524.jpg?lm=4711",
-        "market_value": "€ 3.00 mi",
-        "market_value_eur": 3000000,
-        "contract_until": "2030-12-31",
-        "contract_remaining": "4 anos e 1 mes",
-        "on_loan_from": null,
-        "club": "RB Bragantino",
-        "profile_url": "https://www.transfermarkt.com.br/vanderlan/profil/spieler/816129",
-        "foot": "Canhoto",
-        "height": 183,
-        "matched_name": "Vanderlan",
-        "match_via": "Red Bull Bragantino 2025"
-      },
       "discipline": {
         "fouls_per90": 1.79,
         "fouls_total": 25,
@@ -21758,21 +21240,6 @@
           "ruptura": 5.5
         }
       },
-      "transfermarkt": {
-        "id": "1257132",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/1257132-1769005054.png?lm=4711",
-        "market_value": "€ 5.00 mi",
-        "market_value_eur": 5000000,
-        "contract_until": "2029-12-31",
-        "contract_remaining": "3 anos e 1 mes",
-        "on_loan_from": null,
-        "club": "SC Corinthians",
-        "profile_url": "https://www.transfermarkt.com.br/dieguinho/profil/spieler/1257132",
-        "foot": "Canhoto",
-        "height": 170,
-        "matched_name": "Dieguinho",
-        "match_via": "Corinthians 2025"
-      },
       "discipline": {
         "fouls_per90": 1.36,
         "fouls_total": 18,
@@ -21998,21 +21465,6 @@
           "ruptura": 7.2
         }
       },
-      "transfermarkt": {
-        "id": "114937",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/114937-1483707641.jpg?lm=4711",
-        "market_value": "€ 800 mil",
-        "market_value_eur": 800000,
-        "contract_until": "2027-12-31",
-        "contract_remaining": "1 ano e 1 mes",
-        "on_loan_from": null,
-        "club": "Atlético Mineiro",
-        "profile_url": "https://www.transfermarkt.com.br/dudu/profil/spieler/114937",
-        "foot": "Destro",
-        "height": 166,
-        "matched_name": "Dudu",
-        "match_via": "Atlético Mineiro 2025"
-      },
       "discipline": {
         "fouls_per90": 2.79,
         "fouls_total": 11,
@@ -22186,7 +21638,20 @@
           "ruptura": 6.3
         }
       },
-      "transfermarkt": null,
+      "transfermarkt": {
+        "id": "147694",
+        "photo": "https://img.a.transfermarkt.technology/portrait/header/147694-1606136875.jpg?lm=4711",
+        "market_value": null,
+        "market_value_eur": null,
+        "contract_until": null,
+        "contract_remaining": null,
+        "on_loan_from": null,
+        "club": "Sem clube",
+        "profile_url": "https://www.transfermarkt.com.br/renan-mota/profil/spieler/147694",
+        "foot": "Destro",
+        "height": 169,
+        "matched_name": "Renan Mota"
+      },
       "discipline": {
         "fouls_per90": 1.1,
         "fouls_total": 13,
@@ -22235,21 +21700,6 @@
           "meia_ponta": 6.2,
           "ruptura": 6.2
         }
-      },
-      "transfermarkt": {
-        "id": "1581095",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "AA Ponte Preta U20",
-        "profile_url": "https://www.transfermarkt.com.br/matheus-souza/profil/spieler/1581095",
-        "foot": "Canhoto",
-        "height": null,
-        "matched_name": "Matheus Souza",
-        "match_via": "Ponte Preta U20 2026"
       },
       "discipline": {
         "fouls_per90": 0.77,
@@ -22419,21 +21869,6 @@
           "meia_ponta": 7.5,
           "ruptura": 5.2
         }
-      },
-      "transfermarkt": {
-        "id": "1355386",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/1355386-1773445607.png?lm=4711",
-        "market_value": "€ 1.00 mi",
-        "market_value_eur": 1000000,
-        "contract_until": "2028-01-23",
-        "contract_remaining": "1 ano e 2 meses",
-        "on_loan_from": null,
-        "club": "Santos FC U20",
-        "profile_url": "https://www.transfermarkt.com.br/nadson/profil/spieler/1355386",
-        "foot": "Destro",
-        "height": 171,
-        "matched_name": "Nadson",
-        "match_via": "Santos U20 2026"
       },
       "discipline": {
         "fouls_per90": 1.35,
@@ -22768,21 +22203,6 @@
           "ruptura": 5.8
         }
       },
-      "transfermarkt": {
-        "id": "347079",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/347079-1597923317.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "Fim de carreira",
-        "profile_url": "https://www.transfermarkt.com.br/gilvan/profil/spieler/347079",
-        "foot": "Destro",
-        "height": 188,
-        "matched_name": "Gilvan",
-        "match_via": "CRB 2022"
-      },
       "discipline": {
         "fouls_per90": 1.29,
         "fouls_total": 12,
@@ -23105,21 +22525,6 @@
           "meia_ponta": 7.4,
           "ruptura": 6.7
         }
-      },
-      "transfermarkt": {
-        "id": "442818",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/442818-1748472749.jpg?lm=4711",
-        "market_value": "€ 600 mil",
-        "market_value_eur": 600000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "1 mes",
-        "on_loan_from": null,
-        "club": "Mirassol FC",
-        "profile_url": "https://www.transfermarkt.com.br/fernandinho/profil/spieler/442818",
-        "foot": "Destro",
-        "height": 175,
-        "matched_name": "Fernandinho",
-        "match_via": "Mirassol 2023"
       },
       "discipline": {
         "fouls_per90": 1.45,
@@ -24490,19 +23895,6 @@
           "ruptura": 5.6
         }
       },
-      "transfermarkt": {
-        "id": "129129",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/129129-1665589260.png?lm=4711",
-        "market_value": "€ 1.50 mi",
-        "market_value_eur": 1500000,
-        "contract_until": "2027-06-30",
-        "contract_remaining": "7 meses",
-        "on_loan_from": null,
-        "club": "Atlético de San Luis",
-        "profile_url": "https://www.transfermarkt.com.br/joao-pedro/profil/spieler/129129",
-        "foot": "Destro",
-        "height": 174
-      },
       "discipline": {
         "fouls_per90": 1.71,
         "fouls_total": 10,
@@ -25804,21 +25196,6 @@
           "ruptura": 6.1
         }
       },
-      "transfermarkt": {
-        "id": "114937",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/114937-1483707641.jpg?lm=4711",
-        "market_value": "€ 800 mil",
-        "market_value_eur": 800000,
-        "contract_until": "2027-12-31",
-        "contract_remaining": "1 ano e 1 mes",
-        "on_loan_from": null,
-        "club": "Atlético Mineiro",
-        "profile_url": "https://www.transfermarkt.com.br/dudu/profil/spieler/114937",
-        "foot": "Destro",
-        "height": 166,
-        "matched_name": "Dudu",
-        "match_via": "Atlético Mineiro 2025"
-      },
       "discipline": {
         "fouls_per90": 2.79,
         "fouls_total": 11,
@@ -26868,21 +26245,6 @@
           "ruptura": 6.8
         }
       },
-      "transfermarkt": {
-        "id": "884072",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/884072-1668287183.jpg?lm=4711",
-        "market_value": "€ 3.00 mi",
-        "market_value_eur": 3000000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "1 mes",
-        "on_loan_from": "Botafogo FR",
-        "club": "Liaoning Tieren",
-        "profile_url": "https://www.transfermarkt.com.br/jeffinho/profil/spieler/884072",
-        "foot": "Destro",
-        "height": 176,
-        "matched_name": "Jeffinho",
-        "match_via": "Botafogo 2024"
-      },
       "discipline": {
         "fouls_per90": 1.43,
         "fouls_total": 4,
@@ -27504,19 +26866,6 @@
           "ruptura": 6.7
         }
       },
-      "transfermarkt": {
-        "id": "321239",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/321239-1744288639.jpg?lm=4711",
-        "market_value": "€ 6.00 mi.",
-        "market_value_eur": 6000000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "2 meses",
-        "on_loan_from": null,
-        "club": "Santos FC",
-        "profile_url": "https://www.transfermarkt.com.br/everton/profil/spieler/321239",
-        "foot": "Destro",
-        "height": 174
-      },
       "discipline": {
         "fouls_per90": 1.23,
         "fouls_total": 3,
@@ -27615,21 +26964,6 @@
           "meia_ponta": 6.2,
           "ruptura": 6.6
         }
-      },
-      "transfermarkt": {
-        "id": "668234",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/668234-1662648283.jpg?lm=4711",
-        "market_value": "€ 1.00 mi",
-        "market_value_eur": 1000000,
-        "contract_until": "2027-12-31",
-        "contract_remaining": "1 ano e 1 mes",
-        "on_loan_from": null,
-        "club": "RB Bragantino",
-        "profile_url": "https://www.transfermarkt.com.br/bruninho/profil/spieler/668234",
-        "foot": "Destro",
-        "height": 174,
-        "matched_name": "Bruninho",
-        "match_via": "Red Bull Bragantino 2024"
       },
       "discipline": {
         "fouls_per90": 1.29,
@@ -27794,17 +27128,6 @@
           "ruptura": 6.0
         }
       },
-      "transfermarkt": {
-        "id": "372013",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/372013-1664555713.jpg?lm=4711",
-        "market_value": "€ 1.80 mi.",
-        "market_value_eur": 1800000,
-        "contract_until": "2027-12-31",
-        "contract_remaining": "1 ano e 2 meses",
-        "on_loan_from": null,
-        "club": "Fortaleza EC",
-        "profile_url": "https://www.transfermarkt.com.br/luiz-fernando/profil/spieler/372013"
-      },
       "discipline": {
         "fouls_per90": 3.17,
         "fouls_total": 7,
@@ -27914,21 +27237,6 @@
           "ruptura": 6.3
         }
       },
-      "transfermarkt": {
-        "id": "225617",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/225617-1791467234.jpg?lm=4711",
-        "market_value": "€ 350 mil",
-        "market_value_eur": 350000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "1 mes",
-        "on_loan_from": null,
-        "club": "Mirassol FC",
-        "profile_url": "https://www.transfermarkt.com.br/reinaldo/profil/spieler/225617",
-        "foot": "Canhoto",
-        "height": 178,
-        "matched_name": "Reinaldo",
-        "match_via": "Mirassol 2025"
-      },
       "discipline": {
         "fouls_per90": 2.32,
         "fouls_total": 5,
@@ -27977,21 +27285,6 @@
           "meia_ponta": 6.1,
           "ruptura": 6.6
         }
-      },
-      "transfermarkt": {
-        "id": "668268",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/668268-1704213776.jpg?lm=4711",
-        "market_value": "€ 2.50 mi",
-        "market_value_eur": 2500000,
-        "contract_until": "2028-12-31",
-        "contract_remaining": "2 anos e 1 mes",
-        "on_loan_from": null,
-        "club": "Cruzeiro EC",
-        "profile_url": "https://www.transfermarkt.com.br/marquinhos/profil/spieler/668268",
-        "foot": "Canhoto",
-        "height": 175,
-        "matched_name": "Marquinhos",
-        "match_via": "Cruzeiro 2025"
       },
       "discipline": {
         "fouls_per90": 1.91,
@@ -28334,21 +27627,6 @@
           "ruptura": 6.2
         }
       },
-      "transfermarkt": {
-        "id": "894776",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/894776-1675045780.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": "2026-11-30",
-        "contract_remaining": "29 dia(s)",
-        "on_loan_from": "Vila Nova FC",
-        "club": "Botafogo FC",
-        "profile_url": "https://www.transfermarkt.com.br/marco-antonio/profil/spieler/894776",
-        "foot": "Destro",
-        "height": 180,
-        "matched_name": "Marco Antônio",
-        "match_via": "Náutico 2024"
-      },
       "discipline": {
         "fouls_per90": 2.01,
         "fouls_total": 3,
@@ -28457,19 +27735,6 @@
           "meia_ponta": 6.3,
           "ruptura": 6.5
         }
-      },
-      "transfermarkt": {
-        "id": "1223243",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": "2030-12-31",
-        "contract_remaining": "4 anos e 4 meses",
-        "club": "Athletico Paranaense",
-        "profile_url": "https://www.transfermarkt.com.br/claudinho/profil/spieler/1223243",
-        "matched_name": "Claudinho",
-        "match_score": 102.0,
-        "on_loan_from": null
       },
       "discipline": {
         "fouls_per90": 1.35,
@@ -28745,21 +28010,6 @@
           "meia_ponta": 6.4,
           "ruptura": 6.3
         }
-      },
-      "transfermarkt": {
-        "id": "688684",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/688684-1716603111.jpg?lm=4711",
-        "market_value": "€ 700 mil",
-        "market_value_eur": 700000,
-        "contract_until": "2026-11-30",
-        "contract_remaining": "29 dia(s)",
-        "on_loan_from": "EC Vitória",
-        "club": "Criciúma EC",
-        "profile_url": "https://www.transfermarkt.com.br/ronald/profil/spieler/688684",
-        "foot": "Destro",
-        "height": 171,
-        "matched_name": "Ronald",
-        "match_via": "Fortaleza 2022"
       },
       "discipline": {
         "fouls_per90": 0.0,
@@ -29086,21 +28336,6 @@
           "meia_ponta": 6.6,
           "ruptura": 6.2
         }
-      },
-      "transfermarkt": {
-        "id": "411707",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/411707-1759501693.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "1 mes",
-        "on_loan_from": null,
-        "club": "Botafogo FC",
-        "profile_url": "https://www.transfermarkt.com.br/guilherme-queiroz/profil/spieler/411707",
-        "foot": "Destro",
-        "height": 179,
-        "matched_name": "Guilherme Queiróz",
-        "match_via": "Brusque 2023"
       },
       "discipline": {
         "fouls_per90": 0.0,
@@ -30107,19 +29342,6 @@
           "ruptura": 6.4
         }
       },
-      "transfermarkt": {
-        "id": "372046",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/372046-1726056890.jpg?lm=4711",
-        "market_value": "€ 400 mil",
-        "market_value_eur": 400000,
-        "contract_until": "2026-11-30",
-        "contract_remaining": "28 dia(s)",
-        "on_loan_from": null,
-        "club": "Vila Nova FC",
-        "profile_url": "https://www.transfermarkt.com.br/lincoln/profil/spieler/372046",
-        "foot": "Destro",
-        "height": 180
-      },
       "discipline": {
         "fouls_per90": 0.0,
         "fouls_total": 0,
@@ -30355,21 +29577,6 @@
           "ruptura": 6.3
         }
       },
-      "transfermarkt": {
-        "id": "211305",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/211305-1663310931.png?lm=4711",
-        "market_value": "€ 75 mil",
-        "market_value_eur": 75000,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "Sem clube",
-        "profile_url": "https://www.transfermarkt.com.br/nilson-junior/profil/spieler/211305",
-        "foot": "Canhoto",
-        "height": 190,
-        "matched_name": "Nilson Júnior",
-        "match_via": "Ponte Preta 2024"
-      },
       "discipline": {
         "fouls_per90": 3.91,
         "fouls_total": 2,
@@ -30530,21 +29737,6 @@
           "alvo": 6.7,
           "movel": 7.7
         }
-      },
-      "transfermarkt": {
-        "id": "1051322",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/1051322-1769019041.jpg?lm=4711",
-        "market_value": "€ 1.00 mi",
-        "market_value_eur": 1000000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "1 mes",
-        "on_loan_from": "Atlético Mineiro",
-        "club": "Chapecoense",
-        "profile_url": "https://www.transfermarkt.com.br/robert-santos/profil/spieler/1051322",
-        "foot": "Canhoto",
-        "height": 180,
-        "matched_name": "Robert Santos",
-        "match_via": "Atlético Mineiro 2024"
       },
       "discipline": {
         "fouls_per90": 0.78,
@@ -30837,7 +30029,20 @@
           "movel": 6.1
         }
       },
-      "transfermarkt": null,
+      "transfermarkt": {
+        "id": "73462",
+        "photo": "https://img.a.transfermarkt.technology/portrait/header/73462-1703189175.jpg?lm=4711",
+        "market_value": null,
+        "market_value_eur": null,
+        "contract_until": null,
+        "contract_remaining": null,
+        "on_loan_from": null,
+        "club": "Fim de carreira",
+        "profile_url": "https://www.transfermarkt.com.br/hugo-almeida/profil/spieler/73462",
+        "foot": "Destro",
+        "height": 181,
+        "matched_name": "Hugo Almeida"
+      },
       "discipline": {
         "fouls_per90": 1.31,
         "fouls_total": 19,
@@ -31253,7 +30458,20 @@
           "movel": 5.7
         }
       },
-      "transfermarkt": null,
+      "transfermarkt": {
+        "id": "724795",
+        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
+        "market_value": null,
+        "market_value_eur": null,
+        "contract_until": null,
+        "contract_remaining": null,
+        "on_loan_from": null,
+        "club": "Sem clube",
+        "profile_url": "https://www.transfermarkt.com.br/flavio-torres/profil/spieler/724795",
+        "foot": "Destro",
+        "height": 186,
+        "matched_name": "Flávio Torres"
+      },
       "discipline": {
         "fouls_per90": 1.51,
         "fouls_total": 20,
@@ -31539,21 +30757,6 @@
           "movel": 6.9
         }
       },
-      "transfermarkt": {
-        "id": "393013",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "GE Bagé",
-        "profile_url": "https://www.transfermarkt.com.br/michel/profil/spieler/393013",
-        "foot": "Destro",
-        "height": 185,
-        "matched_name": "Michel",
-        "match_via": "Manaus 2022"
-      },
       "discipline": {
         "fouls_per90": 1.48,
         "fouls_total": 16,
@@ -31602,21 +30805,6 @@
           "alvo": 7.1,
           "movel": 5.8
         }
-      },
-      "transfermarkt": {
-        "id": "208681",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/208681-1725326922.jpg?lm=4711",
-        "market_value": "€ 600 mil",
-        "market_value_eur": 600000,
-        "contract_until": "2027-12-31",
-        "contract_remaining": "1 ano e 1 mes",
-        "on_loan_from": null,
-        "club": "SC Corinthians",
-        "profile_url": "https://www.transfermarkt.com.br/gustavo-henrique/profil/spieler/208681",
-        "foot": "Destro",
-        "height": 194,
-        "matched_name": "Gustavo Henrique",
-        "match_via": "Corinthians 2025"
       },
       "discipline": {
         "fouls_per90": 1.76,
@@ -32087,7 +31275,20 @@
           "movel": 7.1
         }
       },
-      "transfermarkt": null,
+      "transfermarkt": {
+        "id": "233407",
+        "photo": "https://img.a.transfermarkt.technology/portrait/header/233407-1663236875.jpg?lm=4711",
+        "market_value": null,
+        "market_value_eur": null,
+        "contract_until": null,
+        "contract_remaining": null,
+        "on_loan_from": null,
+        "club": "FC Santa Cruz",
+        "profile_url": "https://www.transfermarkt.com.br/maicon-assis/profil/spieler/233407",
+        "foot": "Destro",
+        "height": 176,
+        "matched_name": "Maicon Assis"
+      },
       "discipline": {
         "fouls_per90": 2.34,
         "fouls_total": 21,
@@ -32309,21 +31510,6 @@
           "movel": 6.8
         }
       },
-      "transfermarkt": {
-        "id": "178984",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/178984-1543835678.jpg?lm=4711",
-        "market_value": "€ 1.00 mi",
-        "market_value_eur": 1000000,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "Deportivo Toluca",
-        "profile_url": "https://www.transfermarkt.com.br/luan/profil/spieler/178984",
-        "foot": "Destro",
-        "height": 189,
-        "matched_name": "Luan",
-        "match_via": "Palmeiras 2023"
-      },
       "discipline": {
         "fouls_per90": 1.96,
         "fouls_total": 16,
@@ -32372,19 +31558,6 @@
           "alvo": 5.6,
           "movel": 7.4
         }
-      },
-      "transfermarkt": {
-        "id": "114144",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/114144-1768990157.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "SER Caxias do Sul",
-        "profile_url": "https://www.transfermarkt.com.br/roberto/profil/spieler/114144",
-        "matched_name": "Roberto",
-        "match_score": 106.0
       },
       "discipline": {
         "fouls_per90": 1.37,
@@ -32604,21 +31777,6 @@
           "alvo": 6.2,
           "movel": 6.5
         }
-      },
-      "transfermarkt": {
-        "id": "1090756",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/1090756-1769204144.png?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "Grêmio FBPA U20",
-        "profile_url": "https://www.transfermarkt.com.br/jefinho/profil/spieler/1090756",
-        "foot": "Canhoto",
-        "height": null,
-        "matched_name": "Jefinho",
-        "match_via": "Grêmio U20 2026"
       },
       "discipline": {
         "fouls_per90": 2.01,
@@ -33283,21 +32441,6 @@
           "movel": 6.3
         }
       },
-      "transfermarkt": {
-        "id": "193135",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/s_193135_6600_2012_2.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": null,
-        "contract_remaining": null,
-        "on_loan_from": null,
-        "club": "Mixto EC",
-        "profile_url": "https://www.transfermarkt.com.br/jackson/profil/spieler/193135",
-        "foot": "Destro",
-        "height": 186,
-        "matched_name": "Jackson",
-        "match_score": 111.0
-      },
       "discipline": {
         "fouls_per90": 1.81,
         "fouls_total": 10,
@@ -33698,21 +32841,6 @@
           "alvo": 5.8,
           "movel": 7.2
         }
-      },
-      "transfermarkt": {
-        "id": "736652",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/736652-1685123350.jpg?lm=4711",
-        "market_value": "€ 600 mil",
-        "market_value_eur": 600000,
-        "contract_until": "2026-12-31",
-        "contract_remaining": "1 mes",
-        "on_loan_from": null,
-        "club": "Chapecoense",
-        "profile_url": "https://www.transfermarkt.com.br/joao-paulo/profil/spieler/736652",
-        "foot": "Canhoto",
-        "height": 187,
-        "matched_name": "João Paulo",
-        "match_via": "Chapecoense 2025"
       },
       "discipline": {
         "fouls_per90": 1.56,
@@ -34399,21 +33527,6 @@
           "movel": 6.3
         }
       },
-      "transfermarkt": {
-        "id": "840431",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/840431-1625152220.jpg?lm=4711",
-        "market_value": "€ 500 mil",
-        "market_value_eur": 500000,
-        "contract_until": "2028-12-31",
-        "contract_remaining": "2 anos e 1 mes",
-        "on_loan_from": null,
-        "club": "Coritiba FC",
-        "profile_url": "https://www.transfermarkt.com.br/gustavo/profil/spieler/840431",
-        "foot": "Destro",
-        "height": 178,
-        "matched_name": "Gustavo",
-        "match_score": 111.0
-      },
       "discipline": {
         "fouls_per90": 1.82,
         "fouls_total": 4,
@@ -34854,21 +33967,6 @@
           "alvo": 6.7,
           "movel": 6.3
         }
-      },
-      "transfermarkt": {
-        "id": "448994",
-        "photo": "https://img.a.transfermarkt.technology/portrait/header/448994-1682966178.jpg?lm=4711",
-        "market_value": null,
-        "market_value_eur": null,
-        "contract_until": "2026-11-30",
-        "contract_remaining": "29 dia(s)",
-        "on_loan_from": null,
-        "club": "Náutico",
-        "profile_url": "https://www.transfermarkt.com.br/luiz-paulo/profil/spieler/448994",
-        "foot": "Canhoto",
-        "height": 179,
-        "matched_name": "Luiz Paulo",
-        "match_via": "Náutico 2025"
       },
       "discipline": {
         "fouls_per90": 0.73,
