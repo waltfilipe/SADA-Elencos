@@ -7,6 +7,7 @@ import {
   addToSquad,
   addToWatchlist,
   assignPlayer,
+  flushShadowToCloud,
   hydrateShadowFromCloud,
   loadShadowTeamState,
   removeFromSquad,
@@ -17,6 +18,7 @@ import {
   storageKey,
   dropPlayerOnSlot,
   swapSlots,
+  type ElencoSaved,
   type ShadowScope,
   type ShadowTeamState,
   type TeamBoard,
@@ -120,6 +122,23 @@ export function useShadowTeam(scope?: ShadowScope) {
     [state, persist],
   );
 
+  /**
+   * Botão Salvar do Elenco: grava a escala no estado sincronizado (ou apaga
+   * com null) e sobe para a nuvem na hora — resolve `true` se o PUT foi ok.
+   */
+  const saveElencoOverride = useCallback(
+    (key: string, saved: ElencoSaved | null): Promise<boolean> => {
+      if (!state) return Promise.resolve(false);
+      const elencoOverrides = { ...(state.elencoOverrides ?? {}) };
+      if (saved) elencoOverrides[key] = saved;
+      else delete elencoOverrides[key];
+      const next = { ...state, elencoOverrides };
+      persist(next);
+      return flushShadowToCloud(active, next);
+    },
+    [state, persist, active],
+  );
+
   const isWatchlisted = useCallback(
     (playerId: string) => Boolean(state?.watchlistIds.includes(playerId)),
     [state],
@@ -140,6 +159,7 @@ export function useShadowTeam(scope?: ShadowScope) {
     dropOnSlot,
     reserve,
     changeFormation,
+    saveElencoOverride,
     isWatchlisted,
     isInSquad,
     removeFromSquad: (playerId: string, board: TeamBoard = "sombra") =>

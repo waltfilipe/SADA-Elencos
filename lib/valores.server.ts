@@ -96,8 +96,11 @@ function playedSerieA(personKey: string | null | undefined): boolean {
 function abroadOrigin(tmId: string | null | undefined): { club: string; coef: number } | null {
   if (!tmId) return null;
   const from = tmProfiles()[tmId]?.move?.from_club;
-  if (!from || isBrazilianClub(from)) return null;
-  return { club: from, coef: isEuropeanClub(from) ? ABROAD_COEF : ABROAD_COEF * 0.5 };
+  if (!from) return null;
+  // Lista europeia primeiro — match exato vence o frouxo de clubes BR.
+  if (isEuropeanClub(from)) return { club: from, coef: ABROAD_COEF };
+  if (isBrazilianClub(from)) return null;
+  return { club: from, coef: ABROAD_COEF * 0.5 };
 }
 
 function sideFor(sada: number, tm: number | null): { side: ValorSide; ratio: number | null } {

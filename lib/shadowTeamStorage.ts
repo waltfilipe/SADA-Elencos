@@ -6,11 +6,15 @@ import {
   suggestSlotId,
   type Formation,
 } from "@/lib/formations";
+import type { ElencoOverrides } from "@/lib/elencoOverrides";
 import type { LeagueId } from "@/lib/leagues";
 import { BASE_PATH } from "@/lib/paths";
 import type { PositionFamily } from "@/lib/types";
 
 export type ShadowScope = LeagueId | "todas" | "estaduais";
+
+/** Elenco salvo de um clube (botão Salvar) — sincroniza junto do estado sombra. */
+export type ElencoSaved = ElencoOverrides & { formationId: string };
 
 /**
  * Sync do time sombra com a nuvem (/api/shadow/{scope} — Upstash no deploy
@@ -23,6 +27,19 @@ function shadowApi(scope: ShadowScope): string {
   return `${BASE_PATH}/api/shadow/${scope}`;
 }
 
+async function putShadowToCloud(scope: ShadowScope, state: ShadowTeamState): Promise<boolean> {
+  try {
+    const res = await fetch(shadowApi(scope), {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(state),
+    });
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
 function pushShadowToCloud(scope: ShadowScope, state: ShadowTeamState): void {
   const prev = pushTimers.get(scope);
   if (prev) clearTimeout(prev);
@@ -30,15 +47,20 @@ function pushShadowToCloud(scope: ShadowScope, state: ShadowTeamState): void {
     scope,
     setTimeout(() => {
       pushTimers.delete(scope);
-      fetch(shadowApi(scope), {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(state),
-      }).catch(() => {
-        /* sync indisponível — localStorage segue valendo */
-      });
+      void putShadowToCloud(scope, state);
     }, 400),
   );
+}
+
+/** Botão "Salvar": cancela o debounce e sobe para a nuvem na hora. */
+export async function flushShadowToCloud(
+  scope: ShadowScope,
+  state: ShadowTeamState,
+): Promise<boolean> {
+  const prev = pushTimers.get(scope);
+  if (prev) clearTimeout(prev);
+  pushTimers.delete(scope);
+  return putShadowToCloud(scope, state);
 }
 
 /** Estado sem nenhum atleta em nenhum board — não deve sobrescrever o local. */
@@ -52,7 +74,8 @@ export function isShadowStateEmpty(state: ShadowTeamState): boolean {
     !anyAssigned(state.assignments) &&
     !anyAssigned(state.ownAssignments) &&
     !anyReserve(state.reserves) &&
-    !anyReserve(state.ownReserves)
+    !anyReserve(state.ownReserves) &&
+    !Object.keys(state.elencoOverrides ?? {}).length
   );
 }
 
@@ -110,6 +133,8 @@ export type ShadowTeamState = {
   ownSquadIds: string[];
   ownAssignments: Record<string, string | null>;
   ownReserves: Record<string, string[]>;
+  /** Escalas salvas do quadro Elenco/Prévios (chave: board:liga:temporada:clube). */
+  elencoOverrides: Record<string, ElencoSaved>;
 };
 
 export const EMPTY_STATE: ShadowTeamState = {
@@ -121,6 +146,7 @@ export const EMPTY_STATE: ShadowTeamState = {
   ownSquadIds: [],
   ownAssignments: {},
   ownReserves: {},
+  elencoOverrides: {},
 };
 
 function emptyAssignments(formation: Formation): Record<string, string | null> {
@@ -148,6 +174,7 @@ export function loadShadowTeamState(league: ShadowScope = "serie-a"): ShadowTeam
       ownSquadIds: parsed.ownSquadIds ?? [],
       ownAssignments: { ...base, ...(parsed.ownAssignments ?? {}) },
       ownReserves: parsed.ownReserves ?? {},
+      elencoOverrides: parsed.elencoOverrides ?? {},
     };
   } catch {
     const base = emptyAssignments(formationById(DEFAULT_FORMATION_ID));

@@ -32,6 +32,42 @@ function peopleIndex(): Record<string, PeopleRecord> {
   return peopleCache;
 }
 
+function normName(value: string): string {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+}
+
+let tmClubByName: Map<string, string> | null = null;
+
+/** Cache TM (chave "nome::clube") → clube atual do perfil. Recupera o destino
+ * de quem perdeu a âncora em people.json mas teve match registrado no cache. */
+function tmClubIndex(): Map<string, string> {
+  if (!tmClubByName) {
+    tmClubByName = new Map();
+    try {
+      const cache = JSON.parse(
+        fs.readFileSync(path.join(process.cwd(), "data", "transfermarkt-cache.json"), "utf-8"),
+      ) as Record<string, { club?: string | null }>;
+      for (const [key, entry] of Object.entries(cache)) {
+        const name = key.split("::")[0];
+        const club = entry?.club ?? null;
+        if (!name || !club) continue;
+        const prev = tmClubByName.get(name);
+        // Prefere clube estrangeiro se houver entradas divergentes.
+        if (!prev || (isBrazilianClub(prev) && !isBrazilianClub(club))) {
+          tmClubByName.set(name, club);
+        }
+      }
+    } catch {
+      /* cache ausente — fallback segue limitado */
+    }
+  }
+  return tmClubByName;
+}
+
 function identityKeys(player: PlayerSummary): string[] {
   return [player.athlete_id, player.person_key].filter((key): key is string => Boolean(key));
 }
@@ -128,12 +164,24 @@ export function getSaltos(league: LeagueId): SaltoSeasonGroup[] {
         const inAnyNext = [...nextIndexes.values()].some((index) =>
           keys.some((key) => index.has(key)),
         );
-        if (!inAnyNext && player.person_key) {
-          const tmClub = peopleIndex()[player.person_key]?.tm_club ?? null;
-          if (tmClub && !IGNORED_TM_CLUBS.has(tmClub.toLowerCase()) && !isBrazilianClub(tmClub)) {
-            const region = isEuropeanClub(tmClub) ? "europa" : "outras";
+        if (!inAnyNext) {
+          // Clube atual no TM: âncora da pessoa, bloco TM da própria linha ou
+          // qualquer match registrado no cache — nessa ordem de confiança.
+          const tmClub =
+            (player.person_key ? (peopleIndex()[player.person_key]?.tm_club ?? null) : null) ??
+            player.transfermarkt?.club ??
+            tmClubIndex().get(normName(player.name)) ??
+            null;
+          if (tmClub && !IGNORED_TM_CLUBS.has(tmClub.toLowerCase())) {
+            // Lista europeia primeiro — match exato e confiável; sem ela o
+            // match frouxo de clubes BR engoliria "Napoli" (⊂ "Anapolina").
+            const region = isEuropeanClub(tmClub)
+              ? "europa"
+              : isBrazilianClub(tmClub)
+                ? null
+                : "outras";
             // Série A não tem divisão acima: salto só conta se foi para a Europa.
-            if (league !== "serie-a" || region === "europa") {
+            if (region && (league !== "serie-a" || region === "europa")) {
               destination = { kind: "exterior", club: tmClub, region };
             }
           }

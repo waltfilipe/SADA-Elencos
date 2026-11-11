@@ -18960,7 +18960,20 @@
           "ruptura": 7.5
         }
       },
-      "transfermarkt": null,
+      "transfermarkt": {
+        "id": "830365",
+        "photo": "https://img.a.transfermarkt.technology/portrait/header/830365-1765306584.jpg?lm=4711",
+        "market_value": "€ 28.00 mi",
+        "market_value_eur": 28000000,
+        "contract_until": "2030-06-30",
+        "contract_remaining": "3 anos e 7 meses",
+        "on_loan_from": null,
+        "club": "Napoli",
+        "profile_url": "https://www.transfermarkt.com.br/alisson-santos/profil/spieler/830365",
+        "foot": "Destro",
+        "height": 177,
+        "matched_name": "Alisson Santos"
+      },
       "discipline": {
         "fouls_per90": 0.55,
         "fouls_total": 5,

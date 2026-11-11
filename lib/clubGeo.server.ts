@@ -81,12 +81,24 @@ export function brazilianClubs(): Set<string> {
   return set;
 }
 
+const tokenize = (value: string) => value.split(/\s+/).filter(Boolean);
+
 export function isBrazilianClub(club: string): boolean {
   const norm = normClub(club);
   if (norm.length < 4) return true; // nome curto demais p/ decidir — não marca como exterior
   const set = brazilianClubs();
   if (set.has(norm)) return true;
+  const normTokens = tokenize(norm);
   for (const known of set) {
+    const knownTokens = tokenize(known);
+    // Um dos lados com token único: exige token inteiro igual — senão
+    // "napoli" casaria dentro de "anapolina" (substring ≠ palavra).
+    if (normTokens.length === 1 || knownTokens.length === 1) {
+      const single = normTokens.length === 1 ? normTokens[0] : knownTokens[0];
+      const other = normTokens.length === 1 ? knownTokens : normTokens;
+      if (other.includes(single)) return true;
+      continue;
+    }
     if (known.includes(norm) || norm.includes(known)) return true;
   }
   return false;

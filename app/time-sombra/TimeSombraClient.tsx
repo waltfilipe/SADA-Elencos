@@ -23,13 +23,15 @@ import {
   clearElencoOverrides,
   elencoOverrideKey,
   loadElencoOverrides,
+  loadLegacyElencoOverrides,
+  remapElencoOverrides,
   saveElencoOverrides,
   type ElencoOverrides,
 } from "@/lib/elencoOverrides";
 import { LEAGUES, BRASILEIRAO_LEAGUES, isLeagueId, leaguePath, type LeagueId } from "@/lib/leagues";
 import { BRASILEIRAO_SEASONS, CURRENT_SEASON, isBrasileiraoLeague } from "@/lib/seasons";
 import { ESTADUAIS_LEAGUE_IDS } from "@/lib/estaduaisHub";
-import { benchPlayerIds, boardAssignments, boardReserves, boardSquad, type ShadowScope, type TeamBoard } from "@/lib/shadowTeamStorage";
+import { benchPlayerIds, boardAssignments, boardReserves, boardSquad, type ElencoSaved, type ShadowScope, type TeamBoard } from "@/lib/shadowTeamStorage";
 import { gradeTier, playerInitials, ratingToLetterGrade, tierVars } from "@/lib/scoutTheme";
 import type { SimilarPlayerHit } from "@/lib/crossLeagueSimilarity";
 import type { PlayerSearchRow } from "@/lib/types";
@@ -94,7 +96,7 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
   const mode: SquadSource = viewBoard === "sombra" ? (savedMode === "elenco" ? "sombra" : savedMode) : "elenco";
   const scope: ShadowScope = mode === "sombra-todas" ? "todas" : mode === "sombra" ? sombraLeague : leagueId;
   const board: TeamBoard = mode === "elenco" ? "proprio" : "sombra";
-  const { state, ready, changeFormation, assign, dropOnSlot, reserve, removeFromSquad, removeFromWatchlist } =
+  const { state, ready, changeFormation, assign, dropOnSlot, reserve, removeFromSquad, removeFromWatchlist, saveElencoOverride } =
     useShadowTeam(scope);
   const [selectedSlotId, setSelectedSlotId] = useState<string | null>(null);
   const [detailPlayerId, setDetailPlayerId] = useState<string | null>(null);
@@ -105,6 +107,8 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
   const [elencoHidden, setElencoHidden] = useState<Set<string>>(() => new Set());
   const [picker, setPicker] = useState<{ slot: FormationSlot; mode: "starter" | "reserve" } | null>(null);
   const [elencoOverride, setElencoOverride] = useState<ElencoOverrides | null>(null);
+  const [elencoDirty, setElencoDirty] = useState(false);
+  const [saveState, setSaveState] = useState<"idle" | "saving" | "saved">("idle");
 
   // Ligas fora da página chegam por fetch único (/api/search-rows?slim=1) —
   // o corpo ISR ficaria acima de 20 MB com todas serializadas.
@@ -315,20 +319,40 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
   }, [activeClubKey]);
 
   // Overrides manuais do campo automático (elenco e prévios): por quadro,
-  // série, temporada, clube e formação. Trocar de formação zera o override.
-  // Sem clube selecionado o campo permite montar escalação livre — a chave
-  // "sem-clube" mantém os overrides por quadro/série/temporada/formação em
-  // vez de descartar o clique do "+".
+  // série, temporada e clube — a formação vai dentro do payload e é remapeada
+  // ao trocar de esquema, então a escala não some mais. Rascunho fica no
+  // localStorage na hora; o botão Salvar grava no estado sincronizado (nuvem).
   const overrideKey = elencoOverrideKey(
     viewBoard,
     isPrevios ? prevLeague : leagueId,
     isPrevios ? prevSeason : CURRENT_SEASON,
     activeClubKey ?? "sem-clube",
-    state?.formationId ?? "4-3-3",
   );
+  const overrideLeague = isPrevios ? prevLeague : leagueId;
+  const overrideSeason = isPrevios ? prevSeason : CURRENT_SEASON;
+  const overrideClub = activeClubKey ?? "sem-clube";
   useEffect(() => {
-    setElencoOverride(overrideKey ? loadElencoOverrides(overrideKey) : null);
-  }, [overrideKey]);
+    if (!overrideKey) {
+      setElencoOverride(null);
+      return;
+    }
+    const formation = state?.formationId ?? "4-3-3";
+    const draft =
+      loadElencoOverrides(overrideKey) ??
+      loadLegacyElencoOverrides(viewBoard, overrideLeague, overrideSeason, overrideClub);
+    const saved = state?.elencoOverrides?.[overrideKey] ?? null;
+    const base = draft ?? saved;
+    if (!base) {
+      setElencoOverride(null);
+      setElencoDirty(false);
+      return;
+    }
+    // Remapeia posições se o override foi escrito noutra formação.
+    const normalized = remapElencoOverrides(base, formation);
+    setElencoOverride(normalized);
+    setElencoDirty(draft != null);
+    if (draft) saveElencoOverrides(overrideKey, normalized);
+  }, [overrideKey, state?.formationId, state?.elencoOverrides]);
 
   const visibleClubPlayers = useMemo(
     () => clubPlayers.filter((player) => !elencoHidden.has(player.player_id)),
@@ -465,12 +489,36 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
     if (!overrideKey) return;
     setElencoOverride((current) => {
       const base = current ?? {
+        formationId: state.formationId,
         assignments: clubLineup?.assignments ?? emptyAssignments,
         reservesBySlot: clubLineup?.reservesBySlot ?? {},
       };
-      const next = produce(base);
+      const next = { ...produce(base), formationId: state.formationId };
+      // Rascunho salvo na hora — não some na busca nem ao navegar; o botão
+      // Salvar é quem publica para a nuvem.
       saveElencoOverrides(overrideKey, next);
       return next;
+    });
+    setElencoDirty(true);
+    setSaveState("idle");
+  };
+
+  // Botão Salvar: publica o rascunho no estado do time sombra (que já
+  // sincroniza localStorage + nuvem) e confirma o envio imediato.
+  const saveElenco = () => {
+    if (!overrideKey || !elencoOverride || saveState === "saving") return;
+    setSaveState("saving");
+    const saved: ElencoSaved = {
+      formationId: state.formationId,
+      assignments: elencoOverride.assignments,
+      reservesBySlot: elencoOverride.reservesBySlot,
+    };
+    void saveElencoOverride(overrideKey, saved).then(() => {
+      // Mesmo se a nuvem falhar, o estado local já está gravado.
+      clearElencoOverrides(overrideKey);
+      setElencoDirty(false);
+      setSaveState("saved");
+      window.setTimeout(() => setSaveState("idle"), 2500);
     });
   };
 
@@ -655,6 +703,31 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
           </div>
 
           <div className="shadow-page-controls">
+            {mode === "elenco" ? (
+              <button
+                type="button"
+                className={`elenco-save-btn${elencoDirty ? " dirty" : ""}${saveState === "saved" ? " saved" : ""}`}
+                disabled={saveState === "saving" || (!elencoDirty && !elencoOverride)}
+                title={
+                  elencoDirty
+                    ? "Publica a escalação editada (sincroniza com a nuvem)"
+                    : "Escalação salva — edite o campo para alterar"
+                }
+                onClick={saveElenco}
+              >
+                <i
+                  className={saveState === "saved" ? "fa-solid fa-check" : "fa-solid fa-floppy-disk"}
+                  aria-hidden="true"
+                />
+                {saveState === "saving"
+                  ? "Salvando…"
+                  : saveState === "saved"
+                    ? "Salvo"
+                    : elencoDirty
+                      ? "Salvar ●"
+                      : "Salvar"}
+              </button>
+            ) : null}
             {viewBoard === "sombra" ? (
               <div className="shadow-board-switch" role="tablist" aria-label="Fonte do time sombra">
                 <button
@@ -821,8 +894,13 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
                     className="shadow-pitch-reset"
                     title="Volta à escalação automática por minutos"
                     onClick={() => {
-                      if (overrideKey) clearElencoOverrides(overrideKey);
+                      if (overrideKey) {
+                        clearElencoOverrides(overrideKey);
+                        void saveElencoOverride(overrideKey, null);
+                      }
                       setElencoOverride(null);
+                      setElencoDirty(false);
+                      setSaveState("idle");
                     }}
                   >
                     <i className="fa-solid fa-rotate-left" aria-hidden="true" /> Por minutos
