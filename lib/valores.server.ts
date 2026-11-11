@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 import { getPlayers } from "./data.server";
 import type { LeagueId } from "./leagues";
-import { isBrazilianClub, isEuropeanClub } from "./clubGeo.server";
+import { clubRegion } from "./clubGeo.server";
 import {
   ABROAD_COEF,
   CAPS_COEF,
@@ -97,9 +97,10 @@ function abroadOrigin(tmId: string | null | undefined): { club: string; coef: nu
   if (!tmId) return null;
   const from = tmProfiles()[tmId]?.move?.from_club;
   if (!from) return null;
-  // Lista europeia primeiro — match exato vence o frouxo de clubes BR.
-  if (isEuropeanClub(from)) return { club: from, coef: ABROAD_COEF };
-  if (isBrazilianClub(from)) return null;
+  // Estrangeiro não-UE vence primeiro (ver clubRegion em clubGeo).
+  const region = clubRegion(from);
+  if (region === "europa") return { club: from, coef: ABROAD_COEF };
+  if (region === "brasil") return null;
   return { club: from, coef: ABROAD_COEF * 0.5 };
 }
 

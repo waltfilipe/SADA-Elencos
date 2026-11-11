@@ -5,7 +5,6 @@ import path from "path";
 import { getPlayers } from "./data.server";
 import { LEAGUES } from "./leagues";
 
-const DATA_DIR = path.join(process.cwd(), "data", "cross-season");
 const CLUB_SEASONS = ["2022", "2023", "2024", "2025", "2026"];
 
 /** Tokens de forma jurídica/afiliação comuns em nomes de clubes (TM e dataset). */
@@ -14,7 +13,8 @@ const CLUB_TOKENS = new Set([
   "esporte", "sport", "futebol", "futbol", "regatas", "associacao", "atletico",
   "atlético", "club", "do", "da", "de", "di", "dos", "das", "e", "se", "ser",
   "ge", "ce", "cd", "cn", "sv", "ss", "rb", "ad", "ao", "fec", "fbpa", "afc",
-  "u20", "sub20", "sub-20", "b", "sa", "oficial", "ecfc", "fbc",
+  "u20", "u21", "u23", "u19", "u18", "u17", "u16", "u15", "sub20", "sub-20",
+  "ii", "iii", "b", "sa", "oficial", "ecfc", "fbc",
 ]);
 
 export function normClub(name: string): string {
@@ -33,7 +33,25 @@ export function normClub(name: string): string {
 
 let brazilianClubSet: Set<string> | null = null;
 
-/** Clubes vistos nos dados (ligas/temporadas + pessoas + transferências). */
+/** Grafias alternativas do TM para clubes brasileiros (não aparecem nas
+ * linhas do dataset, então precisam de entrada explícita). */
+const BR_EXTRA_CLUBS_RAW = [
+  "goianiense", "ac goianiense", "operario ferroviario", "operario pr",
+  "hercilio luz", "acec baraunas", "baraunas", "ge gloria", "gloria rs",
+  "osasco sporting", "audax", "porto vitoria", "sd juazeirense",
+  "serc brasil", "brasil de farroupilha", "uniao rondonopolis",
+  "america fc", "america rn", "santos u20", "ypiranga fc",
+  "atletico goianiense",
+];
+
+/**
+ * Clubes brasileiros: linhas reais das ligas/temporadas locais + índice
+ * estático gerado a partir do dataset completo (br-clubs.json — inclui
+ * clubes de ligas que este app não carrega, como divisões estaduais).
+ * Nomes estrangeiros podem constar nas linhas (Copinha convida gringos,
+ * amistosos/Mundial entraram nas temporadas) — quem filtra é o veto de
+ * FOREIGN_NON_EU_CLUBS / EUROPE_CLUBS na classificação, não este conjunto.
+ */
 export function brazilianClubs(): Set<string> {
   if (brazilianClubSet) return brazilianClubSet;
   const set = new Set<string>();
@@ -42,16 +60,6 @@ export function brazilianClubs(): Set<string> {
     const norm = normClub(club);
     if (norm.length >= 4) set.add(norm);
   };
-
-  try {
-    const people = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "people.json"), "utf-8")) as Record<
-      string,
-      { clubs?: string[] }
-    >;
-    for (const person of Object.values(people)) for (const club of person.clubs ?? []) add(club);
-  } catch {
-    /* people.json ausente — segue com os demais conjuntos */
-  }
 
   for (const league of LEAGUES) {
     for (const season of CLUB_SEASONS) {
@@ -64,44 +72,127 @@ export function brazilianClubs(): Set<string> {
   }
 
   try {
-    const transfers = JSON.parse(
-      fs.readFileSync(path.join(DATA_DIR, "transfers.json"), "utf-8"),
-    ) as Record<string, { legs?: { from_club?: string | null; to_club?: string | null }[] }>;
-    for (const record of Object.values(transfers)) {
-      for (const leg of record.legs ?? []) {
-        add(leg.from_club);
-        add(leg.to_club);
-      }
-    }
+    const staticList = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), "data", "cross-season", "br-clubs.json"), "utf-8"),
+    ) as string[];
+    for (const club of staticList) add(club);
   } catch {
-    /* transfers.json ausente */
+    /* índice ausente — segue só com as linhas locais */
   }
+
+  for (const club of BR_EXTRA_CLUBS_RAW) add(club);
 
   brazilianClubSet = set;
   return set;
 }
 
-const tokenize = (value: string) => value.split(/\s+/).filter(Boolean);
+/**
+ * Match de clube: exato ou prefixo (≥6 chars). Prefixo cobre variantes do TM
+ * ("operario" ⊂ "operariopr") sem o falso positivo de substring solta
+ * ("napoli" ⊂ "anapolina", "inter" ⊂ "intermiami").
+ */
+function matchesClubSet(set: Set<string>, norm: string): boolean {
+  if (set.has(norm)) return true;
+  for (const known of set) {
+    if (norm.length >= 6 && known.startsWith(norm)) return true;
+    if (known.length >= 6 && norm.startsWith(known)) return true;
+  }
+  return false;
+}
+
+/**
+ * Clubes estrangeiros fora da Europa que aparecem nas linhas dos dados
+ * (Copinha/est-nv4 convida estrangeiros; mls-next-pro é liga dos EUA; amistosos
+ * e Mundial de Clubes entraram em temporadas nacionais). Sem este veto, um
+ * "Tigres UANL" presente numa linha vira "clube brasileiro" no conjunto.
+ */
+const FOREIGN_NON_EU_CLUBS_RAW = [
+  // México
+  "tigres uanl", "monterrey", "atlas", "leon", "pachuca", "toluca", "pumas unam",
+  "chivas", "guadalajara", "cruz azul", "necaxa", "queretaro",
+  "tijuana", "juarez fc", "mazatlan", "puebla", "santos laguna", "atletico san luis",
+  // EUA / Canadá
+  "inter miami", "miami", "atlanta united", "columbus crew", "fc dallas", "dallas",
+  "new york city", "nycfc", "toronto", "vancouver", "portland timbers",
+  "seattle sounders", "houston dynamo", "austin fc", "charlotte fc",
+  "chicago fire", "fc cincinnati", "cincinnati", "colorado rapids",
+  "minnesota united", "nashville", "new england", "orlando city",
+  "philadelphia union", "real salt lake", "san diego", "sporting kc",
+  "st louis city", "los angeles galaxy", "la galaxy", "lafc", "los angeles fc",
+  "cf montreal", "montreal", "detroit city", "huntsville city",
+  "loudoun united", "nomme united", "muras united", "uncg spartans",
+  "wake forest", "san diego toreros", "seattle redhawks",
+  "portland hearts of pine", "dc united", "red bull new york",
+  // Argentina
+  "boca juniors", "river plate", "racing club", "rosario central",
+  "estudiantes", "talleres", "belgrano", "newells", "old boys", "banfield",
+  "huracan", "gimnasia", "lanus", "velez", "san lorenzo", "argentinos juniors",
+  "platense", "defensa y justicia", "instituto", "barracas central", "riestra",
+  "sarmiento", "union santa fe", "central cordoba", "atletico tucuman",
+  "godoy cruz", "colon", "independiente", "independiente rivadavia",
+  "arsenal sarandi", "tigre",
+  // Resto da América do Sul
+  "cerro porteno", "cerro", "olimpia", "club libertad", "libertad",
+  "nacional asuncion", "sport boys", "universitario", "alianza lima",
+  "sporting cristal", "universitario de vinto", "bolivar", "the strongest",
+  "colo colo", "universidad catolica", "universidad de chile",
+  "deportivo cali", "deportivo pasto", "millonarios", "america de cali",
+  "junior barranquilla", "atletico nacional", "independiente del valle",
+  "independiente juniors", "barcelona sc", "emelec", "ldu", "ldu quito",
+  "caracas", "deportivo tachira", "rayo zuliano", "alajuelense",
+  "nacional montevideo", "penarol", "defensor sporting",
+  // Ásia / Oceania
+  "kashima antlers", "v-varen nagasaki", "daegu", "gimpo", "gimhae city",
+  "yokohama", "suwon", "johor", "bg pathum", "buriram", "rayong",
+  "sisaket united", "rasi salai", "tochigi city", "jef united",
+  "ho chi minh", "shenzhen", "henan", "guangdong", "shandong",
+  "melbourne city", "bc rangers", "kawasaki", "urawa", "vissel kobe",
+  "sanfrecce", "gamba osaka", "cerezo osaka", "fc tokyo", "ulsan",
+  "jeonbuk", "pohang", "fc seoul",
+  // Oriente Médio / África
+  "al ahli", "al fayha", "al hilal", "al nassr", "al ittihad", "al shabab",
+  "al ettifaq", "al taawoun", "maccabi netanya", "hapoel ramat gan",
+  "esperance", "al ahly", "mamelodi", "wydad",
+  // Outros convidados observados
+  "hamrun spartans", "aljustrelense", "drogheda united",
+];
+
+let nonEuForeignClubSet: Set<string> | null = null;
+
+function nonEuForeignClubs(): Set<string> {
+  if (!nonEuForeignClubSet) {
+    nonEuForeignClubSet = new Set(
+      FOREIGN_NON_EU_CLUBS_RAW.map(normClub).filter((name) => name.length >= 4),
+    );
+  }
+  return nonEuForeignClubSet;
+}
+
+/** Veto estrangeiro: exato apenas. Prefixo aqui é perigoso — "americadecali"
+ * engoliria "america" (América-RN/MG brasileiros). */
+function isNonEuForeignClub(norm: string): boolean {
+  return nonEuForeignClubs().has(norm);
+}
 
 export function isBrazilianClub(club: string): boolean {
   const norm = normClub(club);
   if (norm.length < 4) return true; // nome curto demais p/ decidir — não marca como exterior
-  const set = brazilianClubs();
-  if (set.has(norm)) return true;
-  const normTokens = tokenize(norm);
-  for (const known of set) {
-    const knownTokens = tokenize(known);
-    // Um dos lados com token único: exige token inteiro igual — senão
-    // "napoli" casaria dentro de "anapolina" (substring ≠ palavra).
-    if (normTokens.length === 1 || knownTokens.length === 1) {
-      const single = normTokens.length === 1 ? normTokens[0] : knownTokens[0];
-      const other = normTokens.length === 1 ? knownTokens : normTokens;
-      if (other.includes(single)) return true;
-      continue;
-    }
-    if (known.includes(norm) || norm.includes(known)) return true;
-  }
-  return false;
+  if (isNonEuForeignClub(norm)) return false;
+  return matchesClubSet(brazilianClubs(), norm);
+}
+
+/**
+ * Região do clube para fins de "salto": estrangeiro fora da Europa vence
+ * primeiro (evita que "Sporting Cristal" caia no prefixo de "sporting" da
+ * lista europeia), depois Europa, depois Brasil, senão exterior desconhecido.
+ */
+export function clubRegion(club: string): "europa" | "brasil" | "exterior" {
+  const norm = normClub(club);
+  if (isNonEuForeignClub(norm)) return "exterior";
+  if (isEuropeanClub(club)) return "europa";
+  if (norm.length < 4) return "brasil";
+  if (matchesClubSet(brazilianClubs(), norm)) return "brasil";
+  return "exterior";
 }
 
 /**
@@ -140,7 +231,7 @@ const EUROPE_CLUBS_RAW = [
   "hoffenheim", "mainz", "union berlin", "fc augsburg", "augsburg", "werder bremen",
   "fc koln", "koln", "hertha berlin", "schalke", "hamburg", "vfl bochum", "heidenheim",
   // França
-  "paris saint-germain", "psg", "olympique de marseille", "marseille", "olympique lyonnais", "lyon",
+  "paris saint-germain", "psg", "olympique de marseille", "olympique marselha", "marseille", "marselha", "olympique lyonnais", "lyon",
   "as monaco", "monaco", "losc lille", "lille", "ogc nice", "nice", "stade rennais", "rennes",
   "rc lens", "lens", "rc strasbourg", "strasbourg", "fc nantes", "nantes", "montpellier",
   "toulouse", "stade de reims", "reims", "stade brestois", "brest", "auxerre", "angers",
@@ -175,6 +266,9 @@ const EUROPE_CLUBS_RAW = [
   "fcsb", "steaua", "cfr cluj", "dinamo bucuresti", "ferencvaros", "slovan bratislava",
   "olimpija ljubljana", "fk astana", "kairat", "qarabag", "sheriff tiraspol", "hjk helsinki",
   "zalgiris", "shamrock rovers", "sabah fk", "dinamo tbilisi",
+  // Ligas menores UEFA / grafias TM vistas como destino
+  "modena", "modena fc", "widzew lodz", "desportivo tondela",
+  "clube desportivo tondela", "coimbra sports", "birkirkara",
 ];
 
 let europeanClubSet: Set<string> | null = null;
@@ -191,10 +285,5 @@ export function europeanClubs(): Set<string> {
 export function isEuropeanClub(club: string): boolean {
   const norm = normClub(club);
   if (norm.length < 4) return false;
-  const set = europeanClubs();
-  if (set.has(norm)) return true;
-  for (const known of set) {
-    if (known.includes(norm) || norm.includes(known)) return true;
-  }
-  return false;
+  return matchesClubSet(europeanClubs(), norm);
 }

@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 import { getPlayers } from "./data.server";
 import { getLeague, isLeagueId, type LeagueId } from "./leagues";
-import { isBrazilianClub, isEuropeanClub, normClub } from "./clubGeo.server";
+import { clubRegion, isBrazilianClub, normClub } from "./clubGeo.server";
 import { SALTO_LEAGUES, type SaltoPlayer, type SaltoSeasonGroup } from "./saltos";
 import type { PlayerSummary } from "./types";
 
@@ -18,7 +18,13 @@ const ORIGIN_SEASONS = ["2022", "2023", "2024", "2025"];
 const CANDIDATE_MIN_RATING = 6.8;
 const CANDIDATE_MIN_MINUTES = 400;
 
-const IGNORED_TM_CLUBS = new Set(["fim de carreira", "sem clube", "sem contrato", "aposentado"]);
+const IGNORED_TM_CLUBS = new Set([
+  "fim de carreira",
+  "sem clube",
+  "sem contrato",
+  "aposentado",
+  "clube desconhecido",
+]);
 type PeopleRecord = { tm_club?: string | null; clubs?: string[] };
 
 let peopleCache: Record<string, PeopleRecord> | null = null;
@@ -173,13 +179,10 @@ export function getSaltos(league: LeagueId): SaltoSeasonGroup[] {
             tmClubIndex().get(normName(player.name)) ??
             null;
           if (tmClub && !IGNORED_TM_CLUBS.has(tmClub.toLowerCase())) {
-            // Lista europeia primeiro — match exato e confiável; sem ela o
-            // match frouxo de clubes BR engoliria "Napoli" (⊂ "Anapolina").
-            const region = isEuropeanClub(tmClub)
-              ? "europa"
-              : isBrazilianClub(tmClub)
-                ? null
-                : "outras";
+            // Estrangeiro não-UE vence primeiro (ver clubRegion); sem isso
+            // "Sporting Cristal" cairia no prefixo de "sporting" da lista EU.
+            const r = clubRegion(tmClub);
+            const region = r === "europa" ? "europa" : r === "brasil" ? null : "outras";
             // Série A não tem divisão acima: salto só conta se foi para a Europa.
             if (region && (league !== "serie-a" || region === "europa")) {
               destination = { kind: "exterior", club: tmClub, region };
