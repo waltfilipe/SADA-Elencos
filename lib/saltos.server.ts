@@ -207,7 +207,7 @@ export function getSaltos(league: LeagueId): SaltoSeasonGroup[] {
       });
     }
 
-    out.sort((a, b) => b.rating - a.rating || b.minutes - a.minutes);
+    out.sort((a, b) => b.minutes - a.minutes || b.rating - a.rating);
     groups.push({ season, players: out });
   }
 

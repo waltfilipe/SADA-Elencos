@@ -59,10 +59,17 @@ export function SaltosClient({
 }) {
   const router = useRouter();
   const [season, setSeason] = useState("todas");
-  const [minRating, setMinRating] = useState(7);
-  const [minMinutes, setMinMinutes] = useState(600);
+  const [position, setPosition] = useState("todas");
   const [dest, setDest] = useState<DestFilter>("todos");
   const [similar, setSimilar] = useState<SimilarState | null>(null);
+
+  const positions = useMemo(
+    () =>
+      [...new Set(groups.flatMap((group) => group.players.map((player) => player.position)))]
+        .filter(Boolean)
+        .sort(),
+    [groups],
+  );
 
   const filtered = useMemo(
     () =>
@@ -72,13 +79,12 @@ export function SaltosClient({
           ...group,
           players: group.players.filter(
             (player) =>
-              player.rating >= minRating &&
-              player.minutes >= minMinutes &&
+              (position === "todas" || player.position === position) &&
               (dest === "todos" || player.to.kind === dest),
           ),
         }))
         .filter((group) => group.players.length > 0),
-    [groups, season, minRating, minMinutes, dest],
+    [groups, season, position, dest],
   );
 
   const total = filtered.reduce((sum, group) => sum + group.players.length, 0);
@@ -148,31 +154,16 @@ export function SaltosClient({
               ))}
             </select>
           </label>
-          <label className="saltos-filter">
-            <span>
-              Rating mínimo <strong>{minRating.toFixed(1)}</strong>
-            </span>
-            <input
-              type="range"
-              min={6.8}
-              max={7.6}
-              step={0.1}
-              value={minRating}
-              onChange={(event) => setMinRating(Number(event.target.value))}
-            />
-          </label>
-          <label className="saltos-filter">
-            <span>
-              Minutos mínimos <strong>{minMinutes}</strong>
-            </span>
-            <input
-              type="range"
-              min={400}
-              max={2000}
-              step={100}
-              value={minMinutes}
-              onChange={(event) => setMinMinutes(Number(event.target.value))}
-            />
+          <label className="saltos-filter saltos-filter-select">
+            <span>Posição</span>
+            <select value={position} onChange={(event) => setPosition(event.target.value)}>
+              <option value="todas">Todas</option>
+              {positions.map((pos) => (
+                <option key={pos} value={pos}>
+                  {pos}
+                </option>
+              ))}
+            </select>
           </label>
           <div className="saltos-filter saltos-filter-dest">
             <span>Destino</span>
@@ -199,7 +190,7 @@ export function SaltosClient({
         </div>
 
         {filtered.length === 0 ? (
-          <div className="scout-empty">Nenhum atleta com esses filtros — afrouxe o corte de rating ou minutos.</div>
+          <div className="scout-empty">Nenhum atleta com esses filtros.</div>
         ) : (
           filtered.map((group) => (
             <section key={group.season} className="saltos-season">
