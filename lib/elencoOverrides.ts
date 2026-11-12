@@ -5,12 +5,19 @@
  * são remapeadas ao trocar de esquema, então a escalação nunca "some". */
 
 import { fieldSlots, formationById, remapAssignments, type Formation } from "@/lib/formations";
+import type { LeagueId } from "@/lib/leagues";
 
 export type ElencoOverrides = {
   /** Formação em que as posições foram escritas — remapeada na leitura. */
   formationId?: string;
   assignments: Record<string, string | null>;
   reservesBySlot: Record<string, string[]>;
+  /**
+   * Liga de origem de cada atleta escalado — player_id é posicional por
+   * liga, então sem o mapa a linha de outra competição só resolve depois
+   * que ela é carregada (o atleta "some" ao mudar de página).
+   */
+  playerLeague?: Record<string, LeagueId>;
 };
 
 export function elencoOverrideKey(
@@ -33,6 +40,7 @@ export function loadElencoOverrides(key: string): ElencoOverrides | null {
       formationId: parsed.formationId,
       assignments: parsed.assignments,
       reservesBySlot: parsed.reservesBySlot ?? {},
+      playerLeague: parsed.playerLeague,
     };
   } catch {
     return null;
@@ -74,6 +82,7 @@ export function loadLegacyElencoOverrides(
         formationId,
         assignments: parsed.assignments,
         reservesBySlot: parsed.reservesBySlot ?? {},
+        playerLeague: parsed.playerLeague,
       };
     }
   } catch {
@@ -111,5 +120,6 @@ export function remapElencoOverrides(
     formationId: targetFormationId,
     assignments: remapAssignments(from, to, overrides.assignments),
     reservesBySlot: remapReserves(from, to, overrides.reservesBySlot ?? {}),
+    playerLeague: overrides.playerLeague,
   };
 }

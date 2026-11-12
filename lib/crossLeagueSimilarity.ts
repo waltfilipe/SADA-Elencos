@@ -52,7 +52,7 @@ const MIN_PROFILE_GROUP = 5;
 /** Extra weight (on top of 1) for a metric where the profile sits 25 percentiles away from the median. */
 const PROFILE_WEIGHT_SCALE = 1;
 
-function percentileInPool(value: number, pool: number[]): number {
+export function percentileInPool(value: number, pool: number[]): number {
   if (!pool.length) return NEUTRAL_PERCENTILE;
   const sorted = [...pool].sort((a, b) => a - b);
   const idx = sorted.findIndex((v) => v >= value);
@@ -81,7 +81,7 @@ function parseEffPct(item: AspectItem): number | null {
 }
 
 /** Successful actions per 90 (certos / vencidos) from dossier cards. */
-function certosFeaturesForLabel(
+export function certosFeaturesForLabel(
   player: PlayerProfile,
   label: string,
 ): { key: string; value: number }[] {
@@ -159,7 +159,7 @@ type BlockModel = {
   featureIds: string[];
 };
 
-function buildCertosModel(
+export function buildCertosModel(
   family: PositionFamily,
   pool: PlayerProfile[],
   metricLabels?: ReadonlySet<string>,
@@ -221,7 +221,7 @@ function buildCertosModel(
   return { blocks, featureIds: [...new Set(featureIds)] };
 }
 
-function rawCertos(player: PlayerProfile, featureId: string): number | null {
+export function rawCertos(player: PlayerProfile, featureId: string): number | null {
   const sep = featureId.indexOf(" · ");
   const label = featureId.slice(0, sep);
   const subKey = featureId.slice(sep + 3);
@@ -444,12 +444,18 @@ export function rankCrossLeagueSimilarity(
     debug?: boolean;
     /** Restrict the distance model to these dossier aspect labels (e.g. "Duelos Defensivos"). */
     metricLabels?: string[];
+    /**
+     * Família do pool/modelo: por padrão a do atleta. Passando outra família
+     * (ex.: lateral → extremos) o source é pontuado contra a pool alvo —
+     * base da "tradução de posição".
+     */
+    targetFamily?: PositionFamily;
   } = {},
 ): SimilarPlayerHit[] {
   const limit = options.limit ?? 5;
   const minMinutes = options.minMinutes ?? 300;
   const debug = options.debug === true;
-  const family = source.position_family;
+  const family = options.targetFamily ?? source.position_family;
 
   const sameFamily = targetPool.filter(
     (p) => p.position_family === family && p.minutes >= minMinutes,

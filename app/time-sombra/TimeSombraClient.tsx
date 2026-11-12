@@ -9,6 +9,7 @@ import { AddToShadowMenu } from "@/components/shadow/AddToShadowMenu";
 import { ClubSearch, type ClubOption } from "@/components/shadow/ClubSearch";
 import { PitchView } from "@/components/shadow/PitchView";
 import { PositionAnalysis } from "@/components/shadow/PositionAnalysis";
+import { PositionViewCard } from "@/components/shadow/PositionViewCard";
 import { ReserveBench } from "@/components/shadow/ReserveBench";
 import { formatDominantFoot } from "@/components/shadow/ShadowPlayerMiniReport";
 import { ClubLogo } from "@/components/ClubLogo";
@@ -32,6 +33,7 @@ import { LEAGUES, BRASILEIRAO_LEAGUES, isLeagueId, leaguePath, type LeagueId } f
 import { BRASILEIRAO_SEASONS, CURRENT_SEASON, isBrasileiraoLeague } from "@/lib/seasons";
 import { ESTADUAIS_LEAGUE_IDS } from "@/lib/estaduaisHub";
 import { benchPlayerIds, boardAssignments, boardReserves, boardSquad, type ElencoSaved, type ShadowScope, type TeamBoard } from "@/lib/shadowTeamStorage";
+import { athleteRowKey, dedupeAthleteRows, dedupeClubOptions } from "@/lib/athleteDedupe";
 import { gradeTier, playerInitials, ratingToLetterGrade, tierVars } from "@/lib/scoutTheme";
 import type { SimilarPlayerHit } from "@/lib/crossLeagueSimilarity";
 import type { PlayerSearchRow } from "@/lib/types";
@@ -234,14 +236,16 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
   );
   const lookupById = isPrevios ? elencoById : playersById;
 
+  // Um clube por nome: entrada da competição nacional sempre; estadual só
+  // para quem não disputa A/B/C (Série D também conta como "só estadual").
   const indexOptions = useMemo<ClubOption[]>(
     () =>
-      clubIndex
-        .map((entry) => ({
+      dedupeClubOptions(
+        clubIndex.map((entry) => ({
           ...entry,
           leagueName: LEAGUES.find((league) => league.id === entry.leagueId)?.name ?? entry.leagueId,
-        }))
-        .sort((a, b) => a.leagueId.localeCompare(b.leagueId) || a.club.localeCompare(b.club, "pt")),
+        })),
+      ).sort((a, b) => a.club.localeCompare(b.club, "pt")),
     [clubIndex],
   );
 
@@ -357,6 +361,31 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
     if (draft) saveElencoOverrides(overrideKey, normalized);
   }, [overrideKey, state?.formationId, state?.elencoOverrides]);
 
+  // Atleta de outra competição salvo na escalação: carrega a liga dele (via
+  // mapa playerLeague gravado no save) para a linha resolver — sem isso o
+  // campo abre vazio e o atleta só "volta" quando uma busca carrega a liga.
+  useEffect(() => {
+    if (!elencoOverride) return;
+    const ids = [
+      ...Object.values(elencoOverride.assignments).filter((id): id is string => Boolean(id)),
+      ...Object.values(elencoOverride.reservesBySlot ?? {}).flat(),
+    ];
+    const missing = ids.filter((id) => !lookupById.has(id));
+    if (!missing.length) return;
+    const map = elencoOverride.playerLeague ?? {};
+    const known = new Set<LeagueId>();
+    for (const id of missing) {
+      const lg = map[id];
+      if (lg) known.add(lg);
+    }
+    if (known.size) {
+      known.forEach(ensureLeague);
+    } else {
+      // Override antigo sem mapa — varre as ligas uma vez (requestedRef dedup).
+      LEAGUES.forEach((league) => ensureLeague(league.id));
+    }
+  }, [elencoOverride, lookupById, ensureLeague]);
+
   const visibleClubPlayers = useMemo(
     () => clubPlayers.filter((player) => !elencoHidden.has(player.player_id)),
     [clubPlayers, elencoHidden],
@@ -380,13 +409,18 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
     // atual para a reserva (elencoAssign já trata o deslocamento).
     const query = fold(slotQuery.trim());
     // Com texto digitado, a busca varre toda a base do site (todas as séries e posições).
-    const taken = new Set(
+    const takenIds =
       picker.mode === "starter"
         ? (Object.values(assignments).filter((id): id is string => Boolean(id)))
         : [
             ...Object.values(assignments).filter((id): id is string => Boolean(id)),
             ...reservesOn,
-          ],
+          ];
+    // Compara por identidade (athlete_id/person_key): o mesmo atleta pode
+    // estar escalado pela linha de outra competição — ele não pode entrar
+    // de novo pela segunda linha.
+    const taken = new Set(
+      takenIds.map((id) => athleteRowKey(lookupById.get(id) ?? { player_id: id })),
     );
     const families = picker.slot.families;
     const familyRank = (player: SquadPlayer) => {
@@ -394,16 +428,19 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
       return index < 0 ? families.length : index;
     };
     const candidatePool = searching ? elencoPool : elencoPicking ? visibleClubPlayers : pickerPool;
-    const matches = candidatePool
+    // Resumo do atleta: uma linha só por pessoa — a da competição nacional
+    // (mais minutos em empate), com `alsoIn` anotando as outras no card.
+    const dedupedPool = dedupeAthleteRows(candidatePool);
+    const matches = dedupedPool
       .filter((player) => {
-        if (taken.has(player.player_id)) return false;
+        if (taken.has(athleteRowKey(player))) return false;
         if (!searching) return families.includes(player.position_family);
         const leagueName = LEAGUES.find((league) => league.id === player.sourceLeague)?.name ?? "";
         return fold(player.name).includes(query) || fold(player.club).includes(query) || fold(leagueName).includes(query);
       })
       .sort((a, b) => familyRank(a) - familyRank(b) || b.rating - a.rating);
     return searching ? matches.slice(0, 120) : matches;
-  }, [pickerPool, visibleClubPlayers, elencoPool, state, picker, slotQuery, board, mode, elencoOverride, clubLineup]);
+  }, [pickerPool, visibleClubPlayers, elencoPool, state, picker, slotQuery, board, mode, elencoOverride, clubLineup, lookupById, searching]);
 
   if (!ready || !state) {
     return (
@@ -497,6 +534,18 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
         reservesBySlot: clubLineup?.reservesBySlot ?? {},
       };
       const next = { ...produce(base), formationId: state.formationId };
+      // Liga de cada atleta escalado — sem ela, a linha de outra competição
+      // fica sem resolução ao recarregar e o atleta "some" do campo.
+      const ids = [
+        ...Object.values(next.assignments).filter((id): id is string => Boolean(id)),
+        ...Object.values(next.reservesBySlot).flat(),
+      ];
+      const playerLeague: Record<string, LeagueId> = {};
+      for (const id of ids) {
+        const src = lookupById.get(id)?.sourceLeague;
+        if (src) playerLeague[id] = src;
+      }
+      next.playerLeague = playerLeague;
       // Rascunho salvo na hora — não some na busca nem ao navegar; o botão
       // Salvar é quem publica para a nuvem.
       saveElencoOverrides(overrideKey, next);
@@ -516,6 +565,7 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
       formationId: state.formationId,
       assignments: elencoOverride.assignments,
       reservesBySlot: elencoOverride.reservesBySlot,
+      playerLeague: elencoOverride.playerLeague,
     };
     void saveElencoOverride(overrideKey, saved).then(() => {
       // Mesmo se a nuvem falhar, o estado local já está gravado.
@@ -1116,6 +1166,11 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
                             <em>
                               {player.club} · {LEAGUES.find((league) => league.id === player.sourceLeague)?.name} ·{" "}
                               {player.position} · {player.profile}
+                              {player.alsoIn?.length
+                                ? ` · +${player.alsoIn
+                                    .map((row) => LEAGUES.find((league) => league.id === row.league)?.name ?? row.league)
+                                    .join(", ")}`
+                                : ""}
                             </em>
                           </span>
                           <span className="shadow-slot-picker-rating tabular">
@@ -1218,6 +1273,24 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
                       </>
                     ) : null}
                   </div>
+                  {(() => {
+                    // Atleta fora da família primária do slot (ex.: lateral na
+                    // ponta, atacante aberto): percentis recalculados na pool
+                    // da família-alvo da liga — a nova perspectiva dele.
+                    const slot = selectedSlotId
+                      ? formation.slots.find((item) => item.id === selectedSlotId)
+                      : null;
+                    const target = slot?.families[0];
+                    if (!slot || !target || target === selectedPlayer.position_family) return null;
+                    return (
+                      <PositionViewCard
+                        playerId={selectedPlayer.player_id}
+                        league={selectedPlayer.sourceLeague}
+                        family={target}
+                        slotLabel={slot.label}
+                      />
+                    );
+                  })()}
                   </div>
                 </div>
               </article>

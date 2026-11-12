@@ -20,8 +20,8 @@ const F = {
   zag: ["zagueiros"] as PositionFamily[],
   lat: ["laterais"] as PositionFamily[],
   mc: ["meio-campistas"] as PositionFamily[],
-  /** Pontas: extremos primeiro, mas atacantes que jogam abertos também entram. */
-  ex: ["extremos", "atacantes"] as PositionFamily[],
+  /** Pontas: extremos primeiro; atacantes abertos e laterais ofensivos também entram. */
+  ex: ["extremos", "atacantes", "laterais"] as PositionFamily[],
   at: ["atacantes"] as PositionFamily[],
   wing: ["extremos", "laterais"] as PositionFamily[],
   wide: ["extremos", "laterais", "meio-campistas"] as PositionFamily[],

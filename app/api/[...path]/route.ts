@@ -10,6 +10,7 @@ import {
   getStandings,
 } from "@/lib/data.server";
 import { getAveragePlayers } from "@/lib/avgPlayer.server";
+import { positionViewFor } from "@/lib/positionTranslate.server";
 import { athleteSeasonRows } from "@/lib/athleteRows.server";
 import { findPlayerInSeason } from "@/lib/playerSeasonMatch.server";
 import { rankCrossLeagueSimilarity } from "@/lib/crossLeagueSimilarity";
@@ -128,6 +129,20 @@ export async function GET(request: Request, { params }: Params) {
 
   if (resource === "similar" && path.length === 1) {
     return similarPayload(url);
+  }
+
+  if (resource === "position-view" && path.length === 1) {
+    // "Tradução de posição": percentis do atleta dentro da pool de outra
+    // família posicional da mesma liga (ex.: lateral escalado de ponta).
+    const league = url.searchParams.get("league") ?? undefined;
+    const playerId = url.searchParams.get("playerId");
+    const family = url.searchParams.get("family") as PositionFamily | null;
+    if (!playerId || !family) {
+      return NextResponse.json({ error: "missing_params" }, { status: 400 });
+    }
+    const view = positionViewFor(playerId, league as LeagueId | undefined, family);
+    if (!view) return NextResponse.json({ error: "not_found" }, { status: 404 });
+    return NextResponse.json(view);
   }
 
   if (resource === "player-season" && path.length === 1) {
@@ -284,6 +299,7 @@ function similarPayload(url: URL) {
     .filter(Boolean);
   const matches = rankCrossLeagueSimilarity(source, targetPool, {
     limit,
+    targetFamily: positionFamily,
     leagueOf: (p) => leagueByPlayer.get(p),
     sourcePool: getFamilyPlayers(positionFamily, fromLeague, parseSeasonParam(season)),
     debug: url.searchParams.get("debug") === "1",
