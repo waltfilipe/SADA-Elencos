@@ -109,6 +109,9 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
   const [elencoOverride, setElencoOverride] = useState<ElencoOverrides | null>(null);
   const [elencoDirty, setElencoDirty] = useState(false);
   const [saveState, setSaveState] = useState<"idle" | "saving" | "saved">("idle");
+  // Marca que o usuário mexeu no campo nesta sessão — só assim a escala
+  // "segue" a troca de clube; quem só navega entre elencos não carrega nada.
+  const elencoEditedRef = useRef(false);
 
   // Ligas fora da página chegam por fetch único (/api/search-rows?slim=1) —
   // o corpo ISR ficaria acima de 20 MB com todas serializadas.
@@ -373,8 +376,8 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
     const reservesOn = elencoPicking
       ? new Set(Object.values(elencoOverride?.reservesBySlot ?? clubLineup?.reservesBySlot ?? {}).flat())
       : new Set(boardSquad(state, board));
-    const occupantId = assignments[picker.slot.id];
-    if (picker.mode === "starter" && occupantId) return [];
+    // Slot ocupado também mostra candidatos — "Substituir" joga o titular
+    // atual para a reserva (elencoAssign já trata o deslocamento).
     const query = fold(slotQuery.trim());
     // Com texto digitado, a busca varre toda a base do site (todas as séries e posições).
     const taken = new Set(
@@ -500,6 +503,7 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
       return next;
     });
     setElencoDirty(true);
+    elencoEditedRef.current = true;
     setSaveState("idle");
   };
 
@@ -635,6 +639,24 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
     if (isPrevios) {
       setPrevClubKey(key);
     } else {
+      // Campo em edição acompanha a troca de clube: atleta colocado fica
+      // até ser removido. O rascunho é regravado sob a chave do novo clube
+      // (o efeito de carga lê de lá e mantém a mesma escala).
+      if (
+        mode === "elenco" &&
+        !isPrevios &&
+        elencoOverride &&
+        (elencoDirty || elencoEditedRef.current) &&
+        key !== clubKey
+      ) {
+        const nextKey = elencoOverrideKey(
+          viewBoard,
+          leagueId,
+          CURRENT_SEASON,
+          key ?? "sem-clube",
+        );
+        saveElencoOverrides(nextKey, elencoOverride);
+      }
       setClubKey(key);
       if (key) sessionStorage.setItem(CLUB_KEY, key);
       else sessionStorage.removeItem(CLUB_KEY);
@@ -1167,6 +1189,34 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
                         compact
                       />
                     )}
+                    {mode === "elenco" && selectedSlotId ? (
+                      <>
+                        <button
+                          type="button"
+                          className="btn btn-ghost btn-sm"
+                          onClick={() => {
+                            const slot = formation.slots.find((item) => item.id === selectedSlotId);
+                            if (!slot) return;
+                            setSlotQuery("");
+                            setDetailPlayerId(null);
+                            setPicker({ slot, mode: "starter" });
+                          }}
+                        >
+                          Substituir
+                        </button>
+                        <button
+                          type="button"
+                          className="btn btn-ghost btn-sm"
+                          onClick={() => {
+                            elencoAssign(selectedSlotId, null);
+                            setSelectedSlotId(null);
+                            setDetailPlayerId(null);
+                          }}
+                        >
+                          Remover
+                        </button>
+                      </>
+                    ) : null}
                   </div>
                   </div>
                 </div>
