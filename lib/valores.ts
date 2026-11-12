@@ -121,23 +121,27 @@ export const PROFILE_COEF: Record<string, Record<string, number>> = {
   atacantes: { Finalizador: 0.348, Móvel: 0.043, Híbrido: -0.363 },
 };
 
-/** Faixas de idade — base: 26–28 anos (0). Medido v4. */
+/** Faixas de idade — base: 26–28 anos (0). 29–30 suavizado do cliff medido. */
 export function ageTerm(age: number | null): number {
   if (age == null) return 0;
   if (age < 21) return -0.026;
   if (age < 23) return -0.056;
   if (age < 26) return 0.105;
   if (age < 29) return 0;
+  if (age < 31) return -0.3;
   return -0.594;
 }
 
-/** Restante de contrato → termo (anos restantes). Medido v4. */
-export function contractTerm(years: number | null): number {
+/**
+ * Restante de contrato → termo (anos restantes). Medido v4.
+ * O prêmio só vale se o atleta joga: ponderado por minutos
+ * (titular ≥900 min recebe integral; reserva recebe fração, piso 0.4).
+ */
+export function contractTerm(years: number | null, minutes = 9999): number {
   if (years == null) return -0.229; // sem registro — desconto medido
-  if (years < 1) return 0;
-  if (years < 2) return 0.261;
-  if (years < 3.5) return 0.634;
-  return 0.988;
+  const w = Math.min(1, Math.max(0.4, minutes / 900));
+  const t = years < 1 ? 0 : years < 2 ? 0.261 : years < 3.5 ? 0.634 : 0.988;
+  return t * w;
 }
 
 export const PLAYED_A_COEF = 0.391;

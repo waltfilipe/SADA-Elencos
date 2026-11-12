@@ -127,7 +127,7 @@ function valuePlayer(player: PlayerSummary, league: LeagueId): ValorPlayer {
     minutes: 0.296 * Math.log(Math.max(player.minutes, MINUTES_FLOOR)),
     position: POSITION_COEF[player.position_family] ?? 0,
     profile: PROFILE_COEF[player.position_family]?.[player.profile ?? ""] ?? 0,
-    contract: contractTerm(cYears),
+    contract: contractTerm(cYears, player.minutes),
     career: serieAExp ? PLAYED_A_COEF : 0,
     reputation: CAPS_COEF * Math.log1p(caps ?? 0) + (abroad?.coef ?? 0),
     club: G12_CLUBS.has(normClub(player.club ?? "")) ? G12_COEF : 0,
