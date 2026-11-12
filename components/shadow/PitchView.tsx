@@ -135,6 +135,8 @@ export function PitchView({
                     player={player}
                     compareWith={comparePlayer}
                     profileLeague={player.sourceLeague}
+                    viewAs={slot.families[0]}
+                    viewAsLabel={slot.label}
                     block
                   >
                     <PitchToken player={player} />

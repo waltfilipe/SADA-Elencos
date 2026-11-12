@@ -1,14 +1,22 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ClubLogo } from "@/components/ClubLogo";
 import { Tooltip } from "@/components/ui/Tooltip";
 import { SectionRadar, statProfileScores, type SectionScore } from "@/components/position/profile/PlayerReport";
 import { usePlayerProfile } from "@/hooks/usePlayerProfileCache";
 import { formatFoot } from "@/lib/feet";
+import { BASE_PATH } from "@/lib/paths";
 import { profileAccent, sortedProfileShareRows } from "@/lib/profileShares";
 import type { LeagueId } from "@/lib/leagues";
-import type { PlayerSearchRow } from "@/lib/types";
+import type { PlayerSearchRow, PositionFamily } from "@/lib/types";
+
+type PositionViewPayload = {
+  statScores: SectionScore[];
+  profileScores: SectionScore[];
+  estimatedProfile: string | null;
+  coverage: number;
+};
 
 const numberFormat = new Intl.NumberFormat("pt-BR");
 
@@ -53,18 +61,55 @@ export function ShadowPlayerMiniReport({
   compareWith,
   compareLabel = "Time sombra",
   profileLeague,
+  viewAs,
+  viewAsLabel,
 }: {
   player: PlayerSearchRow;
   /** Titular do outro time na mesma vaga (usado no time próprio). */
   compareWith?: PlayerSearchRow | null;
   compareLabel?: string;
   profileLeague?: LeagueId;
+  /** Família primária do slot — diferente da do atleta, os radares são
+   *  recalculados na pool dela ("como ponta" para um lateral, por ex.). */
+  viewAs?: PositionFamily;
+  viewAsLabel?: string;
 }) {
   const league = profileLeague ?? player.sourceLeague;
   const { profile, loading } = usePlayerProfile(player.player_id, true, league);
   const tm = player.transfermarkt ?? profile?.transfermarkt;
 
+  const translated = Boolean(viewAs && viewAs !== player.position_family);
+  const [view, setView] = useState<PositionViewPayload | null>(null);
+  const [viewLoading, setViewLoading] = useState(false);
+  useEffect(() => {
+    if (!translated || !viewAs) {
+      setView(null);
+      setViewLoading(false);
+      return;
+    }
+    let cancelled = false;
+    setView(null);
+    setViewLoading(true);
+    fetch(
+      `${BASE_PATH}/api/position-view?playerId=${encodeURIComponent(player.player_id)}&family=${viewAs}${league ? `&league=${league}` : ""}`,
+    )
+      .then((res) => (res.ok ? res.json() : Promise.reject(new Error("position_view_failed"))))
+      .then((data: PositionViewPayload) => {
+        if (!cancelled) {
+          setView(data);
+          setViewLoading(false);
+        }
+      })
+      .catch(() => {
+        if (!cancelled) setViewLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [translated, viewAs, player.player_id, league]);
+
   const profileScores = useMemo<SectionScore[]>(() => {
+    if (translated) return view?.profileScores ?? [];
     if (!profile) return [];
     return sortedProfileShareRows(profile).map((row) => ({
       title: row.label,
@@ -73,8 +118,11 @@ export function ShadowPlayerMiniReport({
       color: profileAccent(row.label),
       display: `${Math.round(row.share)}%`,
     }));
-  }, [profile]);
-  const statScores = useMemo(() => (profile ? statProfileScores(profile) : []), [profile]);
+  }, [translated, view, profile]);
+  const statScores = useMemo<SectionScore[]>(
+    () => (translated ? (view?.statScores ?? []) : profile ? statProfileScores(profile) : []),
+    [translated, view, profile],
+  );
 
   const birthYear = player.birth_year ?? profile?.birth_year;
   const height = player.height ?? profile?.height;
@@ -111,13 +159,17 @@ export function ShadowPlayerMiniReport({
         <div className="shadow-mini-radars stat-radar-card">
           {profileScores.length >= 3 ? (
             <figure>
-              <figcaption className="shadow-mini-report-section-label">Perfil</figcaption>
+              <figcaption className="shadow-mini-report-section-label">
+                Perfil{translated && viewAsLabel ? ` · como ${viewAsLabel}` : ""}
+              </figcaption>
               <SectionRadar scores={profileScores} variant="screen" shape="sectors" />
             </figure>
           ) : null}
           {statScores.length >= 3 ? (
             <figure>
-              <figcaption className="shadow-mini-report-section-label">Perfil estatístico</figcaption>
+              <figcaption className="shadow-mini-report-section-label">
+                Perfil estatístico{translated && viewAsLabel ? ` · como ${viewAsLabel}` : ""}
+              </figcaption>
               <SectionRadar scores={statScores} variant="screen" />
             </figure>
           ) : null}
@@ -131,7 +183,9 @@ export function ShadowPlayerMiniReport({
         </div>
       ) : null}
 
-      {loading ? <p className="shadow-mini-report-loading">Carregando radares…</p> : null}
+      {loading || viewLoading ? (
+        <p className="shadow-mini-report-loading">Carregando radares…</p>
+      ) : null}
     </div>
   );
 }
@@ -142,16 +196,28 @@ export function ShadowPlayerTooltip({
   block,
   compareWith,
   profileLeague,
+  viewAs,
+  viewAsLabel,
 }: {
   player: PlayerSearchRow;
   children: React.ReactNode;
   block?: boolean;
   compareWith?: PlayerSearchRow | null;
   profileLeague?: LeagueId;
+  viewAs?: PositionFamily;
+  viewAsLabel?: string;
 }) {
   return (
     <Tooltip
-      content={<ShadowPlayerMiniReport player={player} compareWith={compareWith} profileLeague={profileLeague} />}
+      content={
+        <ShadowPlayerMiniReport
+          player={player}
+          compareWith={compareWith}
+          profileLeague={profileLeague}
+          viewAs={viewAs}
+          viewAsLabel={viewAsLabel}
+        />
+      }
       block={block}
     >
       {children}

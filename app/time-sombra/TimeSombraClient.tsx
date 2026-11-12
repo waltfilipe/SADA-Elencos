@@ -9,7 +9,6 @@ import { AddToShadowMenu } from "@/components/shadow/AddToShadowMenu";
 import { ClubSearch, type ClubOption } from "@/components/shadow/ClubSearch";
 import { PitchView } from "@/components/shadow/PitchView";
 import { PositionAnalysis } from "@/components/shadow/PositionAnalysis";
-import { PositionViewCard } from "@/components/shadow/PositionViewCard";
 import { ReserveBench } from "@/components/shadow/ReserveBench";
 import { formatDominantFoot } from "@/components/shadow/ShadowPlayerMiniReport";
 import { ClubLogo } from "@/components/ClubLogo";
@@ -1273,24 +1272,6 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
                       </>
                     ) : null}
                   </div>
-                  {(() => {
-                    // Atleta fora da família primária do slot (ex.: lateral na
-                    // ponta, atacante aberto): percentis recalculados na pool
-                    // da família-alvo da liga — a nova perspectiva dele.
-                    const slot = selectedSlotId
-                      ? formation.slots.find((item) => item.id === selectedSlotId)
-                      : null;
-                    const target = slot?.families[0];
-                    if (!slot || !target || target === selectedPlayer.position_family) return null;
-                    return (
-                      <PositionViewCard
-                        playerId={selectedPlayer.player_id}
-                        league={selectedPlayer.sourceLeague}
-                        family={target}
-                        slotLabel={slot.label}
-                      />
-                    );
-                  })()}
                   </div>
                 </div>
               </article>
