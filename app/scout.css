@@ -4374,6 +4374,19 @@ select:focus-visible {
 .valores-badge-neutro { background: rgba(148, 163, 184, 0.12); color: #94a3b8; }
 .valores-badge-sem_tm { background: rgba(196, 181, 253, 0.13); color: #c4b5fd; }
 
+.valores-resale {
+  font-size: 12px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+.valores-resale.warm { color: #f0b35c; }
+.valores-resale.hot {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.12);
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
 .valores-detail-row td {
   padding: 0;
   border-bottom: 1px solid var(--line, #22303f);

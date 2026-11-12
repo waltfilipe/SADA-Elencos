@@ -1,14 +1,16 @@
 import type { PositionFamily } from "./types";
 
 /**
- * Valor SADA — modelo próprio de precificação por produção.
+ * Valor SADA v4 — "espelho de mercado".
  *
- * ln(V) = 11.975 + liga + rating + idade + 0.321·ln(min) + posição + perfil
- *         + 0.231·contrato + 0.532·jogouA + reputação(caps/exterior)
+ * ln(V) = 11.644 + liga + rating(rd,rd²) + idade(faixas) + 0.296·ln(min)
+ *         + posição + perfil(por família) + contrato + jogouA
+ *         + reputação(caps/exterior) + vitrine(G12)
  *
- * Coeficientes calibrados por regressão log-linear sobre o valor de mercado
- * Transfermarkt (R²≈0.69, jogadores ≥600 min, A/B/C). O valor TM **não** entra
- * como insumo — é a referência externa contra a qual o modelo é comparado.
+ * OLS unificado sobre ln(TM) — 881 jogadores ≥400 min das séries A/B/C com
+ * valor TM (R²≈0.67). Coeficientes gerados por
+ * sada-test/scripts/calibrate_valor_v4.py. O valor TM **não** entra como
+ * insumo — é a referência externa contra a qual o modelo é comparado.
  */
 
 export type ValorSide = "acima" | "neutro" | "abaixo" | "sem_tm";
@@ -23,6 +25,8 @@ export type ValorFactors = {
   contract: number;
   career: number;
   reputation: number;
+  /** Prêmio de vitrine — clube do G12. */
+  club: number;
 };
 
 export type ValorPlayer = {
@@ -54,7 +58,21 @@ export type ValorPlayer = {
   /** sadaValue / marketValueEur (>1 = mercado abaixo da produção). */
   ratio: number | null;
   side: ValorSide;
+  /**
+   * Probabilidade de "salto" (divisão acima ou exterior) na próxima
+   * temporada — modelo logístico treinado em A/B/C 2022–2024 (AUC 0,65).
+   * 0–100; null para posições fora das famílias de campo.
+   */
+  resaleScore: number | null;
   factors: ValorFactors;
+};
+
+export type ResaleModel = {
+  version: string;
+  auc: number;
+  base_rate: number;
+  coef: Record<string, number>;
+  upsider_profiles: string[];
 };
 
 export type ValorSummary = {
@@ -65,51 +83,84 @@ export type ValorSummary = {
   medianSada: number;
 };
 
-export const VALOR_BASE = 11.975;
+export const VALOR_BASE = 11.644;
 
-/** Efeito da liga vs Série A (B/C medidos; D/estaduais extrapolados pela mediana observada). */
+/**
+ * Efeito da liga vs Série A. B/C medidos no OLS unificado v4;
+ * D/estaduais extrapolados mantendo os offsets abaixo da C.
+ */
 export const LEAGUE_COEF: Record<string, number> = {
   "serie-a": 0,
-  "serie-b": -1.471,
-  "serie-c": -2.451,
-  "serie-d": -3.1,
-  "est-nv1": -2.9,
-  "est-nv2": -3.2,
-  "est-nv3": -3.5,
-  "est-nv4": -3.8,
+  "serie-b": -1.451,
+  "serie-c": -1.684,
+  "serie-d": -2.3,
+  "est-nv1": -2.1,
+  "est-nv2": -2.4,
+  "est-nv3": -2.7,
+  "est-nv4": -3.0,
 };
 
-/** Efeito por família posicional (referência: extremos). */
+/** Efeito por família posicional — base: zagueiros (0). Medido v4. */
 export const POSITION_COEF: Record<string, number> = {
-  extremos: 0,
-  atacantes: 0.184,
-  "meio-campistas": -0.045,
-  laterais: -0.275,
-  zagueiros: -0.309,
+  zagueiros: 0,
+  laterais: 0.238,
+  "meio-campistas": 0.275,
+  extremos: 0.494,
+  atacantes: 0.513,
 };
 
-/** Perfis que o mercado paga prêmio dentro de cada família (+0.10). */
-export const PROFILE_PREMIUM: Record<string, ReadonlySet<string>> = {
-  zagueiros: new Set(["Construtor"]),
-  laterais: new Set(["Ofensivo", "Híbrido"]),
-  "meio-campistas": new Set(["Construtor", "Box-to-box", "Híbrido"]),
-  extremos: new Set(["Híbrido", "Meia Ponta", "Driblador"]),
-  atacantes: new Set(["Finalizador", "Móvel"]),
+/**
+ * Coeficiente por perfil dentro da família — base = perfil mais frequente
+ * (Defensor de Área, Ofensivo, Contenção, Driblador, Alvo). Medido v4.
+ */
+export const PROFILE_COEF: Record<string, Record<string, number>> = {
+  zagueiros: { Construtor: 0.335, Combativo: 0.092 },
+  laterais: { Construtor: 0.14, Híbrido: 0.04, Defensivo: -0.262 },
+  "meio-campistas": { Construtor: 0.236, "Box-to-box": 0.229, Híbrido: 0.134 },
+  extremos: { "Meia Ponta": 0.112, Ruptura: 0.014, Híbrido: -0.042 },
+  atacantes: { Finalizador: 0.348, Móvel: 0.043, Híbrido: -0.363 },
 };
 
-/** Perfis descontados dentro de cada família (−0.10). */
-export const PROFILE_DISCOUNT: Record<string, ReadonlySet<string>> = {
-  zagueiros: new Set(["Defensor de Área"]),
-  laterais: new Set(["Construtor"]),
-  "meio-campistas": new Set(["Contenção"]),
-  extremos: new Set(["Ruptura"]),
-  atacantes: new Set(["Alvo", "Híbrido"]),
-};
+/** Faixas de idade — base: 26–28 anos (0). Medido v4. */
+export function ageTerm(age: number | null): number {
+  if (age == null) return 0;
+  if (age < 21) return -0.026;
+  if (age < 23) return -0.056;
+  if (age < 26) return 0.105;
+  if (age < 29) return 0;
+  return -0.594;
+}
 
-export const CONTRACT_STEP = 0.231;
-export const PLAYED_A_COEF = 0.532;
-export const CAPS_COEF = 0.28;
-export const ABROAD_COEF = 0.4;
+/** Restante de contrato → termo (anos restantes). Medido v4. */
+export function contractTerm(years: number | null): number {
+  if (years == null) return -0.229; // sem registro — desconto medido
+  if (years < 1) return 0;
+  if (years < 2) return 0.261;
+  if (years < 3.5) return 0.634;
+  return 0.988;
+}
+
+export const PLAYED_A_COEF = 0.391;
+export const CAPS_COEF = 0.098;
+export const ABROAD_COEF = 0.406;
+export const ABROAD_OTHER_COEF = 0.209;
+export const G12_COEF = 0.468;
+
+/** Clubes do G12 (normalizados por normClub) — efeito vitrine do mercado. */
+export const G12_CLUBS: ReadonlySet<string> = new Set([
+  "flamengo",
+  "palmeiras",
+  "corinthians",
+  "saopaulo",
+  "santos",
+  "gremio",
+  "internacional",
+  "atleticomg",
+  "fluminense",
+  "botafogofr",
+  "vasco",
+  "cruzeiro",
+]);
 
 /** Formata valor em € estilo TM: 38M€ / 400mil€ / 50mil€. */
 export function formatEur(value: number | null | undefined): string {

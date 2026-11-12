@@ -1,0 +1,36 @@
+{
+ "version": "v5-resale-1",
+ "trained_on": "A/B/C 2022-2024 -> salto divisao/exterior no ano seguinte",
+ "n": 3495,
+ "positives": 577,
+ "base_rate": 0.1651,
+ "auc": 0.651,
+ "minutes_floor": 400,
+ "coef": {
+  "intercepto": -0.0731,
+  "idade-26": -0.0967,
+  "sub25": 0.0155,
+  "mais28": 0.1591,
+  "rating": 0.1629,
+  "ln_min": -0.2767,
+  "serie-b": 0.0837,
+  "serie-c": 0.4244,
+  "laterais": -0.0333,
+  "meio-campistas": -0.071,
+  "extremos": -0.0378,
+  "atacantes": -0.0225,
+  "perfil_upside": 0.1195
+ },
+ "upsider_profiles": [
+  "atacantes/Finalizador",
+  "atacantes/Móvel",
+  "extremos/Driblador",
+  "extremos/Híbrido",
+  "laterais/Construtor",
+  "laterais/Híbrido",
+  "meio-campistas/Contenção",
+  "meio-campistas/Híbrido",
+  "zagueiros/Combativo",
+  "zagueiros/Construtor"
+ ]
+}

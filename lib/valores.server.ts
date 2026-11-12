@@ -4,17 +4,21 @@ import fs from "fs";
 import path from "path";
 import { getPlayers } from "./data.server";
 import type { LeagueId } from "./leagues";
-import { clubRegion } from "./clubGeo.server";
+import { clubRegion, normClub } from "./clubGeo.server";
 import {
   ABROAD_COEF,
+  ABROAD_OTHER_COEF,
   CAPS_COEF,
-  CONTRACT_STEP,
+  G12_CLUBS,
+  G12_COEF,
   LEAGUE_COEF,
   PLAYED_A_COEF,
   POSITION_COEF,
-  PROFILE_DISCOUNT,
-  PROFILE_PREMIUM,
+  PROFILE_COEF,
   VALOR_BASE,
+  ageTerm,
+  contractTerm,
+  type ResaleModel,
   type ValorPlayer,
   type ValorSide,
   type ValorSummary,
@@ -41,6 +45,7 @@ type TmProfile = {
 
 let peopleCache: Record<string, PeopleRecord> | null = null;
 let tmProfileCache: Record<string, TmProfile> | null = null;
+let resaleModel: ResaleModel | null = null;
 
 function peopleIndex(): Record<string, PeopleRecord> {
   if (!peopleCache) {
@@ -79,14 +84,6 @@ function contractYears(raw: string | null | undefined): number | null {
   return Number.isFinite(years) ? Math.max(0, years) : null;
 }
 
-function contractTerm(years: number | null): number {
-  if (years == null) return 0.071; // sem registro — efeito quase neutro medido
-  if (years < 1) return 0;
-  if (years < 2) return CONTRACT_STEP;
-  if (years < 3.5) return CONTRACT_STEP * 2;
-  return CONTRACT_STEP * 3;
-}
-
 function playedSerieA(personKey: string | null | undefined): boolean {
   if (!personKey) return false;
   const rows = peopleIndex()[personKey]?.rows ?? [];
@@ -101,7 +98,7 @@ function abroadOrigin(tmId: string | null | undefined): { club: string; coef: nu
   const region = clubRegion(from);
   if (region === "europa") return { club: from, coef: ABROAD_COEF };
   if (region === "brasil") return null;
-  return { club: from, coef: ABROAD_COEF * 0.5 };
+  return { club: from, coef: ABROAD_OTHER_COEF };
 }
 
 function sideFor(sada: number, tm: number | null): { side: ValorSide; ratio: number | null } {
@@ -125,18 +122,15 @@ function valuePlayer(player: PlayerSummary, league: LeagueId): ValorPlayer {
 
   const factors = {
     league: LEAGUE_COEF[league] ?? -3.5,
-    rating: 0.205 * rd + 0.425 * rd * rd,
-    age: age == null ? 0 : age < 23 ? -0.003 * (23 - age) : age > 27 ? -0.176 * (age - 27) : 0,
-    minutes: 0.321 * Math.log(Math.max(player.minutes, MINUTES_FLOOR)),
-    position: POSITION_COEF[player.position_family] ?? -0.3,
-    profile: PROFILE_PREMIUM[player.position_family]?.has(player.profile)
-      ? 0.1
-      : PROFILE_DISCOUNT[player.position_family]?.has(player.profile)
-        ? -0.1
-        : 0,
+    rating: 0.171 * rd + 0.21 * rd * rd,
+    age: ageTerm(age),
+    minutes: 0.296 * Math.log(Math.max(player.minutes, MINUTES_FLOOR)),
+    position: POSITION_COEF[player.position_family] ?? 0,
+    profile: PROFILE_COEF[player.position_family]?.[player.profile ?? ""] ?? 0,
     contract: contractTerm(cYears),
     career: serieAExp ? PLAYED_A_COEF : 0,
     reputation: CAPS_COEF * Math.log1p(caps ?? 0) + (abroad?.coef ?? 0),
+    club: G12_CLUBS.has(normClub(player.club ?? "")) ? G12_COEF : 0,
   };
   const sada = Math.exp(
     VALOR_BASE +
@@ -148,7 +142,8 @@ function valuePlayer(player: PlayerSummary, league: LeagueId): ValorPlayer {
       factors.profile +
       factors.contract +
       factors.career +
-      factors.reputation,
+      factors.reputation +
+      factors.club,
   );
   const market = tm?.market_value_eur ?? null;
   const { side, ratio } = sideFor(sada, market);
@@ -175,6 +170,7 @@ function valuePlayer(player: PlayerSummary, league: LeagueId): ValorPlayer {
     sadaValue: sada,
     ratio,
     side,
+    resaleScore: resaleScore(player, league, age),
     factors,
   };
 }
@@ -182,6 +178,48 @@ function valuePlayer(player: PlayerSummary, league: LeagueId): ValorPlayer {
 function tmProfileCacheSafe(tmId: string | null | undefined): TmProfile | null {
   if (!tmId) return null;
   return tmProfiles()[tmId] ?? null;
+}
+
+function resale(): ResaleModel | null {
+  if (!resaleModel) {
+    try {
+      resaleModel = JSON.parse(
+        fs.readFileSync(path.join(DATA_DIR, "resale-model.json"), "utf-8"),
+      ) as ResaleModel;
+    } catch {
+      resaleModel = null;
+    }
+  }
+  return resaleModel;
+}
+
+/**
+ * Probabilidade de salto (divisão acima / exterior) na próxima temporada.
+ * Mesma vetorização de train_resale_model.py — manter sincronizado.
+ */
+function resaleScore(player: PlayerSummary, league: LeagueId, age: number | null): number | null {
+  const model = resale();
+  const fam = player.position_family;
+  if (!model || !fam || !player.profile) return null;
+  const c = model.coef;
+  const a = age ?? 26;
+  const rd = Math.min(1.8, Math.max(-0.8, player.rating - 6.7));
+  const up = new Set(model.upsider_profiles).has(`${fam}/${player.profile}`);
+  const z =
+    (c["intercepto"] ?? 0) +
+    (c["idade-26"] ?? 0) * (a - 26) +
+    (c["sub25"] ?? 0) * Math.max(0, 25 - a) +
+    (c["mais28"] ?? 0) * Math.max(0, a - 28) +
+    (c["rating"] ?? 0) * rd +
+    (c["ln_min"] ?? 0) * Math.log(Math.max(player.minutes, 300)) +
+    (c["serie-b"] ?? 0) * (league === "serie-b" ? 1 : 0) +
+    (c["serie-c"] ?? 0) * (league === "serie-c" ? 1 : 0) +
+    (c["laterais"] ?? 0) * (fam === "laterais" ? 1 : 0) +
+    (c["meio-campistas"] ?? 0) * (fam === "meio-campistas" ? 1 : 0) +
+    (c["extremos"] ?? 0) * (fam === "extremos" ? 1 : 0) +
+    (c["atacantes"] ?? 0) * (fam === "atacantes" ? 1 : 0) +
+    (c["perfil_upside"] ?? 0) * (up ? 1 : 0);
+  return Math.round((1 / (1 + Math.exp(-z))) * 100);
 }
 
 const valoresCache = new Map<string, { players: ValorPlayer[]; summary: ValorSummary }>();

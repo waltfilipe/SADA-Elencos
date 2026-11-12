@@ -17,7 +17,8 @@ type SortKey =
   | "caps"
   | "tm"
   | "sada"
-  | "ratio";
+  | "ratio"
+  | "resale";
 
 const SIDE_META: Record<ValorSide, { label: string; hint: string }> = {
   acima: { label: "Acima do valor", hint: "produção acima do que o mercado paga" },
@@ -37,6 +38,7 @@ const SORT_DIR_DEFAULT: Record<SortKey, 1 | -1> = {
   tm: -1,
   sada: -1,
   ratio: -1,
+  resale: -1,
 };
 
 function sortValue(player: ValorPlayer, key: SortKey): string | number {
@@ -61,6 +63,8 @@ function sortValue(player: ValorPlayer, key: SortKey): string | number {
       return player.sadaValue;
     case "ratio":
       return player.ratio ?? -1;
+    case "resale":
+      return player.resaleScore ?? -1;
   }
 }
 
@@ -70,12 +74,13 @@ function factorChips(player: ValorPlayer): { label: string; value: number }[] {
     { label: "Liga", value: Math.exp(f.league) },
     { label: "Rating", value: Math.exp(f.rating) },
     { label: "Idade", value: Math.exp(f.age) },
-    { label: "Minutos", value: Math.exp(f.minutes) / 2000 ** 0.321 },
+    { label: "Minutos", value: Math.exp(f.minutes) / 2000 ** 0.296 },
     { label: "Posição", value: Math.exp(f.position) },
     { label: "Perfil", value: Math.exp(f.profile) },
     { label: "Contrato", value: Math.exp(f.contract) },
     { label: "Carreira", value: Math.exp(f.career) },
     { label: "Reputação", value: Math.exp(f.reputation) },
+    { label: "Clube", value: Math.exp(f.club) },
   ].filter((chip) => Math.abs(chip.value - 1) > 0.02);
 }
 
@@ -169,9 +174,10 @@ export function ValoresClient({
           <span className="saltos-eyebrow">{leagueName} · temporada 2026</span>
           <h1>Valores SADA</h1>
           <p>
-            Precificação própria por produção: rating, minutos, idade, perfil, contrato, carreira e
-            reputação (seleção/exterior). O valor Transfermarkt é só a régua de comparação — quem
-            produz acima dele é barganha; quem custa acima dele paga prêmio de reputação.
+            Modelo v4 espelho de mercado: rating, minutos, idade, posição, perfil medido por
+            família, contrato, carreira, reputação e vitrine do clube. O valor Transfermarkt é a
+            régua de comparação — quem produz acima dele é barganha. A coluna Revenda estima a
+            chance de o atleta subir de divisão ou ir ao exterior na próxima temporada.
           </p>
         </header>
 
@@ -289,6 +295,7 @@ export function ValoresClient({
                   </span>
                 </th>
                 {th("ratio", "Mercado")}
+                {th("resale", "Revenda")}
               </tr>
             </thead>
             <tbody>
@@ -358,10 +365,22 @@ export function ValoresClient({
                             : SIDE_META[p.side].label}
                       </span>
                     </td>
+                    <td className="num">
+                      {p.resaleScore != null ? (
+                        <span
+                          className={`valores-resale ${p.resaleScore >= 25 ? "hot" : p.resaleScore >= 15 ? "warm" : ""}`}
+                          title="Probabilidade de subir de divisão ou ir ao exterior na próxima temporada (modelo treinado em saltos 2022–2024)"
+                        >
+                          {p.resaleScore}%
+                        </span>
+                      ) : (
+                        "—"
+                      )}
+                    </td>
                   </tr>,
                   isOpen ? (
                     <tr key={`${p.playerId}-detail`} className="valores-detail-row">
-                      <td colSpan={10}>
+                      <td colSpan={11}>
                         <div className="valores-detail">
                           <div className="valores-factors">
                             {factorChips(p).map((chip) => (
