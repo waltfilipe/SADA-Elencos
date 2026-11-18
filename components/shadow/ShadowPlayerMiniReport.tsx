@@ -61,6 +61,7 @@ export function ShadowPlayerMiniReport({
   compareWith,
   compareLabel = "Time sombra",
   profileLeague,
+  profileSeason,
   viewAs,
   viewAsLabel,
 }: {
@@ -69,13 +70,16 @@ export function ShadowPlayerMiniReport({
   compareWith?: PlayerSearchRow | null;
   compareLabel?: string;
   profileLeague?: LeagueId;
+  /** Temporada do dossiê — obrigatória nos prévios (player_id é posicional
+   *  por ano; sem ela a busca cai na temporada atual e o radar some/errado). */
+  profileSeason?: string;
   /** Família primária do slot — diferente da do atleta, os radares são
    *  recalculados na pool dela ("como ponta" para um lateral, por ex.). */
   viewAs?: PositionFamily;
   viewAsLabel?: string;
 }) {
   const league = profileLeague ?? player.sourceLeague;
-  const { profile, loading } = usePlayerProfile(player.player_id, true, league);
+  const { profile, loading } = usePlayerProfile(player.player_id, true, league, profileSeason);
   const tm = player.transfermarkt ?? profile?.transfermarkt;
 
   const translated = Boolean(viewAs && viewAs !== player.position_family);
@@ -91,7 +95,7 @@ export function ShadowPlayerMiniReport({
     setView(null);
     setViewLoading(true);
     fetch(
-      `${BASE_PATH}/api/position-view?playerId=${encodeURIComponent(player.player_id)}&family=${viewAs}${league ? `&league=${league}` : ""}`,
+      `${BASE_PATH}/api/position-view?playerId=${encodeURIComponent(player.player_id)}&family=${viewAs}${league ? `&league=${league}` : ""}${profileSeason ? `&season=${profileSeason}` : ""}`,
     )
       .then((res) => (res.ok ? res.json() : Promise.reject(new Error("position_view_failed"))))
       .then((data: PositionViewPayload) => {
@@ -106,7 +110,7 @@ export function ShadowPlayerMiniReport({
     return () => {
       cancelled = true;
     };
-  }, [translated, viewAs, player.player_id, league]);
+  }, [translated, viewAs, player.player_id, league, profileSeason]);
 
   const profileScores = useMemo<SectionScore[]>(() => {
     if (translated) return view?.profileScores ?? [];
@@ -196,6 +200,7 @@ export function ShadowPlayerTooltip({
   block,
   compareWith,
   profileLeague,
+  profileSeason,
   viewAs,
   viewAsLabel,
 }: {
@@ -204,6 +209,7 @@ export function ShadowPlayerTooltip({
   block?: boolean;
   compareWith?: PlayerSearchRow | null;
   profileLeague?: LeagueId;
+  profileSeason?: string;
   viewAs?: PositionFamily;
   viewAsLabel?: string;
 }) {
@@ -214,6 +220,7 @@ export function ShadowPlayerTooltip({
           player={player}
           compareWith={compareWith}
           profileLeague={profileLeague}
+          profileSeason={profileSeason}
           viewAs={viewAs}
           viewAsLabel={viewAsLabel}
         />

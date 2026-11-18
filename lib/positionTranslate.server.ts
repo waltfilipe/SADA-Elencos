@@ -103,10 +103,11 @@ export function positionViewFor(
   playerId: string,
   league: LeagueId | undefined,
   targetFamily: PositionFamily,
+  season?: string,
 ): PositionView | null {
-  const source = getPlayerProfile(playerId, league);
+  const source = getPlayerProfile(playerId, league, season);
   if (!source || source.position_family === targetFamily) return null;
-  const pool = getFamilyPlayers(targetFamily, league).filter(
+  const pool = getFamilyPlayers(targetFamily, league, season).filter(
     (player) => player.minutes >= 300,
   );
   if (pool.length < 10) return null;

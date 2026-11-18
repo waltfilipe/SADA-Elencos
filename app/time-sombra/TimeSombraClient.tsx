@@ -993,6 +993,7 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
                   assignments={viewAssignments}
                   compareAssignments={mode === "elenco" && !isPrevios ? state.assignments : null}
                   playersById={lookupById}
+                  profileSeason={isPrevios ? prevSeason : undefined}
                   selectedSlotId={selectedSlotId}
                   placementPlayerId={editable ? placementPlayerId : null}
                   editable={editable}
@@ -1310,6 +1311,7 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
                           <ShadowPlayerRow
                             player={player}
                             profileLabel={player.profile}
+                            profileSeason={isPrevios ? prevSeason : undefined}
                             draggable={editable}
                             onRemove={
                               editable
@@ -1346,6 +1348,7 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
                         <ShadowPlayerRow
                           player={player}
                           profileLabel={player.profile}
+                          profileSeason={isPrevios ? prevSeason : undefined}
                           onRemove={() => removeFromWatchlist(player.player_id)}
                         />
                       </li>

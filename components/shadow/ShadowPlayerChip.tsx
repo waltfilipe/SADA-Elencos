@@ -73,11 +73,14 @@ export function ShadowPlayerChip({ player, size = "md", onRemove, onClick, selec
 export function ShadowPlayerRow({
   player,
   profileLabel,
+  profileSeason,
   onRemove,
   draggable = false,
 }: {
   player: PlayerSearchRow;
   profileLabel?: string | null;
+  /** Temporada do dossiê do atleta (prévios) — sem ela o radar busca a atual. */
+  profileSeason?: string;
   onRemove?: () => void;
   /** Permite arrastar o atleta para um slot do campo. */
   draggable?: boolean;
@@ -93,7 +96,7 @@ export function ShadowPlayerRow({
       draggable={draggable}
       onDragStart={draggable ? (event) => writeShadowDrag(event.dataTransfer, player.player_id, null) : undefined}
     >
-      <ShadowPlayerTooltip player={player} profileLeague={player.sourceLeague} block>
+      <ShadowPlayerTooltip player={player} profileLeague={player.sourceLeague} profileSeason={profileSeason} block>
         <a
           href={scoutPath(
             player.sourceLeague

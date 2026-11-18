@@ -31,6 +31,8 @@ type Props = {
   /** Titulares do time sombra, para mini comparação no time próprio. */
   compareAssignments?: Record<string, string | null> | null;
   playersById: Map<string, PlayerSearchRow>;
+  /** Temporada dos dossiês (prévios) — radares buscam o ano certo. */
+  profileSeason?: string;
   selectedSlotId: string | null;
   placementPlayerId: string | null;
   /** Time sombra monta na mão. Elenco atual só consulta o time já escalado. */
@@ -45,6 +47,7 @@ export function PitchView({
   formationId,
   assignments,
   playersById,
+  profileSeason,
   selectedSlotId,
   placementPlayerId,
   onSelectSlot,
@@ -135,6 +138,7 @@ export function PitchView({
                     player={player}
                     compareWith={comparePlayer}
                     profileLeague={player.sourceLeague}
+                    profileSeason={profileSeason}
                     viewAs={slot.families[0]}
                     viewAsLabel={slot.label}
                     block
@@ -201,6 +205,7 @@ export function BenchStrip({
   playerIds,
   playersById,
   placementPlayerId,
+  profileSeason,
   onPlace,
   onRemove,
   onDropStart,
@@ -208,6 +213,7 @@ export function BenchStrip({
   playerIds: string[];
   playersById: Map<string, PlayerSearchRow>;
   placementPlayerId: string | null;
+  profileSeason?: string;
   onPlace: (playerId: string | null) => void;
   onRemove: (playerId: string) => void;
   onDropStart?: (playerId: string) => void;
@@ -232,7 +238,7 @@ export function BenchStrip({
                 onDropStart?.(id);
               }}
             >
-              <ShadowPlayerTooltip player={player} profileLeague={player.sourceLeague} block>
+              <ShadowPlayerTooltip player={player} profileLeague={player.sourceLeague} profileSeason={profileSeason} block>
                 <ShadowPlayerChip
                   player={player}
                   size="md"

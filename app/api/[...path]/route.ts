@@ -140,7 +140,8 @@ export async function GET(request: Request, { params }: Params) {
     if (!playerId || !family) {
       return NextResponse.json({ error: "missing_params" }, { status: 400 });
     }
-    const view = positionViewFor(playerId, league as LeagueId | undefined, family);
+    const season = url.searchParams.get("season") ?? url.searchParams.get("temporada") ?? undefined;
+    const view = positionViewFor(playerId, league as LeagueId | undefined, family, season);
     if (!view) return NextResponse.json({ error: "not_found" }, { status: 404 });
     return NextResponse.json(view);
   }

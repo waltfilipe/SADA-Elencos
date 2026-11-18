@@ -14,8 +14,11 @@ export async function fetchPlayers(params?: URLSearchParams) {
   return res.json();
 }
 
-export async function fetchPlayer(playerId: string, league?: string): Promise<PlayerProfile> {
-  const query = league ? `?league=${encodeURIComponent(league)}` : "";
+export async function fetchPlayer(playerId: string, league?: string, season?: string): Promise<PlayerProfile> {
+  const params = new URLSearchParams();
+  if (league) params.set("league", league);
+  if (season) params.set("season", season);
+  const query = params.size ? `?${params}` : "";
   const res = await fetch(`${BASE_PATH}/api/players/${playerId}${query}`, { cache: "no-store" });
   if (!res.ok) throw new Error("Jogador não encontrado");
   return res.json();
