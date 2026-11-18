@@ -7,11 +7,13 @@ import { useLeagueOptional } from "@/components/LeagueProvider";
 import { SALTO_LEAGUES } from "@/lib/saltos";
 
 const NAV_SQUAD = [
-  { key: "elenco", path: "/elenco", label: "Elenco", icon: "fa-shirt" },
-  { key: "elencos-previos", path: "/elencos-previos", label: "Elencos Prévios", icon: "fa-clock-rotate-left" },
-  { key: "time-sombra", path: "/time-sombra", label: "Time Sombra", icon: "fa-chess-board" },
-  { key: "saltos", path: "/saltos", label: "Saltos", icon: "fa-arrow-trend-up" },
-  { key: "valores", path: "/valores", label: "Valores", icon: "fa-tag" },
+  // Quadros da comissão: app league-agnostic, links sem prefixo de liga.
+  { key: "elenco", path: "/elenco", label: "Elenco", icon: "fa-shirt", neutral: true },
+  { key: "elencos-previos", path: "/elencos-previos", label: "Elencos Prévios", icon: "fa-clock-rotate-left", neutral: true },
+  { key: "time-sombra", path: "/time-sombra", label: "Time Sombra", icon: "fa-chess-board", neutral: true },
+  // Análises por competição: a liga faz parte do recorte, link mantém contexto.
+  { key: "saltos", path: "/saltos", label: "Saltos", icon: "fa-arrow-trend-up", neutral: false },
+  { key: "valores", path: "/valores", label: "Valores", icon: "fa-tag", neutral: false },
 ] as const;
 
 export type ScoutSection =
@@ -34,7 +36,7 @@ export function ScoutTopbar({ active, subnav }: Props) {
   return (
     <div className="scout-topbar-wrap">
       <header className="scout-topbar scout-topbar-compact">
-        <Link href={league ? league.href("/elenco") : "/"} className="scout-brand" aria-label="SADA | Elencos — início">
+        <Link href="/" className="scout-brand" aria-label="SADA | Elencos — início">
           <SiteLogo variant="stacked" className="scout-header-logo scout-header-logo-stacked" height={40} />
           <span className="scout-brand-app">Elencos</span>
         </Link>
@@ -49,7 +51,7 @@ export function ScoutTopbar({ active, subnav }: Props) {
             return (
               <Link
                 key={item.key}
-                href={league ? league.href(item.path) : item.path}
+                href={item.neutral || !league ? item.path : league.href(item.path)}
                 className={isActive ? "active" : undefined}
                 aria-current={isActive ? "page" : undefined}
               >
