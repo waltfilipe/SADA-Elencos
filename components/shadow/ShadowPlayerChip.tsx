@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { useLeague } from "@/components/LeagueProvider";
+import { scoutPath } from "@/lib/paths";
 import { ClubLogo } from "@/components/ClubLogo";
 import { PlayerPhoto } from "@/components/PlayerPhoto";
 import { ShadowPlayerTooltip } from "@/components/shadow/ShadowPlayerMiniReport";
@@ -94,12 +94,14 @@ export function ShadowPlayerRow({
       onDragStart={draggable ? (event) => writeShadowDrag(event.dataTransfer, player.player_id, null) : undefined}
     >
       <ShadowPlayerTooltip player={player} profileLeague={player.sourceLeague} block>
-        <Link
-          href={
+        <a
+          href={scoutPath(
             player.sourceLeague
               ? `/${player.sourceLeague}/posicao/${player.position_family}?atleta=${player.player_id}`
-              : href(`/posicao/${player.position_family}?atleta=${player.player_id}`)
-          }
+              : href(`/posicao/${player.position_family}?atleta=${player.player_id}`),
+          )}
+          target="_blank"
+          rel="noopener noreferrer"
           className="shadow-player-row-link"
         >
           <span className="shadow-player-row-photo">
@@ -120,7 +122,7 @@ export function ShadowPlayerRow({
           <span className="shadow-player-row-rating shadow-chip-letter tabular" style={tierVars(token)}>
             {letter}
           </span>
-        </Link>
+        </a>
       </ShadowPlayerTooltip>
       {onRemove ? (
         <button type="button" className="shadow-player-row-remove" aria-label={`Remover ${player.name}`} onClick={onRemove}>

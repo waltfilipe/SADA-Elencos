@@ -1,6 +1,6 @@
 "use client";
 
-import { BASE_PATH } from "@/lib/paths";
+import { BASE_PATH, SCOUT_APP_URL, scoutPath } from "@/lib/paths";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useLeague } from "@/components/LeagueProvider";
@@ -1228,14 +1228,16 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
                     {ratingToLetterGrade(selectedPlayer.rating)}
                   </span>
                   <div className="shadow-slot-detail-actions">
-                    <Link
+                    <a
                       className="btn btn-ghost btn-sm"
-                      href={`/${selectedPlayer.sourceLeague}/posicao/${selectedPlayer.position_family}?atleta=${selectedPlayer.player_id}${
+                      href={`${SCOUT_APP_URL}/${selectedPlayer.sourceLeague}/posicao/${selectedPlayer.position_family}?atleta=${selectedPlayer.player_id}${
                         isPrevios && prevSeason !== CURRENT_SEASON ? `&temporada=${prevSeason}` : ""
                       }`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Ver perfil
-                    </Link>
+                    </a>
                     {isPrevios ? null : (
                       <AddToShadowMenu
                         playerId={selectedPlayer.player_id}
@@ -1329,8 +1331,10 @@ export function TimeSombraClient({ playersByLeague, clubIndex, board: viewBoard 
                         : (
                           <>
                             Nenhum atleta neste time. Clique numa vaga do campo ou abra{" "}
-                            <Link href={href("/posicao/zagueiros")}>Posições</Link> e{" "}
-                            <Link href={href("/filtros")}>Filtros</Link> para adicionar pelo perfil.
+                            <a href={`${SCOUT_APP_URL}${href("/posicao/zagueiros")}`} target="_blank" rel="noopener noreferrer">Posições</a>{" "}
+                            e{" "}
+                            <a href={`${SCOUT_APP_URL}${href("/filtros")}`} target="_blank" rel="noopener noreferrer">Filtros</a>{" "}
+                            para adicionar pelo perfil.
                           </>
                         )}
                     </p>
@@ -1474,12 +1478,16 @@ function PreviosSimilarSection({
                       <ul className="previos-similar-hits">
                         {hits.map((hit, index) => (
                           <li key={hit.player_id}>
-                            <Link
+                            <a
                               className="previos-similar-hit"
-                              href={leaguePath(
-                                hit.league ?? (target === "estaduais" ? "est-nv1" : target),
-                                `/posicao/${player.position_family}?atleta=${encodeURIComponent(hit.player_id)}`,
+                              href={scoutPath(
+                                leaguePath(
+                                  hit.league ?? (target === "estaduais" ? "est-nv1" : target),
+                                  `/posicao/${player.position_family}?atleta=${encodeURIComponent(hit.player_id)}`,
+                                ),
                               )}
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
                               <span className="previos-similar-rank tabular">{index + 1}</span>
                               <PlayerPhoto
@@ -1499,7 +1507,7 @@ function PreviosSimilarSection({
                                 </em>
                               </span>
                               <span className="previos-similar-score tabular">{hit.similarity}%</span>
-                            </Link>
+                            </a>
                           </li>
                         ))}
                       </ul>
